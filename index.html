@@ -81,6 +81,17 @@
 
     <div id="map"></div>
 
+    <!-- Site Preview Overlay -->
+    <div id="site-overlay" class="site-overlay">
+        <div class="overlay-header">
+            <h2 id="overlay-title">Site Details</h2>
+            <button class="close-overlay" onclick="unescoExplorer.closePreview()">×</button>
+        </div>
+        <div class="overlay-content" id="overlay-content">
+            <div class="loading-overlay">Loading site details...</div>
+        </div>
+    </div>
+
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     

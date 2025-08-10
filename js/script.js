@@ -32,6 +32,11 @@ class UNESCOExplorer {
         }).addTo(this.map);
 
         this.map.addLayer(this.markers);
+        
+        // Close overlay when clicking on map
+        this.map.on('click', () => {
+            this.closePreview();
+        });
     }
 
     async loadUNESCOSites() {
@@ -137,6 +142,12 @@ class UNESCOExplorer {
                 const popupContent = this.createPopupContent(site, isVisited);
                 marker.bindPopup(popupContent);
                 
+                // Add click event to open preview directly
+                marker.on('click', (e) => {
+                    e.originalEvent.stopPropagation(); // Prevent map click from closing overlay
+                    this.showPreview(site.name);
+                });
+                
                 // Add hover events to show/hide popup with delay
                 let popupTimeout;
                 
@@ -228,10 +239,16 @@ class UNESCOExplorer {
                     <strong>Year Inscribed:</strong> ${site.year}<br>
                     <strong>Criteria:</strong> ${site.criteria}
                 </div>
-                <button class="popup-button ${isVisited ? 'visited' : ''}" 
-                        onclick="unescoExplorer.toggleVisited('${site.name}')">
-                    ${isVisited ? '✓ Visited' : 'Mark as Visited'}
-                </button>
+                <div class="popup-buttons">
+                    <button class="popup-button ${isVisited ? 'visited' : ''}" 
+                            onclick="unescoExplorer.toggleVisited('${site.name}')">
+                        ${isVisited ? '✓ Visited' : 'Mark as Visited'}
+                    </button>
+                    <button class="popup-button preview-button" 
+                            onclick="unescoExplorer.showPreview('${site.name.replace(/'/g, "\\'")}')">
+                        Preview
+                    </button>
+                </div>
             </div>
         `;
     }
@@ -274,6 +291,181 @@ class UNESCOExplorer {
             document.getElementById('dropdown-content').style.display = 'none';
             document.querySelector('.dropdown-menu').classList.remove('show');
         }
+    }
+
+    async showPreview(siteName) {
+        const overlay = document.getElementById('site-overlay');
+        const overlayTitle = document.getElementById('overlay-title');
+        const overlayContent = document.getElementById('overlay-content');
+        
+        // Show overlay with loading state
+        overlayTitle.textContent = siteName;
+        overlayContent.innerHTML = '<div class="loading-overlay">Loading site details...</div>';
+        overlay.classList.add('show');
+        
+        // Find the site data
+        const site = this.sites.find(s => s.name === siteName);
+        if (!site) {
+            overlayContent.innerHTML = '<div class="loading-overlay">Site not found.</div>';
+            return;
+        }
+        
+        try {
+            // Fetch detailed information from Wikipedia and other sources
+            const siteDetails = await this.fetchSiteDetails(site);
+            this.renderSiteDetails(siteDetails, site);
+        } catch (error) {
+            console.error('Error fetching site details:', error);
+            overlayContent.innerHTML = `
+                <div class="error-message">
+                    <h3>Unable to load detailed information</h3>
+                    <p>Please check your internet connection and try again.</p>
+                    <div class="basic-info">
+                        <h4>Basic Information:</h4>
+                        <p><strong>Country:</strong> ${site.country}</p>
+                        <p><strong>Year Inscribed:</strong> ${site.year}</p>
+                        <p><strong>Criteria:</strong> ${site.criteria}</p>
+                        <p><strong>Coordinates:</strong> ${site.lat.toFixed(4)}, ${site.lng.toFixed(4)}</p>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    async fetchSiteDetails(site) {
+        // Try to fetch from Wikipedia API
+        const searchQuery = encodeURIComponent(site.name + ' UNESCO World Heritage Site');
+        const wikipediaSearchUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${searchQuery}`;
+        
+        try {
+            const response = await fetch(wikipediaSearchUrl);
+            if (response.ok) {
+                const data = await response.json();
+                return {
+                    title: data.title || site.name,
+                    description: data.extract || 'No description available.',
+                    image: data.thumbnail ? data.thumbnail.source : null,
+                    wikipediaUrl: data.content_urls ? data.content_urls.desktop.page : null
+                };
+            }
+        } catch (error) {
+            console.log('Wikipedia API failed, using fallback');
+        }
+        
+        // Fallback: try alternative Wikipedia search
+        try {
+            const searchUrl = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(site.name)}`;
+            const response = await fetch(searchUrl);
+            if (response.ok) {
+                const data = await response.json();
+                return {
+                    title: data.title || site.name,
+                    description: data.extract || 'No description available.',
+                    image: data.thumbnail ? data.thumbnail.source : null,
+                    wikipediaUrl: data.content_urls ? data.content_urls.desktop.page : null
+                };
+            }
+        } catch (error) {
+            console.log('Alternative Wikipedia search failed');
+        }
+        
+        // Final fallback
+        return {
+            title: site.name,
+            description: `${site.name} is a UNESCO World Heritage Site located in ${site.country}. It was inscribed in ${site.year} under the criteria: ${site.criteria}.`,
+            image: null,
+            wikipediaUrl: null
+        };
+    }
+
+    renderSiteDetails(details, site) {
+        const overlayContent = document.getElementById('overlay-content');
+        const isVisited = this.visitedSites.has(site.name);
+        
+        overlayContent.innerHTML = `
+            <div class="site-details">
+                ${details.image ? `
+                    <div class="site-image">
+                        <img src="${details.image}" alt="${details.title}" onerror="this.style.display='none'">
+                    </div>
+                ` : ''}
+                
+                <div class="site-info">
+                    <div class="info-section">
+                        <h3>Description</h3>
+                        <p>${details.description}</p>
+                    </div>
+                    
+                    <div class="info-section">
+                        <h3>Basic Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <strong>Country:</strong> ${site.country}
+                            </div>
+                            <div class="info-item">
+                                <strong>Year Inscribed:</strong> ${site.year}
+                            </div>
+                            <div class="info-item">
+                                <strong>Criteria:</strong> ${site.criteria}
+                            </div>
+                            <div class="info-item">
+                                <strong>Coordinates:</strong> 
+                                <span class="coordinates-link" onclick="unescoExplorer.zoomToSite(${site.lat}, ${site.lng})" title="Click to zoom to location">
+                                    ${site.lat.toFixed(4)}, ${site.lng.toFixed(4)}
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Status:</strong> <span class="status ${isVisited ? 'visited' : 'unvisited'}">${isVisited ? 'Visited' : 'Not Visited'}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay-actions">
+                        <button class="action-button ${isVisited ? 'visited' : ''}" 
+                                onclick="unescoExplorer.toggleVisited('${site.name}'); unescoExplorer.updateOverlayStatus('${site.name}')">
+                            ${isVisited ? '✓ Visited' : 'Mark as Visited'}
+                        </button>
+                        ${details.wikipediaUrl ? `
+                            <a href="${details.wikipediaUrl}" target="_blank" class="action-button wikipedia-link">
+                                View on Wikipedia
+                            </a>
+                        ` : ''}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    updateOverlayStatus(siteName) {
+        const isVisited = this.visitedSites.has(siteName);
+        const statusElement = document.querySelector('.status');
+        const actionButton = document.querySelector('.overlay-actions .action-button');
+        
+        if (statusElement) {
+            statusElement.textContent = isVisited ? 'Visited' : 'Not Visited';
+            statusElement.className = `status ${isVisited ? 'visited' : 'unvisited'}`;
+        }
+        
+        if (actionButton) {
+            actionButton.textContent = isVisited ? '✓ Visited' : 'Mark as Visited';
+            actionButton.className = `action-button ${isVisited ? 'visited' : ''}`;
+        }
+    }
+
+    zoomToSite(lat, lng) {
+        // Close the overlay first
+        this.closePreview();
+        
+        // Zoom to the site location with a higher zoom level
+        this.map.setView([lat, lng], 8, {
+            animate: true,
+            duration: 1.5
+        });
+    }
+
+    closePreview() {
+        const overlay = document.getElementById('site-overlay');
+        overlay.classList.remove('show');
     }
 }
 

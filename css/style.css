@@ -216,6 +216,297 @@ body {
     display: block;
 }
 
+/* Popup button styling */
+.popup-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.popup-button {
+    flex: 1;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.popup-button:hover {
+    background: #2980b9;
+}
+
+.popup-button.visited {
+    background: #27ae60;
+}
+
+.popup-button.visited:hover {
+    background: #229954;
+}
+
+.preview-button {
+    background: #9b59b6 !important;
+}
+
+.preview-button:hover {
+    background: #8e44ad !important;
+}
+
+/* Site overlay styling */
+.site-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.site-overlay.show {
+    right: 0;
+}
+
+.overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ecf0f1;
+    background: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 2001;
+}
+
+.overlay-header h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin: 0;
+}
+
+.close-overlay {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #7f8c8d;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.close-overlay:hover {
+    background: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+}
+
+.overlay-content {
+    padding: 20px;
+}
+
+.loading-overlay {
+    text-align: center;
+    padding: 40px 20px;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* Site details styling */
+.site-details {
+    max-width: 100%;
+}
+
+.site-image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.site-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+    margin-bottom: 25px;
+}
+
+.info-section h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.info-section p {
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.info-grid {
+    display: grid;
+    gap: 12px;
+}
+
+.info-item {
+    color: #34495e;
+    font-size: 14px;
+}
+
+.info-item strong {
+    color: #2c3e50;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.status.visited {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status.unvisited {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.overlay-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.action-button {
+    flex: 1;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.action-button:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+}
+
+.action-button.visited {
+    background: #27ae60;
+}
+
+.action-button.visited:hover {
+    background: #229954;
+}
+
+.wikipedia-link {
+    background: #9b59b6 !important;
+}
+
+.wikipedia-link:hover {
+    background: #8e44ad !important;
+}
+
+.error-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-message h3 {
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.error-message p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.basic-info {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.basic-info h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.basic-info p {
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+/* Clickable coordinates styling */
+.coordinates-link {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.coordinates-link:hover {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .site-overlay {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .popup-buttons {
+        flex-direction: column;
+    }
+    
+    .popup-button {
+        margin-bottom: 5px;
+    }
+    
+    .overlay-actions {
+        flex-direction: column;
+    }
+    
+    .action-button {
+        margin-bottom: 8px;
+    }
+    
+    .info-item strong {
+        min-width: auto;
+        display: block;
+        margin-bottom: 4px;
+    }
+}
+
 /* General cluster styling */
 .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
     -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
