@@ -2,7 +2,7 @@ class UNESCOExplorer {
     constructor() {
         this.map = null;
         this.sites = [];
-        this.visitedSites = new Set(JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]'));
+        this.visitedSites = new Set(); // Start empty, will be loaded from Firebase or localStorage
         this.markers = new L.MarkerClusterGroup({
             chunkedLoading: true,
             maxClusterRadius: 50,
@@ -16,6 +16,42 @@ class UNESCOExplorer {
         
         this.initMap();
         this.loadUNESCOSites();
+        this.loadVisitedSites();
+    }
+
+    async loadVisitedSites() {
+        // Wait for auth manager to be ready
+        if (window.authManager && window.authManager.isSignedIn && window.firebaseDb) {
+            try {
+                // Load from Firebase if user is signed in
+                const userDocRef = window.firebaseDb.collection('users').doc(window.authManager.currentUser.id);
+                const doc = await userDocRef.get();
+                
+                if (doc.exists) {
+                    const userData = doc.data();
+                    this.visitedSites = new Set(userData.visitedSites || []);
+                    console.log('Loaded visited sites from Firebase:', userData.visitedSites?.length || 0);
+                } else {
+                    // If no Firebase data, check localStorage as fallback
+                    const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
+                    this.visitedSites = new Set(localData);
+                    console.log('Loaded visited sites from localStorage:', localData.length);
+                }
+            } catch (error) {
+                console.error('Error loading from Firebase, using localStorage:', error);
+                const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
+                this.visitedSites = new Set(localData);
+            }
+        } else {
+            // Not signed in, use localStorage
+            const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
+            this.visitedSites = new Set(localData);
+            console.log('User not signed in, using localStorage:', localData.length);
+        }
+        
+        // Update UI after loading data
+        this.updateMarkers();
+        this.updateStats();
     }
 
     initMap() {
@@ -487,7 +523,7 @@ class AuthManager {
     init() {
         if (this.useFirebase && window.firebaseAuth) {
             // Listen for Firebase auth state changes
-            window.firebaseAuth.onAuthStateChanged((user) => {
+            window.firebaseAuth.onAuthStateChanged(async (user) => {
                 if (user) {
                     this.currentUser = {
                         email: user.email,
@@ -496,11 +532,21 @@ class AuthManager {
                     };
                     this.isSignedIn = true;
                     this.updateUI();
-                    this.syncData();
+                    await this.syncData();
+                    
+                    // Reload visited sites data from Firebase after sign in
+                    if (window.unescoExplorer) {
+                        await unescoExplorer.loadVisitedSites();
+                    }
                 } else {
                     this.currentUser = null;
                     this.isSignedIn = false;
                     this.updateUI();
+                    
+                    // Reload visited sites from localStorage when signed out
+                    if (window.unescoExplorer) {
+                        await unescoExplorer.loadVisitedSites();
+                    }
                 }
             });
         } else {
