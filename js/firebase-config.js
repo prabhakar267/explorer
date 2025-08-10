@@ -38,6 +38,10 @@ function initializeFirebase() {
 function waitForEnvAndInitialize() {
     if (window.ENV) {
         initializeFirebase();
+        // Update exports after initialization
+        window.firebaseAuth = auth;
+        window.firebaseDb = db;
+        window.isFirebaseEnabled = firebaseApp !== null;
     } else {
         // Wait a bit and try again
         setTimeout(waitForEnvAndInitialize, 100);
@@ -47,7 +51,7 @@ function waitForEnvAndInitialize() {
 // Start the initialization process
 waitForEnvAndInitialize();
 
-// Export for use in other files
+// Initial exports (will be updated after initialization)
 window.firebaseAuth = auth;
 window.firebaseDb = db;
 window.isFirebaseEnabled = firebaseApp !== null;

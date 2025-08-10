@@ -1,79 +1,172 @@
 # UNESCO World Heritage Sites Explorer
 
-A single-page web application that displays UNESCO World Heritage Sites on an interactive map, allowing users to track their visits and explore sites worldwide.
+![UNESCO World Heritage Sites Explorer](https://prabhakar267.github.io/explorer/assets/molumen-world-map-1.svg)
 
-## Features
+A modern, interactive web application that displays UNESCO World Heritage Sites on a beautiful map interface, allowing users to track their visits and explore sites worldwide with cross-device synchronization.
 
-- **Interactive Map**: Full-screen map view with zoom in/out capabilities
-- **Site Markers**: Visual markers for all UNESCO World Heritage Sites
-- **Visit Tracking**: Mark sites as visited with persistent local storage
-- **Marker Clustering**: Automatic clustering of markers when zoomed out
-- **Site Information**: Detailed popups with site information including:
-  - Site name and country
-  - Year of inscription
-  - UNESCO criteria (Cultural, Natural, or Mixed)
-- **Statistics**: Real-time tracking of total sites, visited sites, and remaining sites
-- **Responsive Design**: Works on desktop and mobile devices
+**🌐 Live Demo**: [https://prabhakar267.github.io/explorer/](https://prabhakar267.github.io/explorer/)
 
-## Technology Stack
+## ✨ Features
+
+### 🗺️ Interactive Mapping
+- **Full-screen Map**: Immersive map experience with smooth navigation
+- **Hover Previews**: Instant site information on marker hover
+- **Smart Clustering**: Automatic marker grouping with visit status indicators
+- **World Wrapping**: Seamless map navigation across longitude boundaries
+- **Zoom to Location**: Click coordinates to jump to site location
+
+### 👤 User Authentication & Sync
+- **Firebase Authentication**: Secure email/password accounts
+- **Cross-Device Sync**: Access your data from any device
+- **Real-time Updates**: Instant synchronization across all devices
+- **Offline Support**: Works without internet using local storage
+- **Data Merging**: Intelligently combines data from multiple devices
+
+### 🎨 Modern Design
+- **Theme System**: Light, dark, and system theme modes
+- **Glass Morphism**: Modern UI with backdrop blur effects
+- **Responsive Design**: Perfect on desktop, tablet, and mobile
+- **CSS Variables**: Dynamic theming throughout the interface
+- **Smooth Animations**: Polished interactions and transitions
+
+### 📊 Site Management
+- **Visit Tracking**: Mark sites as visited with persistent storage
+- **Detailed Previews**: Rich site information with Wikipedia integration
+- **Progress Statistics**: Real-time tracking of visited vs remaining sites
+- **Site Search**: Easy discovery through interactive map exploration
+- **Reset Functionality**: Clear all visited sites when needed
+
+### 🔒 Security & Configuration
+- **Environment Variables**: Secure Firebase configuration management
+- **No Hardcoded Keys**: API keys loaded from environment files
+- **Graceful Fallbacks**: Works in demo mode without Firebase
+- **Git Security**: Sensitive files automatically ignored
+
+## 🛠️ Technology Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Mapping**: Leaflet.js with MarkerCluster plugin
-- **Data Storage**: Browser localStorage for visit tracking
-- **Hosting**: GitHub Pages compatible (no backend required)
+- **Authentication**: Firebase Auth
+- **Database**: Firebase Firestore
+- **Styling**: CSS Variables, Glass Morphism, Responsive Design
+- **Data Storage**: Firebase + localStorage fallback
+- **Hosting**: GitHub Pages compatible
 
-## Site Data
+## 🌍 Site Data
 
-The application loads data directly from the official UNESCO World Heritage Sites database via their public API (`https://ihp-wins.unesco.org/.../whc-sites-2025.csv`), containing 1000+ sites from around the world, covering:
-- **Africa**: Pyramids of Giza, Robben Island, Cradle of Humankind, etc.
-- **Asia**: Great Wall of China, Taj Mahal, Angkor, Borobudur, etc.
-- **Europe**: Colosseum, Acropolis, Stonehenge, Palace of Versailles, etc.
-- **Americas**: Machu Picchu, Chichen Itza, Yellowstone, Grand Canyon, etc.
-- **Oceania**: Great Barrier Reef, Uluru, Sydney Opera House, etc.
+The application loads real-time data from the official UNESCO World Heritage Sites database (`https://ihp-wins.unesco.org/.../whc-sites-2025.csv`), featuring 1000+ sites across:
 
-The CSV data includes comprehensive information such as:
-- Site names in multiple languages
-- Precise coordinates (latitude/longitude)
-- Inscription dates
-- UNESCO criteria categories
-- Country information
+- **🏛️ Cultural Sites**: Taj Mahal, Colosseum, Machu Picchu, Great Wall of China
+- **🌿 Natural Sites**: Great Barrier Reef, Yellowstone, Galápagos Islands
+- **🏞️ Mixed Sites**: Mount Fuji, Meteora, Papahānaumokuākea
+- **🌍 Global Coverage**: Sites from all continents and regions
 
-## Usage
+Each site includes:
+- Precise GPS coordinates
+- Inscription year and criteria
+- Country and regional information
+- Wikipedia integration for detailed descriptions
 
-1. **Viewing Sites**: The map loads with all UNESCO sites marked
-2. **Navigation**: Use mouse/touch to pan and zoom the map
-3. **Site Details**: Click on any marker to view site information
-4. **Mark as Visited**: Click the "Mark as Visited" button in the popup
-5. **Track Progress**: View your progress in the statistics panel
+## 🚀 Quick Start
 
-## Visual Indicators
+### Option 1: Use Live Version
+Visit [https://prabhakar267.github.io/explorer/](https://prabhakar267.github.io/explorer/) - no setup required!
 
-- **Red Markers**: Unvisited sites
-- **Green Markers**: Visited sites
-- **Clustered Markers**: Multiple sites grouped together when zoomed out
+### Option 2: Local Development
+```bash
+git clone https://github.com/prabhakar267/explorer.git
+cd explorer
+# Open index.html in your browser - no build process needed!
+```
 
-## Data Persistence
+### Option 3: With Firebase Sync
+1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com/)
+2. Enable Authentication (Email/Password) and Firestore Database
+3. Copy `.env.example` to `.env` and add your Firebase configuration
+4. Open `index.html` in your browser
 
-Your visit tracking data is automatically saved to your browser's local storage, so your progress persists between sessions.
+See [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for detailed Firebase configuration instructions.
 
-## Installation & Deployment
+## 📱 Usage Guide
 
-### Local Development
-1. Clone or download the repository
-2. Open `index.html` in a web browser
-3. No build process or server required
+### 🔍 Exploring Sites
+- **Browse Map**: Pan and zoom to explore different regions
+- **Hover Preview**: Hover over markers for quick site information
+- **Click for Details**: Click markers for full site previews with Wikipedia info
+- **Theme Toggle**: Switch between light, dark, and system themes
 
-### GitHub Pages Deployment
-1. Upload files to a GitHub repository
+### 👤 Account Features
+- **Sign Up/In**: Create an account for cross-device sync
+- **Visit Tracking**: Mark sites as visited - syncs across all devices
+- **Progress Tracking**: View statistics in the bottom-left panel
+- **Data Sync**: Automatic synchronization with visual status indicators
+
+### 🎯 Visual Indicators
+- **🔴 Red Markers**: Unvisited sites
+- **🟢 Green Markers**: Visited sites
+- **📍 Clusters**: Grouped markers showing visit status
+- **🔄 Sync Status**: Real-time sync indicators in account menu
+
+## 🔧 Configuration
+
+### Environment Variables
+Create a `.env` file with your Firebase configuration:
+```env
+FIREBASE_API_KEY=your-api-key
+FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_STORAGE_BUCKET=your-project.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=123456789
+FIREBASE_APP_ID=your-app-id
+FIREBASE_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+### Security
+- Environment variables are automatically loaded
+- `.env` file is git-ignored for security
+- Firebase rules restrict access to user's own data
+- Graceful fallback to demo mode without configuration
+
+## 🌐 Deployment
+
+### GitHub Pages
+1. Fork or clone the repository
 2. Enable GitHub Pages in repository settings
-3. The site will be available at `https://username.github.io/repository-name`
+3. Add Firebase configuration (optional)
+4. Access at `https://username.github.io/repository-name`
 
-## Browser Compatibility
+### Custom Hosting
+- Upload files to any static hosting service
+- Configure environment variables for Firebase sync
+- No server-side requirements
 
-- Modern browsers with ES6+ support
-- Chrome, Firefox, Safari, Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
+## 🔒 Privacy & Data
 
-## License
+- **Local Storage**: Visit data stored locally when not signed in
+- **Firebase Sync**: Encrypted data storage when authenticated
+- **No Tracking**: No analytics or user tracking (unless you enable Firebase Analytics)
+- **Open Source**: Full transparency - inspect all code
+
+## 🤝 Contributing
+
+Contributions are welcome! This project was created as a coding exercise and learning experience.
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
 
 This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- **UNESCO**: For maintaining the World Heritage Sites database
+- **Leaflet.js**: For the excellent mapping library
+- **Firebase**: For authentication and database services
+- **OpenStreetMap**: For the map tiles and data
+
+---
+
+**Created by [Prabhakar Gupta](https://github.com/prabhakar267)** - A vibe coding project built with Claude 3.5 Sonnet
