@@ -6,56 +6,34 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-
-    - name: Inject Environment Variables
-      run: |
-        # Create a temporary JavaScript file with environment variables
-        cat > js/env-config.js << EOF
-        // Auto-generated environment configuration
-        // This file is created during GitHub Actions build process
-        window.ENV = {
-          FIREBASE_API_KEY: '${{ secrets.FIREBASE_API_KEY }}',
-          FIREBASE_AUTH_DOMAIN: '${{ secrets.FIREBASE_AUTH_DOMAIN }}',
-          FIREBASE_DATABASE_URL: '${{ secrets.FIREBASE_DATABASE_URL }}',
-          FIREBASE_PROJECT_ID: '${{ secrets.FIREBASE_PROJECT_ID }}',
-          FIREBASE_STORAGE_BUCKET: '${{ secrets.FIREBASE_STORAGE_BUCKET }}',
-          FIREBASE_MESSAGING_SENDER_ID: '${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}',
-          FIREBASE_APP_ID: '${{ secrets.FIREBASE_APP_ID }}',
-          FIREBASE_MEASUREMENT_ID: '${{ secrets.FIREBASE_MEASUREMENT_ID }}'
-        };
-        console.log('Environment variables loaded from GitHub Actions build');
-        EOF
-
-        echo "Generated env-config.js:"
-        cat js/env-config.js
-
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        path: '.'
+        node-version: '18'
+
+    - name: Create environment config
+      run: |
+        echo "window.ENV_CONFIG = {" > js/env-config.js
+        echo "  FIREBASE_API_KEY: '${{ secrets.FIREBASE_API_KEY }}'," >> js/env-config.js
+        echo "  FIREBASE_AUTH_DOMAIN: '${{ secrets.FIREBASE_AUTH_DOMAIN }}'," >> js/env-config.js
+        echo "  FIREBASE_PROJECT_ID: '${{ secrets.FIREBASE_PROJECT_ID }}'," >> js/env-config.js
+        echo "  FIREBASE_STORAGE_BUCKET: '${{ secrets.FIREBASE_STORAGE_BUCKET }}'," >> js/env-config.js
+        echo "  FIREBASE_MESSAGING_SENDER_ID: '${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}'," >> js/env-config.js
+        echo "  FIREBASE_APP_ID: '${{ secrets.FIREBASE_APP_ID }}'" >> js/env-config.js
+        echo "};" >> js/env-config.js
 
     - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.PAT_20250810 }}
+        publish_dir: ./
+        exclude_assets: '.github,README.md,FIREBASE_SETUP.md,GITHUB_SETUP.md'
