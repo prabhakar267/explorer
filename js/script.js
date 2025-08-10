@@ -133,6 +133,37 @@ class UNESCOExplorer {
                 const popupContent = this.createPopupContent(site, isVisited);
                 marker.bindPopup(popupContent);
                 
+                // Add hover events to show/hide popup with delay
+                let popupTimeout;
+                
+                marker.on('mouseover', function(e) {
+                    clearTimeout(popupTimeout);
+                    this.openPopup();
+                });
+                
+                marker.on('mouseout', function(e) {
+                    const popup = this.getPopup();
+                    popupTimeout = setTimeout(() => {
+                        this.closePopup();
+                    }, 300); // 300ms delay before closing
+                });
+                
+                // Keep popup open when hovering over it
+                marker.on('popupopen', function(e) {
+                    const popupElement = e.popup.getElement();
+                    if (popupElement) {
+                        popupElement.addEventListener('mouseenter', function() {
+                            clearTimeout(popupTimeout);
+                        });
+                        
+                        popupElement.addEventListener('mouseleave', function() {
+                            popupTimeout = setTimeout(() => {
+                                e.target.closePopup();
+                            }, 100);
+                        });
+                    }
+                });
+                
                 this.markers.addLayer(marker);
             });
         });
