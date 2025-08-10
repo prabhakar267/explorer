@@ -23,7 +23,7 @@ class UNESCOExplorer {
             worldCopyJump: true,
             maxBounds: [[-90, -Infinity], [90, Infinity]],
             zoomControl: false
-        }).setView([20, 0], 2);
+        }).setView([20, 0], 3);
         
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '© OpenStreetMap contributors',
@@ -469,10 +469,66 @@ class UNESCOExplorer {
     }
 }
 
+// Theme management
+class ThemeManager {
+    constructor() {
+        this.currentTheme = localStorage.getItem('theme') || 'system';
+        this.init();
+    }
+
+    init() {
+        this.applyTheme(this.currentTheme);
+        this.setupThemeToggle();
+    }
+
+    applyTheme(theme) {
+        if (theme === 'system') {
+            const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', systemTheme);
+        } else {
+            document.documentElement.setAttribute('data-theme', theme);
+        }
+        
+        this.currentTheme = theme;
+        localStorage.setItem('theme', theme);
+        this.updateActiveButton();
+    }
+
+    setupThemeToggle() {
+        const themeButtons = document.querySelectorAll('.theme-option');
+        themeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const theme = button.getAttribute('data-theme');
+                this.applyTheme(theme);
+            });
+        });
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            if (this.currentTheme === 'system') {
+                this.applyTheme('system');
+            }
+        });
+    }
+
+    updateActiveButton() {
+        const themeButtons = document.querySelectorAll('.theme-option');
+        themeButtons.forEach(button => {
+            button.classList.remove('active');
+            if (button.getAttribute('data-theme') === this.currentTheme) {
+                button.classList.add('active');
+            }
+        });
+    }
+}
+
 // Initialize the app when the page loads
 let unescoExplorer;
+let themeManager;
+
 document.addEventListener('DOMContentLoaded', function() {
     unescoExplorer = new UNESCOExplorer();
+    themeManager = new ThemeManager();
     
     // Setup dropdown menu functionality
     const dropdownButton = document.getElementById('dropdown-button');
