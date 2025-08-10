@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNESCO World Heritage Sites Explorer</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>UNESCO World Heritage Sites Explorer</h1>
+        <p>Discover and track your visits to UNESCO World Heritage Sites around the world</p>
+    </div>
+
+    <div class="stats" id="stats">
+        <div>Total Sites: <span id="total-sites">Loading...</span></div>
+        <div>Visited: <span id="visited-count">0</span></div>
+        <div>Remaining: <span id="remaining-count">Loading...</span></div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>Loading UNESCO World Heritage Sites...</div>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Leaflet MarkerCluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
