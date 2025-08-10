@@ -21,7 +21,8 @@ class UNESCOExplorer {
     initMap() {
         this.map = L.map('map', {
             worldCopyJump: true,
-            maxBounds: [[-90, -Infinity], [90, Infinity]]
+            maxBounds: [[-90, -Infinity], [90, Infinity]],
+            zoomControl: false
         }).setView([20, 0], 2);
         
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -261,10 +262,51 @@ class UNESCOExplorer {
         document.getElementById('visited-count').textContent = visitedCount;
         document.getElementById('remaining-count').textContent = remainingCount;
     }
+
+    resetAll() {
+        if (confirm('Are you sure you want to reset all visited sites? This action cannot be undone.')) {
+            this.visitedSites.clear();
+            localStorage.removeItem('visitedUNESCOSites');
+            this.updateMarkers();
+            this.updateStats();
+            
+            // Close dropdown after action
+            document.getElementById('dropdown-content').style.display = 'none';
+            document.querySelector('.dropdown-menu').classList.remove('show');
+        }
+    }
 }
 
 // Initialize the app when the page loads
 let unescoExplorer;
 document.addEventListener('DOMContentLoaded', function() {
     unescoExplorer = new UNESCOExplorer();
+    
+    // Setup dropdown menu functionality
+    const dropdownButton = document.getElementById('dropdown-button');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+    dropdownButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('show');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
+    
+    // Setup title click functionality to toggle description
+    const headerTitle = document.getElementById('header-title');
+    const headerDescription = document.getElementById('header-description');
+    
+    headerTitle.addEventListener('click', function() {
+        if (headerDescription.style.display === 'none') {
+            headerDescription.style.display = 'block';
+        } else {
+            headerDescription.style.display = 'none';
+        }
+    });
 });

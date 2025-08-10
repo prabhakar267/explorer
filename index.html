@@ -51,8 +51,21 @@
 </head>
 <body>
     <div class="header">
-        <h1>UNESCO World Heritage Sites Explorer</h1>
-        <p>Discover and track your visits to UNESCO World Heritage Sites around the world</p>
+        <h1 id="header-title" style="cursor: pointer;">UNESCO World Heritage Sites Explorer</h1>
+        <p id="header-description" style="display: none;">
+            Discover and track your visits to UNESCO World Heritage Sites around the world.<br>
+            <span style="color: #7f8c8d; margin-top: 5px; display: block;">
+                A vibe coding project by Prabhakar Gupta, created using Claude 3.5 Sonnet. 
+                <a href="https://github.com/prabhakar267/explorer" target="_blank" style="color: #3498db; text-decoration: none;">View Source Code</a>
+            </span>
+        </p>
+    </div>
+
+    <div class="dropdown-menu">
+        <button class="dropdown-button" id="dropdown-button">⋮</button>
+        <div class="dropdown-content" id="dropdown-content">
+            <a href="#" onclick="unescoExplorer.resetAll()">Reset All Visited Sites</a>
+        </div>
     </div>
 
     <div class="stats" id="stats">
