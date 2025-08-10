@@ -398,6 +398,88 @@ body {
     margin: 8px 0;
 }
 
+/* Authentication styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.auth-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    text-align: center;
+}
+
+.auth-button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.auth-button.secondary {
+    background: var(--secondary-color);
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.auth-button.secondary:hover {
+    background: var(--text-muted);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user-email {
+    font-size: 12px;
+    color: var(--text-primary);
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.sync-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.sync-indicator {
+    color: var(--success-color);
+    font-size: 8px;
+}
+
+.sync-indicator.syncing {
+    color: var(--warning-color);
+    animation: pulse 1.5s infinite;
+}
+
+.sync-indicator.error {
+    color: var(--danger-color);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
 /* Popup button styling */
 .popup-buttons {
     display: flex;

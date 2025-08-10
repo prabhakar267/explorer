@@ -263,6 +263,11 @@ class UNESCOExplorer {
         localStorage.setItem('visitedUNESCOSites', JSON.stringify([...this.visitedSites]));
         this.updateMarkers();
         this.updateStats();
+        
+        // Trigger cloud sync if user is signed in
+        if (window.authManager) {
+            authManager.onDataChange();
+        }
     }
 
     updateMarkers() {
@@ -469,6 +474,288 @@ class UNESCOExplorer {
     }
 }
 
+// Authentication and Cloud Sync Manager
+class AuthManager {
+    constructor() {
+        this.currentUser = null;
+        this.isSignedIn = false;
+        this.syncInProgress = false;
+        this.useFirebase = window.isFirebaseEnabled || false;
+        this.init();
+    }
+
+    init() {
+        if (this.useFirebase && window.firebaseAuth) {
+            // Listen for Firebase auth state changes
+            window.firebaseAuth.onAuthStateChanged((user) => {
+                if (user) {
+                    this.currentUser = {
+                        email: user.email,
+                        id: user.uid,
+                        signedInAt: new Date().toISOString()
+                    };
+                    this.isSignedIn = true;
+                    this.updateUI();
+                    this.syncData();
+                } else {
+                    this.currentUser = null;
+                    this.isSignedIn = false;
+                    this.updateUI();
+                }
+            });
+        } else {
+            // Fallback to localStorage for demo
+            const savedUser = localStorage.getItem('unescoUser');
+            if (savedUser) {
+                try {
+                    this.currentUser = JSON.parse(savedUser);
+                    this.isSignedIn = true;
+                    this.updateUI();
+                    this.syncData();
+                } catch (error) {
+                    console.error('Error loading saved user:', error);
+                    localStorage.removeItem('unescoUser');
+                }
+            }
+        }
+    }
+
+    async showLoginForm() {
+        const email = prompt('Enter your email address:');
+        if (!email) return;
+
+        if (!this.isValidEmail(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        const password = prompt('Enter your password (or create a new one):');
+        if (!password) return;
+
+        try {
+            this.setSyncStatus('syncing');
+
+            if (this.useFirebase && window.firebaseAuth) {
+                // Try to sign in first
+                try {
+                    await window.firebaseAuth.signInWithEmailAndPassword(email, password);
+                } catch (signInError) {
+                    // If sign in fails, try to create account
+                    if (signInError.code === 'auth/user-not-found' || signInError.code === 'auth/wrong-password') {
+                        if (confirm('Account not found. Would you like to create a new account?')) {
+                            await window.firebaseAuth.createUserWithEmailAndPassword(email, password);
+                        } else {
+                            throw signInError;
+                        }
+                    } else {
+                        throw signInError;
+                    }
+                }
+            } else {
+                // Fallback to localStorage simulation
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+                this.currentUser = {
+                    email: email,
+                    id: this.generateUserId(email),
+                    signedInAt: new Date().toISOString()
+                };
+                
+                this.isSignedIn = true;
+                localStorage.setItem('unescoUser', JSON.stringify(this.currentUser));
+                
+                this.updateUI();
+                await this.syncData();
+            }
+            
+            // Close dropdown
+            document.querySelector('.dropdown-menu').classList.remove('show');
+            
+        } catch (error) {
+            console.error('Sign in error:', error);
+            this.setSyncStatus('error');
+            alert(`Sign in failed: ${error.message || 'Please try again.'}`);
+        }
+    }
+
+    async signOut() {
+        if (confirm('Are you sure you want to sign out? Your data will remain synced to your account.')) {
+            try {
+                if (this.useFirebase && window.firebaseAuth) {
+                    await window.firebaseAuth.signOut();
+                } else {
+                    this.currentUser = null;
+                    this.isSignedIn = false;
+                    localStorage.removeItem('unescoUser');
+                    localStorage.removeItem('cloudSyncData');
+                    this.updateUI();
+                }
+                
+                // Close dropdown
+                document.querySelector('.dropdown-menu').classList.remove('show');
+            } catch (error) {
+                console.error('Sign out error:', error);
+                alert('Sign out failed. Please try again.');
+            }
+        }
+    }
+
+    async syncData() {
+        if (!this.isSignedIn || !this.currentUser) return;
+
+        try {
+            this.setSyncStatus('syncing');
+            
+            // Get local data
+            const localVisitedSites = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
+            const localTheme = localStorage.getItem('theme') || 'system';
+
+            if (this.useFirebase && window.firebaseDb) {
+                // Real Firebase sync
+                const userDocRef = window.firebaseDb.collection('users').doc(this.currentUser.id);
+                
+                // Get existing cloud data
+                const doc = await userDocRef.get();
+                let cloudData = {
+                    visitedSites: [],
+                    theme: 'system',
+                    lastSync: new Date().toISOString()
+                };
+
+                if (doc.exists) {
+                    cloudData = doc.data();
+                }
+
+                // Merge data (union of visited sites)
+                const mergedVisitedSites = [...new Set([...localVisitedSites, ...cloudData.visitedSites])];
+                
+                // Update cloud data
+                const updatedData = {
+                    visitedSites: mergedVisitedSites,
+                    theme: localTheme,
+                    lastSync: new Date().toISOString(),
+                    email: this.currentUser.email
+                };
+                
+                // Save to Firebase
+                await userDocRef.set(updatedData, { merge: true });
+                
+                // Update local data with merged data
+                localStorage.setItem('visitedUNESCOSites', JSON.stringify(mergedVisitedSites));
+                
+            } else {
+                // Fallback localStorage simulation
+                const cloudKey = `unesco_data_${this.currentUser.id}`;
+                const existingCloudData = localStorage.getItem(cloudKey);
+                
+                let cloudData = {
+                    visitedSites: [],
+                    theme: 'system',
+                    lastSync: new Date().toISOString()
+                };
+
+                if (existingCloudData) {
+                    cloudData = JSON.parse(existingCloudData);
+                }
+
+                // Merge data (union of visited sites)
+                const mergedVisitedSites = [...new Set([...localVisitedSites, ...cloudData.visitedSites])];
+                
+                // Update cloud data
+                cloudData.visitedSites = mergedVisitedSites;
+                cloudData.theme = localTheme;
+                cloudData.lastSync = new Date().toISOString();
+                
+                // Save to "cloud" (localStorage for demo)
+                localStorage.setItem(cloudKey, JSON.stringify(cloudData));
+                
+                // Update local data with merged data
+                localStorage.setItem('visitedUNESCOSites', JSON.stringify(mergedVisitedSites));
+                
+                // Simulate network delay
+                await new Promise(resolve => setTimeout(resolve, 500));
+            }
+            
+            // Update the app with synced data
+            if (window.unescoExplorer) {
+                const mergedSites = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
+                unescoExplorer.visitedSites = new Set(mergedSites);
+                unescoExplorer.updateMarkers();
+                unescoExplorer.updateStats();
+            }
+            
+            this.setSyncStatus('synced');
+            
+        } catch (error) {
+            console.error('Sync error:', error);
+            this.setSyncStatus('error');
+        }
+    }
+
+    updateUI() {
+        const loginSection = document.getElementById('login-section');
+        const userSection = document.getElementById('user-section');
+        const userEmail = document.getElementById('user-email');
+
+        if (this.isSignedIn && this.currentUser) {
+            loginSection.style.display = 'none';
+            userSection.style.display = 'block';
+            userEmail.textContent = this.currentUser.email;
+        } else {
+            loginSection.style.display = 'block';
+            userSection.style.display = 'none';
+        }
+    }
+
+    setSyncStatus(status) {
+        const syncIndicator = document.querySelector('.sync-indicator');
+        const syncText = document.querySelector('.sync-text');
+        
+        if (!syncIndicator || !syncText) return;
+
+        syncIndicator.className = 'sync-indicator';
+        
+        switch (status) {
+            case 'syncing':
+                syncIndicator.classList.add('syncing');
+                syncText.textContent = 'Syncing...';
+                break;
+            case 'synced':
+                syncText.textContent = 'Synced';
+                break;
+            case 'error':
+                syncIndicator.classList.add('error');
+                syncText.textContent = 'Sync Error';
+                break;
+        }
+    }
+
+    isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    generateUserId(email) {
+        // Simple hash function for demo purposes
+        let hash = 0;
+        for (let i = 0; i < email.length; i++) {
+            const char = email.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash; // Convert to 32-bit integer
+        }
+        return Math.abs(hash).toString(36);
+    }
+
+    // Method to trigger sync when data changes
+    async onDataChange() {
+        if (this.isSignedIn && !this.syncInProgress) {
+            this.syncInProgress = true;
+            await this.syncData();
+            this.syncInProgress = false;
+        }
+    }
+}
+
 // Theme management
 class ThemeManager {
     constructor() {
@@ -525,10 +812,12 @@ class ThemeManager {
 // Initialize the app when the page loads
 let unescoExplorer;
 let themeManager;
+let authManager;
 
 document.addEventListener('DOMContentLoaded', function() {
     unescoExplorer = new UNESCOExplorer();
     themeManager = new ThemeManager();
+    authManager = new AuthManager();
     
     // Setup dropdown menu functionality
     const dropdownButton = document.getElementById('dropdown-button');
