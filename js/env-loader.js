@@ -28,10 +28,8 @@ function loadEnvironmentVariables() {
             value = process.env[varName];
         }
         
-        // Method 2: Build-time injected variables (Vite)
-        if (!value && typeof import.meta !== 'undefined' && import.meta.env && import.meta.env[`VITE_${varName}`]) {
-            value = import.meta.env[`VITE_${varName}`];
-        }
+        // Method 2: Build-time injected variables (Vite) - skip in non-module context
+        // Note: import.meta is only available in ES modules, skipping to avoid syntax errors
         
         // Method 3: React-style environment variables
         if (!value && typeof process !== 'undefined' && process.env && process.env[`REACT_APP_${varName}`]) {
