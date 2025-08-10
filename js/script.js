@@ -8,7 +8,10 @@ class UNESCOExplorer {
             maxClusterRadius: 50,
             spiderfyOnMaxZoom: true,
             showCoverageOnHover: false,
-            zoomToBoundsOnClick: true
+            zoomToBoundsOnClick: true,
+            iconCreateFunction: (cluster) => {
+                return this.createClusterIcon(cluster);
+            }
         });
         
         this.initMap();
@@ -166,6 +169,52 @@ class UNESCOExplorer {
                 
                 this.markers.addLayer(marker);
             });
+        });
+    }
+
+    createClusterIcon(cluster) {
+        const markers = cluster.getAllChildMarkers();
+        const childCount = cluster.getChildCount();
+        
+        // Check if all markers in this cluster represent visited sites
+        let allVisited = true;
+        for (let marker of markers) {
+            // Get the site name from the marker's popup content
+            const popupContent = marker.getPopup().getContent();
+            const titleMatch = popupContent.match(/<div class="popup-title">(.*?)<\/div>/);
+            if (titleMatch) {
+                const siteName = titleMatch[1];
+                if (!this.visitedSites.has(siteName)) {
+                    allVisited = false;
+                    break;
+                }
+            }
+        }
+        
+        // Determine cluster size class
+        let sizeClass = 'marker-cluster-small';
+        if (childCount < 10) {
+            sizeClass = 'marker-cluster-small';
+        } else if (childCount < 100) {
+            sizeClass = 'marker-cluster-medium';
+        } else {
+            sizeClass = 'marker-cluster-large';
+        }
+        
+        // Choose colors based on visited status
+        const colors = allVisited ? {
+            background: 'rgba(39, 174, 96, 0.6)',
+            inner: 'rgba(46, 204, 113, 0.6)'
+        } : {
+            background: 'rgba(231, 76, 60, 0.6)',
+            inner: 'rgba(192, 57, 43, 0.6)'
+        };
+        
+        return new L.DivIcon({
+            html: `<div style="background-color: ${colors.inner}"><span>${childCount}</span></div>`,
+            className: `marker-cluster ${sizeClass} ${allVisited ? 'cluster-visited' : 'cluster-unvisited'}`,
+            iconSize: new L.Point(40, 40),
+            style: `background-color: ${colors.background}`
         });
     }
 
