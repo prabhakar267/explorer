@@ -36,12 +36,17 @@ function loadEnvironmentVariables() {
             value = process.env[`REACT_APP_${varName}`];
         }
         
-        // Method 4: GitHub Pages/Netlify environment variables (if exposed via build process)
+        // Method 4: GitHub repository secrets (if exposed via build process)
+        if (!value && typeof window !== 'undefined' && window.GITHUB_SECRETS && window.GITHUB_SECRETS[varName]) {
+            value = window.GITHUB_SECRETS[varName];
+        }
+        
+        // Method 5: GitHub Pages/Netlify environment variables (if exposed via build process)
         if (!value && typeof window !== 'undefined' && window[varName]) {
             value = window[varName];
         }
         
-        // Method 5: Check for global variables that might be injected
+        // Method 6: Check for global variables that might be injected
         if (!value && typeof window !== 'undefined' && window.ENV && window.ENV[varName]) {
             value = window.ENV[varName];
         }
