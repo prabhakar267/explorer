@@ -65,22 +65,13 @@
                     <button class="dropdown-button" id="dropdown-button">⋮</button>
                     <div class="dropdown-content" id="dropdown-content">
                         <div class="dropdown-section">
-                            <span class="dropdown-label">Account</span>
-                            <div id="auth-section">
-                                <div id="login-section" class="auth-form">
-                                    <button class="auth-button" onclick="authManager.showLoginForm()">Sign In</button>
-                                </div>
-                                <div id="user-section" class="user-info" style="display: none;">
-                                    <div class="user-details">
-                                        <span id="user-email" class="user-email"></span>
-                                        <div class="sync-status" id="sync-status">
-                                            <span class="sync-indicator">●</span>
-                                            <span class="sync-text">Synced</span>
-                                        </div>
-                                    </div>
-                                    <button class="auth-button secondary" onclick="authManager.signOut()">Sign Out</button>
-                                </div>
+                            <span class="dropdown-label">Data Sync</span>
+                            <div class="sync-status" id="sync-status">
+                                <span class="sync-indicator">●</span>
+                                <span class="sync-text">Local Only</span>
                             </div>
+                            <button class="auth-button" onclick="showAccessCodeDialog()">Enter Access Code</button>
+                            <button class="auth-button secondary" onclick="downloadData()">Download Data</button>
                         </div>
                         <div class="dropdown-divider"></div>
                         <div class="dropdown-section">
@@ -130,19 +121,8 @@
     <!-- Leaflet MarkerCluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-
-    <!-- GitHub Secrets (for deployment) -->
-    <script src="js/github-secrets.js"></script>
-
-    <!-- Environment Variables Loader -->
-    <script src="js/env-loader.js"></script>
-
-    <!-- Firebase Configuration -->
-    <script src="js/firebase-config.js"></script>
+    <!-- Gist Data Manager -->
+    <script src="js/gist-data-manager.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/script.js"></script>

@@ -2,7 +2,7 @@ class UNESCOExplorer {
     constructor() {
         this.map = null;
         this.sites = [];
-        this.visitedSites = new Set(); // Start empty, will be loaded from Firebase or localStorage
+        this.visitedSites = new Set(); // Start empty, will be loaded from Gist or localStorage
         this.markers = new L.MarkerClusterGroup({
             chunkedLoading: true,
             maxClusterRadius: 50,
@@ -20,46 +20,14 @@ class UNESCOExplorer {
     }
 
     async loadVisitedSites() {
-        // Wait for Firebase to be ready if it's enabled
-        if (window.isFirebaseEnabled && window.firebaseAuth && window.authManager) {
-            // Wait a bit for auth state to be established
-            await new Promise(resolve => setTimeout(resolve, 100));
-            
-            if (window.authManager.isSignedIn && window.authManager.currentUser && window.firebaseDb) {
-                try {
-                    // Load from Firebase if user is signed in
-                    const userDocRef = window.firebaseDb.collection('users').doc(window.authManager.currentUser.id);
-                    const doc = await userDocRef.get();
-                    
-                    if (doc.exists) {
-                        const userData = doc.data();
-                        this.visitedSites = new Set(userData.visitedSites || []);
-                        console.log('Loaded visited sites from Firebase:', userData.visitedSites?.length || 0);
-                        
-                        // Update localStorage with Firebase data
-                        localStorage.setItem('visitedUNESCOSites', JSON.stringify(userData.visitedSites || []));
-                    } else {
-                        // If no Firebase data, check localStorage as fallback
-                        const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
-                        this.visitedSites = new Set(localData);
-                        console.log('No Firebase data found, using localStorage:', localData.length);
-                    }
-                } catch (error) {
-                    console.error('Error loading from Firebase, using localStorage:', error);
-                    const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
-                    this.visitedSites = new Set(localData);
-                }
-            } else {
-                // Not signed in, use localStorage
-                const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
-                this.visitedSites = new Set(localData);
-                console.log('User not signed in, using localStorage:', localData.length);
-            }
+        // Wait for DataManager to be ready
+        if (window.dataManager) {
+            const visitedSitesArray = await window.dataManager.loadUserData();
+            this.visitedSites = new Set(visitedSitesArray);
         } else {
-            // Firebase not enabled, use localStorage
+            // Fallback to localStorage
             const localData = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
             this.visitedSites = new Set(localData);
-            console.log('Firebase not enabled, using localStorage:', localData.length);
         }
         
         // Update UI after loading data
@@ -255,14 +223,9 @@ class UNESCOExplorer {
         }
         
         // Determine cluster size class
-        let sizeClass = 'marker-cluster-small';
-        if (childCount < 10) {
-            sizeClass = 'marker-cluster-small';
-        } else if (childCount < 100) {
-            sizeClass = 'marker-cluster-medium';
-        } else {
-            sizeClass = 'marker-cluster-large';
-        }
+        const sizeClass = childCount < 10 ? 'marker-cluster-small' : 
+                          childCount < 100 ? 'marker-cluster-medium' : 
+                          'marker-cluster-large';
         
         // Choose colors based on visited status
         const colors = allVisited ? {
@@ -316,8 +279,8 @@ class UNESCOExplorer {
         this.updateStats();
         
         // Trigger cloud sync if user is signed in
-        if (window.authManager) {
-            authManager.onDataChange();
+        if (window.dataManager) {
+            dataManager.onDataChange();
         }
     }
 
@@ -525,295 +488,16 @@ class UNESCOExplorer {
     }
 }
 
-// Authentication and Cloud Sync Manager
-class AuthManager {
-    constructor() {
-        this.currentUser = null;
-        this.isSignedIn = false;
-        this.syncInProgress = false;
-        this.useFirebase = window.isFirebaseEnabled || false;
-        this.init();
+// Functions for Gist Data Manager
+function showAccessCodeDialog() {
+    if (window.dataManager) {
+        window.dataManager.showAccessCodeDialog();
     }
+}
 
-    init() {
-        if (this.useFirebase && window.firebaseAuth) {
-            // Listen for Firebase auth state changes
-            window.firebaseAuth.onAuthStateChanged(async (user) => {
-                if (user) {
-                    this.currentUser = {
-                        email: user.email,
-                        id: user.uid,
-                        signedInAt: new Date().toISOString()
-                    };
-                    this.isSignedIn = true;
-                    this.updateUI();
-                    await this.syncData();
-                    
-                    // Reload visited sites data from Firebase after sign in
-                    if (window.unescoExplorer) {
-                        await unescoExplorer.loadVisitedSites();
-                    }
-                } else {
-                    this.currentUser = null;
-                    this.isSignedIn = false;
-                    this.updateUI();
-                    
-                    // Reload visited sites from localStorage when signed out
-                    if (window.unescoExplorer) {
-                        await unescoExplorer.loadVisitedSites();
-                    }
-                }
-            });
-        } else {
-            // Fallback to localStorage for demo
-            const savedUser = localStorage.getItem('unescoUser');
-            if (savedUser) {
-                try {
-                    this.currentUser = JSON.parse(savedUser);
-                    this.isSignedIn = true;
-                    this.updateUI();
-                    this.syncData();
-                } catch (error) {
-                    console.error('Error loading saved user:', error);
-                    localStorage.removeItem('unescoUser');
-                }
-            }
-        }
-    }
-
-    async showLoginForm() {
-        const email = prompt('Enter your email address:');
-        if (!email) return;
-
-        if (!this.isValidEmail(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-
-        const password = prompt('Enter your password (or create a new one):');
-        if (!password) return;
-
-        try {
-            this.setSyncStatus('syncing');
-
-            if (this.useFirebase && window.firebaseAuth) {
-                // Try to sign in first
-                try {
-                    await window.firebaseAuth.signInWithEmailAndPassword(email, password);
-                } catch (signInError) {
-                    // If sign in fails, try to create account
-                    if (signInError.code === 'auth/user-not-found' || signInError.code === 'auth/wrong-password') {
-                        if (confirm('Account not found. Would you like to create a new account?')) {
-                            await window.firebaseAuth.createUserWithEmailAndPassword(email, password);
-                        } else {
-                            throw signInError;
-                        }
-                    } else {
-                        throw signInError;
-                    }
-                }
-            } else {
-                // Fallback to localStorage simulation
-                await new Promise(resolve => setTimeout(resolve, 1000));
-                
-                this.currentUser = {
-                    email: email,
-                    id: this.generateUserId(email),
-                    signedInAt: new Date().toISOString()
-                };
-                
-                this.isSignedIn = true;
-                localStorage.setItem('unescoUser', JSON.stringify(this.currentUser));
-                
-                this.updateUI();
-                await this.syncData();
-            }
-            
-            // Close dropdown
-            document.querySelector('.dropdown-menu').classList.remove('show');
-            
-        } catch (error) {
-            console.error('Sign in error:', error);
-            this.setSyncStatus('error');
-            alert(`Sign in failed: ${error.message || 'Please try again.'}`);
-        }
-    }
-
-    async signOut() {
-        if (confirm('Are you sure you want to sign out? Your data will remain synced to your account.')) {
-            try {
-                if (this.useFirebase && window.firebaseAuth) {
-                    await window.firebaseAuth.signOut();
-                } else {
-                    this.currentUser = null;
-                    this.isSignedIn = false;
-                    localStorage.removeItem('unescoUser');
-                    localStorage.removeItem('cloudSyncData');
-                    this.updateUI();
-                }
-                
-                // Close dropdown
-                document.querySelector('.dropdown-menu').classList.remove('show');
-            } catch (error) {
-                console.error('Sign out error:', error);
-                alert('Sign out failed. Please try again.');
-            }
-        }
-    }
-
-    async syncData() {
-        if (!this.isSignedIn || !this.currentUser) return;
-
-        try {
-            this.setSyncStatus('syncing');
-            
-            // Get local data
-            const localVisitedSites = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
-            const localTheme = localStorage.getItem('theme') || 'system';
-
-            if (this.useFirebase && window.firebaseDb) {
-                // Real Firebase sync
-                const userDocRef = window.firebaseDb.collection('users').doc(this.currentUser.id);
-                
-                // Get existing cloud data
-                const doc = await userDocRef.get();
-                let cloudData = {
-                    visitedSites: [],
-                    theme: 'system',
-                    lastSync: new Date().toISOString()
-                };
-
-                if (doc.exists) {
-                    cloudData = doc.data();
-                }
-
-                // Merge data (union of visited sites)
-                const mergedVisitedSites = [...new Set([...localVisitedSites, ...cloudData.visitedSites])];
-                
-                // Update cloud data
-                const updatedData = {
-                    visitedSites: mergedVisitedSites,
-                    theme: localTheme,
-                    lastSync: new Date().toISOString(),
-                    email: this.currentUser.email
-                };
-                
-                // Save to Firebase
-                await userDocRef.set(updatedData, { merge: true });
-                
-                // Update local data with merged data
-                localStorage.setItem('visitedUNESCOSites', JSON.stringify(mergedVisitedSites));
-                
-            } else {
-                // Fallback localStorage simulation
-                const cloudKey = `unesco_data_${this.currentUser.id}`;
-                const existingCloudData = localStorage.getItem(cloudKey);
-                
-                let cloudData = {
-                    visitedSites: [],
-                    theme: 'system',
-                    lastSync: new Date().toISOString()
-                };
-
-                if (existingCloudData) {
-                    cloudData = JSON.parse(existingCloudData);
-                }
-
-                // Merge data (union of visited sites)
-                const mergedVisitedSites = [...new Set([...localVisitedSites, ...cloudData.visitedSites])];
-                
-                // Update cloud data
-                cloudData.visitedSites = mergedVisitedSites;
-                cloudData.theme = localTheme;
-                cloudData.lastSync = new Date().toISOString();
-                
-                // Save to "cloud" (localStorage for demo)
-                localStorage.setItem(cloudKey, JSON.stringify(cloudData));
-                
-                // Update local data with merged data
-                localStorage.setItem('visitedUNESCOSites', JSON.stringify(mergedVisitedSites));
-                
-                // Simulate network delay
-                await new Promise(resolve => setTimeout(resolve, 500));
-            }
-            
-            // Update the app with synced data
-            if (window.unescoExplorer) {
-                const mergedSites = JSON.parse(localStorage.getItem('visitedUNESCOSites') || '[]');
-                unescoExplorer.visitedSites = new Set(mergedSites);
-                unescoExplorer.updateMarkers();
-                unescoExplorer.updateStats();
-            }
-            
-            this.setSyncStatus('synced');
-            
-        } catch (error) {
-            console.error('Sync error:', error);
-            this.setSyncStatus('error');
-        }
-    }
-
-    updateUI() {
-        const loginSection = document.getElementById('login-section');
-        const userSection = document.getElementById('user-section');
-        const userEmail = document.getElementById('user-email');
-
-        if (this.isSignedIn && this.currentUser) {
-            loginSection.style.display = 'none';
-            userSection.style.display = 'block';
-            userEmail.textContent = this.currentUser.email;
-        } else {
-            loginSection.style.display = 'block';
-            userSection.style.display = 'none';
-        }
-    }
-
-    setSyncStatus(status) {
-        const syncIndicator = document.querySelector('.sync-indicator');
-        const syncText = document.querySelector('.sync-text');
-        
-        if (!syncIndicator || !syncText) return;
-
-        syncIndicator.className = 'sync-indicator';
-        
-        switch (status) {
-            case 'syncing':
-                syncIndicator.classList.add('syncing');
-                syncText.textContent = 'Syncing...';
-                break;
-            case 'synced':
-                syncText.textContent = 'Synced';
-                break;
-            case 'error':
-                syncIndicator.classList.add('error');
-                syncText.textContent = 'Sync Error';
-                break;
-        }
-    }
-
-    isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
-    generateUserId(email) {
-        // Simple hash function for demo purposes
-        let hash = 0;
-        for (let i = 0; i < email.length; i++) {
-            const char = email.charCodeAt(i);
-            hash = ((hash << 5) - hash) + char;
-            hash = hash & hash; // Convert to 32-bit integer
-        }
-        return Math.abs(hash).toString(36);
-    }
-
-    // Method to trigger sync when data changes
-    async onDataChange() {
-        if (this.isSignedIn && !this.syncInProgress) {
-            this.syncInProgress = true;
-            await this.syncData();
-            this.syncInProgress = false;
-        }
+function downloadData() {
+    if (window.dataManager) {
+        window.dataManager.downloadData();
     }
 }
 
@@ -873,12 +557,15 @@ class ThemeManager {
 // Initialize the app when the page loads
 let unescoExplorer;
 let themeManager;
-let authManager;
+let dataManager;
 
 document.addEventListener('DOMContentLoaded', function() {
     unescoExplorer = new UNESCOExplorer();
     themeManager = new ThemeManager();
-    authManager = new AuthManager();
+    dataManager = new GistDataManager();
+    
+    // Make dataManager globally available
+    window.dataManager = dataManager;
     
     // Setup dropdown menu functionality
     const dropdownButton = document.getElementById('dropdown-button');

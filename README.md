@@ -1,8 +1,8 @@
 # UNESCO World Heritage Sites Explorer
 
-![UNESCO World Heritage Sites Explorer](https://prabhakar267.github.io/explorer/assets/molumen-world-map-1.svg)
+![UNESCO World Heritage Sites Explorer](https://prabhakar267.github.io/explorer/assets/molumen-world-map-1.png)
 
-A modern, interactive web application that displays UNESCO World Heritage Sites on a beautiful map interface, allowing users to track their visits and explore sites worldwide with cross-device synchronization.
+A modern, interactive web application that displays UNESCO World Heritage Sites on a beautiful map interface, allowing users to track their visits and explore sites worldwide with optional GitHub Gist synchronization.
 
 **🌐 Live Demo**: [https://prabhakar267.github.io/explorer/](https://prabhakar267.github.io/explorer/)
 
@@ -15,12 +15,12 @@ A modern, interactive web application that displays UNESCO World Heritage Sites 
 - **World Wrapping**: Seamless map navigation across longitude boundaries
 - **Zoom to Location**: Click coordinates to jump to site location
 
-### 👤 User Authentication & Sync
-- **Firebase Authentication**: Secure email/password accounts
-- **Cross-Device Sync**: Access your data from any device
-- **Real-time Updates**: Instant synchronization across all devices
-- **Offline Support**: Works without internet using local storage
-- **Data Merging**: Intelligently combines data from multiple devices
+### 🔐 Data Sync & Access Control
+- **Local Storage**: Works perfectly without any setup - data stored locally
+- **Access Code System**: Optional GitHub Gist sync with encrypted access codes
+- **Data Export**: Download your visit data as JSON for backup/sharing
+- **Read-only Sync**: Gist data loads automatically when access code is provided
+- **Offline First**: Full functionality without internet connection
 
 ### 🎨 Modern Design
 - **Theme System**: Light, dark, and system theme modes
@@ -36,21 +36,21 @@ A modern, interactive web application that displays UNESCO World Heritage Sites 
 - **Site Search**: Easy discovery through interactive map exploration
 - **Reset Functionality**: Clear all visited sites when needed
 
-### 🔒 Security & Configuration
-- **Environment Variables**: Secure Firebase configuration management
-- **No Hardcoded Keys**: API keys loaded from environment files
-- **Graceful Fallbacks**: Works in demo mode without Firebase
-- **Git Security**: Sensitive files automatically ignored
+### 🔒 Security & Privacy
+- **No Registration Required**: Works immediately without accounts
+- **Encrypted Access Codes**: Secure access to shared data via GitHub Gists
+- **Local Data Priority**: Your data stays on your device by default
+- **No Tracking**: Zero analytics or user tracking
 
 ## 🛠️ Technology Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Mapping**: Leaflet.js with MarkerCluster plugin
-- **Authentication**: Firebase Auth
-- **Database**: Firebase Firestore
+- **Data Sync**: GitHub Gist integration (optional)
 - **Styling**: CSS Variables, Glass Morphism, Responsive Design
-- **Data Storage**: Firebase + localStorage fallback
+- **Data Storage**: localStorage + optional Gist sync
 - **Hosting**: GitHub Pages compatible
+- **Security**: Caesar cipher encryption for access codes
 
 ## 🌍 Site Data
 
@@ -69,23 +69,23 @@ Each site includes:
 
 ## 🚀 Quick Start
 
-### Option 1: Use Live Version
-Visit [https://prabhakar267.github.io/explorer/](https://prabhakar267.github.io/explorer/) - no setup required!
+### Option 1: Use Live Version (Recommended)
+Visit [https://prabhakar267.github.io/explorer/](https://prabhakar267.github.io/explorer/) - works immediately!
 
 ### Option 2: Local Development
 ```bash
 git clone https://github.com/prabhakar267/explorer.git
 cd explorer
-# Open index.html in your browser - no build process needed!
+# Serve via local HTTP server (required for CORS)
+python3 -m http.server 8000
+# Open http://localhost:8000 in your browser
 ```
 
-### Option 3: With Firebase Sync
-1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com/)
-2. Enable Authentication (Email/Password) and Firestore Database
-3. Copy `.env.example` to `.env` and add your Firebase configuration
-4. Open `index.html` in your browser
-
-See [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for detailed Firebase configuration instructions.
+### Option 3: With GitHub Gist Sync
+1. Get an access code from the project maintainer
+2. Click the dropdown menu (⋮) in the top-right
+3. Select "Enter Access Code" and input your code
+4. Your data will now sync with the shared GitHub Gist
 
 ## 📱 Usage Guide
 
@@ -95,57 +95,63 @@ See [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for detailed Firebase configuration i
 - **Click for Details**: Click markers for full site previews with Wikipedia info
 - **Theme Toggle**: Switch between light, dark, and system themes
 
-### 👤 Account Features
-- **Sign Up/In**: Create an account for cross-device sync
-- **Visit Tracking**: Mark sites as visited - syncs across all devices
-- **Progress Tracking**: View statistics in the bottom-left panel
-- **Data Sync**: Automatic synchronization with visual status indicators
+### 💾 Data Management
+- **Local Storage**: All visit data automatically saved to your browser
+- **Access Code**: Optional sync with GitHub Gist for shared data
+- **Download Data**: Export your visits as JSON file
+- **Reset Data**: Clear all visited sites when needed
 
 ### 🎯 Visual Indicators
 - **🔴 Red Markers**: Unvisited sites
 - **🟢 Green Markers**: Visited sites
 - **📍 Clusters**: Grouped markers showing visit status
-- **🔄 Sync Status**: Real-time sync indicators in account menu
+- **🔄 Sync Status**: Shows "Local Only" or "Gist Sync" in dropdown menu
 
-## 🔧 Configuration
+## 🔧 Data Synchronization
 
-### Environment Variables
-Create a `.env` file with your Firebase configuration:
-```env
-FIREBASE_API_KEY=your-api-key
-FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
-FIREBASE_PROJECT_ID=your-project-id
-FIREBASE_STORAGE_BUCKET=your-project.appspot.com
-FIREBASE_MESSAGING_SENDER_ID=123456789
-FIREBASE_APP_ID=your-app-id
-FIREBASE_MEASUREMENT_ID=G-XXXXXXXXXX
+### How It Works
+1. **Default Mode**: Data stored locally in your browser
+2. **Gist Sync Mode**: Enter access code to load shared data from GitHub Gist
+3. **Data Export**: Download JSON file to manually update gists
+4. **Security**: Access codes encrypted using Caesar cipher
+
+### Access Code System
+- Access codes are encrypted before being stored in the codebase
+- Only users with valid access codes can sync with GitHub Gists
+- Console logging shows encrypted versions for debugging
+- Data is read-only from gists - updates require manual gist editing
+
+### Data Format
+Downloaded JSON includes:
+```json
+{
+  "visitedSites": ["Site Name 1", "Site Name 2"],
+  "theme": "system",
+  "lastUpdated": "2025-01-11T08:00:00.000Z",
+  "totalSites": 42
+}
 ```
-
-### Security
-- Environment variables are automatically loaded
-- `.env` file is git-ignored for security
-- Firebase rules restrict access to user's own data
-- Graceful fallback to demo mode without configuration
 
 ## 🌐 Deployment
 
 ### GitHub Pages
-1. Fork or clone the repository
+1. Fork the repository
 2. Enable GitHub Pages in repository settings
-3. Add Firebase configuration (optional)
-4. Access at `https://username.github.io/repository-name`
+3. Access at `https://username.github.io/repository-name`
+4. No additional configuration needed
 
 ### Custom Hosting
 - Upload files to any static hosting service
-- Configure environment variables for Firebase sync
+- Ensure HTTPS for security
 - No server-side requirements
 
-## 🔒 Privacy & Data
+## 🔒 Privacy & Security
 
-- **Local Storage**: Visit data stored locally when not signed in
-- **Firebase Sync**: Encrypted data storage when authenticated
-- **No Tracking**: No analytics or user tracking (unless you enable Firebase Analytics)
-- **Open Source**: Full transparency - inspect all code
+- **Local First**: Data stays on your device by default
+- **No Registration**: Works without creating accounts
+- **Encrypted Access**: Access codes use Caesar cipher encryption
+- **No Tracking**: Zero analytics or user monitoring
+- **Open Source**: Full code transparency
 
 ## 🤝 Contributing
 
@@ -154,7 +160,8 @@ Contributions are welcome! This project was created as a coding exercise and lea
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Submit a pull request
+4. Test locally with `python3 -m http.server 8000`
+5. Submit a pull request
 
 ## 📄 License
 
@@ -164,9 +171,16 @@ This project is open source and available under the MIT License.
 
 - **UNESCO**: For maintaining the World Heritage Sites database
 - **Leaflet.js**: For the excellent mapping library
-- **Firebase**: For authentication and database services
+- **GitHub**: For Gist hosting and Pages deployment
 - **OpenStreetMap**: For the map tiles and data
 
 ---
 
 **Created by [Prabhakar Gupta](https://github.com/prabhakar267)** - A vibe coding project built with Claude 3.5 Sonnet
+
+## 🔄 Recent Updates
+
+- **v2.0**: Replaced Firebase with GitHub Gist system for simpler, more secure data sync
+- **Security**: Implemented encrypted access code system
+- **Optimization**: Removed dead code and optimized performance
+- **Privacy**: Eliminated need for user accounts while maintaining sync capability
