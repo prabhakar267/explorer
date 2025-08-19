@@ -37,6 +37,23 @@ class UNESCOExplorer {
         }
     }
 
+    // Method to update visited sites when data is received from API
+    updateVisitedSitesFromAPI(visitedSitesArray) {
+        console.log('Updating UI with API data:', visitedSitesArray.length, 'visited sites');
+        
+        // Update the visited sites set
+        this.visitedSites = new Set(visitedSitesArray);
+        
+        // Update UI immediately if sites are already loaded
+        if (this.sites.length > 0) {
+            this.updateMarkers();
+            this.updateStats();
+            console.log('UI updated with API data');
+        } else {
+            console.log('Sites not loaded yet, UI will update when sites are loaded');
+        }
+    }
+
     initMap() {
         this.map = L.map('map', {
             worldCopyJump: true,
@@ -560,7 +577,13 @@ let themeManager;
 let dataManager;
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize UNESCOExplorer first
     unescoExplorer = new UNESCOExplorer();
+    
+    // Make it globally available immediately
+    window.unescoExplorer = unescoExplorer;
+    
+    // Then initialize other managers
     themeManager = new ThemeManager();
     dataManager = new GistDataManager();
     

@@ -8,7 +8,7 @@ class GistDataManager {
             // Encrypted access codes using simple Caesar cipher
             "nybbtbouv123": {
                 gistId: "05bc3de9d00ceaf8d9505ec513a57ccd",
-                gistUrl: "https://gist.github.com/prabhakar267/05bc3de9d00ceaf8d9505ec513a57ccd.js"
+                gistUrl: "https://api.github.com/gists/05bc3de9d00ceaf8d9505ec513a57ccd"
             }
         };
         this.currentAccessCode = null;
@@ -21,7 +21,10 @@ class GistDataManager {
         // Check if user has a saved access code
         const savedCode = localStorage.getItem('unescoAccessCode');
         if (savedCode) {
-            this.setAccessCode(savedCode);
+            // Delay the access code setting to ensure UI is ready
+            setTimeout(() => {
+                this.setAccessCode(savedCode);
+            }, 100);
         }
     }
 
@@ -71,40 +74,52 @@ class GistDataManager {
         const gistConfig = this.accessCodes[encryptedCode];
 
         try {
-            // Create a script element to load the gist
-            return new Promise((resolve, reject) => {
-                // Remove any existing gist script
-                const existingScript = document.getElementById('gist-data-script');
-                if (existingScript) {
-                    existingScript.remove();
+            // Fetch gist data using GitHub API
+            const response = await fetch(gistConfig.gistUrl);
+            
+            if (!response.ok) {
+                throw new Error(`GitHub API request failed: ${response.status}`);
+            }
+
+            const gistData = await response.json();
+            
+            // Find the data file in the gist
+            const files = gistData.files;
+            let dataContent = null;
+            
+            // Look for JSON data file (could be named data.json, unesco-data.json, etc.)
+            for (const filename in files) {
+                if (filename.toLowerCase().includes('data') && filename.toLowerCase().includes('.json')) {
+                    dataContent = files[filename].content;
+                    break;
                 }
-
-                // Create new script element
-                const script = document.createElement('script');
-                script.id = 'gist-data-script';
-                script.src = gistConfig.gistUrl;
-                
-                // Set up callback for when gist loads
-                window.gistDataCallback = (data) => {
-                    this.loadedData = data;
-                    console.log('Loaded data from GitHub Gist:', data?.visitedSites?.length || 0, 'visited sites');
-                    resolve(data?.visitedSites || []);
-                };
-
-                script.onerror = () => {
-                    console.error('Failed to load GitHub Gist');
-                    reject(new Error('Failed to load gist'));
-                };
-
-                document.head.appendChild(script);
-
-                // Timeout after 10 seconds
-                setTimeout(() => {
-                    if (!this.loadedData) {
-                        reject(new Error('Gist loading timeout'));
+            }
+            
+            // If no specific data file found, try the first JSON file
+            if (!dataContent) {
+                for (const filename in files) {
+                    if (filename.toLowerCase().endsWith('.json')) {
+                        dataContent = files[filename].content;
+                        break;
                     }
-                }, 10000);
-            });
+                }
+            }
+            
+            if (!dataContent) {
+                throw new Error('No JSON data file found in gist');
+            }
+
+            // Parse the JSON data
+            const parsedData = JSON.parse(dataContent);
+            this.loadedData = parsedData;
+            
+            console.log('Loaded data from GitHub Gist:', parsedData?.visitedSites?.length || 0, 'visited sites');
+            
+            // Notify UI that data has been loaded
+            this.notifyDataLoaded(parsedData?.visitedSites || []);
+            
+            return parsedData?.visitedSites || [];
+            
         } catch (error) {
             console.error('Error loading gist data:', error);
             return [];
@@ -162,10 +177,7 @@ class GistDataManager {
             
             if (this.setAccessCode(code)) {
                 alert('Access code accepted! Data will now sync from GitHub Gist.');
-                // Reload the page to refresh data
-                if (window.unescoExplorer) {
-                    unescoExplorer.loadVisitedSites();
-                }
+                // Data loading and UI update will be handled by setAccessCode -> loadGistData -> notifyDataLoaded
             } else {
                 alert('Invalid access code. Please try again.');
             }
@@ -194,6 +206,21 @@ class GistDataManager {
     async onDataChange() {
         // No automatic sync - data is read-only from gist
         // Users need to manually update the gist
+    }
+
+    // Notify the UI when data has been loaded from API
+    notifyDataLoaded(visitedSites) {
+        if (window.unescoExplorer) {
+            // Update the visited sites in the explorer
+            window.unescoExplorer.updateVisitedSitesFromAPI(visitedSites);
+        } else {
+            // If UI is not ready yet, wait and try again
+            setTimeout(() => {
+                if (window.unescoExplorer) {
+                    window.unescoExplorer.updateVisitedSitesFromAPI(visitedSites);
+                }
+            }, 500);
+        }
     }
 }
 
