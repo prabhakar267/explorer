@@ -1,8 +1,27 @@
 class UNESCOExplorer {
+    // Marker style constants. Picked up by setStyle() on toggle without
+    // rebuilding markers.
+    static VISITED_STYLE = {
+        fillColor: '#27ae60',
+        color: '#2ecc71',
+    };
+    static UNVISITED_STYLE = {
+        fillColor: '#e74c3c',
+        color: '#c0392b',
+    };
+    static BASE_MARKER_OPTS = {
+        radius: 8,
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.8,
+    };
+
     constructor() {
         this.map = null;
         this.sites = [];
         this.visitedSites = new Set(); // Start empty, will be loaded from Gist or localStorage
+        this.markersBySite = new Map(); // siteName -> L.CircleMarker
+        this._popupHoverTimeout = null; // Shared across all markers (delegation)
         this.markers = new L.MarkerClusterGroup({
             chunkedLoading: true,
             maxClusterRadius: 50,
@@ -13,10 +32,57 @@ class UNESCOExplorer {
                 return this.createClusterIcon(cluster);
             }
         });
-        
+
+        this._setupMarkerEventDelegation();
         this.initMap();
         this.loadUNESCOSites();
         this.loadVisitedSites();
+    }
+
+    // One set of handlers for the whole cluster group, instead of four per
+    // marker. Reads `siteData` attached to each marker.
+    _setupMarkerEventDelegation() {
+        this.markers.on('click', (e) => {
+            const marker = e.layer;
+            const site = marker?.siteData;
+            if (!site) return;
+            e.originalEvent?.stopPropagation?.();
+            this.showPreview(site.name);
+        });
+
+        this.markers.on('mouseover', (e) => {
+            const marker = e.layer;
+            if (!marker?.siteData) return;
+            clearTimeout(this._popupHoverTimeout);
+            marker.openPopup();
+        });
+
+        this.markers.on('mouseout', (e) => {
+            const marker = e.layer;
+            if (!marker?.siteData) return;
+            this._popupHoverTimeout = setTimeout(() => {
+                marker.closePopup();
+            }, 300);
+        });
+
+        this.markers.on('popupopen', (e) => {
+            const popupEl = e.popup.getElement();
+            if (!popupEl) return;
+            popupEl.addEventListener('mouseenter', () => {
+                clearTimeout(this._popupHoverTimeout);
+            });
+            popupEl.addEventListener('mouseleave', () => {
+                this._popupHoverTimeout = setTimeout(() => {
+                    e.popup._source?.closePopup();
+                }, 100);
+            });
+        });
+    }
+
+    _styleFor(siteName) {
+        return this.visitedSites.has(siteName)
+            ? UNESCOExplorer.VISITED_STYLE
+            : UNESCOExplorer.UNVISITED_STYLE;
     }
 
     async loadVisitedSites() {
@@ -160,82 +226,49 @@ class UNESCOExplorer {
     }
 
     createMarkers() {
+        // One marker per site. Previously this created three (±360° offsets)
+        // to simulate seamless world wrapping, which tripled memory and
+        // clustering work. `worldCopyJump: true` on the map handles panning
+        // across the date line.
         this.sites.forEach(site => {
-            const isVisited = this.visitedSites.has(site.name);
-            
-            // Create markers at original position and duplicates at ±360° longitude
-            // This creates the illusion of world wrapping without new API calls
-            [-360, 0, 360].forEach(lngOffset => {
-                const marker = L.circleMarker([site.lat, site.lng + lngOffset], {
-                    radius: 8,
-                    fillColor: isVisited ? '#27ae60' : '#e74c3c',
-                    color: isVisited ? '#2ecc71' : '#c0392b',
-                    weight: 2,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                });
+            const marker = L.circleMarker(
+                [site.lat, site.lng],
+                {
+                    ...UNESCOExplorer.BASE_MARKER_OPTS,
+                    ...this._styleFor(site.name),
+                }
+            );
 
-                const popupContent = this.createPopupContent(site, isVisited);
-                marker.bindPopup(popupContent);
-                
-                // Add click event to open preview directly
-                marker.on('click', (e) => {
-                    e.originalEvent.stopPropagation(); // Prevent map click from closing overlay
-                    this.showPreview(site.name);
-                });
-                
-                // Add hover events to show/hide popup with delay
-                let popupTimeout;
-                
-                marker.on('mouseover', function(e) {
-                    clearTimeout(popupTimeout);
-                    this.openPopup();
-                });
-                
-                marker.on('mouseout', function(e) {
-                    const popup = this.getPopup();
-                    popupTimeout = setTimeout(() => {
-                        this.closePopup();
-                    }, 300); // 300ms delay before closing
-                });
-                
-                // Keep popup open when hovering over it
-                marker.on('popupopen', function(e) {
-                    const popupElement = e.popup.getElement();
-                    if (popupElement) {
-                        popupElement.addEventListener('mouseenter', function() {
-                            clearTimeout(popupTimeout);
-                        });
-                        
-                        popupElement.addEventListener('mouseleave', function() {
-                            popupTimeout = setTimeout(() => {
-                                e.target.closePopup();
-                            }, 100);
-                        });
-                    }
-                });
-                
-                this.markers.addLayer(marker);
-            });
+            // Attach site data directly. Avoids regex-on-popup-HTML in
+            // createClusterIcon() and lets event-delegation handlers route
+            // events back to the right site.
+            marker.siteData = site;
+
+            // Lazy popup: Leaflet calls this function the first time the
+            // popup is opened. Always reflects current visited state without
+            // needing a rebuild after toggle.
+            marker.bindPopup(() => this.createPopupContent(
+                site,
+                this.visitedSites.has(site.name)
+            ));
+
+            this.markersBySite.set(site.name, marker);
+            this.markers.addLayer(marker);
         });
     }
 
     createClusterIcon(cluster) {
         const markers = cluster.getAllChildMarkers();
         const childCount = cluster.getChildCount();
-        
-        // Check if all markers in this cluster represent visited sites
+
+        // Read site name from marker property. Previously parsed popup HTML
+        // with a regex on every child on every zoom/pan.
         let allVisited = true;
-        for (let marker of markers) {
-            // Get the site name from the marker's popup content
-            const popupContent = marker.getPopup().getContent();
-            const titleMatch = popupContent.match(/<div class="popup-title">(.*?)<\/div>/);
-            if (titleMatch) {
-                const siteName = titleMatch[1];
-                if (!this.visitedSites.has(siteName)) {
-                    allVisited = false;
-                    break;
-                }
+        for (const marker of markers) {
+            const name = marker.siteData?.name;
+            if (!name || !this.visitedSites.has(name)) {
+                allVisited = false;
+                break;
             }
         }
         
@@ -290,20 +323,39 @@ class UNESCOExplorer {
         } else {
             this.visitedSites.add(siteName);
         }
-        
+
         localStorage.setItem('visitedUNESCOSites', JSON.stringify([...this.visitedSites]));
-        this.updateMarkers();
+
+        // Restyle just the affected marker. No cluster rebuild. The cluster
+        // icon containing this marker will repaint on the next zoom/pan;
+        // force an immediate refresh so visited-cluster color is consistent.
+        const marker = this.markersBySite.get(siteName);
+        if (marker) {
+            marker.setStyle(this._styleFor(siteName));
+        }
+        this.markers.refreshClusters();
         this.updateStats();
-        
+
         // Trigger cloud sync if user is signed in
         if (window.dataManager) {
             dataManager.onDataChange();
         }
     }
 
+    // Apply current visited state to every existing marker without tearing
+    // down the cluster group. Used for bulk state changes (initial load,
+    // reset, gist sync). Individual toggles use the faster path in
+    // toggleVisited().
     updateMarkers() {
-        this.markers.clearLayers();
-        this.createMarkers();
+        if (this.markersBySite.size === 0) {
+            // No markers yet — build them.
+            this.createMarkers();
+            return;
+        }
+        this.markersBySite.forEach((marker, siteName) => {
+            marker.setStyle(this._styleFor(siteName));
+        });
+        this.markers.refreshClusters();
     }
 
     updateStats() {
