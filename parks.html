@@ -3,49 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNESCO World Heritage Sites Explorer</title>
-    
+    <title>US National Parks Explorer</title>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Discover and track your visits to UNESCO World Heritage Sites around the world. Interactive map with detailed information about cultural and natural heritage sites.">
-    <meta name="keywords" content="UNESCO, World Heritage Sites, travel, culture, history, interactive map, heritage, monuments, natural sites">
+    <meta name="description" content="Discover and track your visits to the 63 US National Parks. Interactive map with details and visit tracking, companion to the UNESCO World Heritage Sites Explorer.">
+    <meta name="keywords" content="US National Parks, NPS, travel, nature, interactive map, national parks, visit tracker">
     <meta name="author" content="Prabhakar Gupta">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/globe.png">
     <link rel="shortcut icon" type="image/png" href="assets/globe.png">
     <link rel="apple-touch-icon" href="assets/globe.png">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://prabhakar267.github.io/explorer/">
-    <meta property="og:title" content="UNESCO World Heritage Sites Explorer">
-    <meta property="og:description" content="Discover and track your visits to UNESCO World Heritage Sites around the world. Interactive map with detailed information about cultural and natural heritage sites.">
+    <meta property="og:url" content="https://prabhakar267.github.io/explorer/parks.html">
+    <meta property="og:title" content="US National Parks Explorer">
+    <meta property="og:description" content="Discover and track your visits to the 63 US National Parks.">
     <meta property="og:image" content="https://prabhakar267.github.io/explorer/assets/molumen-world-map-1.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="UNESCO World Heritage Sites Explorer">
-    
+    <meta property="og:site_name" content="US National Parks Explorer">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://prabhakar267.github.io/explorer/">
-    <meta property="twitter:title" content="UNESCO World Heritage Sites Explorer">
-    <meta property="twitter:description" content="Discover and track your visits to UNESCO World Heritage Sites around the world. Interactive map with detailed information about cultural and natural heritage sites.">
+    <meta property="twitter:url" content="https://prabhakar267.github.io/explorer/parks.html">
+    <meta property="twitter:title" content="US National Parks Explorer">
+    <meta property="twitter:description" content="Discover and track your visits to the 63 US National Parks.">
     <meta property="twitter:image" content="https://prabhakar267.github.io/explorer/assets/molumen-world-map-1.png">
-    
+
     <!-- Additional Meta Tags -->
     <meta name="theme-color" content="#3498db">
     <meta name="msapplication-TileColor" content="#3498db">
-    <meta name="application-name" content="UNESCO Explorer">
-    
+    <meta name="application-name" content="US Parks Explorer">
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
+
     <!-- Leaflet MarkerCluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -53,28 +53,18 @@
     <div class="header">
         <div class="header-content">
             <div class="header-text">
-                <h1 id="header-title" style="cursor: pointer;">UNESCO World Heritage Sites Explorer</h1>
+                <h1 id="header-title" style="cursor: pointer;">US National Parks Explorer</h1>
                 <p id="header-description" style="display: none;">
-                    Discover and track your visits to UNESCO World Heritage Sites around the world.<br>
-                    A vibe coding project by Prabhakar Gupta, created using Claude 3.5 Sonnet. 
+                    Discover and track your visits to the 63 US National Parks.<br>
+                    A companion to the <a href="index.html" style="color: #3498db; text-decoration: none;">🌍 UNESCO Sites</a> explorer.
                     <a href="https://github.com/prabhakar267/explorer" target="_blank" style="color: #3498db; text-decoration: none;">View Source Code</a>
                 </p>
             </div>
             <div class="header-actions">
-                <a href="parks.html" title="Go to US National Parks Explorer" style="align-self: center; margin-right: 12px; color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500;">🏞 US National Parks</a>
+                <a href="index.html" title="Go to UNESCO World Heritage Sites Explorer" style="align-self: center; margin-right: 12px; color: var(--text-secondary); text-decoration: none; font-size: 14px; font-weight: 500;">🌍 UNESCO Sites</a>
                 <div class="dropdown-menu">
                     <button class="dropdown-button" id="dropdown-button">⋮</button>
                     <div class="dropdown-content" id="dropdown-content">
-                        <div class="dropdown-section">
-                            <span class="dropdown-label">Data Sync</span>
-                            <div class="sync-status" id="sync-status">
-                                <span class="sync-indicator">●</span>
-                                <span class="sync-text">Local Only</span>
-                            </div>
-                            <button class="auth-button" onclick="showAccessCodeDialog()">Enter Access Code</button>
-                            <button class="auth-button secondary" onclick="downloadData()">Download Data</button>
-                        </div>
-                        <div class="dropdown-divider"></div>
                         <div class="dropdown-section">
                             <span class="dropdown-label">Theme</span>
                             <div class="theme-toggle">
@@ -84,7 +74,7 @@
                             </div>
                         </div>
                         <div class="dropdown-divider"></div>
-                        <a href="#" onclick="unescoExplorer.resetAll()">Reset All Visited Sites</a>
+                        <a href="#" onclick="parksExplorer.resetAll()">Reset All Visited Parks</a>
                     </div>
                 </div>
             </div>
@@ -92,14 +82,14 @@
     </div>
 
     <div class="stats" id="stats">
-        <div>Total Sites: <span id="total-sites">Loading...</span></div>
+        <div>Total Parks: <span id="total-sites">Loading...</span></div>
         <div>Visited: <span id="visited-count">0</span></div>
         <div>Remaining: <span id="remaining-count">Loading...</span></div>
     </div>
 
     <div class="loading" id="loading">
         <div class="spinner"></div>
-        <div>Loading UNESCO World Heritage Sites...</div>
+        <div>Loading US National Parks...</div>
     </div>
 
     <div id="map"></div>
@@ -107,25 +97,22 @@
     <!-- Site Preview Overlay -->
     <div id="site-overlay" class="site-overlay">
         <div class="overlay-header">
-            <button class="back-button" onclick="unescoExplorer.closePreview()" title="Go back">←</button>
-            <h2 id="overlay-title">Site Details</h2>
-            <button class="close-overlay" onclick="unescoExplorer.closePreview()">×</button>
+            <button class="back-button" onclick="parksExplorer.closePreview()" title="Go back">←</button>
+            <h2 id="overlay-title">Park Details</h2>
+            <button class="close-overlay" onclick="parksExplorer.closePreview()">×</button>
         </div>
         <div class="overlay-content" id="overlay-content">
-            <div class="loading-overlay">Loading site details...</div>
+            <div class="loading-overlay">Loading park details...</div>
         </div>
     </div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
+
     <!-- Leaflet MarkerCluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-    <!-- Gist Data Manager -->
-    <script src="js/gist-data-manager.js"></script>
-
     <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/parks.js"></script>
 </body>
 </html>
