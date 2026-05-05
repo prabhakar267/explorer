@@ -3,9 +3,11 @@
 
 class GistDataManager {
     constructor() {
-        this.encryptionKey = "unesco-explorer-2025"; // Simple key for basic obfuscation
+        this.obfuscationKey = "unesco-explorer-2025"; // Simple key for basic obfuscation
         this.accessCodes = {
-            // Encrypted access codes using simple Caesar cipher
+            // Obfuscated access codes using ROT13 (NOT encryption — this is
+            // obfuscation only. The gist ID below is visible in the bundle,
+            // so access codes gate UX, not data secrecy.)
             "nybbtbouv123": {
                 gistId: "05bc3de9d00ceaf8d9505ec513a57ccd",
                 gistUrl: "https://api.github.com/gists/05bc3de9d00ceaf8d9505ec513a57ccd"
@@ -28,8 +30,10 @@ class GistDataManager {
         }
     }
 
-    // Simple Caesar cipher for basic obfuscation
-    encrypt(text) {
+    // Simple ROT13 obfuscation. NOT cryptographically secure — this only
+    // prevents casual discovery of access codes in the source. Anyone with
+    // DevTools can read `this.accessCodes` and the gist ID directly.
+    obfuscate(text) {
         return text.split('').map(char => {
             if (char.match(/[a-z]/i)) {
                 const code = char.charCodeAt(0);
@@ -42,9 +46,9 @@ class GistDataManager {
 
 
     setAccessCode(code) {
-        const encryptedCode = this.encrypt(code.toLowerCase());
+        const obfuscatedCode = this.obfuscate(code.toLowerCase());
         
-        if (this.accessCodes[encryptedCode]) {
+        if (this.accessCodes[obfuscatedCode]) {
             this.currentAccessCode = code;
             this.isEnabled = true;
             localStorage.setItem('unescoAccessCode', code);
@@ -70,8 +74,8 @@ class GistDataManager {
             return [];
         }
 
-        const encryptedCode = this.encrypt(this.currentAccessCode.toLowerCase());
-        const gistConfig = this.accessCodes[encryptedCode];
+        const obfuscatedCode = this.obfuscate(this.currentAccessCode.toLowerCase());
+        const gistConfig = this.accessCodes[obfuscatedCode];
 
         try {
             // Fetch gist data using GitHub API
@@ -171,9 +175,9 @@ class GistDataManager {
     showAccessCodeDialog() {
         const code = prompt('Enter access code to sync with GitHub Gist:');
         if (code) {
-            const encryptedCode = this.encrypt(code.toLowerCase());
+            const obfuscatedCode = this.obfuscate(code.toLowerCase());
             console.log(`Access code entered: "${code}"`);
-            console.log(`Encrypted version: "${encryptedCode}"`);
+            console.log(`Obfuscated version: "${obfuscatedCode}"`);
             
             if (this.setAccessCode(code)) {
                 alert('Access code accepted! Data will now sync from GitHub Gist.');
