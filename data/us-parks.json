@@ -1,0 +1,762 @@
+[
+  {
+    "name": "Acadia",
+    "wikipediaTitle": "Acadia National Park",
+    "lat": 44.35,
+    "lng": -68.21,
+    "states": [
+      "Maine"
+    ],
+    "state": "Maine",
+    "yearEstablished": 1919,
+    "areaAcres": 49071.4
+  },
+  {
+    "name": "American Samoa",
+    "wikipediaTitle": "National Park of American Samoa",
+    "lat": -14.25,
+    "lng": -170.68,
+    "states": [
+      "American Samoa"
+    ],
+    "state": "American Samoa",
+    "yearEstablished": 1988,
+    "areaAcres": 8256.67
+  },
+  {
+    "name": "Arches",
+    "wikipediaTitle": "Arches National Park",
+    "lat": 38.68,
+    "lng": -109.57,
+    "states": [
+      "Utah"
+    ],
+    "state": "Utah",
+    "yearEstablished": 1971,
+    "areaAcres": 76678.98
+  },
+  {
+    "name": "Badlands",
+    "wikipediaTitle": "Badlands National Park",
+    "lat": 43.75,
+    "lng": -102.5,
+    "states": [
+      "South Dakota"
+    ],
+    "state": "South Dakota",
+    "yearEstablished": 1978,
+    "areaAcres": 242755.94
+  },
+  {
+    "name": "Big Bend",
+    "wikipediaTitle": "Big Bend National Park",
+    "lat": 29.25,
+    "lng": -103.25,
+    "states": [
+      "Texas"
+    ],
+    "state": "Texas",
+    "yearEstablished": 1944,
+    "areaAcres": 801163.21
+  },
+  {
+    "name": "Biscayne",
+    "wikipediaTitle": "Biscayne National Park",
+    "lat": 25.65,
+    "lng": -80.08,
+    "states": [
+      "Florida"
+    ],
+    "state": "Florida",
+    "yearEstablished": 1980,
+    "areaAcres": 172971.11
+  },
+  {
+    "name": "Black Canyon of the Gunnison",
+    "wikipediaTitle": "Black Canyon of the Gunnison National Park",
+    "lat": 38.57,
+    "lng": -107.72,
+    "states": [
+      "Colorado"
+    ],
+    "state": "Colorado",
+    "yearEstablished": 1999,
+    "areaAcres": 30779.83
+  },
+  {
+    "name": "Bryce Canyon",
+    "wikipediaTitle": "Bryce Canyon National Park",
+    "lat": 37.57,
+    "lng": -112.18,
+    "states": [
+      "Utah"
+    ],
+    "state": "Utah",
+    "yearEstablished": 1928,
+    "areaAcres": 35835.08
+  },
+  {
+    "name": "Canyonlands",
+    "wikipediaTitle": "Canyonlands National Park",
+    "lat": 38.2,
+    "lng": -109.93,
+    "states": [
+      "Utah"
+    ],
+    "state": "Utah",
+    "yearEstablished": 1964,
+    "areaAcres": 337597.83
+  },
+  {
+    "name": "Capitol Reef",
+    "wikipediaTitle": "Capitol Reef National Park",
+    "lat": 38.2,
+    "lng": -111.17,
+    "states": [
+      "Utah"
+    ],
+    "state": "Utah",
+    "yearEstablished": 1971,
+    "areaAcres": 241904.5
+  },
+  {
+    "name": "Carlsbad Caverns",
+    "wikipediaTitle": "Carlsbad Caverns National Park",
+    "lat": 32.17,
+    "lng": -104.44,
+    "states": [
+      "New Mexico"
+    ],
+    "state": "New Mexico",
+    "yearEstablished": 1930,
+    "areaAcres": 46766.45
+  },
+  {
+    "name": "Channel Islands",
+    "wikipediaTitle": "Channel Islands National Park",
+    "lat": 34.01,
+    "lng": -119.42,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1980,
+    "areaAcres": 249561
+  },
+  {
+    "name": "Congaree",
+    "wikipediaTitle": "Congaree National Park",
+    "lat": 33.78,
+    "lng": -80.78,
+    "states": [
+      "South Carolina"
+    ],
+    "state": "South Carolina",
+    "yearEstablished": 2003,
+    "areaAcres": 26692.6
+  },
+  {
+    "name": "Crater Lake",
+    "wikipediaTitle": "Crater Lake National Park",
+    "lat": 42.94,
+    "lng": -122.1,
+    "states": [
+      "Oregon"
+    ],
+    "state": "Oregon",
+    "yearEstablished": 1902,
+    "areaAcres": 183224.05
+  },
+  {
+    "name": "Cuyahoga Valley",
+    "wikipediaTitle": "Cuyahoga Valley National Park",
+    "lat": 41.24,
+    "lng": -81.55,
+    "states": [
+      "Ohio"
+    ],
+    "state": "Ohio",
+    "yearEstablished": 2000,
+    "areaAcres": 32571.89
+  },
+  {
+    "name": "Death Valley",
+    "wikipediaTitle": "Death Valley National Park",
+    "lat": 36.24,
+    "lng": -116.82,
+    "states": [
+      "California",
+      "Nevada"
+    ],
+    "state": "California, Nevada",
+    "yearEstablished": 1994,
+    "areaAcres": 3408395.63
+  },
+  {
+    "name": "Denali",
+    "wikipediaTitle": "Denali National Park and Preserve",
+    "lat": 63.33,
+    "lng": -150.5,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1917,
+    "areaAcres": 4740911.16
+  },
+  {
+    "name": "Dry Tortugas",
+    "wikipediaTitle": "Dry Tortugas National Park",
+    "lat": 24.63,
+    "lng": -82.87,
+    "states": [
+      "Florida"
+    ],
+    "state": "Florida",
+    "yearEstablished": 1992,
+    "areaAcres": 64701.22
+  },
+  {
+    "name": "Everglades",
+    "wikipediaTitle": "Everglades National Park",
+    "lat": 25.32,
+    "lng": -80.93,
+    "states": [
+      "Florida"
+    ],
+    "state": "Florida",
+    "yearEstablished": 1934,
+    "areaAcres": 1508938.57
+  },
+  {
+    "name": "Gates of the Arctic",
+    "wikipediaTitle": "Gates of the Arctic National Park and Preserve",
+    "lat": 67.78,
+    "lng": -153.3,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 7523897.45
+  },
+  {
+    "name": "Gateway Arch",
+    "wikipediaTitle": "Gateway Arch National Park",
+    "lat": 38.63,
+    "lng": -90.19,
+    "states": [
+      "Missouri"
+    ],
+    "state": "Missouri",
+    "yearEstablished": 2018,
+    "areaAcres": 192.83
+  },
+  {
+    "name": "Glacier",
+    "wikipediaTitle": "Glacier National Park (U.S.)",
+    "lat": 48.8,
+    "lng": -114,
+    "states": [
+      "Montana"
+    ],
+    "state": "Montana",
+    "yearEstablished": 1910,
+    "areaAcres": 1013126.39
+  },
+  {
+    "name": "Glacier Bay",
+    "wikipediaTitle": "Glacier Bay National Park and Preserve",
+    "lat": 58.5,
+    "lng": -137,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 3223383.43
+  },
+  {
+    "name": "Grand Canyon",
+    "wikipediaTitle": "Grand Canyon National Park",
+    "lat": 36.06,
+    "lng": -112.14,
+    "states": [
+      "Arizona"
+    ],
+    "state": "Arizona",
+    "yearEstablished": 1919,
+    "areaAcres": 1201647.03
+  },
+  {
+    "name": "Grand Teton",
+    "wikipediaTitle": "Grand Teton National Park",
+    "lat": 43.73,
+    "lng": -110.8,
+    "states": [
+      "Wyoming"
+    ],
+    "state": "Wyoming",
+    "yearEstablished": 1929,
+    "areaAcres": 310044.36
+  },
+  {
+    "name": "Great Basin",
+    "wikipediaTitle": "Great Basin National Park",
+    "lat": 38.98,
+    "lng": -114.3,
+    "states": [
+      "Nevada"
+    ],
+    "state": "Nevada",
+    "yearEstablished": 1986,
+    "areaAcres": 77180
+  },
+  {
+    "name": "Great Sand Dunes",
+    "wikipediaTitle": "Great Sand Dunes National Park and Preserve",
+    "lat": 37.73,
+    "lng": -105.51,
+    "states": [
+      "Colorado"
+    ],
+    "state": "Colorado",
+    "yearEstablished": 2004,
+    "areaAcres": 107345.73
+  },
+  {
+    "name": "Great Smoky Mountains",
+    "wikipediaTitle": "Great Smoky Mountains National Park",
+    "lat": 35.68,
+    "lng": -83.53,
+    "states": [
+      "North Carolina",
+      "Tennessee"
+    ],
+    "state": "North Carolina, Tennessee",
+    "yearEstablished": 1934,
+    "areaAcres": 522426.88
+  },
+  {
+    "name": "Guadalupe Mountains",
+    "wikipediaTitle": "Guadalupe Mountains National Park",
+    "lat": 31.92,
+    "lng": -104.87,
+    "states": [
+      "Texas"
+    ],
+    "state": "Texas",
+    "yearEstablished": 1972,
+    "areaAcres": 86367.1
+  },
+  {
+    "name": "Haleakalā",
+    "wikipediaTitle": "Haleakalā National Park",
+    "lat": 20.72,
+    "lng": -156.17,
+    "states": [
+      "Hawaii"
+    ],
+    "state": "Hawaii",
+    "yearEstablished": 1961,
+    "areaAcres": 33488.98
+  },
+  {
+    "name": "Hawaiʻi Volcanoes",
+    "wikipediaTitle": "Hawaiʻi Volcanoes National Park",
+    "lat": 19.38,
+    "lng": -155.2,
+    "states": [
+      "Hawaii"
+    ],
+    "state": "Hawaii",
+    "yearEstablished": 1916,
+    "areaAcres": 344812.18
+  },
+  {
+    "name": "Hot Springs",
+    "wikipediaTitle": "Hot Springs National Park",
+    "lat": 34.51,
+    "lng": -93.05,
+    "states": [
+      "Arkansas"
+    ],
+    "state": "Arkansas",
+    "yearEstablished": 1921,
+    "areaAcres": 5554.15
+  },
+  {
+    "name": "Indiana Dunes",
+    "wikipediaTitle": "Indiana Dunes National Park",
+    "lat": 41.6533,
+    "lng": -87.0524,
+    "states": [
+      "Indiana"
+    ],
+    "state": "Indiana",
+    "yearEstablished": 2019,
+    "areaAcres": 15349.08
+  },
+  {
+    "name": "Isle Royale",
+    "wikipediaTitle": "Isle Royale National Park",
+    "lat": 48.1,
+    "lng": -88.55,
+    "states": [
+      "Michigan"
+    ],
+    "state": "Michigan",
+    "yearEstablished": 1940,
+    "areaAcres": 571790.3
+  },
+  {
+    "name": "Joshua Tree",
+    "wikipediaTitle": "Joshua Tree National Park",
+    "lat": 33.79,
+    "lng": -115.9,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1994,
+    "areaAcres": 795155.85
+  },
+  {
+    "name": "Katmai",
+    "wikipediaTitle": "Katmai National Park and Preserve",
+    "lat": 58.5,
+    "lng": -155,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 3674529.33
+  },
+  {
+    "name": "Kenai Fjords",
+    "wikipediaTitle": "Kenai Fjords National Park",
+    "lat": 59.92,
+    "lng": -149.65,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 669650.05
+  },
+  {
+    "name": "Kings Canyon",
+    "wikipediaTitle": "Kings Canyon National Park",
+    "lat": 36.8,
+    "lng": -118.55,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1940,
+    "areaAcres": 461901.2
+  },
+  {
+    "name": "Kobuk Valley",
+    "wikipediaTitle": "Kobuk Valley National Park",
+    "lat": 67.55,
+    "lng": -159.28,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 1750716.16
+  },
+  {
+    "name": "Lake Clark",
+    "wikipediaTitle": "Lake Clark National Park and Preserve",
+    "lat": 60.97,
+    "lng": -153.42,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 2619816.49
+  },
+  {
+    "name": "Lassen Volcanic",
+    "wikipediaTitle": "Lassen Volcanic National Park",
+    "lat": 40.49,
+    "lng": -121.51,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1916,
+    "areaAcres": 106589.02
+  },
+  {
+    "name": "Mammoth Cave",
+    "wikipediaTitle": "Mammoth Cave National Park",
+    "lat": 37.18,
+    "lng": -86.1,
+    "states": [
+      "Kentucky"
+    ],
+    "state": "Kentucky",
+    "yearEstablished": 1941,
+    "areaAcres": 72472.87
+  },
+  {
+    "name": "Mesa Verde",
+    "wikipediaTitle": "Mesa Verde National Park",
+    "lat": 37.18,
+    "lng": -108.49,
+    "states": [
+      "Colorado"
+    ],
+    "state": "Colorado",
+    "yearEstablished": 1906,
+    "areaAcres": 52485.17
+  },
+  {
+    "name": "Mount Rainier",
+    "wikipediaTitle": "Mount Rainier National Park",
+    "lat": 46.85,
+    "lng": -121.75,
+    "states": [
+      "Washington"
+    ],
+    "state": "Washington",
+    "yearEstablished": 1899,
+    "areaAcres": 236381.64
+  },
+  {
+    "name": "New River Gorge",
+    "wikipediaTitle": "New River Gorge National Park and Preserve",
+    "lat": 38.07,
+    "lng": -81.08,
+    "states": [
+      "West Virginia"
+    ],
+    "state": "West Virginia",
+    "yearEstablished": 2020,
+    "areaAcres": 7021
+  },
+  {
+    "name": "North Cascades",
+    "wikipediaTitle": "North Cascades National Park",
+    "lat": 48.7,
+    "lng": -121.2,
+    "states": [
+      "Washington"
+    ],
+    "state": "Washington",
+    "yearEstablished": 1968,
+    "areaAcres": 504780.94
+  },
+  {
+    "name": "Olympic",
+    "wikipediaTitle": "Olympic National Park",
+    "lat": 47.97,
+    "lng": -123.5,
+    "states": [
+      "Washington"
+    ],
+    "state": "Washington",
+    "yearEstablished": 1938,
+    "areaAcres": 922649.41
+  },
+  {
+    "name": "Petrified Forest",
+    "wikipediaTitle": "Petrified Forest National Park",
+    "lat": 35.07,
+    "lng": -109.78,
+    "states": [
+      "Arizona"
+    ],
+    "state": "Arizona",
+    "yearEstablished": 1962,
+    "areaAcres": 221390.21
+  },
+  {
+    "name": "Pinnacles",
+    "wikipediaTitle": "Pinnacles National Park",
+    "lat": 36.48,
+    "lng": -121.16,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 2013,
+    "areaAcres": 26685.73
+  },
+  {
+    "name": "Redwood",
+    "wikipediaTitle": "Redwood National and State Parks",
+    "lat": 41.3,
+    "lng": -124,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1968,
+    "areaAcres": 138999.37
+  },
+  {
+    "name": "Rocky Mountain",
+    "wikipediaTitle": "Rocky Mountain National Park",
+    "lat": 40.4,
+    "lng": -105.58,
+    "states": [
+      "Colorado"
+    ],
+    "state": "Colorado",
+    "yearEstablished": 1915,
+    "areaAcres": 265847.74
+  },
+  {
+    "name": "Saguaro",
+    "wikipediaTitle": "Saguaro National Park",
+    "lat": 32.25,
+    "lng": -110.5,
+    "states": [
+      "Arizona"
+    ],
+    "state": "Arizona",
+    "yearEstablished": 1994,
+    "areaAcres": 92876.75
+  },
+  {
+    "name": "Sequoia",
+    "wikipediaTitle": "Sequoia National Park",
+    "lat": 36.43,
+    "lng": -118.68,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1890,
+    "areaAcres": 404062.63
+  },
+  {
+    "name": "Shenandoah",
+    "wikipediaTitle": "Shenandoah National Park",
+    "lat": 38.53,
+    "lng": -78.35,
+    "states": [
+      "Virginia"
+    ],
+    "state": "Virginia",
+    "yearEstablished": 1935,
+    "areaAcres": 200445.92
+  },
+  {
+    "name": "Theodore Roosevelt",
+    "wikipediaTitle": "Theodore Roosevelt National Park",
+    "lat": 46.97,
+    "lng": -103.45,
+    "states": [
+      "North Dakota"
+    ],
+    "state": "North Dakota",
+    "yearEstablished": 1978,
+    "areaAcres": 70446.89
+  },
+  {
+    "name": "Virgin Islands",
+    "wikipediaTitle": "Virgin Islands National Park",
+    "lat": 18.33,
+    "lng": -64.73,
+    "states": [
+      "U.S. Virgin Islands"
+    ],
+    "state": "U.S. Virgin Islands",
+    "yearEstablished": 1956,
+    "areaAcres": 15052.33
+  },
+  {
+    "name": "Voyageurs",
+    "wikipediaTitle": "Voyageurs National Park",
+    "lat": 48.5,
+    "lng": -92.88,
+    "states": [
+      "Minnesota"
+    ],
+    "state": "Minnesota",
+    "yearEstablished": 1975,
+    "areaAcres": 218222.35
+  },
+  {
+    "name": "White Sands",
+    "wikipediaTitle": "White Sands National Park",
+    "lat": 32.78,
+    "lng": -106.17,
+    "states": [
+      "New Mexico"
+    ],
+    "state": "New Mexico",
+    "yearEstablished": 2019,
+    "areaAcres": 146344.31
+  },
+  {
+    "name": "Wind Cave",
+    "wikipediaTitle": "Wind Cave National Park",
+    "lat": 43.57,
+    "lng": -103.48,
+    "states": [
+      "South Dakota"
+    ],
+    "state": "South Dakota",
+    "yearEstablished": 1903,
+    "areaAcres": 33970.84
+  },
+  {
+    "name": "Wrangell–St. Elias",
+    "wikipediaTitle": "Wrangell–St. Elias National Park and Preserve",
+    "lat": 61,
+    "lng": -142,
+    "states": [
+      "Alaska"
+    ],
+    "state": "Alaska",
+    "yearEstablished": 1980,
+    "areaAcres": 8323146.48
+  },
+  {
+    "name": "Yellowstone",
+    "wikipediaTitle": "Yellowstone National Park",
+    "lat": 44.6,
+    "lng": -110.5,
+    "states": [
+      "Wyoming",
+      "Montana",
+      "Idaho"
+    ],
+    "state": "Wyoming, Montana, Idaho",
+    "yearEstablished": 1872,
+    "areaAcres": 2219790.71
+  },
+  {
+    "name": "Yosemite",
+    "wikipediaTitle": "Yosemite National Park",
+    "lat": 37.83,
+    "lng": -119.5,
+    "states": [
+      "California"
+    ],
+    "state": "California",
+    "yearEstablished": 1890,
+    "areaAcres": 761747.5
+  },
+  {
+    "name": "Zion",
+    "wikipediaTitle": "Zion National Park",
+    "lat": 37.3,
+    "lng": -113.05,
+    "states": [
+      "Utah"
+    ],
+    "state": "Utah",
+    "yearEstablished": 1919,
+    "areaAcres": 147242.66
+  }
+]

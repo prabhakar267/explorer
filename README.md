@@ -67,6 +67,24 @@ Each site includes:
 - Country and regional information
 - Wikipedia integration for detailed descriptions
 
+## 🏞 US National Parks view
+
+A companion view at [`/parks.html`](https://prabhakar267.github.io/explorer/parks.html) shows the **63 US National Parks** on a US-bounded map with the same interaction model as the UNESCO view — markers, hover previews, click-for-details, and mark-as-visited.
+
+- **Separate visit state:** Parks visits are stored under the `visitedUSParks` localStorage key and do **not** overlap with UNESCO visits. Marking Yellowstone as visited on one page has no effect on the other.
+- **Local-only in v1:** The Parks view does not use the GitHub Gist sync. NPS API integration, code generalization, and Gist sync for Parks are tracked as follow-up issues.
+- **Cross-links:** Each page links to the other from the header.
+
+### Refreshing the parks dataset
+
+The list of 63 parks lives in [`data/us-parks.json`](data/us-parks.json) and is generated from the Wikipedia article _List of national parks of the United States_ by [`scripts/extract-us-parks.js`](scripts/extract-us-parks.js). The script has no dependencies — vanilla Node.
+
+```bash
+node scripts/extract-us-parks.js
+```
+
+Re-run this when Wikipedia lists a new park (every few years) and commit the updated JSON. Wikipedia is **not** a runtime dependency — the client only reads the committed JSON file.
+
 ## 🚀 Quick Start
 
 ### Option 1: Use Live Version (Recommended)
