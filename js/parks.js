@@ -1,19 +1,19 @@
 // US National Parks Explorer
 //
-// v1 of the Parks view. This class is intentionally a near-duplicate of
-// UNESCOExplorer in js/script.js. The two differ in:
-//   - data source        (local JSON file vs. UNESCO CSV)
-//   - storage key        (visitedUSParks vs. visitedUNESCOSites)
-//   - map bounds         (cropped to the US + territories)
-//   - preview lookup     (uses wikipediaTitle from the record, more
-//                         reliable than UNESCO's guess-from-name)
-//   - popup / detail copy (Year Established / Area / State instead of
-//                          Country / Year Inscribed / Criteria)
-//   - no Gist sync        (v1 is local-only; sync is a follow-up issue)
+// v1 of the Parks view — a companion to the UNESCO map.
 //
-// Refactoring the two into a shared base class (SitesExplorer) is tracked
-// as a separate follow-up. For v1 the duplication is tolerated so the two
-// surfaces can evolve independently.
+// Data source: the static data/us-parks.json committed to the repo,
+// populated at build time from the NPS API by
+// scripts/extract-us-parks.js. The NPS record for each park ships with
+// the description and an official image URL, so this class renders
+// previews entirely from the local JSON without any runtime Wikipedia
+// or NPS API call.
+//
+// This class intentionally mirrors the shape of UNESCOExplorer but is
+// not generalized into a shared base — that refactor is tracked as a
+// follow-up. The two surfaces differ enough (data source, storage key,
+// bounds, popup/overlay fields) that extracting a base now would be
+// premature.
 
 class USParksExplorer {
     static VISITED_STYLE = {
@@ -31,15 +31,13 @@ class USParksExplorer {
         fillOpacity: 0.8,
     };
 
-    // Bounds chosen to cover all 63 parks including territories:
-    //   - Alaska / Gates of the Arctic at ~67.8N
-    //   - American Samoa at ~14.25S, 170.68W
-    //   - US Virgin Islands at ~64.73W
-    // A little padding so markers aren't clipped against the edge.
+    // Bounds cover all 63 parks including territories:
+    //   - Gates of the Arctic at ~67.8N (Alaska)
+    //   - American Samoa at ~14.2S, 170.7W
+    //   - US Virgin Islands at ~18.3N, 64.7W
+    // Padded slightly so markers aren't clipped at the edge.
     static MAX_BOUNDS = [[-16, -180], [72, -64]];
-    // Initial view centers on CONUS so the common case (lower-48 parks)
-    // is visible without panning.
-    static INITIAL_CENTER = [39.5, -98.35];
+    static INITIAL_CENTER = [39.5, -98.35]; // CONUS
     static INITIAL_ZOOM = 4;
 
     static STORAGE_KEY = 'visitedUSParks';
@@ -125,8 +123,8 @@ class USParksExplorer {
 
     initMap() {
         this.map = L.map('map', {
-            // The US is contiguous enough that world-wrapping would be
-            // confusing. Disable it and constrain to US bounds instead.
+            // The US is contiguous enough that world-wrapping would just
+            // be confusing. Disable it and pin the viewport to US bounds.
             worldCopyJump: false,
             maxBounds: USParksExplorer.MAX_BOUNDS,
             maxBoundsViscosity: 1.0,
@@ -230,11 +228,14 @@ class USParksExplorer {
         });
     }
 
-    _formatArea(acres) {
-        if (typeof acres !== 'number' || Number.isNaN(acres)) return 'Unknown';
-        return `${acres.toLocaleString('en-US', {
-            maximumFractionDigits: 0,
-        })} acres`;
+    _escapeHtml(str) {
+        if (str == null) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
     }
 
     createPopupContent(site, isVisited) {
@@ -243,18 +244,17 @@ class USParksExplorer {
                 ? 'States'
                 : 'State';
         const stateValue =
-            site.state || (Array.isArray(site.states) ? site.states.join(', ') : '');
+            site.state ||
+            (Array.isArray(site.states) ? site.states.join(', ') : '');
         // Escape single quotes in the site name so the onclick handlers
-        // don't break when a park name contains them (none currently do,
-        // but belt-and-braces).
+        // don't break — park names are hand-curated but keep this safe.
         const safeName = site.name.replace(/'/g, "\\'");
         return `
             <div class="custom-popup">
-                <div class="popup-title">${site.name}</div>
+                <div class="popup-title">${this._escapeHtml(site.name)}</div>
                 <div class="popup-info">
-                    <strong>${stateLabel}:</strong> ${stateValue}<br>
-                    <strong>Established:</strong> ${site.yearEstablished ?? 'Unknown'}<br>
-                    <strong>Area:</strong> ${this._formatArea(site.areaAcres)}
+                    <strong>${stateLabel}:</strong> ${this._escapeHtml(stateValue)}<br>
+                    <strong>Designation:</strong> ${this._escapeHtml(site.designation || 'National Park')}
                 </div>
                 <div class="popup-buttons">
                     <button class="popup-button ${isVisited ? 'visited' : ''}"
@@ -327,14 +327,12 @@ class USParksExplorer {
         }
     }
 
-    async showPreview(siteName) {
+    showPreview(siteName) {
         const overlay = document.getElementById('site-overlay');
         const overlayTitle = document.getElementById('overlay-title');
         const overlayContent = document.getElementById('overlay-content');
 
         overlayTitle.textContent = siteName;
-        overlayContent.innerHTML =
-            '<div class="loading-overlay">Loading park details...</div>';
         overlay.classList.add('show');
 
         const site = this.sites.find((s) => s.name === siteName);
@@ -344,62 +342,12 @@ class USParksExplorer {
             return;
         }
 
-        try {
-            const siteDetails = await this.fetchSiteDetails(site);
-            this.renderSiteDetails(siteDetails, site);
-        } catch (error) {
-            console.error('Error fetching park details:', error);
-            overlayContent.innerHTML = `
-                <div class="error-message">
-                    <h3>Unable to load detailed information</h3>
-                    <p>Please check your internet connection and try again.</p>
-                    <div class="basic-info">
-                        <h4>Basic Information:</h4>
-                        <p><strong>State:</strong> ${site.state || 'Unknown'}</p>
-                        <p><strong>Established:</strong> ${site.yearEstablished ?? 'Unknown'}</p>
-                        <p><strong>Area:</strong> ${this._formatArea(site.areaAcres)}</p>
-                        <p><strong>Coordinates:</strong> ${site.lat.toFixed(4)}, ${site.lng.toFixed(4)}</p>
-                    </div>
-                </div>
-            `;
-        }
+        // Previews are synchronous — description + image ship with the
+        // static JSON, so there's no loading state to worry about.
+        this.renderSiteDetails(site);
     }
 
-    async fetchSiteDetails(site) {
-        // Park records include wikipediaTitle — use it directly rather
-        // than guessing from the display name like UNESCOExplorer does.
-        // Wikipedia's REST summary API expects an encoded page title.
-        const title = site.wikipediaTitle || site.name;
-        const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(
-            title
-        )}`;
-        try {
-            const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.json();
-                return {
-                    title: data.title || site.name,
-                    description: data.extract || 'No description available.',
-                    image: data.thumbnail ? data.thumbnail.source : null,
-                    wikipediaUrl: data.content_urls
-                        ? data.content_urls.desktop.page
-                        : null,
-                };
-            }
-        } catch (error) {
-            console.log('Wikipedia summary fetch failed, using fallback');
-        }
-
-        // Final fallback — a minimal card assembled from the record itself.
-        return {
-            title: site.name,
-            description: `${site.name} National Park is located in ${site.state}. It was established in ${site.yearEstablished}.`,
-            image: null,
-            wikipediaUrl: `https://en.wikipedia.org/wiki/${encodeURIComponent(title)}`,
-        };
-    }
-
-    renderSiteDetails(details, site) {
+    renderSiteDetails(site) {
         const overlayContent = document.getElementById('overlay-content');
         const isVisited = this.visitedSites.has(site.name);
         const stateLabel =
@@ -407,16 +355,24 @@ class USParksExplorer {
                 ? 'States'
                 : 'State';
         const stateValue =
-            site.state || (Array.isArray(site.states) ? site.states.join(', ') : '');
+            site.state ||
+            (Array.isArray(site.states) ? site.states.join(', ') : '');
         const safeName = site.name.replace(/'/g, "\\'");
+        const image = site.image;
+        const imageCredit = image && image.credit ? ` (© ${this._escapeHtml(image.credit)})` : '';
 
         overlayContent.innerHTML = `
             <div class="site-details">
                 ${
-                    details.image
+                    image && image.url
                         ? `
                     <div class="site-image">
-                        <img src="${details.image}" alt="${details.title}" onerror="this.style.display='none'">
+                        <img src="${this._escapeHtml(image.url)}" alt="${this._escapeHtml(image.altText || site.name)}" onerror="this.style.display='none'">
+                        ${
+                            image.caption
+                                ? `<div style="font-size: 12px; color: var(--text-muted); padding: 6px 8px 0;">${this._escapeHtml(image.caption)}${imageCredit}</div>`
+                                : ''
+                        }
                     </div>
                 `
                         : ''
@@ -425,20 +381,23 @@ class USParksExplorer {
                 <div class="site-info">
                     <div class="info-section">
                         <h3>Description</h3>
-                        <p>${details.description}</p>
+                        <p>${this._escapeHtml(site.description || `${site.name} National Park.`)}</p>
                     </div>
 
                     <div class="info-section">
                         <h3>Basic Information</h3>
                         <div class="info-grid">
                             <div class="info-item">
-                                <strong>${stateLabel}:</strong> ${stateValue}
+                                <strong>Full Name:</strong> ${this._escapeHtml(site.fullName || site.name)}
                             </div>
                             <div class="info-item">
-                                <strong>Established:</strong> ${site.yearEstablished ?? 'Unknown'}
+                                <strong>${stateLabel}:</strong> ${this._escapeHtml(stateValue)}
                             </div>
                             <div class="info-item">
-                                <strong>Area:</strong> ${this._formatArea(site.areaAcres)}
+                                <strong>Designation:</strong> ${this._escapeHtml(site.designation || 'National Park')}
+                            </div>
+                            <div class="info-item">
+                                <strong>Park Code:</strong> ${this._escapeHtml(site.parkCode || '—')}
                             </div>
                             <div class="info-item">
                                 <strong>Coordinates:</strong>
@@ -458,10 +417,10 @@ class USParksExplorer {
                             ${isVisited ? '✓ Visited' : 'Mark as Visited'}
                         </button>
                         ${
-                            details.wikipediaUrl
+                            site.url
                                 ? `
-                            <a href="${details.wikipediaUrl}" target="_blank" class="action-button wikipedia-link">
-                                View on Wikipedia
+                            <a href="${this._escapeHtml(site.url)}" target="_blank" rel="noopener" class="action-button wikipedia-link">
+                                View on nps.gov
                             </a>
                         `
                                 : ''
@@ -504,9 +463,9 @@ class USParksExplorer {
     }
 }
 
-// Theme management — intentionally duplicated from script.js so the Parks
-// page stays self-contained. A shared `js/theme.js` is a good extraction
-// target once the two views are generalized.
+// Theme management — duplicated from script.js so the Parks page is
+// self-contained. A shared js/theme.js is a reasonable extraction target
+// when (or if) the two views are generalized.
 class ThemeManager {
     constructor() {
         this.currentTheme = localStorage.getItem('theme') || 'system';

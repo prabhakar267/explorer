@@ -1,762 +1,1266 @@
 [
   {
     "name": "Acadia",
-    "wikipediaTitle": "Acadia National Park",
-    "lat": 44.35,
-    "lng": -68.21,
+    "fullName": "Acadia National Park",
+    "parkCode": "acad",
+    "designation": "National Park",
     "states": [
       "Maine"
     ],
     "state": "Maine",
-    "yearEstablished": 1919,
-    "areaAcres": 49071.4
+    "lat": 44.409286,
+    "lng": -68.247501,
+    "description": "Acadia National Park protects the natural beauty of the highest rocky headlands along the Atlantic coastline of the United States, an abundance of habitats, and a rich cultural heritage. At 4 million visits a year, it's one of the top 10 most-visited national parks in the United States. Visitors enjoy 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads.",
+    "url": "https://www.nps.gov/acad/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B477B-1DD8-B71B-0BCB48E009241BAA.jpg",
+      "altText": "A brilliant sunset filled with hues of blue, red, orange, magenta, and purple highlight the sky.",
+      "caption": "As the tallest point on the eastern seaboard Cadillac Mountain provides fantastic viewpoints.",
+      "credit": "NPS / Kristi Rugg"
+    }
   },
   {
     "name": "American Samoa",
-    "wikipediaTitle": "National Park of American Samoa",
-    "lat": -14.25,
-    "lng": -170.68,
+    "fullName": "National Park of American Samoa",
+    "parkCode": "npsa",
+    "designation": "National Park",
     "states": [
       "American Samoa"
     ],
     "state": "American Samoa",
-    "yearEstablished": 1988,
-    "areaAcres": 8256.67
+    "lat": -14.22865935,
+    "lng": -169.8503777,
+    "description": "The National Park of American Samoa invites you to discover the vibrant culture and stunning landscapes of the South Pacific. Experience a world unlike any other, where natural beauty and cultural heritage are protected for future generations. Join us in exploring these islands of sacred earth!",
+    "url": "https://www.nps.gov/npsa/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84F643-1DD8-B71B-0BC6F3EA2E1F58AB.jpg",
+      "altText": "Tuafanua Trail",
+      "caption": "Pola Island rises over 400 feet straight out of the ocean off Tutuila. A short walk from Vatia village, Pola is an ideal nesting site for many species of seabirds.",
+      "credit": "NPS Photo / Michael Larson"
+    }
   },
   {
     "name": "Arches",
-    "wikipediaTitle": "Arches National Park",
-    "lat": 38.68,
-    "lng": -109.57,
+    "fullName": "Arches National Park",
+    "parkCode": "arch",
+    "designation": "National Park",
     "states": [
       "Utah"
     ],
     "state": "Utah",
-    "yearEstablished": 1971,
-    "areaAcres": 76678.98
+    "lat": 38.72261844,
+    "lng": -109.5863666,
+    "description": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+    "url": "https://www.nps.gov/arch/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg",
+      "altText": "A crowd of people sit and watch the sunset at delicate arch.",
+      "caption": "Exploration awaits at Arches",
+      "credit": "NPS/Veronica Verdin"
+    }
   },
   {
     "name": "Badlands",
-    "wikipediaTitle": "Badlands National Park",
-    "lat": 43.75,
-    "lng": -102.5,
+    "fullName": "Badlands National Park",
+    "parkCode": "badl",
+    "designation": "National Park",
     "states": [
       "South Dakota"
     ],
     "state": "South Dakota",
-    "yearEstablished": 1978,
-    "areaAcres": 242755.94
+    "lat": 43.68584846,
+    "lng": -102.482942,
+    "description": "The rugged beauty of the Badlands draws visitors from around the world. These striking geologic deposits contain one of the world’s richest fossil beds. Ancient horses and rhinos once roamed here. The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.",
+    "url": "https://www.nps.gov/badl/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82EE63-1DD8-B71B-0BD6EE0FDCB5D402.jpg",
+      "altText": "Layered badlands formations behind fields of green grass under cloudy and billowing clouds.",
+      "caption": "Summer storms are frequently violent and unpredictable.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Big Bend",
-    "wikipediaTitle": "Big Bend National Park",
-    "lat": 29.25,
-    "lng": -103.25,
+    "fullName": "Big Bend National Park",
+    "parkCode": "bibe",
+    "designation": "National Park",
     "states": [
       "Texas"
     ],
     "state": "Texas",
-    "yearEstablished": 1944,
-    "areaAcres": 801163.21
+    "lat": 29.29817767,
+    "lng": -103.2297897,
+    "description": "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and species diversity is the best in the country. This magical place is Big Bend...",
+    "url": "https://www.nps.gov/bibe/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/8BF8356B-BB63-76A4-19F5296EF94C96B4.jpg",
+      "altText": "Blooming Cenizo",
+      "caption": "Cenizo, or Big Bend Silverleaf blossoms after summer rains.",
+      "credit": "NPS"
+    }
   },
   {
     "name": "Biscayne",
-    "wikipediaTitle": "Biscayne National Park",
-    "lat": 25.65,
-    "lng": -80.08,
+    "fullName": "Biscayne National Park",
+    "parkCode": "bisc",
+    "designation": "National Park",
     "states": [
       "Florida"
     ],
     "state": "Florida",
-    "yearEstablished": 1980,
-    "areaAcres": 172971.11
+    "lat": 25.490587,
+    "lng": -80.21023851,
+    "description": "Within sight of Miami, yet worlds away, Biscayne protects a rare combination of aquamarine waters, emerald islands, and fish-bejeweled coral reefs. Evidence of 10,000 years of human history is here too; from prehistoric tribes to shipwrecks, and pineapple farmers to presidents. For many, the park is a boating, fishing, and diving destination, while others enjoy a warm breeze and peaceful scenery.",
+    "url": "https://www.nps.gov/bisc/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8717A4-1DD8-B71B-0B2EED68CFA7E008.jpg",
+      "altText": "Coral reef with two snorkelers diving below the surface",
+      "caption": "Snorkeling is a great way to explore the coral reefs in the park",
+      "credit": "NPS image by Shaun Wolfe"
+    }
   },
   {
     "name": "Black Canyon of the Gunnison",
-    "wikipediaTitle": "Black Canyon of the Gunnison National Park",
-    "lat": 38.57,
-    "lng": -107.72,
+    "fullName": "Black Canyon Of The Gunnison National Park",
+    "parkCode": "blca",
+    "designation": "National Park",
     "states": [
       "Colorado"
     ],
     "state": "Colorado",
-    "yearEstablished": 1999,
-    "areaAcres": 30779.83
+    "lat": 38.57779869,
+    "lng": -107.7242756,
+    "description": "Big enough to be overwhelming, yet still intimate enough to feel the pulse of time. Come see some of the steepest cliffs, oldest rock, and craggiest spires in North America. Forces of nature and the Gunnison River sculpted this canyon over two million years. The result is a vertical wilderness of rock, water, and sky.",
+    "url": "https://www.nps.gov/blca/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81655F-1DD8-B71B-0B4BCFFDB74EE723.jpg",
+      "altText": "Black Canyon near Tomichi Point",
+      "caption": "Black Canyon near Tomichi Point",
+      "credit": "NPS Photo/Lynch"
+    }
   },
   {
     "name": "Bryce Canyon",
-    "wikipediaTitle": "Bryce Canyon National Park",
-    "lat": 37.57,
-    "lng": -112.18,
+    "fullName": "Bryce Canyon National Park",
+    "parkCode": "brca",
+    "designation": "National Park",
     "states": [
       "Utah"
     ],
     "state": "Utah",
-    "yearEstablished": 1928,
-    "areaAcres": 35835.08
+    "lat": 37.58399144,
+    "lng": -112.1826689,
+    "description": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
+    "url": "https://www.nps.gov/brca/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg",
+      "altText": "A red rock landscape and plateau forest glows with the morning sun",
+      "caption": "Viewpoints of the iconic Bryce Amphitheater are located along the first 3 miles of the park road and are a popular destination at sunrise.",
+      "credit": "NPS Photo / Peter Densmore"
+    }
   },
   {
     "name": "Canyonlands",
-    "wikipediaTitle": "Canyonlands National Park",
-    "lat": 38.2,
-    "lng": -109.93,
+    "fullName": "Canyonlands National Park",
+    "parkCode": "cany",
+    "designation": "National Park",
     "states": [
       "Utah"
     ],
     "state": "Utah",
-    "yearEstablished": 1964,
-    "areaAcres": 337597.83
+    "lat": 38.24555783,
+    "lng": -109.8801624,
+    "description": "Canyonlands is a wilderness of canyons, buttes, and spires carved by the Colorado River and Green River. The park is divided into four distinct districts; no roads join them together. The districts share similar desert ecosystems, but each one provides unique opportunities for adventure and discovery.",
+    "url": "https://www.nps.gov/cany/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg",
+      "altText": "a broad stone arch with rock pinnacles in the distance",
+      "caption": "Mesa Arch, at Island in the Sky, is a great spot for photographers.",
+      "credit": "NPS/Neal Herbert"
+    }
   },
   {
     "name": "Capitol Reef",
-    "wikipediaTitle": "Capitol Reef National Park",
-    "lat": 38.2,
-    "lng": -111.17,
+    "fullName": "Capitol Reef National Park",
+    "parkCode": "care",
+    "designation": "National Park",
     "states": [
       "Utah"
     ],
     "state": "Utah",
-    "yearEstablished": 1971,
-    "areaAcres": 241904.5
+    "lat": 38.2821653131,
+    "lng": -111.247048378,
+    "description": "Located in south-central Utah in the heart of red rock country, Capitol Reef National Park is a hidden treasure filled with cliffs, canyons, domes, and bridges in the Waterpocket Fold, a geologic monocline (a wrinkle on the earth) extending almost 100 miles.",
+    "url": "https://www.nps.gov/care/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E3C7-1DD8-B71B-0B4181834EE46AED.jpg",
+      "altText": "Wingate Sandstone cliffs behind historic barn and farmhouse",
+      "caption": "Windgate sandstone towers above historic Fruita farms and homes",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Carlsbad Caverns",
-    "wikipediaTitle": "Carlsbad Caverns National Park",
-    "lat": 32.17,
-    "lng": -104.44,
+    "fullName": "Carlsbad Caverns National Park",
+    "parkCode": "cave",
+    "designation": "National Park",
     "states": [
       "New Mexico"
     ],
     "state": "New Mexico",
-    "yearEstablished": 1930,
-    "areaAcres": 46766.45
+    "lat": 32.14089463,
+    "lng": -104.5529688,
+    "description": "High ancient sea ledges, deep rocky canyons, flowering cactus, and desert wildlife—treasures above the ground in the Chihuahuan Desert. Hidden beneath the surface are more than 119 caves—formed when sulfuric acid dissolved limestone leaving behind caverns of all sizes.",
+    "url": "https://www.nps.gov/cave/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/29C3C977-AAE6-B7FD-3C107828D704A5CB.jpg",
+      "altText": "Photo of Giant Dome and Twin Domes in the Big Room.",
+      "caption": "Giant and Twin domes in the Big Room.",
+      "credit": "NPS / Michael Larson"
+    }
   },
   {
     "name": "Channel Islands",
-    "wikipediaTitle": "Channel Islands National Park",
-    "lat": 34.01,
-    "lng": -119.42,
+    "fullName": "Channel Islands National Park",
+    "parkCode": "chis",
+    "designation": "National Park",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1980,
-    "areaAcres": 249561
+    "lat": 33.98680093,
+    "lng": -119.9112735,
+    "description": "Channel Islands National Park encompasses five remarkable islands and their ocean environment, preserving and protecting a wealth of natural and cultural resources. Isolation over thousands of years has created unique animals, plants, and archeological resources found nowhere else on Earth and helped preserve a place where visitors can experience coastal southern California as it once was.",
+    "url": "https://www.nps.gov/chis/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/8DE774D1-CB22-37F2-D826E3F0A73D303A.jpg",
+      "altText": "Steep, rugged ocean cliffs extending in an island chain.",
+      "caption": "Inspiration Point, Anacapa Island: One of the most spectacular views in the park can be found from Inspiration Point. Looking to the west, one may see Middle and West Anacapa, with Santa Cruz Island in the distance.",
+      "credit": "Tim Hauf, timhaufphotography.com"
+    }
   },
   {
     "name": "Congaree",
-    "wikipediaTitle": "Congaree National Park",
-    "lat": 33.78,
-    "lng": -80.78,
+    "fullName": "Congaree National Park",
+    "parkCode": "cong",
+    "designation": "National Park",
     "states": [
       "South Carolina"
     ],
     "state": "South Carolina",
-    "yearEstablished": 2003,
-    "areaAcres": 26692.6
+    "lat": 33.79187523,
+    "lng": -80.74867805,
+    "description": "Astonishing biodiversity exists in Congaree National Park, the largest intact expanse of old growth bottomland hardwood forest remaining in the southeastern United States. Waters from the Congaree and Wateree Rivers sweep through the floodplain, carrying nutrients and sediments that nourish and rejuvenate this ecosystem and support the growth of national and state champion trees.",
+    "url": "https://www.nps.gov/cong/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C862C60-1DD8-B71B-0BB65F7B652BA840.jpg",
+      "altText": "View of the Congaree River during the Fall",
+      "caption": "View of the Congaree River during the Fall",
+      "credit": "NPS"
+    }
   },
   {
     "name": "Crater Lake",
-    "wikipediaTitle": "Crater Lake National Park",
-    "lat": 42.94,
-    "lng": -122.1,
+    "fullName": "Crater Lake National Park",
+    "parkCode": "crla",
+    "designation": "National Park",
     "states": [
       "Oregon"
     ],
     "state": "Oregon",
-    "yearEstablished": 1902,
-    "areaAcres": 183224.05
+    "lat": 42.94065854,
+    "lng": -122.1338414,
+    "description": "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak. Scientists marvel at its purity—fed by rain and snow, it’s the deepest lake in the USA and one of the most pristine on Earth. Artists, photographers, and sightseers gaze in wonder at its blue water and stunning setting atop the Cascade Mountain Range.",
+    "url": "https://www.nps.gov/crla/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B227E-1DD8-B71B-0BEECDD24771C381.jpg",
+      "altText": "A view of Crater Lake and Wizard Island",
+      "caption": "Looking at Crater Lake and Wizard Island from Discovery Point",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Cuyahoga Valley",
-    "wikipediaTitle": "Cuyahoga Valley National Park",
-    "lat": 41.24,
-    "lng": -81.55,
+    "fullName": "Cuyahoga Valley National Park",
+    "parkCode": "cuva",
+    "designation": "National Park",
     "states": [
       "Ohio"
     ],
     "state": "Ohio",
-    "yearEstablished": 2000,
-    "areaAcres": 32571.89
+    "lat": 41.26093905,
+    "lng": -81.57116722,
+    "description": "Though a short distance from the urban areas of Cleveland and Akron, Cuyahoga Valley National Park seems worlds away. The park is a refuge for native plants and wildlife, and provides routes of discovery for visitors. The winding Cuyahoga River gives way to deep forests, rolling hills, and open farmlands. Walk or ride the Towpath Trail to follow the historic route of the Ohio & Erie Canal.",
+    "url": "https://www.nps.gov/cuva/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7425874-D97F-BFD6-36581A36C8A7FF0D.jpg",
+      "altText": "People in bright orange kayaks paddle around a bend in a river, past green trees and a rocky shore.",
+      "caption": "A group of kayaks passing a rocky beach on the Cuyahoga River in summer.",
+      "credit": "NPS Photo / D.J. Reiser"
+    }
   },
   {
     "name": "Death Valley",
-    "wikipediaTitle": "Death Valley National Park",
-    "lat": 36.24,
-    "lng": -116.82,
+    "fullName": "Death Valley National Park",
+    "parkCode": "deva",
+    "designation": "National Park",
     "states": [
       "California",
       "Nevada"
     ],
     "state": "California, Nevada",
-    "yearEstablished": 1994,
-    "areaAcres": 3408395.63
+    "lat": 36.48753731,
+    "lng": -117.134395,
+    "description": "In this below-sea-level basin, steady drought and record summer heat make Death Valley a land of extremes. Yet, each extreme has a striking contrast. Towering peaks are frosted with winter snow. Rare rainstorms bring vast fields of wildflowers. Lush oases harbor tiny fish and refuge for wildlife and humans. Despite its morbid name, a great diversity of life thrives in Death Valley.",
+    "url": "https://www.nps.gov/deva/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/84A6F4EF-9F8D-2784-0B3D03B4C5103EF8.jpg",
+      "altText": "Snowcapped mountains surrounded by bright blue skies and frames by gold wildflowers on a valley floo",
+      "caption": "Golden flowers cover a typically rocky and dry valley floor in the spring.",
+      "credit": "NPS"
+    }
   },
   {
     "name": "Denali",
-    "wikipediaTitle": "Denali National Park and Preserve",
-    "lat": 63.33,
-    "lng": -150.5,
+    "fullName": "Denali National Park & Preserve",
+    "parkCode": "dena",
+    "designation": "National Park & Preserve",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1917,
-    "areaAcres": 4740911.16
+    "lat": 63.29777484,
+    "lng": -151.0526568,
+    "description": "Denali is six million acres of wild land, bisected by one ribbon of road. Travelers along it see the relatively low-elevation taiga forest give way to high alpine tundra and snowy mountains, culminating in North America's tallest peak, 20,310' Mount McKinley. Wild animals large and small roam un-fenced lands, living as they have for ages. Solitude, tranquility and wilderness await.",
+    "url": "https://www.nps.gov/dena/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83CC90-1DD8-B71B-0B1F35E5ED96E36F.jpg",
+      "altText": "a white colored sheep standing on a mountainside overlooking a green valley",
+      "caption": "Congress originally created Denali National Park (called Mount McKinley National Park, at the time) to protect wildlife, particularly Dall sheep",
+      "credit": "NPS Photo / Nathan Kostegian"
+    }
   },
   {
     "name": "Dry Tortugas",
-    "wikipediaTitle": "Dry Tortugas National Park",
-    "lat": 24.63,
-    "lng": -82.87,
+    "fullName": "Dry Tortugas National Park",
+    "parkCode": "drto",
+    "designation": "National Park",
     "states": [
       "Florida"
     ],
     "state": "Florida",
-    "yearEstablished": 1992,
-    "areaAcres": 64701.22
+    "lat": 24.628741,
+    "lng": -82.87319,
+    "description": "Almost 70 miles (113 km) west of Key West lies the remote Dry Tortugas National Park. This 100-square mile park is mostly open water with seven small islands. Accessible only by boat or seaplane, the park is known the world over as the home of magnificent Fort Jefferson, picturesque blue waters, superlative coral reefs and marine life, and the vast assortment of bird life that frequents the area.",
+    "url": "https://www.nps.gov/drto/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81050F-1DD8-B71B-0B45EDC68B621860.jpg",
+      "altText": "A few of the stars at night with a view of Fort Jefferson.",
+      "caption": "The Dry Tortugas is so remote that night sky viewing is possible.",
+      "credit": "NPS Photo / Brett Seymour"
+    }
   },
   {
     "name": "Everglades",
-    "wikipediaTitle": "Everglades National Park",
-    "lat": 25.32,
-    "lng": -80.93,
+    "fullName": "Everglades National Park",
+    "parkCode": "ever",
+    "designation": "National Park",
     "states": [
       "Florida"
     ],
     "state": "Florida",
-    "yearEstablished": 1934,
-    "areaAcres": 1508938.57
+    "lat": 25.37294225,
+    "lng": -80.88200301,
+    "description": "Established in 1947 as the first national park created for its biodiversity, Everglades National Park protects 1.5 million acres of wetland, forest, and marine habitats and the native plants and animals that call it home. With several international designations, the park provides a major source of drinking water for local residents of South Florida and recreational opportunities for all.",
+    "url": "https://www.nps.gov/ever/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/17EC840E-9926-2E09-F2DD47A282915BBB.jpg",
+      "altText": "A sunset creates a silhouette of a cypress tree with needle-like leaves that is shaped like an 'N'.",
+      "caption": "Cypress Tree Sunrise (2020 Photo Contest)",
+      "credit": "NPS Photo by Miguel Salas"
+    }
   },
   {
     "name": "Gates of the Arctic",
-    "wikipediaTitle": "Gates of the Arctic National Park and Preserve",
-    "lat": 67.78,
-    "lng": -153.3,
+    "fullName": "Gates Of The Arctic National Park & Preserve",
+    "parkCode": "gaar",
+    "designation": "National Park & Preserve",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 7523897.45
+    "lat": 67.75961636,
+    "lng": -153.2917758,
+    "description": "This vast landscape does not contain any roads or trails. Visitors discover intact ecosystems where people have lived with the land for over ten thousand years. Wild rivers meander through glacier-carved valleys, caribou migrate along age-old trails, endless summer light fades into aurora-lit night skies of winter. Virtually unchanged, except by the forces of nature.",
+    "url": "https://www.nps.gov/gaar/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8B6B-1DD8-B71B-0B8B89FE0C6B6F4F.jpg",
+      "altText": "Aerial view of the Alatna River as it winds through a valley",
+      "caption": "Aerial view of the Alatna River as it winds through a valley",
+      "credit": "NPS Photo / Sean Tevebaugh"
+    }
   },
   {
     "name": "Gateway Arch",
-    "wikipediaTitle": "Gateway Arch National Park",
-    "lat": 38.63,
-    "lng": -90.19,
+    "fullName": "Gateway Arch National Park",
+    "parkCode": "jeff",
+    "designation": "National Park",
     "states": [
       "Missouri"
     ],
     "state": "Missouri",
-    "yearEstablished": 2018,
-    "areaAcres": 192.83
+    "lat": 38.6258069,
+    "lng": -90.1892508,
+    "description": "Gateway Arch National Park commemorates President Jefferson’s vision of a continental nation, the individuals and cultural groups who helped shape its history, St. Louis’ role in westward expansion, and Dred and Harriet Scott, who sued for their freedom in the Old Courthouse.",
+    "url": "https://www.nps.gov/jeff/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/200BA7E6-D782-9A97-A8C36AC178DEB31C.jpg",
+      "altText": "The Gateway Arch and Old Courthouse with a row of pink blooming cherry trees in front",
+      "caption": "The blooming cherry trees in Kiener Plaza provide a wonderful foreground for the Gateway Arch and Old Courthouse in spring.",
+      "credit": "NPS photo/Jennifer Clark"
+    }
   },
   {
     "name": "Glacier",
-    "wikipediaTitle": "Glacier National Park (U.S.)",
-    "lat": 48.8,
-    "lng": -114,
+    "fullName": "Glacier National Park",
+    "parkCode": "glac",
+    "designation": "National Park",
     "states": [
       "Montana"
     ],
     "state": "Montana",
-    "yearEstablished": 1910,
-    "areaAcres": 1013126.39
+    "lat": 48.68414678,
+    "lng": -113.8009306,
+    "description": "A showcase of melting glaciers, alpine meadows, carved valleys, and spectacular lakes. With over 700 miles of trails, Glacier is a paradise for adventurous visitors seeking a landscape steeped in human culture. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road.",
+    "url": "https://www.nps.gov/glac/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/C20E6CD3-CDF7-B3AB-8448CDCD7FD590FF.jpg",
+      "altText": "Large mountains dotted with snow loom above a rocky meadow filled with yellow flowers.",
+      "caption": "Glacier lilies dot the landscape off the Highline Trail.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Glacier Bay",
-    "wikipediaTitle": "Glacier Bay National Park and Preserve",
-    "lat": 58.5,
-    "lng": -137,
+    "fullName": "Glacier Bay National Park & Preserve",
+    "parkCode": "glba",
+    "designation": "National Park & Preserve",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 3223383.43
+    "lat": 58.80086718,
+    "lng": -136.8407579,
+    "description": "Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glacier Bay National Park and Preserve is known as Homeland to the Huna and Yakutat Lingít, and is a highlight of Alaska's Inside Passage. From sea to summit, Glacier Bay offers limitless opportunities for adventure and inspiration.",
+    "url": "https://www.nps.gov/glba/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C791618-1DD8-B71B-0B113FBF2EC1D614.jpg",
+      "altText": "Cruising Glacier Bay",
+      "caption": "Passengers line the deck to enjoy the icy scene at Margerie Glacier",
+      "credit": "NPS / T. VandenBerg"
+    }
   },
   {
     "name": "Grand Canyon",
-    "wikipediaTitle": "Grand Canyon National Park",
-    "lat": 36.06,
-    "lng": -112.14,
+    "fullName": "Grand Canyon National Park",
+    "parkCode": "grca",
+    "designation": "National Park",
     "states": [
       "Arizona"
     ],
     "state": "Arizona",
-    "yearEstablished": 1919,
-    "areaAcres": 1201647.03
+    "lat": 36.0001165336,
+    "lng": -112.121516363,
+    "description": "Entirely within the state of Arizona, the park encompasses 278 miles (447 km) of the Colorado River and adjacent uplands. Located on the ancestral homelands of 11 present day Tribal Communities, Grand Canyon is one of the most spectacular examples of erosion anywhere in the world—a mile deep canyon unmatched in the incomparable vistas it offers visitors from both north and south rims.",
+    "url": "https://www.nps.gov/grca/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B12D1-1DD8-B71B-0BCE0712F9CEA155.jpg",
+      "altText": "The canyon glows orange as people visit Mather Point, a rock outcropping that juts into Grand Canyon",
+      "caption": "People come from all over the world to view Grand Canyon's sunset",
+      "credit": "NPS/M.Quinn"
+    }
   },
   {
     "name": "Grand Teton",
-    "wikipediaTitle": "Grand Teton National Park",
-    "lat": 43.73,
-    "lng": -110.8,
+    "fullName": "Grand Teton National Park",
+    "parkCode": "grte",
+    "designation": "National Park",
     "states": [
       "Wyoming"
     ],
     "state": "Wyoming",
-    "yearEstablished": 1929,
-    "areaAcres": 310044.36
+    "lat": 43.81853565,
+    "lng": -110.7054666,
+    "description": "Soaring over a landscape rich with wildlife, pristine lakes, and majestic alpine vistas, the Teton Range stands as a testament to generations of stewards. For over 11,000 years, communities have thrived in the valley known as Jackson Hole, turning these mountains into more than just peaks—they embody imagination and enduring human connection.",
+    "url": "https://www.nps.gov/grte/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA4C5-1DD8-B71B-0B7FCC54E43FEE79.jpg",
+      "altText": "Backpackers in North Fork Cascade Canyon, Grand Teton behind",
+      "caption": "Backpackers in North Fork Cascade Canyon approaching Paintbrush Divide.",
+      "credit": "NPS Photo / D. Lehle"
+    }
   },
   {
     "name": "Great Basin",
-    "wikipediaTitle": "Great Basin National Park",
-    "lat": 38.98,
-    "lng": -114.3,
+    "fullName": "Great Basin National Park",
+    "parkCode": "grba",
+    "designation": "National Park",
     "states": [
       "Nevada"
     ],
     "state": "Nevada",
-    "yearEstablished": 1986,
-    "areaAcres": 77180
+    "lat": 38.94617378,
+    "lng": -114.2579782,
+    "description": "From the 13,063-foot summit of Wheeler Peak to the sagebrush-covered foothills, Great Basin National Park hosts a sample of the incredible diversity of the larger Great Basin region. Come and partake of the solitude of the wilderness, walk among ancient bristlecone pines, bask in the darkest of night skies, and explore mysterious subterranean passages. There's a lot more than just desert here.",
+    "url": "https://www.nps.gov/grba/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/FD29737E-9549-8EF4-90C1076486DE559A.jpeg",
+      "altText": "blue sky with green trees in mountain cirque",
+      "caption": "Trail to ancient bristlecone pine trees.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Great Sand Dunes",
-    "wikipediaTitle": "Great Sand Dunes National Park and Preserve",
-    "lat": 37.73,
-    "lng": -105.51,
+    "fullName": "Great Sand Dunes National Park & Preserve",
+    "parkCode": "grsa",
+    "designation": "National Park & Preserve",
     "states": [
       "Colorado"
     ],
     "state": "Colorado",
-    "yearEstablished": 2004,
-    "areaAcres": 107345.73
+    "lat": 37.79256812,
+    "lng": -105.5919572,
+    "description": "The tallest dunes in North America are the centerpiece in a diverse landscape of grasslands, wetlands, forests, alpine lakes, and tundra. Stay on a moonless night to experience countless stars in this International Dark Sky Park! Open 24 hours a day, 7 days a week year-round. There are no timed entries or reservations to visit.",
+    "url": "https://www.nps.gov/grsa/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/BC4ACB4C-0A6D-0188-E9A6AA1217827461.jpg",
+      "altText": "Grasslands, large dunes, and snow-capped peaks at sunset",
+      "caption": "The view at the park entrance contrasts giant dunes and snow-capped mountains.",
+      "credit": "NPS/Patrick Myers"
+    }
   },
   {
     "name": "Great Smoky Mountains",
-    "wikipediaTitle": "Great Smoky Mountains National Park",
-    "lat": 35.68,
-    "lng": -83.53,
+    "fullName": "Great Smoky Mountains National Park",
+    "parkCode": "grsm",
+    "designation": "National Park",
     "states": [
       "North Carolina",
       "Tennessee"
     ],
     "state": "North Carolina, Tennessee",
-    "yearEstablished": 1934,
-    "areaAcres": 522426.88
+    "lat": 35.60116374,
+    "lng": -83.50818326,
+    "description": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park. Plan your visit today!",
+    "url": "https://www.nps.gov/grsm/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg",
+      "altText": "A thick layer of frost covers the fields, trees, and mountains in Cades Cove.",
+      "caption": "Wintertime brings a quiet beauty to the Great Smoky Mountains.",
+      "credit": "Kristina Plaas"
+    }
   },
   {
     "name": "Guadalupe Mountains",
-    "wikipediaTitle": "Guadalupe Mountains National Park",
-    "lat": 31.92,
-    "lng": -104.87,
+    "fullName": "Guadalupe Mountains National Park",
+    "parkCode": "gumo",
+    "designation": "National Park",
     "states": [
       "Texas"
     ],
     "state": "Texas",
-    "yearEstablished": 1972,
-    "areaAcres": 86367.1
+    "lat": 31.92304462,
+    "lng": -104.885527,
+    "description": "Come experience mountains and canyons, desert and dunes, night skies and spectacular vistas within a place unlike any other. Guadalupe Mountains National Park protects the world's most extensive Permian fossil reef, the four highest peaks in Texas, an environmentally diverse collection of flora and fauna, and the stories of lives shaped through conflict, cooperation and survival.",
+    "url": "https://www.nps.gov/gumo/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C825533-1DD8-B71B-0B6FDF436F604A3C.jpg",
+      "altText": "El Capitan with blooming claret cup cacti",
+      "caption": "Blossoming claret cup cacti add a splash of color to the Chihuahuan desert.",
+      "credit": "NPS/Bieri"
+    }
   },
   {
     "name": "Haleakalā",
-    "wikipediaTitle": "Haleakalā National Park",
-    "lat": 20.72,
-    "lng": -156.17,
+    "fullName": "Haleakalā National Park",
+    "parkCode": "hale",
+    "designation": "National Park",
     "states": [
       "Hawaii"
     ],
     "state": "Hawaii",
-    "yearEstablished": 1961,
-    "areaAcres": 33488.98
+    "lat": 20.70693015,
+    "lng": -156.1591775,
+    "description": "This special place vibrates with stories of ancient and modern Hawaiian culture and protects the bond between the land and its people. The park also cares for endangered species, some of which exist nowhere else. Come visit this special place - renew your spirit amid stark volcanic landscapes and sub-tropical rain forest with an unforgettable hike through the backcountry.",
+    "url": "https://www.nps.gov/hale/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3D05E583-1DD8-B71B-0BBFF82F7F78AF6A.jpg",
+      "altText": "'Ahinahina blooms in Haleakala crater",
+      "caption": "'Ahinahina silversword blooms in Haleakala crater",
+      "credit": "NPS"
+    }
   },
   {
     "name": "Hawaiʻi Volcanoes",
-    "wikipediaTitle": "Hawaiʻi Volcanoes National Park",
-    "lat": 19.38,
-    "lng": -155.2,
+    "fullName": "Hawaiʻi Volcanoes National Park",
+    "parkCode": "havo",
+    "designation": "National Park",
     "states": [
       "Hawaii"
     ],
     "state": "Hawaii",
-    "yearEstablished": 1916,
-    "areaAcres": 344812.18
+    "lat": 19.3355036,
+    "lng": -155.4700257,
+    "description": "Hawai‘i Volcanoes National Park protects some of the most unique geological, biological, and cherished cultural landscapes in the world. Extending from sea level to 13,680 feet, the park encompasses the summits of two of the world's most active volcanoes - Kīlauea and Mauna Loa - and is a designated International Biosphere Reserve and UNESCO World Heritage Site.",
+    "url": "https://www.nps.gov/havo/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
+      "altText": "Rocky coastline with palm trees and a cliff beyon",
+      "caption": "Coastline of Hawaiʻi Volcanoes National Park",
+      "credit": "Courtesy of J. Frank"
+    }
   },
   {
     "name": "Hot Springs",
-    "wikipediaTitle": "Hot Springs National Park",
-    "lat": 34.51,
-    "lng": -93.05,
+    "fullName": "Hot Springs National Park",
+    "parkCode": "hosp",
+    "designation": "National Park",
     "states": [
       "Arkansas"
     ],
     "state": "Arkansas",
-    "yearEstablished": 1921,
-    "areaAcres": 5554.15
+    "lat": 34.52414366,
+    "lng": -93.06332936,
+    "description": "Hot Springs National Park has a rich cultural past. The grand architecture of our historic bathhouses is equally matched by the natural curiosities that have been drawing people here for hundreds of years. Ancient thermal springs, mountain views, incredible geology, forested hikes, and abundant creeks – all in the middle of town – make Hot Springs National Park a unique and beautiful destination.",
+    "url": "https://www.nps.gov/hosp/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/C0D8DFDD-F151-C5B0-3004B0088C98BA5A.jpg",
+      "altText": "A pink sky above gentle white buildings",
+      "caption": "Bathhouse Row as the sun sets",
+      "credit": "Mitch Smith"
+    }
   },
   {
     "name": "Indiana Dunes",
-    "wikipediaTitle": "Indiana Dunes National Park",
-    "lat": 41.6533,
-    "lng": -87.0524,
+    "fullName": "Indiana Dunes National Park",
+    "parkCode": "indu",
+    "designation": "National Park",
     "states": [
       "Indiana"
     ],
     "state": "Indiana",
-    "yearEstablished": 2019,
-    "areaAcres": 15349.08
+    "lat": 41.63765525,
+    "lng": -87.09647445,
+    "description": "Lake Michigan's might has influenced Indiana Dunes for millennia. Wind and waves have shaped the land, leaving a rich mosaic of habitats along these 15 miles of Indiana coast. Over 50 miles of trails lead through shifting sand dunes, quiet woodlands, sunny prairies and lush wetlands. Known for its striking plant and bird diversity, it's easy to find inspiration throughout the park’s 16,000 acres.",
+    "url": "https://www.nps.gov/indu/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/9253EDFB-AAFD-E111-B985CD2747F5C48F.jpg",
+      "altText": "Michigan Lake beach with green grassy dunes in the background, under a blue sky.",
+      "caption": "Central Avenue Beach at low water levels, spring 2006.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Isle Royale",
-    "wikipediaTitle": "Isle Royale National Park",
-    "lat": 48.1,
-    "lng": -88.55,
+    "fullName": "Isle Royale National Park",
+    "parkCode": "isro",
+    "designation": "National Park",
     "states": [
       "Michigan"
     ],
     "state": "Michigan",
-    "yearEstablished": 1940,
-    "areaAcres": 571790.3
+    "lat": 48.01145819,
+    "lng": -88.82780657,
+    "description": "Explore a rugged, isolated island far from our connected communities. Isle Royale offers adventures for backpackers, hikers, boaters, paddlers, and divers. Cross Lake Superior and make a commitment: Become a part of this island, and let it become a part of you. Find peace and refuge in island wilderness – because Isle Royale, in turn, finds refuge in us. Help Isle Royale stay wild.",
+    "url": "https://www.nps.gov/isro/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/6059CAD8-02E8-2E00-2922DF84800167E0.jpg",
+      "altText": "View from above the trees looking down at Duncan Bay Narrows, trees, Lake Superior, and Canada.",
+      "caption": "Isle Royale, located in the northwestern corner of Lake Superior, offers views of the Canadian shoreline.",
+      "credit": "NPS / Paul Brown"
+    }
   },
   {
     "name": "Joshua Tree",
-    "wikipediaTitle": "Joshua Tree National Park",
-    "lat": 33.79,
-    "lng": -115.9,
+    "fullName": "Joshua Tree National Park",
+    "parkCode": "jotr",
+    "designation": "National Park",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1994,
-    "areaAcres": 795155.85
+    "lat": 33.91418525,
+    "lng": -115.8398125,
+    "description": "Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California. Come explore for yourself!",
+    "url": "https://www.nps.gov/jotr/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/306D0D93-9CCA-76E1-AD48268F8D7A7E3E.jpg",
+      "altText": "The sky turns hues of pink and purple over a field of Joshua trees.",
+      "caption": "Quail Springs area at sunset",
+      "credit": "NPS / Emily Hassell"
+    }
   },
   {
     "name": "Katmai",
-    "wikipediaTitle": "Katmai National Park and Preserve",
-    "lat": 58.5,
-    "lng": -155,
+    "fullName": "Katmai National Park & Preserve",
+    "parkCode": "katm",
+    "designation": "National Park & Preserve",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 3674529.33
+    "lat": 58.62235668,
+    "lng": -155.0126574,
+    "description": "A landscape is alive underneath our feet, filled with creatures that remind us what it is to be wild. Katmai was established in 1918 to protect the volcanically devastated region surrounding Novarupta and the Valley of Ten Thousand Smokes. Today, Katmai National Park and Preserve also protects 9,000 years of human history and important habitat for salmon and thousands of brown bears.",
+    "url": "https://www.nps.gov/katm/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0FDB-1DD8-B71B-0B8933ACA92FE6B3.jpg",
+      "altText": "salmon jumping at waterfall",
+      "caption": "Each year, 200,000 to 400,000 sockeye salmon jump Brooks Falls.",
+      "credit": "NPS/David Jacob"
+    }
   },
   {
     "name": "Kenai Fjords",
-    "wikipediaTitle": "Kenai Fjords National Park",
-    "lat": 59.92,
-    "lng": -149.65,
+    "fullName": "Kenai Fjords National Park",
+    "parkCode": "kefj",
+    "designation": "National Park",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 669650.05
+    "lat": 59.81804414,
+    "lng": -150.106502,
+    "description": "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush forests along the fjords once carved by the vast expanse of ice. Today, shrinking glaciers bear witness to the effects of our changing climate.",
+    "url": "https://www.nps.gov/kefj/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798EAB-1DD8-B71B-0BC4BEFB197F2C90.jpg",
+      "altText": "aerial image of Bear Glacier",
+      "caption": "Bear Glacier is the largest of nearly 40 glaciers that flow from the Harding Icefield.",
+      "credit": "USGS/Bruce Molnia"
+    }
   },
   {
     "name": "Kings Canyon",
-    "wikipediaTitle": "Kings Canyon National Park",
-    "lat": 36.8,
-    "lng": -118.55,
+    "fullName": "Sequoia & Kings Canyon National Parks",
+    "parkCode": "seki",
+    "designation": "National Parks",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1940,
-    "areaAcres": 461901.2
+    "lat": 36.8879,
+    "lng": -118.5551,
+    "description": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to plan your visit or to learn about the plants and animals here and the threats they face. Ancient giant sequoias may seem invincible, but they, too are vulnerable.",
+    "url": "https://www.nps.gov/seki/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A250B-1DD8-B71B-0BCF61A89A8B2970.jpg",
+      "altText": "A deep canyon with a forested floor and steep granite cliffs",
+      "caption": "The Glaciers carved the Kings Canyon's steep granite cliffs, leaving a wide U-shaped valley.",
+      "credit": "NPS/Rick Cain"
+    }
   },
   {
     "name": "Kobuk Valley",
-    "wikipediaTitle": "Kobuk Valley National Park",
-    "lat": 67.55,
-    "lng": -159.28,
+    "fullName": "Kobuk Valley National Park",
+    "parkCode": "kova",
+    "designation": "National Park",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 1750716.16
+    "lat": 67.35631336,
+    "lng": -159.2002293,
+    "description": "Caribou, sand dunes, the Kobuk River, Onion Portage - just some of the facets of Kobuk Valley National Park. Thousands of caribou migrate through, their tracks crisscrossing sculpted dunes. The Kobuk River is an ancient and current corridor for people and wildlife. For 9000 years, people came to Onion Portage to harvest caribou as they swam the river. Even today, that rich tradition continues.",
+    "url": "https://www.nps.gov/kova/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1214-1DD8-B71B-0B00D823BD9BF4CF.jpg",
+      "altText": "sun setting on sand dunes",
+      "caption": "The setting sun casts shadows of black spruce on the dunes and colors the water of Ahnewetut Creek a deep blue.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Lake Clark",
-    "wikipediaTitle": "Lake Clark National Park and Preserve",
-    "lat": 60.97,
-    "lng": -153.42,
+    "fullName": "Lake Clark National Park & Preserve",
+    "parkCode": "lacl",
+    "designation": "National Park & Preserve",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 2619816.49
+    "lat": 60.57405857,
+    "lng": -153.55535,
+    "description": "Lake Clark National Park and Preserve is a land of stunning beauty. Volcanoes steam, salmon run, bears forage, and craggy mountains reflect in shimmering turquoise lakes. Here, too, local people and culture still depend on the land and water. Venture into the park to become part of the wilderness.",
+    "url": "https://www.nps.gov/lacl/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A9F9E-1DD8-B71B-0B6CEC8EF3F377DA.jpg",
+      "altText": "Photo of blue sky with fluffy white clouds reflect in calm lake with mountains in the background.",
+      "caption": "The park's namesake lake is the largest lake by volume in the National Park Service.",
+      "credit": "NPS Photo / James Kramer"
+    }
   },
   {
     "name": "Lassen Volcanic",
-    "wikipediaTitle": "Lassen Volcanic National Park",
-    "lat": 40.49,
-    "lng": -121.51,
+    "fullName": "Lassen Volcanic National Park",
+    "parkCode": "lavo",
+    "designation": "National Park",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1916,
-    "areaAcres": 106589.02
+    "lat": 40.49354575,
+    "lng": -121.4075993,
+    "description": "Lassen Volcanic National Park is home to steaming fumaroles, meadows freckled with wildflowers, clear mountain lakes, and numerous volcanoes. Jagged peaks tell the story of its eruptive past while hot water continues to shape the land.",
+    "url": "https://www.nps.gov/lavo/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C873811-1DD8-B71B-0B9C62ED8E12E7B5.jpg",
+      "altText": "A frozen lake below snow-covered trees and peak",
+      "caption": "With over 30 feet of snowfall annually, Lassen provides numerous opportunities for winter recreation.",
+      "credit": "NPS Photo / Scott Arnaz"
+    }
   },
   {
     "name": "Mammoth Cave",
-    "wikipediaTitle": "Mammoth Cave National Park",
-    "lat": 37.18,
-    "lng": -86.1,
+    "fullName": "Mammoth Cave National Park",
+    "parkCode": "maca",
+    "designation": "National Park",
     "states": [
       "Kentucky"
     ],
     "state": "Kentucky",
-    "yearEstablished": 1941,
-    "areaAcres": 72472.87
+    "lat": 37.19760458,
+    "lng": -86.13090198,
+    "description": "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, earning it the title of UNESCO World Heritage Site and International Biosphere Region.",
+    "url": "https://www.nps.gov/maca/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/95EAA431-F26B-66EB-E9E6B108F47F70B0.jpg",
+      "altText": "A cascade of water pours over a rock ledge. Green foliage is in the background.",
+      "caption": "The sound of falling water welcomes visitors into the natural entrance of Mammoth Cave.",
+      "credit": "NPS Photo/ Deb Spillman"
+    }
   },
   {
     "name": "Mesa Verde",
-    "wikipediaTitle": "Mesa Verde National Park",
-    "lat": 37.18,
-    "lng": -108.49,
+    "fullName": "Mesa Verde National Park",
+    "parkCode": "meve",
+    "designation": "National Park",
     "states": [
       "Colorado"
     ],
     "state": "Colorado",
-    "yearEstablished": 1906,
-    "areaAcres": 52485.17
+    "lat": 37.23908345,
+    "lng": -108.4624032,
+    "description": "For over 700 years, the Ancestral Pueblo people built thriving communities on the mesas and in the cliffs of Mesa Verde. Today, the park protects the rich cultural heritage of 27 Pueblos and Tribes and offers visitors a spectacular window into the past. This World Heritage Site and International Dark Sky Park is home to over a thousand species, including several that live nowhere else on earth.",
+    "url": "https://www.nps.gov/meve/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C0089-1DD8-B71B-0BC397BA671C0616.jpg",
+      "altText": "Large cliff dwelling in cliff alcove",
+      "caption": "Cliff Palace, Mesa Verde's Largest Cliff Dwelling",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Mount Rainier",
-    "wikipediaTitle": "Mount Rainier National Park",
-    "lat": 46.85,
-    "lng": -121.75,
+    "fullName": "Mount Rainier National Park",
+    "parkCode": "mora",
+    "designation": "National Park",
     "states": [
       "Washington"
     ],
     "state": "Washington",
-    "yearEstablished": 1899,
-    "areaAcres": 236381.64
+    "lat": 46.86075416,
+    "lng": -121.7043885,
+    "description": "Ascending to 14,410 feet above sea level, Mount Rainier stands as an icon in the Washington landscape. An active volcano, Mount Rainier is the most glaciated peak in the contiguous U.S.A., spawning five major rivers. Subalpine wildflower meadows ring the icy volcano while ancient forest cloaks Mount Rainier’s lower slopes. Wildlife abounds in the park’s ecosystems. A lifetime of discovery awaits.",
+    "url": "https://www.nps.gov/mora/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/49F34094-B893-7DD6-5AE0F0220724B0EF.jpg",
+      "altText": "A purple and pink streaked sky over a mountain peak and forested valley.",
+      "caption": "The Silver Forest Trail at Sunrise features spectacular views of Mount Rainier and the White River valley.",
+      "credit": "JD Hascup Photo"
+    }
   },
   {
     "name": "New River Gorge",
-    "wikipediaTitle": "New River Gorge National Park and Preserve",
-    "lat": 38.07,
-    "lng": -81.08,
+    "fullName": "New River Gorge National Park & Preserve",
+    "parkCode": "neri",
+    "designation": "National Park & Preserve",
     "states": [
       "West Virginia"
     ],
     "state": "West Virginia",
-    "yearEstablished": 2020,
-    "areaAcres": 7021
+    "lat": 37.86878554,
+    "lng": -80.99956002,
+    "description": "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
+    "url": "https://www.nps.gov/neri/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8C70-1DD8-B71B-0B00C7B2373E386E.jpg",
+      "altText": "sun rising over the New River Gorge",
+      "caption": "Sun rising over the New River Gorge from Diamond Point on the Endless Wall Trail.",
+      "credit": "Gary Hartley"
+    }
   },
   {
     "name": "North Cascades",
-    "wikipediaTitle": "North Cascades National Park",
-    "lat": 48.7,
-    "lng": -121.2,
+    "fullName": "North Cascades National Park",
+    "parkCode": "noca",
+    "designation": "National Park",
     "states": [
       "Washington"
     ],
     "state": "Washington",
-    "yearEstablished": 1968,
-    "areaAcres": 504780.94
+    "lat": 48.71171756,
+    "lng": -121.2069423,
+    "description": "Less than three hours from Seattle, an alpine landscape beckons. Discover communities of life adapted to moisture in the west and recurring fire in the east. Explore jagged peaks crowned by more than 300 glaciers. Listen to cascading waters in forested valleys. Witness a landscape sensitive to the Earth's changing climate. Help steward the ecological heart of the Cascades.",
+    "url": "https://www.nps.gov/noca/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A599D-1DD8-B71B-0BBDC12BEC5107B5.jpg",
+      "altText": "boats on the water with mountains and trees surrounding",
+      "caption": "Stehekin sits at the top of Lake Chelan, welcoming visitors to take a life at a slower pace.",
+      "credit": "NPS Photo/D.Dixon"
+    }
   },
   {
     "name": "Olympic",
-    "wikipediaTitle": "Olympic National Park",
-    "lat": 47.97,
-    "lng": -123.5,
+    "fullName": "Olympic National Park",
+    "parkCode": "olym",
+    "designation": "National Park",
     "states": [
       "Washington"
     ],
     "state": "Washington",
-    "yearEstablished": 1938,
-    "areaAcres": 922649.41
+    "lat": 47.80392754,
+    "lng": -123.6663848,
+    "description": "With its incredible range of precipitation and elevation, diversity is the hallmark of Olympic National Park. Encompassing nearly a million acres, the park protects a vast wilderness, thousands of years of human history, and several distinctly different ecosystems, including glacier-capped mountains, old-growth temperate rain forests, and over 70 miles of wild coastline. Come explore!",
+    "url": "https://www.nps.gov/olym/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B1DB4-1DD8-B71B-0B9DFEFDD398DB71.jpg",
+      "altText": "A herd of elk crossing a river.",
+      "caption": "A herd of Roosevelt Elk cross a river in Olympic.",
+      "credit": "NPS Photo/Jon Preston"
+    }
   },
   {
     "name": "Petrified Forest",
-    "wikipediaTitle": "Petrified Forest National Park",
-    "lat": 35.07,
-    "lng": -109.78,
+    "fullName": "Petrified Forest National Park",
+    "parkCode": "pefo",
+    "designation": "National Park",
     "states": [
       "Arizona"
     ],
     "state": "Arizona",
-    "yearEstablished": 1962,
-    "areaAcres": 221390.21
+    "lat": 34.98387664,
+    "lng": -109.7877678,
+    "description": "A landscape where deep time lies fully on display, Petrified Forest National Park blends colorful badlands, vast grasslands, and one of the world’s largest and most vivid collections of petrified wood. Spanning more than 200 million years of geologic history, the park protects ancient fossils, ancestral Puebloan sites, habitat for desert animals, and a sweeping stretch of historic Route 66.",
+    "url": "https://www.nps.gov/pefo/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8213-1DD8-B71B-0BE4A3B9394FD89A.jpg",
+      "altText": "Sunlit Painted Desert hills of the Petrified Forest National Wilderness Area",
+      "caption": "Sunrise and sunset are favorite times to view the colorful Painted Desert of the Petrified Forest National Wilderness Area",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Pinnacles",
-    "wikipediaTitle": "Pinnacles National Park",
-    "lat": 36.48,
-    "lng": -121.16,
+    "fullName": "Pinnacles National Park",
+    "parkCode": "pinn",
+    "designation": "National Park",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 2013,
-    "areaAcres": 26685.73
+    "lat": 36.49029208,
+    "lng": -121.1813607,
+    "description": "Around 23 million years ago, a series of volcanic eruptions shaped the landscape that is now Pinnacles National Park. The remnants of these ancient eruptions have formed a striking terrain of rocky spires and deep canyons. Visitors can explore diverse environments, from chaparral and oak woodlands to the cool, shaded depths of canyon floors.",
+    "url": "https://www.nps.gov/pinn/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86A8CB-1DD8-B71B-0BAE8F7141CCBB1B.jpg",
+      "altText": "Boulders in the Balconies Cave.",
+      "caption": "Balconies Cliffs as seen from the inside of the Balconies Caves",
+      "credit": "National Park Service/Oscar Garcia"
+    }
   },
   {
     "name": "Redwood",
-    "wikipediaTitle": "Redwood National and State Parks",
-    "lat": 41.3,
-    "lng": -124,
+    "fullName": "Redwood National and State Parks",
+    "parkCode": "redw",
+    "designation": "National and State Parks",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1968,
-    "areaAcres": 138999.37
+    "lat": 41.37237268,
+    "lng": -124.0318129,
+    "description": "Renowned for the world’s tallest trees, Redwood’s landscapes span from open prairies and oak woodlands to pristine rivers and untamed coastline. This ancient home has supported people for thousands of years. The National Park Service and California State Parks now work to safeguard and rejuvenate these lands for everyone’s enjoyment, learning, and inspiration.",
+    "url": "https://www.nps.gov/redw/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD69DD56-E050-4F4E-DDF622317D38250E.jpg",
+      "altText": "View from forest floor looking straight up. Ferns as seen close up and redwood trunks meet.",
+      "caption": "The redwood forest is a complicated and beautiful series of habitats.",
+      "credit": "NPS Photo / Steve Olson"
+    }
   },
   {
     "name": "Rocky Mountain",
-    "wikipediaTitle": "Rocky Mountain National Park",
-    "lat": 40.4,
-    "lng": -105.58,
+    "fullName": "Rocky Mountain National Park",
+    "parkCode": "romo",
+    "designation": "National Park",
     "states": [
       "Colorado"
     ],
     "state": "Colorado",
-    "yearEstablished": 1915,
-    "areaAcres": 265847.74
+    "lat": 40.3556924,
+    "lng": -105.6972879,
+    "description": "Rocky Mountain National Park's 415 square miles (265,807 acres) encompasses a spectacular range of mountain environments. From meadows found in the montane life zone to glistening alpine lakes and up to the towering mountain peaks, there is something for everyone to discover. Along the way explore over 300 miles of hiking trails and incredible wildlife viewing.",
+    "url": "https://www.nps.gov/romo/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/84D344F9-BB2D-B929-9902E50D96500616.jpg",
+      "altText": "Rocky Mountain National Park Sign on a sunny day with clear sky overhead",
+      "caption": "Rocky Mountain National Park Sign",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Saguaro",
-    "wikipediaTitle": "Saguaro National Park",
-    "lat": 32.25,
-    "lng": -110.5,
+    "fullName": "Saguaro National Park",
+    "parkCode": "sagu",
+    "designation": "National Park",
     "states": [
       "Arizona"
     ],
     "state": "Arizona",
-    "yearEstablished": 1994,
-    "areaAcres": 92876.75
+    "lat": 32.20909636,
+    "lng": -110.7574974,
+    "description": "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
+    "url": "https://www.nps.gov/sagu/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/5CB8B2F6-01B7-9A50-73702A355E4136B8.jpg",
+      "altText": "Saguaro flowers",
+      "caption": "The flowering season in Saguaro National Park attracts visitors from all over the world.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Sequoia",
-    "wikipediaTitle": "Sequoia National Park",
-    "lat": 36.43,
-    "lng": -118.68,
+    "fullName": "Sequoia & Kings Canyon National Parks",
+    "parkCode": "seki",
+    "designation": "National Parks",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1890,
-    "areaAcres": 404062.63
+    "lat": 36.4864,
+    "lng": -118.5658,
+    "description": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to plan your visit or to learn about the plants and animals here and the threats they face. Ancient giant sequoias may seem invincible, but they, too are vulnerable.",
+    "url": "https://www.nps.gov/seki/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A250B-1DD8-B71B-0BCF61A89A8B2970.jpg",
+      "altText": "A deep canyon with a forested floor and steep granite cliffs",
+      "caption": "The Glaciers carved the Kings Canyon's steep granite cliffs, leaving a wide U-shaped valley.",
+      "credit": "NPS/Rick Cain"
+    }
   },
   {
     "name": "Shenandoah",
-    "wikipediaTitle": "Shenandoah National Park",
-    "lat": 38.53,
-    "lng": -78.35,
+    "fullName": "Shenandoah National Park",
+    "parkCode": "shen",
+    "designation": "National Park",
     "states": [
       "Virginia"
     ],
     "state": "Virginia",
-    "yearEstablished": 1935,
-    "areaAcres": 200445.92
+    "lat": 38.49236644,
+    "lng": -78.46907715,
+    "description": "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is a land bursting with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to deer, songbirds, and black bear, there's so much to explore...and your journey begins right here!",
+    "url": "https://www.nps.gov/shen/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B539-1DD8-B71B-0BEAAA4AC31E7D5B.jpg",
+      "altText": "A man stands on a rocky outcrop overlooking the receding mountains.",
+      "caption": "There are over 60 peaks with an elevation over 3,000 feet in Shenandoah.",
+      "credit": "NPS Photo / Neal Lewis"
+    }
   },
   {
     "name": "Theodore Roosevelt",
-    "wikipediaTitle": "Theodore Roosevelt National Park",
-    "lat": 46.97,
-    "lng": -103.45,
+    "fullName": "Theodore Roosevelt National Park",
+    "parkCode": "thro",
+    "designation": "National Park",
     "states": [
       "North Dakota"
     ],
     "state": "North Dakota",
-    "yearEstablished": 1978,
-    "areaAcres": 70446.89
+    "lat": 47.17777274,
+    "lng": -103.4300083,
+    "description": "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.",
+    "url": "https://www.nps.gov/thro/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg",
+      "altText": "A colorfully striped butte in the foreground overlooks a dark green badlands landscape",
+      "caption": "The River Bend Overlook offers one of the most popular views in the park's North Unit.",
+      "credit": "NPS Photo / Mark Meyers"
+    }
   },
   {
     "name": "Virgin Islands",
-    "wikipediaTitle": "Virgin Islands National Park",
-    "lat": 18.33,
-    "lng": -64.73,
+    "fullName": "Virgin Islands National Park",
+    "parkCode": "viis",
+    "designation": "National Park",
     "states": [
       "U.S. Virgin Islands"
     ],
     "state": "U.S. Virgin Islands",
-    "yearEstablished": 1956,
-    "areaAcres": 15052.33
+    "lat": 18.34279656,
+    "lng": -64.74194451,
+    "description": "Go beyond Virgin Islands National Park's stunning white-sand beaches. Hike to historic plantation sites to learn about a challenging past when sugar and enslaved labor dominated life on the island. Visit the Indigenous Taino's ancient petroglyphs. Snorkel coral reefs to discover hidden marine life. Two-thirds of the island of St. John is national park, making it a unique destination for visitors.",
+    "url": "https://www.nps.gov/viis/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F0534AF-91EB-443B-41760F790BE42778.jpg",
+      "altText": "Turquoise water laps white sandy shore fringed with lush green vegetation.",
+      "caption": "Renowned for its beauty, Trunk Bay is a visitor favorite.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Voyageurs",
-    "wikipediaTitle": "Voyageurs National Park",
-    "lat": 48.5,
-    "lng": -92.88,
+    "fullName": "Voyageurs National Park",
+    "parkCode": "voya",
+    "designation": "National Park",
     "states": [
       "Minnesota"
     ],
     "state": "Minnesota",
-    "yearEstablished": 1975,
-    "areaAcres": 218222.35
+    "lat": 48.48370609,
+    "lng": -92.8382913,
+    "description": "Voyageurs National Park spans 218,000 acres of lakes, forests, and streams in northern Minnesota. Established in 1975, the park is named after the French-Canadian Voyageurs who once navigated these abundant waters. Voyageurs National Park provides exceptional opportunities for recreation and exploration amidst landscapes rich in natural beauty, history, and cultural heritage.",
+    "url": "https://www.nps.gov/voya/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8405EF-1DD8-B71B-0B42909E4E77E144.jpg",
+      "altText": "Northern Lights over Voyageurs National Park waters",
+      "caption": "Experience the Aurora Borealis at Voyageurs National Park",
+      "credit": "NPS /Dimse"
+    }
   },
   {
     "name": "White Sands",
-    "wikipediaTitle": "White Sands National Park",
-    "lat": 32.78,
-    "lng": -106.17,
+    "fullName": "White Sands National Park",
+    "parkCode": "whsa",
+    "designation": "National Park",
     "states": [
       "New Mexico"
     ],
     "state": "New Mexico",
-    "yearEstablished": 2019,
-    "areaAcres": 146344.31
+    "lat": 32.77907858,
+    "lng": -106.3333461,
+    "description": "Rising from the heart of the Tularosa Basin is one of the world's great natural wonders - the glistening white sands of New Mexico. Great wave-like dunes of gypsum sand have engulfed 275 square miles of desert, creating the world's largest gypsum dunefield. White Sands National Park preserves a major portion of this unique dunefield, along with the plants and animals that live here.",
+    "url": "https://www.nps.gov/whsa/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/7CA16410-A412-1F05-2D92EB04EEB27980.jpg",
+      "altText": "White dunes in foreground with sun setting behind mountain.",
+      "caption": "Sunsets are one of the most popular times to visit White Sands. Visitors can experience sunset every day of the year.",
+      "credit": "NPS Photo"
+    }
   },
   {
     "name": "Wind Cave",
-    "wikipediaTitle": "Wind Cave National Park",
-    "lat": 43.57,
-    "lng": -103.48,
+    "fullName": "Wind Cave National Park",
+    "parkCode": "wica",
+    "designation": "National Park",
     "states": [
       "South Dakota"
     ],
     "state": "South Dakota",
-    "yearEstablished": 1903,
-    "areaAcres": 33970.84
+    "lat": 43.58012365,
+    "lng": -103.4394709,
+    "description": "Wind Cave National Park protects two very different worlds - one deep within the earth, the other a sunlit world of many resources. Bison, elk, and other wildlife roam the rolling prairie grasslands and forested hillsides of one of America's oldest national parks. Below the remnant island of intact prairie sits Wind Cave, one of the longest and most complex caves in the world.",
+    "url": "https://www.nps.gov/wica/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACD12-1DD8-B71B-0BEF13804E4498FF.jpg",
+      "altText": "a bison cow and calf on the prairie",
+      "caption": "Several hundred bison roam the rolling prairie of Wind Cave National Park.",
+      "credit": "NPS Photo / Dan Roddy"
+    }
   },
   {
     "name": "Wrangell–St. Elias",
-    "wikipediaTitle": "Wrangell–St. Elias National Park and Preserve",
-    "lat": 61,
-    "lng": -142,
+    "fullName": "Wrangell - St Elias National Park & Preserve",
+    "parkCode": "wrst",
+    "designation": "National Park & Preserve",
     "states": [
       "Alaska"
     ],
     "state": "Alaska",
-    "yearEstablished": 1980,
-    "areaAcres": 8323146.48
+    "lat": 61.4182147,
+    "lng": -142.6028439,
+    "description": "Wrangell-St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. At 13.2 million acres, the park is the same size as Yellowstone National Park, Yosemite National Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This rugged, beautiful land is filled with opportunities for adventure.",
+    "url": "https://www.nps.gov/wrst/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AAD63-1DD8-B71B-0BCE10FFD741A687.jpg",
+      "altText": "Glaciers loom over the ocean with large snowy mountains rising into blue skies",
+      "caption": "Wrangell-St. Elias National Park contains a diversity of natural features.  Landscapes unique to the North American continent are common here.",
+      "credit": "NPS Photo/ Neal Herbert"
+    }
   },
   {
     "name": "Yellowstone",
-    "wikipediaTitle": "Yellowstone National Park",
-    "lat": 44.6,
-    "lng": -110.5,
+    "fullName": "Yellowstone National Park",
+    "parkCode": "yell",
+    "designation": "National Park",
     "states": [
-      "Wyoming",
+      "Idaho",
       "Montana",
-      "Idaho"
+      "Wyoming"
     ],
-    "state": "Wyoming, Montana, Idaho",
-    "yearEstablished": 1872,
-    "areaAcres": 2219790.71
+    "state": "Idaho, Montana, Wyoming",
+    "lat": 44.59824417,
+    "lng": -110.5471695,
+    "description": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.",
+    "url": "https://www.nps.gov/yell/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg",
+      "altText": "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.",
+      "caption": "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures",
+      "credit": "NPS/Jim Peaco"
+    }
   },
   {
     "name": "Yosemite",
-    "wikipediaTitle": "Yosemite National Park",
-    "lat": 37.83,
-    "lng": -119.5,
+    "fullName": "Yosemite National Park",
+    "parkCode": "yose",
+    "designation": "National Park",
     "states": [
       "California"
     ],
     "state": "California",
-    "yearEstablished": 1890,
-    "areaAcres": 761747.5
+    "lat": 37.84883288,
+    "lng": -119.5571873,
+    "description": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+    "url": "https://www.nps.gov/yose/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84CC4C-1DD8-B71B-0BE967E5E5D93F25.jpg",
+      "altText": "Two tall waterfalls flowing down snow covered granite walls.",
+      "caption": "Yosemite Falls will sometimes only trickle at the end of summer, but wet winters can rejuvenate the flow.",
+      "credit": "NPS / Cindy Jacoby"
+    }
   },
   {
     "name": "Zion",
-    "wikipediaTitle": "Zion National Park",
-    "lat": 37.3,
-    "lng": -113.05,
+    "fullName": "Zion National Park",
+    "parkCode": "zion",
+    "designation": "National Park",
     "states": [
       "Utah"
     ],
     "state": "Utah",
-    "yearEstablished": 1919,
-    "areaAcres": 147242.66
+    "lat": 37.29839254,
+    "lng": -113.0265138,
+    "description": "Follow the paths where people have walked for thousands of years. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience the tall, stretching walls of a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present-day adventures.",
+    "url": "https://www.nps.gov/zion/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg",
+      "altText": "A triangular sandstone mountain overlooks green and yellow foliage. A cloudy blue sky is overhead.",
+      "caption": "The Watchman in Zion Canyon",
+      "credit": "NPS/Shane Carte"
+    }
   }
 ]
