@@ -17,9 +17,9 @@ A modern, interactive web application that displays UNESCO World Heritage Sites 
 
 ### 🔐 Data Sync & Access Control
 - **Local Storage**: Works perfectly without any setup - data stored locally
-- **Access Code System**: Optional GitHub Gist sync with encrypted access codes
+- **Access Code System**: Optional GitHub Gist sync gated by a shared access code
 - **Data Export**: Download your visit data as JSON for backup/sharing
-- **Read-only Sync**: Gist data loads automatically when access code is provided
+- **Read-only Sync**: Gist data loads automatically when a valid access code is provided
 - **Offline First**: Full functionality without internet connection
 
 ### 🎨 Modern Design
@@ -38,9 +38,9 @@ A modern, interactive web application that displays UNESCO World Heritage Sites 
 
 ### 🔒 Security & Privacy
 - **No Registration Required**: Works immediately without accounts
-- **Encrypted Access Codes**: Secure access to shared data via GitHub Gists
 - **Local Data Priority**: Your data stays on your device by default
-- **No Tracking**: Zero analytics or user tracking
+- **No Tracking**: No analytics or user tracking
+- **No Third-Party Cookies**: No external scripts loaded for tracking purposes
 
 ## 🛠️ Technology Stack
 
@@ -50,7 +50,7 @@ A modern, interactive web application that displays UNESCO World Heritage Sites 
 - **Styling**: CSS Variables, Glass Morphism, Responsive Design
 - **Data Storage**: localStorage + optional Gist sync
 - **Hosting**: GitHub Pages compatible
-- **Security**: Caesar cipher encryption for access codes
+- **Access Codes**: ROT13 obfuscation (not encryption — see [Security note](#-privacy--security))
 
 ## 🌍 Site Data
 
@@ -113,13 +113,15 @@ python3 -m http.server 8000
 1. **Default Mode**: Data stored locally in your browser
 2. **Gist Sync Mode**: Enter access code to load shared data from GitHub Gist
 3. **Data Export**: Download JSON file to manually update gists
-4. **Security**: Access codes encrypted using Caesar cipher
+4. **Access Gating**: Access codes are obfuscated (ROT13) in the source to prevent casual discovery — this is **not encryption**
 
 ### Access Code System
-- Access codes are encrypted before being stored in the codebase
-- Only users with valid access codes can sync with GitHub Gists
-- Console logging shows encrypted versions for debugging
-- Data is read-only from gists - updates require manual gist editing
+- Access codes are obfuscated (ROT13) before being stored in the codebase to avoid plaintext leakage via code search
+- Only users with valid access codes can trigger the gist fetch in the UI
+- Console logging shows obfuscated versions for debugging
+- Data is read-only from gists — updates require manually editing the gist
+
+> ⚠️ **Security note:** ROT13 is obfuscation, not encryption. Anyone viewing the source in DevTools can recover the access codes and find the gist ID. If the linked gist is public, its contents are public regardless of the access code. Treat the access code as a UX gate, not a security mechanism — do not store anything in the gist that you wouldn't publish openly.
 
 ### Data Format
 Downloaded JSON includes:
@@ -149,8 +151,8 @@ Downloaded JSON includes:
 
 - **Local First**: Data stays on your device by default
 - **No Registration**: Works without creating accounts
-- **Encrypted Access**: Access codes use Caesar cipher encryption
-- **No Tracking**: Zero analytics or user monitoring
+- **No Tracking**: No analytics, cookies, or external tracking scripts
+- **Access Code Obfuscation**: Access codes use ROT13 in source — this is **obfuscation, not encryption**. It prevents casual discovery via code search but anyone with DevTools can recover the codes. Do not rely on it for data secrecy.
 - **Open Source**: Full code transparency
 
 ## 🤝 Contributing
@@ -180,7 +182,8 @@ This project is open source and available under the MIT License.
 
 ## 🔄 Recent Updates
 
-- **v2.0**: Replaced Firebase with GitHub Gist system for simpler, more secure data sync
-- **Security**: Implemented encrypted access code system
+- **v2.0**: Replaced Firebase with GitHub Gist system for simpler data sync
+- **Privacy**: Removed Google Analytics and eliminated all tracking
+- **Honesty**: Replaced "encryption" claims with accurate "obfuscation" terminology
 - **Optimization**: Removed dead code and optimized performance
-- **Privacy**: Eliminated need for user accounts while maintaining sync capability
+- **Accounts**: Eliminated need for user accounts while maintaining optional sync
