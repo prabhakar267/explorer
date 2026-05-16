@@ -44,6 +44,7 @@ async function run() {
   const collection = COLLECTIONS[collectionKey];
   const sites = loadJson(collection.sitesFile);
   const visited = new Set(loadJson(collection.visitedFile));
+  saveVisited(collection.visitedFile, [...visited]);
 
   while (true) {
     const siteName = await search({
