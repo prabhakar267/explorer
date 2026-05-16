@@ -17,7 +17,7 @@ export default function Parks() {
   const [previewSite, setPreviewSite] = useState(null);
   const [descVisible, setDescVisible] = useState(false);
   const [theme, setTheme] = useTheme();
-  const { visited, toggle, resetAll } = useVisited('visitedUSParks');
+  const { visited } = useVisited(import.meta.env.BASE_URL + 'data/visited-parks.json');
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'data/us-parks.json')
@@ -49,7 +49,7 @@ export default function Parks() {
     window._explorerMapZoom?.(lat, lng);
   };
 
-  const popupContent = (site, isVisited) => {
+  const popupContent = (site) => {
     const stateLabel = Array.isArray(site.states) && site.states.length > 1 ? 'States' : 'State';
     const stateValue = site.state || (Array.isArray(site.states) ? site.states.join(', ') : '');
     return `
@@ -96,7 +96,7 @@ export default function Parks() {
           </div>
           <div className="header-actions">
             <Link to="/" className="home-link">&larr; Home</Link>
-            <DropdownMenu theme={theme} setTheme={setTheme} onReset={resetAll} />
+            <DropdownMenu theme={theme} setTheme={setTheme} />
           </div>
         </div>
       </div>
@@ -111,7 +111,6 @@ export default function Parks() {
       <ExplorerMap
         sites={sites}
         visited={visited}
-        onToggle={toggle}
         onPreview={handlePreview}
         mapOptions={{
           worldCopyJump: false,
@@ -135,7 +134,6 @@ export default function Parks() {
           site={previewSite}
           details={overlayDetails}
           isVisited={visited.has(previewSite.name)}
-          onToggle={toggle}
           onClose={() => setPreviewSite(null)}
           onZoom={handleZoom}
           linkLabel="View on nps.gov"

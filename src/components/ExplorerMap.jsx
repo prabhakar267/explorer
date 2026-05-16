@@ -12,7 +12,6 @@ const BASE_MARKER_OPTS = { radius: 8, weight: 2, opacity: 1, fillOpacity: 0.8 };
 export default function ExplorerMap({
   sites,
   visited,
-  onToggle,
   onPreview,
   mapOptions,
   tileOptions,
@@ -122,7 +121,6 @@ export default function ExplorerMap({
       marker.setStyle(style);
     });
     if (clusterRef.current) {
-      // Update cluster icon function with current visited state
       clusterRef.current.options.iconCreateFunction = (c) => createClusterIcon(c, visited);
       clusterRef.current.refreshClusters();
     }

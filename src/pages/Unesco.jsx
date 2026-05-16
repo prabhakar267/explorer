@@ -5,7 +5,6 @@ import SiteOverlay from '../components/SiteOverlay';
 import DropdownMenu from '../components/DropdownMenu';
 import { useTheme } from '../hooks/useTheme';
 import { useVisited } from '../hooks/useVisited';
-import { loadGistData, showAccessCodeDialog, downloadData } from '../utils/gistDataManager';
 import '../styles/explorer.css';
 
 export default function Unesco() {
@@ -15,21 +14,20 @@ export default function Unesco() {
   const [previewDetails, setPreviewDetails] = useState(null);
   const [descVisible, setDescVisible] = useState(false);
   const [theme, setTheme] = useTheme();
-  const { visited, toggle, resetAll, loadFromArray } = useVisited('visitedUNESCOSites');
+  const { visited } = useVisited(import.meta.env.BASE_URL + 'data/visited-unesco.json');
 
   useEffect(() => {
-    fetchSites().then((data) => {
-      setSites(data);
-      setLoading(false);
-    });
+    fetch(import.meta.env.BASE_URL + 'data/unesco-sites.json')
+      .then((r) => r.json())
+      .then((data) => {
+        setSites(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error('Error loading UNESCO sites:', err);
+        setLoading(false);
+      });
   }, []);
-
-  // Attempt to load from gist
-  useEffect(() => {
-    loadGistData().then((arr) => {
-      if (arr && arr.length > 0) loadFromArray(arr);
-    });
-  }, [loadFromArray]);
 
   const handlePreview = useCallback(async (siteName) => {
     if (!siteName) {
@@ -52,7 +50,7 @@ export default function Unesco() {
     window._explorerMapZoom?.(lat, lng);
   };
 
-  const popupContent = (site, isVisited) => `
+  const popupContent = (site) => `
     <div class="custom-popup">
       <div class="popup-title">${site.name}</div>
       <div class="popup-info">
@@ -82,22 +80,7 @@ export default function Unesco() {
           </div>
           <div className="header-actions">
             <Link to="/" className="home-link">&larr; Home</Link>
-            <DropdownMenu theme={theme} setTheme={setTheme} onReset={resetAll}>
-              <div className="dropdown-section">
-                <span className="dropdown-label">Data Sync</span>
-                <div className="sync-status">
-                  <span className="sync-indicator">&#9679;</span>
-                  <span className="sync-text">Local Only</span>
-                </div>
-                <button className="auth-button" onClick={showAccessCodeDialog} style={{ marginTop: 8 }}>
-                  Enter Access Code
-                </button>
-                <button className="auth-button secondary" onClick={downloadData} style={{ marginTop: 4 }}>
-                  Download Data
-                </button>
-              </div>
-              <div className="dropdown-divider" />
-            </DropdownMenu>
+            <DropdownMenu theme={theme} setTheme={setTheme} />
           </div>
         </div>
       </div>
@@ -112,7 +95,6 @@ export default function Unesco() {
       <ExplorerMap
         sites={sites}
         visited={visited}
-        onToggle={toggle}
         onPreview={handlePreview}
         mapOptions={{
           worldCopyJump: true,
@@ -143,7 +125,6 @@ export default function Unesco() {
             ],
           } : null}
           isVisited={visited.has(previewSite.name)}
-          onToggle={toggle}
           onClose={() => { setPreviewSite(null); setPreviewDetails(null); }}
           onZoom={handleZoom}
           linkLabel="View on Wikipedia"
@@ -152,70 +133,6 @@ export default function Unesco() {
       )}
     </div>
   );
-}
-
-async function fetchSites() {
-  const response = await fetch(
-    'https://ihp-wins.unesco.org/dataset/88c8eff6-b94d-4826-bb13-7107ac4c02a9/resource/2f46f6b2-45f9-402b-ace9-1e02c9c97a3d/download/whc-sites-2025.csv'
-  );
-  const csvText = await response.text();
-  return parseCSV(csvText);
-}
-
-function parseCSV(csvText) {
-  const lines = csvText.split('\n');
-  const headers = lines[0].split(',');
-  const sites = [];
-
-  const nameIndex = headers.indexOf('name_en');
-  const countryIndex = headers.indexOf('states_name_en');
-  const latIndex = headers.indexOf('latitude');
-  const lngIndex = headers.indexOf('longitude');
-  const yearIndex = headers.indexOf('date_inscribed');
-  const categoryIndex = headers.indexOf('category_short');
-
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
-
-    const fields = parseCSVLine(line);
-
-    if (fields.length > Math.max(nameIndex, countryIndex, latIndex, lngIndex, yearIndex, categoryIndex)) {
-      const lat = parseFloat(fields[latIndex]);
-      const lng = parseFloat(fields[lngIndex]);
-      if (isNaN(lat) || isNaN(lng)) continue;
-
-      sites.push({
-        name: fields[nameIndex] || 'Unknown Site',
-        country: fields[countryIndex] || 'Unknown Country',
-        lat,
-        lng,
-        year: parseInt(fields[yearIndex]) || 'Unknown',
-        criteria: fields[categoryIndex] || 'Unknown',
-      });
-    }
-  }
-  return sites;
-}
-
-function parseCSVLine(line) {
-  const fields = [];
-  let current = '';
-  let inQuotes = false;
-
-  for (let i = 0; i < line.length; i++) {
-    const char = line[i];
-    if (char === '"') {
-      inQuotes = !inQuotes;
-    } else if (char === ',' && !inQuotes) {
-      fields.push(current.trim());
-      current = '';
-    } else {
-      current += char;
-    }
-  }
-  fields.push(current.trim());
-  return fields;
 }
 
 async function fetchSiteDetails(site) {

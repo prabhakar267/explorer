@@ -1,34 +1,14 @@
-import { useState, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 
-export function useVisited(storageKey) {
-  const [visited, setVisited] = useState(() => {
-    const data = JSON.parse(localStorage.getItem(storageKey) || '[]');
-    return new Set(data);
-  });
+export function useVisited(dataUrl) {
+  const [visited, setVisited] = useState(new Set());
 
-  const toggle = useCallback((name) => {
-    setVisited((prev) => {
-      const next = new Set(prev);
-      if (next.has(name)) {
-        next.delete(name);
-      } else {
-        next.add(name);
-      }
-      localStorage.setItem(storageKey, JSON.stringify([...next]));
-      return next;
-    });
-  }, [storageKey]);
+  useEffect(() => {
+    fetch(dataUrl)
+      .then((r) => r.json())
+      .then((arr) => setVisited(new Set(arr)))
+      .catch(() => {});
+  }, [dataUrl]);
 
-  const resetAll = useCallback(() => {
-    if (confirm('Are you sure you want to reset all visited sites? This action cannot be undone.')) {
-      setVisited(new Set());
-      localStorage.removeItem(storageKey);
-    }
-  }, [storageKey]);
-
-  const loadFromArray = useCallback((arr) => {
-    setVisited(new Set(arr));
-  }, []);
-
-  return { visited, toggle, resetAll, loadFromArray };
+  return { visited };
 }

@@ -28,7 +28,7 @@ const path = require('path');
 
 const API_KEY = process.env.NPS_API_KEY || 'DEMO_KEY';
 const API_URL = `https://developer.nps.gov/api/v1/parks?limit=500&api_key=${API_KEY}`;
-const OUTPUT_PATH = path.join(__dirname, '..', 'data', 'us-parks.json');
+const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'data', 'us-parks.json');
 
 // State / territory code → full name. Covers everything the NPS API can
 // return in `states` (two-letter codes, comma-separated when a park spans

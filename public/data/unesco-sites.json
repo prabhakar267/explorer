@@ -1,0 +1,8346 @@
+[
+  {
+    "name": "‘Uruq Bani Ma’arid",
+    "country": "Saudi Arabia",
+    "lat": 19.36388889,
+    "lng": 45.59833333,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "<i>Aflaj</i> Irrigation Systems of Oman",
+    "country": "Oman",
+    "lat": 22.99888889,
+    "lng": 57.53605556,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "18th-Century Royal Palace at Caserta with the Park, the Aqueduct of Vanvitelli, and the San Leucio Complex",
+    "country": "Italy",
+    "lat": 41.07333,
+    "lng": 14.32639,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Aachen Cathedral",
+    "country": "Germany",
+    "lat": 50.77474685,
+    "lng": 6.083919968,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "Aapravasi Ghat",
+    "country": "Mauritius",
+    "lat": -20.15863889,
+    "lng": 57.50316667,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Aasivissuit – Nipisat. Inuit Hunting Ground between Ice and Sea",
+    "country": "Denmark",
+    "lat": 67.06393056,
+    "lng": -51.43320556,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Abbey and Altenmünster of Lorsch",
+    "country": "Germany",
+    "lat": 49.65369,
+    "lng": 8.56858,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Abbey Church of Saint-Savin sur Gartempe",
+    "country": "France",
+    "lat": 46.56472,
+    "lng": 0.86611,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Abbey of St Gall",
+    "country": "Switzerland",
+    "lat": 47.42333,
+    "lng": 9.37778,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Abu Mena",
+    "country": "Egypt",
+    "lat": 30.83583333,
+    "lng": 29.66666667,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Acropolis, Athens",
+    "country": "Greece",
+    "lat": 37.97087,
+    "lng": 23.72618,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Agave Landscape and Ancient Industrial Facilities of Tequila",
+    "country": "Mexico",
+    "lat": 20.86305556,
+    "lng": -103.7786111,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Agra Fort",
+    "country": "India",
+    "lat": 27.179806,
+    "lng": 78.021528,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Air and Ténéré Natural Reserves",
+    "country": "Niger",
+    "lat": 19.07619264,
+    "lng": 9.661999998,
+    "year": 1991,
+    "criteria": "N"
+  },
+  {
+    "name": "Ajanta Caves",
+    "country": "India",
+    "lat": 20.553111,
+    "lng": 75.70025,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Aksum",
+    "country": "Ethiopia",
+    "lat": 14.13019,
+    "lng": 38.71861,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Al Qal'a of Beni Hammad",
+    "country": "Algeria",
+    "lat": 35.81844,
+    "lng": 4.78684,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Al Zubarah Archaeological Site",
+    "country": "Qatar",
+    "lat": 25.97805556,
+    "lng": 51.02972222,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Al-Ahsa Oasis, an Evolving Cultural Landscape",
+    "country": "Saudi Arabia",
+    "lat": 25.40216667,
+    "lng": 49.63056944,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Aldabra Atoll",
+    "country": "Seychelles",
+    "lat": -9.416666667,
+    "lng": 46.41666667,
+    "year": 1982,
+    "criteria": "N"
+  },
+  {
+    "name": "Alhambra, Generalife and Albayzín, Granada",
+    "country": "Spain",
+    "lat": 37.17677778,
+    "lng": -3.589916667,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Amami-Oshima Island, Tokunoshima Island, Northern part of Okinawa Island, and Iriomote Island",
+    "country": "Japan",
+    "lat": 28.27916667,
+    "lng": 129.3783333,
+    "year": 2021,
+    "criteria": "N"
+  },
+  {
+    "name": "Amiens Cathedral",
+    "country": "France",
+    "lat": 49.895,
+    "lng": 2.301666667,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Amphitheatre of El Jem",
+    "country": "Tunisia",
+    "lat": 35.29639,
+    "lng": 10.70694,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient <I>Ksour</I> of Ouadane, Chinguetti, Tichitt and Oualata",
+    "country": "Mauritania",
+    "lat": 20.92889,
+    "lng": -11.62361,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
+    "country": "Albania,Austria,Belgium,Bosnia and Herzegovina,Bulgaria,Croatia,Czechia,France,Germany,Italy,North Macedonia,Poland,Romania,Slovakia,Slovenia,Spain,Switzerland,Ukraine",
+    "lat": 48.9,
+    "lng": 22.18333333,
+    "year": 2007,
+    "criteria": "N"
+  },
+  {
+    "name": "Ancient Building Complex in the Wudang Mountains",
+    "country": "China",
+    "lat": 32.46667,
+    "lng": 111,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Aleppo",
+    "country": "Syrian Arab Republic",
+    "lat": 36.19916667,
+    "lng": 37.16277778,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Bosra",
+    "country": "Syrian Arab Republic",
+    "lat": 32.51916667,
+    "lng": 36.48416667,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Damascus",
+    "country": "Syrian Arab Republic",
+    "lat": 33.51083333,
+    "lng": 36.30972222,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Nessebar",
+    "country": "Bulgaria",
+    "lat": 42.65911111,
+    "lng": 27.73602778,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Ping Yao",
+    "country": "China",
+    "lat": 37.20139,
+    "lng": 112.15444,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Polonnaruwa",
+    "country": "Sri Lanka",
+    "lat": 7.915833333,
+    "lng": 81.00055556,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Qalhat",
+    "country": "Oman",
+    "lat": 22.69522222,
+    "lng": 59.37811111,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Sigiriya",
+    "country": "Sri Lanka",
+    "lat": 7.95,
+    "lng": 80.75,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient City of Tauric Chersonese and its Chora",
+    "country": "Ukraine",
+    "lat": 44.61083333,
+    "lng": 33.49138889,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient Ferrous Metallurgy Sites of Burkina Faso",
+    "country": "Burkina Faso",
+    "lat": 12.58775833,
+    "lng": -3.328986111,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient Jericho/Tell es-Sultan",
+    "country": "State of Palestine",
+    "lat": 31.87130556,
+    "lng": 35.44405556,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient Maya City and Protected Tropical Forests of Calakmul, Campeche",
+    "country": "Mexico",
+    "lat": 18.05302778,
+    "lng": -89.73728333,
+    "year": 2002,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Ancient Thebes with its Necropolis",
+    "country": "Egypt",
+    "lat": 25.73333,
+    "lng": 32.6,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Ancient Villages of Northern Syria",
+    "country": "Syrian Arab Republic",
+    "lat": 36.33416667,
+    "lng": 36.84416667,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Andrefana Dry Forests",
+    "country": "Madagascar",
+    "lat": -18.66157778,
+    "lng": 44.76738611,
+    "year": 1990,
+    "criteria": "N"
+  },
+  {
+    "name": "Angkor",
+    "country": "Cambodia",
+    "lat": 13.43333333,
+    "lng": 103.8333333,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Anjar",
+    "country": "Lebanon",
+    "lat": 33.73194444,
+    "lng": 35.93333333,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Antequera Dolmens Site",
+    "country": "Spain",
+    "lat": 37.025,
+    "lng": -4.544444444,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Anticosti",
+    "country": "Canada",
+    "lat": 49.53861111,
+    "lng": -63.24527778,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Antigua Guatemala",
+    "country": "Guatemala",
+    "lat": 14.556504,
+    "lng": -90.73381,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Antigua Naval Dockyard and Related Archaeological Sites",
+    "country": "Antigua and Barbuda",
+    "lat": 17.00694444,
+    "lng": -61.76166667,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Aphrodisias",
+    "country": "Türkiye",
+    "lat": 37.70833333,
+    "lng": 28.72361111,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Aqueduct of Padre Tembleque Hydraulic System",
+    "country": "Mexico",
+    "lat": 19.83527778,
+    "lng": -98.66256667,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Arab-Norman Palermo and the Cathedral Churches of Cefalú and Monreale",
+    "country": "Italy",
+    "lat": 38.11083333,
+    "lng": 13.35305556,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Area and the Patriarchal Basilica of Aquileia",
+    "country": "Italy",
+    "lat": 45.76833333,
+    "lng": 13.3675,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Area of Agrigento",
+    "country": "Italy",
+    "lat": 37.28972222,
+    "lng": 13.59333333,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Areas of Pompei, Herculaneum and Torre Annunziata",
+    "country": "Italy",
+    "lat": 40.75,
+    "lng": 14.48333333,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Ensemble of Mérida",
+    "country": "Spain",
+    "lat": 38.91611,
+    "lng": -6.33778,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Landscape of the First Coffee Plantations in the South-East of Cuba",
+    "country": "Cuba",
+    "lat": 20.03,
+    "lng": -75.39138889,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Monuments Zone of Xochicalco",
+    "country": "Mexico",
+    "lat": 18.803972,
+    "lng": -99.29639,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Park and Ruins of Quirigua",
+    "country": "Guatemala",
+    "lat": 15.27059,
+    "lng": -89.04025,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Ruins at Moenjodaro",
+    "country": "Pakistan",
+    "lat": 27.32916667,
+    "lng": 68.13888889,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Ruins of Liangzhu City",
+    "country": "China",
+    "lat": 30.39555556,
+    "lng": 119.9908333,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Aigai (modern name Vergina)",
+    "country": "Greece",
+    "lat": 40.47139,
+    "lng": 22.31833,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Ani",
+    "country": "Türkiye",
+    "lat": 40.5,
+    "lng": 43.56666667,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Carthage",
+    "country": "Tunisia",
+    "lat": 36.85278,
+    "lng": 10.32333,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Cyrene",
+    "country": "Libya",
+    "lat": 32.825,
+    "lng": 21.85833,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Delphi",
+    "country": "Greece",
+    "lat": 38.48149,
+    "lng": 22.49617,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Leptis Magna",
+    "country": "Libya",
+    "lat": 32.63833,
+    "lng": 14.29306,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Mystras",
+    "country": "Greece",
+    "lat": 37.08056,
+    "lng": 22.36667,
+    "year": 1989,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar",
+    "country": "India",
+    "lat": 25.13666667,
+    "lng": 85.44388889,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Olympia",
+    "country": "Greece",
+    "lat": 37.64,
+    "lng": 21.634,
+    "year": 1989,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Philippi",
+    "country": "Greece",
+    "lat": 41.01472222,
+    "lng": 24.28527778,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Sabratha",
+    "country": "Libya",
+    "lat": 32.80528,
+    "lng": 12.485,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Troy",
+    "country": "Türkiye",
+    "lat": 39.95644,
+    "lng": 26.239,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Site of Volubilis",
+    "country": "Morocco",
+    "lat": 34.07389,
+    "lng": -5.55694,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Sites of Bat, Al-Khutm and Al-Ayn",
+    "country": "Oman",
+    "lat": 23.26986,
+    "lng": 56.745,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Sites of the Island of Meroe",
+    "country": "Sudan",
+    "lat": 16.93333333,
+    "lng": 33.71666667,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Archaeological Zone of Paquimé, Casas Grandes",
+    "country": "Mexico",
+    "lat": 30.367128,
+    "lng": -107.948122,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Archipiélago de Revillagigedo",
+    "country": "Mexico",
+    "lat": 18.78805556,
+    "lng": -110.9752778,
+    "year": 2016,
+    "criteria": "N"
+  },
+  {
+    "name": "Architectural Ensemble of the Trinity Sergius Lavra in Sergiev Posad",
+    "country": "Russian Federation",
+    "lat": 56.31035,
+    "lng": 38.1312,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Area de Conservación Guanacaste",
+    "country": "Costa Rica",
+    "lat": 10.85,
+    "lng": -85.61666667,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Arles, Roman and Romanesque Monuments",
+    "country": "France",
+    "lat": 43.67763889,
+    "lng": 4.630694444,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Armenian Monastic Ensembles of Iran",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 38.97888889,
+    "lng": 45.47333333,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Arslantepe Mound",
+    "country": "Türkiye",
+    "lat": 38.3822,
+    "lng": 38.36109167,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "As-Salt - The Place of Tolerance and Urban Hospitality",
+    "country": "Jordan",
+    "lat": 32.04261111,
+    "lng": 35.72830556,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Asante Traditional Buildings",
+    "country": "Ghana",
+    "lat": 6.401111111,
+    "lng": -1.625833333,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Ashur (Qal'at Sherqat)",
+    "country": "Iraq",
+    "lat": 35.45666667,
+    "lng": 43.26111111,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Asmara: A Modernist African City",
+    "country": "Eritrea",
+    "lat": 15.33527778,
+    "lng": 38.93583333,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Assumption Cathedral and Monastery of the town-island of Sviyazhsk",
+    "country": "Russian Federation",
+    "lat": 55.77027778,
+    "lng": 48.65277778,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Astronomical Observatories of Kazan Federal University",
+    "country": "Russian Federation",
+    "lat": 55.79090833,
+    "lng": 49.11909722,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "At-Turaif District in ad-Dir'iyah",
+    "country": "Saudi Arabia",
+    "lat": 24.73413333,
+    "lng": 46.57246667,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Atlantic Forest South-East Reserves",
+    "country": "Brazil",
+    "lat": -24.16667,
+    "lng": -48,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Auschwitz Birkenau <br /><small>German Nazi Concentration and Extermination Camp (1940-1945)</small>",
+    "country": "Poland",
+    "lat": 50.03888889,
+    "lng": 19.175,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Australian Convict Sites",
+    "country": "Australia",
+    "lat": -33.37833333,
+    "lng": 150.9944444,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Australian Fossil Mammal Sites (Riversleigh / Naracoorte)",
+    "country": "Australia",
+    "lat": -19.08333333,
+    "lng": 138.7166667,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "Baalbek",
+    "country": "Lebanon",
+    "lat": 34.00666667,
+    "lng": 36.20416667,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Babylon",
+    "country": "Iraq",
+    "lat": 32.54196944,
+    "lng": 44.42083333,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Baekje Historic Areas",
+    "country": "Republic of Korea",
+    "lat": 36.46194444,
+    "lng": 127.1272222,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Bagan",
+    "country": "Myanmar",
+    "lat": 21.14888889,
+    "lng": 94.88444444,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Bahá’i Holy Places in Haifa and the Western Galilee",
+    "country": "Israel",
+    "lat": 32.82939667,
+    "lng": 34.97164889,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Bahla Fort",
+    "country": "Oman",
+    "lat": 22.96417,
+    "lng": 57.30111,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Bale Mountains National Park",
+    "country": "Ethiopia",
+    "lat": 6.797777778,
+    "lng": 39.74888889,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Ban Chiang Archaeological Site",
+    "country": "Thailand",
+    "lat": 17.407772,
+    "lng": 103.237589,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Banc d'Arguin National Park",
+    "country": "Mauritania",
+    "lat": 20.23472,
+    "lng": -16.10889,
+    "year": 1989,
+    "criteria": "N"
+  },
+  {
+    "name": "Baptism Site “Bethany Beyond the Jordan” (Al-Maghtas)",
+    "country": "Jordan",
+    "lat": 31.83722222,
+    "lng": 35.55277778,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Barberton Makhonjwa Mountains",
+    "country": "South Africa",
+    "lat": -25.97388889,
+    "lng": 31.01388889,
+    "year": 2018,
+    "criteria": "N"
+  },
+  {
+    "name": "Baroque Churches of the Philippines",
+    "country": "Philippines",
+    "lat": 14.59,
+    "lng": 120.97,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Bassari Country: Bassari, Fula and Bedik Cultural Landscapes",
+    "country": "Senegal",
+    "lat": 12.59333333,
+    "lng": -12.84583333,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Bauhaus and its Sites in Weimar, Dessau and Bernau",
+    "country": "Germany",
+    "lat": 50.97477778,
+    "lng": 11.3295,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Beijing Central Axis: A Building Ensemble Exhibiting the Ideal Order of the Chinese Capital",
+    "country": "China",
+    "lat": 39.90722222,
+    "lng": 116.3913889,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Belfries of Belgium and France",
+    "country": "Belgium,France",
+    "lat": 50.17444,
+    "lng": 3.23139,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Belize Barrier Reef Reserve System",
+    "country": "Belize",
+    "lat": 17.190549,
+    "lng": -87.846213,
+    "year": 1996,
+    "criteria": "N"
+  },
+  {
+    "name": "Benedictine Convent of St John at Müstair",
+    "country": "Switzerland",
+    "lat": 46.62945,
+    "lng": 10.44765,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Bergpark Wilhelmshöhe",
+    "country": "Germany",
+    "lat": 51.31583333,
+    "lng": 9.393055556,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Berlin Modernism Housing Estates",
+    "country": "Germany",
+    "lat": 52.44833333,
+    "lng": 13.45,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Białowieża Forest",
+    "country": "Belarus,Poland",
+    "lat": 52.7275,
+    "lng": 23.98111111,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Bikini Atoll Nuclear Test Site",
+    "country": "Marshall Islands",
+    "lat": 11.6,
+    "lng": 165.3805556,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Birka and Hovgården",
+    "country": "Sweden",
+    "lat": 59.33514,
+    "lng": 17.54264,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Birthplace of Jesus: Church of the Nativity and the Pilgrimage Route, Bethlehem",
+    "country": "State of Palestine",
+    "lat": 31.70435278,
+    "lng": 35.2075,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Bisotun",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 34.38833333,
+    "lng": 47.43666667,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Blenheim Palace",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.84194444,
+    "lng": -1.361388889,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Blue and John Crow Mountains",
+    "country": "Jamaica",
+    "lat": 18.0775,
+    "lng": -76.57111111,
+    "year": 2015,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Bolgar Historical and Archaeological Complex",
+    "country": "Russian Federation",
+    "lat": 54.97888889,
+    "lng": 49.05638889,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Bordeaux, Port of the Moon",
+    "country": "France",
+    "lat": 44.83888889,
+    "lng": -0.572222222,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Borobudur Temple Compounds",
+    "country": "Indonesia",
+    "lat": -7.60778,
+    "lng": 110.20361,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Botanical Garden (Orto Botanico), Padua",
+    "country": "Italy",
+    "lat": 45.39911111,
+    "lng": 11.88066667,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Bourges Cathedral",
+    "country": "France",
+    "lat": 47.08222222,
+    "lng": 2.398333333,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Boyana Church",
+    "country": "Bulgaria",
+    "lat": 42.64463194,
+    "lng": 23.26618278,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Brâncuși Monumental Ensemble of Târgu Jiu",
+    "country": "Romania",
+    "lat": 45.03827778,
+    "lng": 23.27877778,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Brasilia",
+    "country": "Brazil",
+    "lat": -15.78333,
+    "lng": -47.9,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Brimstone Hill Fortress National Park",
+    "country": "Saint Kitts and Nevis",
+    "lat": 17.34694,
+    "lng": -62.83722,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Brú na Bóinne - Archaeological Ensemble of the Bend of the Boyne",
+    "country": "Ireland",
+    "lat": 53.69469444,
+    "lng": -6.4755,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Bryggen",
+    "country": "Norway",
+    "lat": 60.39722,
+    "lng": 5.32306,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Budapest, including the Banks of the Danube, the Buda Castle Quarter and Andrássy Avenue",
+    "country": "Hungary",
+    "lat": 47.48242,
+    "lng": 19.07067,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Buddhist Monuments at Sanchi",
+    "country": "India",
+    "lat": 23.47944,
+    "lng": 77.73972,
+    "year": 1989,
+    "criteria": "C"
+  },
+  {
+    "name": "Buddhist Monuments in the Horyu-ji Area",
+    "country": "Japan",
+    "lat": 34.61666667,
+    "lng": 135.7333333,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Buddhist Ruins of Takht-i-Bahi and Neighbouring City Remains at Sahr-i-Bahlol",
+    "country": "Pakistan",
+    "lat": 34.32083333,
+    "lng": 71.94583333,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Budj Bim Cultural Landscape",
+    "country": "Australia",
+    "lat": -38.08111111,
+    "lng": 141.8852778,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Burgos Cathedral",
+    "country": "Spain",
+    "lat": 42.34073333,
+    "lng": -3.704011111,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Bursa and Cumalıkızık: the Birth of the Ottoman Empire",
+    "country": "Türkiye",
+    "lat": 40.18473056,
+    "lng": 29.06233611,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Butrint",
+    "country": "Albania",
+    "lat": 39.745732,
+    "lng": 20.02095,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Bwindi Impenetrable National Park",
+    "country": "Uganda",
+    "lat": -1.047,
+    "lng": 29.692,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "Byblos",
+    "country": "Lebanon",
+    "lat": 34.11917,
+    "lng": 35.64555556,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Cahokia Mounds State Historic Site",
+    "country": "United States of America",
+    "lat": 38.65861111,
+    "lng": -90.06138889,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Cambodian Memorial Sites: From centres of repression to places of peace and reflection",
+    "country": "Cambodia",
+    "lat": 11.77016,
+    "lng": 104.384814,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Camino Real de Tierra Adentro",
+    "country": "Mexico",
+    "lat": 22.60805556,
+    "lng": -102.3791667,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Canadian Rocky Mountain Parks",
+    "country": "Canada",
+    "lat": 51.42472222,
+    "lng": -116.4797222,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Canaima National Park",
+    "country": "Venezuela (Bolivarian Republic of)",
+    "lat": 5.337994,
+    "lng": -62.037883,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "Canal du Midi",
+    "country": "France",
+    "lat": 43.61138889,
+    "lng": 1.416388889,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Canterbury Cathedral, St Augustine's Abbey, and St Martin's Church",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.28,
+    "lng": 1.083333333,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Cape Floral Region Protected Areas",
+    "country": "South Africa",
+    "lat": -34.35580512,
+    "lng": 18.47503218,
+    "year": 2004,
+    "criteria": "N"
+  },
+  {
+    "name": "Carlsbad Caverns National Park",
+    "country": "United States of America",
+    "lat": 32.16666667,
+    "lng": -104.3833333,
+    "year": 1995,
+    "criteria": "N"
+  },
+  {
+    "name": "Carolingian Westwork and Civitas Corvey",
+    "country": "Germany",
+    "lat": 51.77827778,
+    "lng": 9.41025,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Castel del Monte",
+    "country": "Italy",
+    "lat": 41.08480556,
+    "lng": 16.27094444,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Castle of the Teutonic Order in Malbork",
+    "country": "Poland",
+    "lat": 54.041,
+    "lng": 19.02972222,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Castles and Town Walls of King Edward in Gwynedd",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 53.13972222,
+    "lng": -4.276944444,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Castles of Augustusburg and Falkenlust at Brühl",
+    "country": "Germany",
+    "lat": 50.82502778,
+    "lng": 6.909777778,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Cathedral of Notre-Dame, Former Abbey of Saint-Rémi and Palace of Tau, Reims",
+    "country": "France",
+    "lat": 49.25333333,
+    "lng": 4.032777778,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Cathedral, Alcázar and Archivo de Indias in Seville",
+    "country": "Spain",
+    "lat": 37.38384,
+    "lng": -5.99155,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Cathedral, Torre Civica and Piazza Grande, Modena",
+    "country": "Italy",
+    "lat": 44.64624,
+    "lng": 10.92568,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Cave of Altamira and Paleolithic Cave Art of Northern Spain",
+    "country": "Spain",
+    "lat": 43.38252778,
+    "lng": -4.116166667,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Caves and Ice Age Art in the Swabian Jura",
+    "country": "Germany",
+    "lat": 48.38777778,
+    "lng": 9.765555556,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Caves of Aggtelek Karst and Slovak Karst",
+    "country": "Hungary,Slovakia",
+    "lat": 48.47573,
+    "lng": 20.48687,
+    "year": 1995,
+    "criteria": "N"
+  },
+  {
+    "name": "Caves of Maresha and Bet-Guvrin in the Judean Lowlands as a Microcosm of the Land of the Caves",
+    "country": "Israel",
+    "lat": 31.60111111,
+    "lng": 34.9,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Central Highlands of Sri Lanka",
+    "country": "Sri Lanka",
+    "lat": 7.45245,
+    "lng": 80.8021,
+    "year": 2010,
+    "criteria": "N"
+  },
+  {
+    "name": "Central Sector of the Imperial Citadel of Thang Long - Hanoi",
+    "country": "Viet Nam",
+    "lat": 21.03752,
+    "lng": 105.838623,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Central Sikhote-Alin",
+    "country": "Russian Federation",
+    "lat": 46.68333333,
+    "lng": 136.6611111,
+    "year": 2001,
+    "criteria": "N"
+  },
+  {
+    "name": "Central University City Campus of the <i>Universidad Nacional Autónoma de México</i> (UNAM)",
+    "country": "Mexico",
+    "lat": 19.33222222,
+    "lng": -99.18805556,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Central Zone of the Town of Angra do Heroismo in the Azores",
+    "country": "Portugal",
+    "lat": 38.655,
+    "lng": -27.22,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Chaco Culture",
+    "country": "United States of America",
+    "lat": 36.06377778,
+    "lng": -107.9708333,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Chaîne des Puys - Limagne fault tectonic arena",
+    "country": "France",
+    "lat": 45.77938889,
+    "lng": 2.965111111,
+    "year": 2018,
+    "criteria": "N"
+  },
+  {
+    "name": "Champagne Hillsides, Houses and Cellars",
+    "country": "France",
+    "lat": 49.0775,
+    "lng": 3.946111111,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Chan Chan Archaeological Zone",
+    "country": "Peru",
+    "lat": -8.107836,
+    "lng": -79.074737,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Changdeokgung Palace Complex",
+    "country": "Republic of Korea",
+    "lat": 37.57888889,
+    "lng": 126.9911111,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Chankillo Archaeoastronomical Complex",
+    "country": "Peru",
+    "lat": -9.556861111,
+    "lng": -78.23591667,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Chartres Cathedral",
+    "country": "France",
+    "lat": 48.4475,
+    "lng": 1.487222222,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Chavin (Archaeological Site)",
+    "country": "Peru",
+    "lat": -9.592772544,
+    "lng": -77.1784535,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Chief Roi Mata’s Domain",
+    "country": "Vanuatu",
+    "lat": -17.62806944,
+    "lng": 168.1777194,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "China Danxia",
+    "country": "China",
+    "lat": 28.42194444,
+    "lng": 106.0425,
+    "year": 2010,
+    "criteria": "N"
+  },
+  {
+    "name": "Chiribiquete National Park – “The Maloca of the Jaguar”",
+    "country": "Colombia",
+    "lat": 0.525277778,
+    "lng": -72.79722222,
+    "year": 2018,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Chitwan National Park",
+    "country": "Nepal",
+    "lat": 27.5,
+    "lng": 84.33333,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Choirokoitia",
+    "country": "Cyprus",
+    "lat": 34.79674067,
+    "lng": 33.34394315,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Chongoni Rock-Art Area",
+    "country": "Malawi",
+    "lat": -14.21852077,
+    "lng": 34.20707383,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Church and Dominican Convent of Santa Maria delle Grazie with “The Last Supper” by Leonardo da Vinci",
+    "country": "Italy",
+    "lat": 45.466,
+    "lng": 9.171,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Church of the Ascension, Kolomenskoye",
+    "country": "Russian Federation",
+    "lat": 55.65556,
+    "lng": 37.67389,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Church Town of Gammelstad, Luleå",
+    "country": "Sweden",
+    "lat": 65.64611,
+    "lng": 22.02861,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Churches and Convents of Goa",
+    "country": "India",
+    "lat": 15.50222,
+    "lng": 73.91167,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Churches of Moldavia",
+    "country": "Romania",
+    "lat": 47.77833333,
+    "lng": 25.71277778,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Churches of the Pskov School of Architecture",
+    "country": "Russian Federation",
+    "lat": 57.80719444,
+    "lng": 28.32855556,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Cidade Velha, Historic Centre of Ribeira Grande",
+    "country": "Cabo Verde",
+    "lat": 14.91513889,
+    "lng": -23.60519444,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Cistercian Abbey of Fontenay",
+    "country": "France",
+    "lat": 47.63944,
+    "lng": 4.38911,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Citadel of the Ho Dynasty",
+    "country": "Viet Nam",
+    "lat": 20.07805556,
+    "lng": 105.6047222,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Bath",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.38130556,
+    "lng": -2.359055556,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Cuzco",
+    "country": "Peru",
+    "lat": -13.517276,
+    "lng": -71.980004,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Graz – Historic Centre and Schloss Eggenberg",
+    "country": "Austria",
+    "lat": 47.07305556,
+    "lng": 15.43861111,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Luxembourg: its Old Quarters and Fortifications",
+    "country": "Luxembourg",
+    "lat": 49.61,
+    "lng": 6.13333,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Potosí",
+    "country": "Bolivia (Plurinational State of)",
+    "lat": -19.599112,
+    "lng": -65.749813,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Quito",
+    "country": "Ecuador",
+    "lat": -0.22,
+    "lng": -78.51208333,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Safranbolu",
+    "country": "Türkiye",
+    "lat": 41.26,
+    "lng": 32.68972,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Valletta",
+    "country": "Malta",
+    "lat": 35.90056,
+    "lng": 14.51444,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "City of Vicenza and the Palladian Villas of the Veneto",
+    "country": "Italy",
+    "lat": 45.54916667,
+    "lng": 11.54944444,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Classical Gardens of Suzhou",
+    "country": "China",
+    "lat": 31.31666667,
+    "lng": 120.45,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Cliff of Bandiagara (Land of the Dogons)",
+    "country": "Mali",
+    "lat": 14.33333,
+    "lng": -3.41667,
+    "year": 1989,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Coastal and Marine Ecosystems of the Bijagós Archipelago – Omatí Minhô",
+    "country": "Guinea-Bissau",
+    "lat": 11.12,
+    "lng": -15.94888889,
+    "year": 2025,
+    "criteria": "N"
+  },
+  {
+    "name": "Cocos Island National Park",
+    "country": "Costa Rica",
+    "lat": 5.533333333,
+    "lng": -87.06666667,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "Coffee Cultural Landscape of Colombia",
+    "country": "Colombia",
+    "lat": 4.889476,
+    "lng": -75.773082,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Colchic Rainforests and Wetlands",
+    "country": "Georgia",
+    "lat": 41.70227778,
+    "lng": 41.9512,
+    "year": 2021,
+    "criteria": "N"
+  },
+  {
+    "name": "Cold Winter Deserts of Turan",
+    "country": "Kazakhstan,Turkmenistan,Uzbekistan",
+    "lat": 44.02583333,
+    "lng": 79.03416667,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Collegiate Church, Castle and Old Town of Quedlinburg",
+    "country": "Germany",
+    "lat": 51.78333,
+    "lng": 11.15,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Cologne Cathedral",
+    "country": "Germany",
+    "lat": 50.94111111,
+    "lng": 6.957222222,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Colonial City of Santo Domingo",
+    "country": "Dominican Republic",
+    "lat": 18.472394,
+    "lng": -69.885841,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Colonies of Benevolence",
+    "country": "Belgium,Netherlands (Kingdom of the)",
+    "lat": 53.04222222,
+    "lng": 6.391588889,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Comoé National Park",
+    "country": "Côte d'Ivoire",
+    "lat": 9,
+    "lng": -4,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Complex of Hué Monuments",
+    "country": "Viet Nam",
+    "lat": 16.46944,
+    "lng": 107.57778,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Convent of Christ in Tomar",
+    "country": "Portugal",
+    "lat": 39.60472,
+    "lng": -8.4175,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Cordouan Lighthouse",
+    "country": "France",
+    "lat": 45.58630556,
+    "lng": -1.173333333,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Cornwall and West Devon Mining Landscape",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 50.13611111,
+    "lng": -5.383611111,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Coro and its Port",
+    "country": "Venezuela (Bolivarian Republic of)",
+    "lat": 11.409794,
+    "lng": -69.679228,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Costiera Amalfitana",
+    "country": "Italy",
+    "lat": 40.63333333,
+    "lng": 14.60277778,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Crac des Chevaliers and Qal’at Salah El-Din",
+    "country": "Syrian Arab Republic",
+    "lat": 34.75666667,
+    "lng": 36.29444444,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Crespi d'Adda",
+    "country": "Italy",
+    "lat": 45.59333,
+    "lng": 9.53833,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Cueva de las Manos, Río Pinturas",
+    "country": "Argentina",
+    "lat": -47.15,
+    "lng": -70.66666667,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural and Historic Ensemble of the Solovetsky Islands",
+    "country": "Russian Federation",
+    "lat": 65.08333333,
+    "lng": 35.66666667,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Heritage Sites of Ancient Khuttal",
+    "country": "Tajikistan",
+    "lat": 37.74439361,
+    "lng": 69.29871278,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Bali Province: the <em>Subak</em> System as a Manifestation of the <em>Tri Hita Karana</em> Philosophy",
+    "country": "Indonesia",
+    "lat": -8.259166667,
+    "lng": 115.4027778,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Hawraman/Uramanat",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 35.10735833,
+    "lng": 46.47785,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Honghe Hani Rice Terraces",
+    "country": "China",
+    "lat": 23.09327778,
+    "lng": 102.7799806,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Kenozero Lake",
+    "country": "Russian Federation",
+    "lat": 61.928,
+    "lng": 38.17261111,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Khinalig People and “Köç Yolu” Transhumance Route",
+    "country": "Azerbaijan",
+    "lat": 40.7059,
+    "lng": 48.8854,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Maymand",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 30.16805556,
+    "lng": 55.37555556,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Old Tea Forests of the Jingmai Mountain in Pu’er",
+    "country": "China",
+    "lat": 22.18416667,
+    "lng": 100.0075,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of Sintra",
+    "country": "Portugal",
+    "lat": 38.78333,
+    "lng": -9.41667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Landscape of the Serra de Tramuntana",
+    "country": "Spain",
+    "lat": 39.73083333,
+    "lng": 2.694722222,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Cultural Sites of Al Ain (Hafit, Hili, Bidaa Bint Saud and Oases Areas)",
+    "country": "United Arab Emirates",
+    "lat": 24.06777778,
+    "lng": 55.80638889,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Curonian Spit",
+    "country": "Lithuania,Russian Federation",
+    "lat": 55.27458,
+    "lng": 20.96239,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Danube Delta",
+    "country": "Romania",
+    "lat": 45.08333,
+    "lng": 29.5,
+    "year": 1991,
+    "criteria": "N"
+  },
+  {
+    "name": "Darien National Park",
+    "country": "Panama",
+    "lat": 7.736111111,
+    "lng": -77.54722222,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Decorated Cave of Pont d’Arc, known as Grotte Chauvet-Pont d’Arc, Ardèche",
+    "country": "France",
+    "lat": 44.3875,
+    "lng": 4.416111111,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Deer Stone Monuments and Related Bronze Age Sites",
+    "country": "Mongolia",
+    "lat": 47.74277778,
+    "lng": 101.2258333,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Delos",
+    "country": "Greece",
+    "lat": 37.4,
+    "lng": 25.26667,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Desembarco del Granma National Park",
+    "country": "Cuba",
+    "lat": 19.88333,
+    "lng": -77.63333,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Dholavira: a Harappan City",
+    "country": "India",
+    "lat": 23.88840833,
+    "lng": 70.21330278,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Dilmun Burial Mounds",
+    "country": "Bahrain",
+    "lat": 26.14972222,
+    "lng": 50.51277778,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Dinosaur Provincial Park",
+    "country": "Canada",
+    "lat": 50.76777778,
+    "lng": -111.4922222,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Diy-Gid-Biy Cultural Landscape of the Mandara Mountains",
+    "country": "Cameroon",
+    "lat": 10.90333333,
+    "lng": 13.79555556,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Diyarbakır Fortress and Hevsel Gardens Cultural Landscape",
+    "country": "Türkiye",
+    "lat": 37.9031,
+    "lng": 40.23930833,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Dja Faunal Reserve",
+    "country": "Cameroon",
+    "lat": 3.125,
+    "lng": 12.983,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Djémila",
+    "country": "Algeria",
+    "lat": 36.32056,
+    "lng": 5.73667,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Djerba: Testimony to a settlement pattern in an island territory",
+    "country": "Tunisia",
+    "lat": 33.79241944,
+    "lng": 11.00395833,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Djoudj National Bird Sanctuary",
+    "country": "Senegal",
+    "lat": 16.414602,
+    "lng": -16.237906,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Doñana National Park",
+    "country": "Spain",
+    "lat": 36.9477,
+    "lng": -6.358861,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "Dong Phayayen-Khao Yai Forest Complex",
+    "country": "Thailand",
+    "lat": 14.33,
+    "lng": 102.05,
+    "year": 2005,
+    "criteria": "N"
+  },
+  {
+    "name": "Dorset and East Devon Coast",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 50.70555556,
+    "lng": -2.989888889,
+    "year": 2001,
+    "criteria": "N"
+  },
+  {
+    "name": "Dougga / Thugga",
+    "country": "Tunisia",
+    "lat": 36.42361,
+    "lng": 9.22028,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Durham Castle and Cathedral",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 54.77472222,
+    "lng": -1.576111111,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Durmitor National Park",
+    "country": "Montenegro",
+    "lat": 43.133,
+    "lng": 19.0166,
+    "year": 1980,
+    "criteria": "N"
+  },
+  {
+    "name": "Dutch Water Defence Lines",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 52.555,
+    "lng": 4.791388889,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Earliest 16th-Century Monasteries on the Slopes of Popocatepetl",
+    "country": "Mexico",
+    "lat": 18.93472222,
+    "lng": -98.89777778,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Early Christian Monuments of Ravenna",
+    "country": "Italy",
+    "lat": 44.42041667,
+    "lng": 12.19625,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "East Rennell",
+    "country": "Solomon Islands",
+    "lat": -11.68333,
+    "lng": 160.33333,
+    "year": 1998,
+    "criteria": "N"
+  },
+  {
+    "name": "Ecosystem and Relict Cultural Landscape of Lopé-Okanda",
+    "country": "Gabon",
+    "lat": -0.5,
+    "lng": 11.5,
+    "year": 2007,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Eisinga Planetarium in Franeker",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 53.187375,
+    "lng": 5.543752778,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "El Pinacate and Gran Desierto de Altar Biosphere Reserve",
+    "country": "Mexico",
+    "lat": 32,
+    "lng": -113.9166667,
+    "year": 2013,
+    "criteria": "N"
+  },
+  {
+    "name": "El Tajin, Pre-Hispanic City",
+    "country": "Mexico",
+    "lat": 20.446095,
+    "lng": -97.377642,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Elephanta Caves",
+    "country": "India",
+    "lat": 18.96667,
+    "lng": 72.93583,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Ellora Caves",
+    "country": "India",
+    "lat": 20.02639,
+    "lng": 75.17917,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Engelsberg Ironworks",
+    "country": "Sweden",
+    "lat": 59.97,
+    "lng": 16.01,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Ennedi Massif: Natural and Cultural Landscape",
+    "country": "Chad",
+    "lat": 17.04166667,
+    "lng": 21.86277778,
+    "year": 2016,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Ephesus",
+    "country": "Türkiye",
+    "lat": 37.92916667,
+    "lng": 27.35944444,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Episcopal City of Albi",
+    "country": "France",
+    "lat": 43.92916667,
+    "lng": 2.144166667,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Episcopal Complex of the Euphrasian Basilica in the Historic Centre of Poreč",
+    "country": "Croatia",
+    "lat": 45.22858333,
+    "lng": 13.59333333,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Erbil Citadel",
+    "country": "Iraq",
+    "lat": 36.19111111,
+    "lng": 44.00916667,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Erzgebirge/Krušnohoří Mining Region",
+    "country": "Czechia,Germany",
+    "lat": 50.40652778,
+    "lng": 12.83734444,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "ESMA Museum and Site of Memory – Former Clandestine Centre of Detention, Torture and Extermination",
+    "country": "Argentina",
+    "lat": -34.53664167,
+    "lng": -58.46533333,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Evaporitic Karst and Caves of Northern Apennines",
+    "country": "Italy",
+    "lat": 44.37994444,
+    "lng": 10.38891667,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Everglades National Park",
+    "country": "United States of America",
+    "lat": 25.55444444,
+    "lng": -80.99638889,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Fagus Factory in Alfeld",
+    "country": "Germany",
+    "lat": 51.98388889,
+    "lng": 9.812222222,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Fanjingshan",
+    "country": "China",
+    "lat": 27.89555556,
+    "lng": 108.68,
+    "year": 2018,
+    "criteria": "N"
+  },
+  {
+    "name": "Fasil Ghebbi, Gondar Region",
+    "country": "Ethiopia",
+    "lat": 12.607909,
+    "lng": 37.4697,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Fatehpur Sikri",
+    "country": "India",
+    "lat": 27.097528,
+    "lng": 77.6665,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Faya Palaeolandscape",
+    "country": "United Arab Emirates",
+    "lat": 25.08280556,
+    "lng": 55.80658333,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Fertö / Neusiedlersee Cultural Landscape",
+    "country": "Austria,Hungary",
+    "lat": 47.71927778,
+    "lng": 16.72272222,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Forest Massif of Odzala-Kokoua",
+    "country": "Congo",
+    "lat": 1.335555556,
+    "lng": 14.86027778,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Forest Research Institute Malaysia Forest Park Selangor",
+    "country": "Malaysia",
+    "lat": 3.22925,
+    "lng": 101.6272778,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Fort and Shalamar Gardens in Lahore",
+    "country": "Pakistan",
+    "lat": 31.59027778,
+    "lng": 74.30972222,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Fort Jesus, Mombasa",
+    "country": "Kenya",
+    "lat": -4.062777778,
+    "lng": 39.67944444,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Fortifications of Vauban",
+    "country": "France",
+    "lat": 47.23611111,
+    "lng": 6.026944444,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Fortifications on the Caribbean Side of Panama: Portobelo-San Lorenzo",
+    "country": "Panama",
+    "lat": 9.553888889,
+    "lng": -79.65583333,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Fortress of Suomenlinna",
+    "country": "Finland",
+    "lat": 60.14722,
+    "lng": 24.98722,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Forts and Castles, Volta, Greater Accra, Central and Western Regions",
+    "country": "Ghana",
+    "lat": 5.39103,
+    "lng": -0.49361,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Fossil Hominid Sites of South Africa",
+    "country": "South Africa",
+    "lat": -24.15861,
+    "lng": 29.17694,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Franciscan Missions in the Sierra Gorda of Querétaro",
+    "country": "Mexico",
+    "lat": 21.20438889,
+    "lng": -99.46411111,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Fray Bentos Industrial Landscape",
+    "country": "Uruguay",
+    "lat": -33.11777778,
+    "lng": -58.33166667,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "French Austral Lands and Seas",
+    "country": "France",
+    "lat": -49.38036111,
+    "lng": 69.35280556,
+    "year": 2019,
+    "criteria": "N"
+  },
+  {
+    "name": "Frontiers of the Roman Empire",
+    "country": "Germany,United Kingdom of Great Britain and Northern Ireland",
+    "lat": 54.99261111,
+    "lng": -2.601,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Frontiers of the Roman Empire – Dacia",
+    "country": "Romania",
+    "lat": 47.18078889,
+    "lng": 23.15941111,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Frontiers of the Roman Empire – The Danube Limes (Western Segment)",
+    "country": "Austria,Germany,Slovakia",
+    "lat": 48.11519444,
+    "lng": 16.86138889,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Frontiers of the Roman Empire – The Lower German Limes",
+    "country": "Germany,Netherlands (Kingdom of the)",
+    "lat": 52.18033333,
+    "lng": 4.433,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Fujian <em>Tulou</em>",
+    "country": "China",
+    "lat": 25.02305556,
+    "lng": 117.6858333,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Funerary Tradition in the Prehistory of Sardinia – <em>The domus de janas</em>",
+    "country": "Italy",
+    "lat": 40.08513889,
+    "lng": 8.951333333,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Galápagos Islands",
+    "country": "Ecuador",
+    "lat": -0.68986,
+    "lng": -90.501319,
+    "year": 1978,
+    "criteria": "N"
+  },
+  {
+    "name": "Gamzigrad-Romuliana, Palace of Galerius",
+    "country": "Serbia",
+    "lat": 43.89930556,
+    "lng": 22.18611111,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Garajonay National Park",
+    "country": "Spain",
+    "lat": 28.12625,
+    "lng": -17.23722222,
+    "year": 1986,
+    "criteria": "N"
+  },
+  {
+    "name": "Garamba National Park",
+    "country": "Democratic Republic of the Congo",
+    "lat": 4,
+    "lng": 29.25,
+    "year": 1980,
+    "criteria": "N"
+  },
+  {
+    "name": "Garrison Border Town of Elvas and its Fortifications",
+    "country": "Portugal",
+    "lat": 38.88061944,
+    "lng": -7.163322222,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Gaya Tumuli",
+    "country": "Republic of Korea",
+    "lat": 35.23726389,
+    "lng": 128.873725,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Gebel Barkal and the Sites of the Napatan Region",
+    "country": "Sudan",
+    "lat": 18.537,
+    "lng": 31.82802778,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Gelati Monastery",
+    "country": "Georgia",
+    "lat": 42.29472222,
+    "lng": 42.76833333,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Genoa: <i>Le Strade Nuove</i> and the system of the<i> Palazzi dei Rolli</i>",
+    "country": "Italy",
+    "lat": 44.41222222,
+    "lng": 8.931111111,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Giant's Causeway and Causeway Coast",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 55.24083333,
+    "lng": -6.511666667,
+    "year": 1986,
+    "criteria": "N"
+  },
+  {
+    "name": "Göbekli Tepe",
+    "country": "Türkiye",
+    "lat": 37.22324194,
+    "lng": 38.92236389,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Gobustan Rock Art Cultural Landscape",
+    "country": "Azerbaijan",
+    "lat": 40.125,
+    "lng": 49.375,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Gochang, Hwasun and Ganghwa Dolmen Sites",
+    "country": "Republic of Korea",
+    "lat": 34.96667,
+    "lng": 126.92917,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Gola-Tiwai Complex",
+    "country": "Sierra Leone",
+    "lat": 7.541166667,
+    "lng": -11.34788889,
+    "year": 2025,
+    "criteria": "N"
+  },
+  {
+    "name": "Golden Mountains of Altai",
+    "country": "Russian Federation",
+    "lat": 50.46666667,
+    "lng": 86,
+    "year": 1998,
+    "criteria": "N"
+  },
+  {
+    "name": "Golestan Palace",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 35.68036667,
+    "lng": 51.42051111,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Gonbad-e Qābus",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 37.25802778,
+    "lng": 55.169,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Gondwana Rainforests of Australia",
+    "country": "Australia",
+    "lat": -28.25,
+    "lng": 150.05,
+    "year": 1986,
+    "criteria": "N"
+  },
+  {
+    "name": "Gordion",
+    "country": "Türkiye",
+    "lat": 39.64333333,
+    "lng": 31.98611111,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Göreme National Park and the Rock Sites of Cappadocia",
+    "country": "Türkiye",
+    "lat": 38.66667,
+    "lng": 34.85,
+    "year": 1985,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Gorham's Cave Complex",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 36.12266944,
+    "lng": -5.342061111,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Gough and Inaccessible Islands",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": -40.32472222,
+    "lng": -9.928611111,
+    "year": 1995,
+    "criteria": "N"
+  },
+  {
+    "name": "Grand Canyon National Park",
+    "country": "United States of America",
+    "lat": 36.10083333,
+    "lng": -112.0905556,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Great Barrier Reef",
+    "country": "Australia",
+    "lat": -18.28611111,
+    "lng": 147.7,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Great Burkhan Khaldun Mountain and its surrounding sacred landscape",
+    "country": "Mongolia",
+    "lat": 48.76197778,
+    "lng": 109.0093278,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Great Himalayan National Park Conservation Area",
+    "country": "India",
+    "lat": 31.83333333,
+    "lng": 77.58333333,
+    "year": 2014,
+    "criteria": "N"
+  },
+  {
+    "name": "Great Mosque and Hospital of Divriği",
+    "country": "Türkiye",
+    "lat": 39.371271,
+    "lng": 38.121826,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Great Smoky Mountains National Park",
+    "country": "United States of America",
+    "lat": 35.59305556,
+    "lng": -83.43555556,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Great Zimbabwe National Monument",
+    "country": "Zimbabwe",
+    "lat": -20.27116995,
+    "lng": 30.93326897,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Greater Blue Mountains Area",
+    "country": "Australia",
+    "lat": -33.7,
+    "lng": 150,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "Gros Morne National Park",
+    "country": "Canada",
+    "lat": 49.6125,
+    "lng": -57.53138889,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Group of Monuments at Hampi",
+    "country": "India",
+    "lat": 15.31444,
+    "lng": 76.47167,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Group of Monuments at Mahabalipuram",
+    "country": "India",
+    "lat": 12.61667,
+    "lng": 80.19167,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Group of Monuments at Pattadakal",
+    "country": "India",
+    "lat": 15.94833,
+    "lng": 75.81667,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Gulf of Porto: Calanche of Piana, Gulf of Girolata, Scandola Reserve",
+    "country": "France",
+    "lat": 42.32519444,
+    "lng": 8.628833333,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Gunung Mulu National Park",
+    "country": "Malaysia",
+    "lat": 4.13333,
+    "lng": 114.91667,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "Gusuku Sites and Related Properties of the Kingdom of Ryukyu",
+    "country": "Japan",
+    "lat": 26.20861111,
+    "lng": 127.6827778,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Gyeongju Historic Areas",
+    "country": "Republic of Korea",
+    "lat": 35.78889,
+    "lng": 129.22667,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Ha Long Bay - Cat Ba Archipelago",
+    "country": "Viet Nam",
+    "lat": 20.83277778,
+    "lng": 107.1611111,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "Haeinsa Temple Janggyeong Panjeon, the Depositories for the <I>Tripitaka Koreana</I> Woodblocks",
+    "country": "Republic of Korea",
+    "lat": 35.801672,
+    "lng": 128.098711,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Ħal Saflieni Hypogeum",
+    "country": "Malta",
+    "lat": 35.86959,
+    "lng": 14.50688337,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Hallstatt-Dachstein / Salzkammergut Cultural Landscape",
+    "country": "Austria",
+    "lat": 47.55944444,
+    "lng": 13.64638889,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Hanseatic City of Lübeck",
+    "country": "Germany",
+    "lat": 53.86667,
+    "lng": 10.69167,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Hanseatic Town of Visby",
+    "country": "Sweden",
+    "lat": 57.64167,
+    "lng": 18.29583,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Harar Jugol, the Fortified Historic Town",
+    "country": "Ethiopia",
+    "lat": 9.308888889,
+    "lng": 42.13777778,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Hatra",
+    "country": "Iraq",
+    "lat": 35.58806,
+    "lng": 42.71833,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Hattusha: the Hittite Capital",
+    "country": "Türkiye",
+    "lat": 40.01389,
+    "lng": 34.62056,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Hawaii Volcanoes National Park",
+    "country": "United States of America",
+    "lat": 19.40083333,
+    "lng": -155.1236111,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Head-Smashed-In Buffalo Jump",
+    "country": "Canada",
+    "lat": 49.70840556,
+    "lng": -113.6520528,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Heard and McDonald Islands",
+    "country": "Australia",
+    "lat": -53.1,
+    "lng": 73.5,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "Heart of Neolithic Orkney",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 58.99605556,
+    "lng": -3.188666667,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Hebron/Al-Khalil Old Town",
+    "country": "State of Palestine",
+    "lat": 31.52444444,
+    "lng": 35.10833333,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Hegmataneh",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 34.80238889,
+    "lng": 48.51668611,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Hegra Archaeological Site (al-Hijr / Madā ͐ in Ṣāliḥ)",
+    "country": "Saudi Arabia",
+    "lat": 26.78361111,
+    "lng": 37.955,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Henderson Island",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": -24.36666667,
+    "lng": -128.3333333,
+    "year": 1988,
+    "criteria": "N"
+  },
+  {
+    "name": "Heritage of Mercury. Almadén and Idrija",
+    "country": "Slovenia,Spain",
+    "lat": 38.77527778,
+    "lng": -4.838888889,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Hidden Christian Sites in the Nagasaki Region",
+    "country": "Japan",
+    "lat": 32.80222222,
+    "lng": 128.9038889,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Hierapolis-Pamukkale",
+    "country": "Türkiye",
+    "lat": 37.92389,
+    "lng": 29.12333,
+    "year": 1988,
+    "criteria": "C/N"
+  },
+  {
+    "name": "High Coast / Kvarken Archipelago",
+    "country": "Finland,Sweden",
+    "lat": 63.3,
+    "lng": 21.3,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "Hill Forts of Rajasthan",
+    "country": "India",
+    "lat": 24.88333333,
+    "lng": 74.64611111,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Hiraizumi – Temples, Gardens and Archaeological Sites Representing the Buddhist Pure Land",
+    "country": "Japan",
+    "lat": 39.00111111,
+    "lng": 141.1077778,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Hiroshima Peace Memorial (Genbaku Dome)",
+    "country": "Japan",
+    "lat": 34.395556,
+    "lng": 132.453611,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Area of Willemstad, Inner City and Harbour, Curaçao",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 12.10194,
+    "lng": -68.90222,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Areas of Istanbul",
+    "country": "Türkiye",
+    "lat": 41.00847,
+    "lng": 28.97993,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Bridgetown and its Garrison",
+    "country": "Barbados",
+    "lat": 13.09666667,
+    "lng": -59.61388889,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Cairo",
+    "country": "Egypt",
+    "lat": 30.05,
+    "lng": 31.26111,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre (Old Town) of Tallinn",
+    "country": "Estonia",
+    "lat": 59.437,
+    "lng": 24.74,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Agadez",
+    "country": "Niger",
+    "lat": 16.97361111,
+    "lng": 7.991388889,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Avignon: Papal Palace, Episcopal Ensemble and Avignon Bridge",
+    "country": "France",
+    "lat": 43.95277778,
+    "lng": 4.806111111,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Bukhara",
+    "country": "Uzbekistan",
+    "lat": 39.77472,
+    "lng": 64.42861,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Camagüey",
+    "country": "Cuba",
+    "lat": 21.37861111,
+    "lng": -77.91861111,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Český Krumlov",
+    "country": "Czechia",
+    "lat": 48.81069444,
+    "lng": 14.31502778,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Cordoba",
+    "country": "Spain",
+    "lat": 37.87919444,
+    "lng": -4.779722222,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Évora",
+    "country": "Portugal",
+    "lat": 38.57306,
+    "lng": -7.90778,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Florence",
+    "country": "Italy",
+    "lat": 43.77306,
+    "lng": 11.25611,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Guimarães and Couros Zone",
+    "country": "Portugal",
+    "lat": 41.443,
+    "lng": -8.292777778,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Kraków",
+    "country": "Poland",
+    "lat": 50.06138889,
+    "lng": 19.93722222,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Lima",
+    "country": "Peru",
+    "lat": -12.046542,
+    "lng": -77.0304,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Mexico City and Xochimilco",
+    "country": "Mexico",
+    "lat": 19.41833,
+    "lng": -99.13278,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Morelia",
+    "country": "Mexico",
+    "lat": 19.700927,
+    "lng": -101.190376,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Naples",
+    "country": "Italy",
+    "lat": 40.85138889,
+    "lng": 14.26277778,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Oaxaca and Archaeological Site of Monte Albán",
+    "country": "Mexico",
+    "lat": 17.061579,
+    "lng": -96.725885,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Oporto, Luiz I Bridge and Monastery of Serra do Pilar",
+    "country": "Portugal",
+    "lat": 41.14166667,
+    "lng": -8.616666667,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Prague",
+    "country": "Czechia",
+    "lat": 50.08972,
+    "lng": 14.41944,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Puebla",
+    "country": "Mexico",
+    "lat": 19.045967,
+    "lng": -98.197769,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Riga",
+    "country": "Latvia",
+    "lat": 56.95417,
+    "lng": 24.11667,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+    "country": "Holy See,Italy",
+    "lat": 41.89022222,
+    "lng": 12.49230556,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Saint Petersburg and Related Groups of Monuments",
+    "country": "Russian Federation",
+    "lat": 59.95,
+    "lng": 30.31833,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Salvador de Bahia",
+    "country": "Brazil",
+    "lat": -12.972917,
+    "lng": -38.512981,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of San Gimignano",
+    "country": "Italy",
+    "lat": 43.46806,
+    "lng": 11.04167,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Santa Ana de los Ríos de Cuenca",
+    "country": "Ecuador",
+    "lat": -2.897447,
+    "lng": -79.004382,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Santa Cruz de Mompox",
+    "country": "Colombia",
+    "lat": 9.240492,
+    "lng": -74.423084,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of São Luís",
+    "country": "Brazil",
+    "lat": -2.530054,
+    "lng": -44.303369,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Sheki with the Khan’s Palace",
+    "country": "Azerbaijan",
+    "lat": 41.20333333,
+    "lng": 47.1875,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Siena",
+    "country": "Italy",
+    "lat": 43.31861111,
+    "lng": 11.33166667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Telč",
+    "country": "Czechia",
+    "lat": 49.18413889,
+    "lng": 15.45397222,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of the City of Pienza",
+    "country": "Italy",
+    "lat": 43.07694444,
+    "lng": 11.67861111,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of the City of Salzburg",
+    "country": "Austria",
+    "lat": 47.80055556,
+    "lng": 13.04333333,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of the Town of Diamantina",
+    "country": "Brazil",
+    "lat": -18.244776,
+    "lng": -43.59768,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of the Town of Olinda",
+    "country": "Brazil",
+    "lat": -8.013333333,
+    "lng": -34.845,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Warsaw",
+    "country": "Poland",
+    "lat": 52.25,
+    "lng": 21.013,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centre of Zacatecas",
+    "country": "Mexico",
+    "lat": 22.775484,
+    "lng": -102.573531,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Centres of Berat and Gjirokastra",
+    "country": "Albania",
+    "lat": 40.07416667,
+    "lng": 20.14083333,
+    "year": 2005,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Ayutthaya",
+    "country": "Thailand",
+    "lat": 14.34778,
+    "lng": 100.56056,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Meknes",
+    "country": "Morocco",
+    "lat": 33.88333,
+    "lng": -5.55833,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Sucre",
+    "country": "Bolivia (Plurinational State of)",
+    "lat": -19.04799,
+    "lng": -65.259592,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Toledo",
+    "country": "Spain",
+    "lat": 39.85694444,
+    "lng": -4.024444444,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Trogir",
+    "country": "Croatia",
+    "lat": 43.51708333,
+    "lng": 16.25136111,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Vigan",
+    "country": "Philippines",
+    "lat": 17.575,
+    "lng": 120.3875,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic City of Yazd",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 31.90138889,
+    "lng": 54.36916667,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic District of Old Québec",
+    "country": "Canada",
+    "lat": 46.80944444,
+    "lng": -71.21055556,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Ensemble of the Potala Palace, Lhasa",
+    "country": "China",
+    "lat": 29.65792,
+    "lng": 91.11717,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Fortified City of Carcassonne",
+    "country": "France",
+    "lat": 43.2070631,
+    "lng": 2.3636562,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Fortified Town of Campeche",
+    "country": "Mexico",
+    "lat": 19.84639,
+    "lng": -90.53722,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Jeddah, the Gate to Makkah",
+    "country": "Saudi Arabia",
+    "lat": 21.48388889,
+    "lng": 39.1875,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments and Sites in Kaesong",
+    "country": "Democratic People's Republic of Korea",
+    "lat": 37.98166667,
+    "lng": 126.5080556,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments of Ancient Kyoto (Kyoto, Uji and Otsu Cities)",
+    "country": "Japan",
+    "lat": 34.98055556,
+    "lng": 135.7694444,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments of Ancient Nara",
+    "country": "Japan",
+    "lat": 34.67555556,
+    "lng": 135.8394444,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments of Dengfeng in “The Centre of Heaven and Earth”",
+    "country": "China",
+    "lat": 34.45874722,
+    "lng": 113.0677194,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments of Novgorod and Surroundings",
+    "country": "Russian Federation",
+    "lat": 58.53333,
+    "lng": 31.28333,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments Zone of Querétaro",
+    "country": "Mexico",
+    "lat": 20.593292,
+    "lng": -100.392135,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Monuments Zone of Tlacotalpan",
+    "country": "Mexico",
+    "lat": 18.613459,
+    "lng": -95.658676,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Mosque City of Bagerhat",
+    "country": "Bangladesh",
+    "lat": 22.66667,
+    "lng": 89.8,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Quarter of the City of Colonia del Sacramento",
+    "country": "Uruguay",
+    "lat": -34.47119,
+    "lng": -57.849898,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Quarter of the Seaport City of Valparaíso",
+    "country": "Chile",
+    "lat": -33.04063889,
+    "lng": -71.628,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Sanctuary of Machu Picchu",
+    "country": "Peru",
+    "lat": -13.184934,
+    "lng": -72.533443,
+    "year": 1983,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Historic Town of Banská Štiavnica and the Technical Monuments in its Vicinity",
+    "country": "Slovakia",
+    "lat": 48.46111,
+    "lng": 18.9,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Town of Grand-Bassam",
+    "country": "Côte d'Ivoire",
+    "lat": 5.195833333,
+    "lng": -3.736388889,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Town of Guanajuato and Adjacent Mines",
+    "country": "Mexico",
+    "lat": 21.01694,
+    "lng": -101.25556,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Town of Ouro Preto",
+    "country": "Brazil",
+    "lat": -20.38888889,
+    "lng": -43.50555556,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Town of St George and Related Fortifications, Bermuda",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 32.37944444,
+    "lng": -64.67777778,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Town of Sukhothai and Associated Historic Towns",
+    "country": "Thailand",
+    "lat": 17.00722,
+    "lng": 99.78972,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Town of Zabid",
+    "country": "Yemen",
+    "lat": 14.19533333,
+    "lng": 43.31552778,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Villages of Korea: Hahoe and Yangdong",
+    "country": "Republic of Korea",
+    "lat": 36.53916667,
+    "lng": 128.5166667,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Villages of Shirakawa-go and Gokayama",
+    "country": "Japan",
+    "lat": 36.4,
+    "lng": 136.8833333,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Historic Walled Town of Cuenca",
+    "country": "Spain",
+    "lat": 40.07662,
+    "lng": -2.13174,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Historical Centre of the City of Arequipa",
+    "country": "Peru",
+    "lat": -16.398353,
+    "lng": -71.536777,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Historical Complex of Split with the Palace of Diocletian",
+    "country": "Croatia",
+    "lat": 43.50888889,
+    "lng": 16.43916667,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Historical Monuments at Makli, Thatta",
+    "country": "Pakistan",
+    "lat": 24.76666667,
+    "lng": 67.9,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Historical Monuments of Mtskheta",
+    "country": "Georgia",
+    "lat": 41.84227778,
+    "lng": 44.72102778,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Hopewell Ceremonial Earthworks",
+    "country": "United States of America",
+    "lat": 40.05365833,
+    "lng": -82.44606111,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Hospicio Cabañas, Guadalajara",
+    "country": "Mexico",
+    "lat": 20.676888,
+    "lng": -103.337798,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Huanglong Scenic and Historic Interest Area",
+    "country": "China",
+    "lat": 32.75417,
+    "lng": 103.82222,
+    "year": 1992,
+    "criteria": "N"
+  },
+  {
+    "name": "Huascarán National Park",
+    "country": "Peru",
+    "lat": -9.33333,
+    "lng": -77.4,
+    "year": 1985,
+    "criteria": "N"
+  },
+  {
+    "name": "Hubei Shennongjia",
+    "country": "China",
+    "lat": 31.46972222,
+    "lng": 110.2077778,
+    "year": 2016,
+    "criteria": "N"
+  },
+  {
+    "name": "Human Rights, Liberation and Reconciliation: Nelson Mandela Legacy Sites",
+    "country": "South Africa",
+    "lat": -25.74069167,
+    "lng": 28.21179167,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Humayun's Tomb, Delhi",
+    "country": "India",
+    "lat": 28.59333,
+    "lng": 77.25056,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Hwaseong Fortress",
+    "country": "Republic of Korea",
+    "lat": 37.27222,
+    "lng": 127.00833,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Hyrcanian Forests",
+    "country": "Azerbaijan,Iran (Islamic Republic of)",
+    "lat": 37.42147222,
+    "lng": 55.72427778,
+    "year": 2019,
+    "criteria": "N"
+  },
+  {
+    "name": "Ichkeul National Park",
+    "country": "Tunisia",
+    "lat": 37.16361,
+    "lng": 9.67472,
+    "year": 1980,
+    "criteria": "N"
+  },
+  {
+    "name": "Iguaçu National Park",
+    "country": "Brazil",
+    "lat": -25.44814722,
+    "lng": -53.80014444,
+    "year": 1986,
+    "criteria": "N"
+  },
+  {
+    "name": "Iguazu National Park",
+    "country": "Argentina",
+    "lat": -25.577357,
+    "lng": -54.286073,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Independence Hall",
+    "country": "United States of America",
+    "lat": 39.94861111,
+    "lng": -75.15,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Ironbridge Gorge",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 52.62638889,
+    "lng": -2.472777778,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Ischigualasto / Talampaya Natural Parks",
+    "country": "Argentina",
+    "lat": -30,
+    "lng": -68,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "iSimangaliso Wetland Park – Maputo National Park",
+    "country": "Mozambique,South Africa",
+    "lat": -27.83888889,
+    "lng": 32.55,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Island of Gorée",
+    "country": "Senegal",
+    "lat": 14.66722,
+    "lng": -17.40083,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "Island of Mozambique",
+    "country": "Mozambique",
+    "lat": -15.03417,
+    "lng": 40.73583,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Island of Saint-Louis",
+    "country": "Senegal",
+    "lat": 16.02778,
+    "lng": -16.50444,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Isole Eolie (Aeolian Islands)",
+    "country": "Italy",
+    "lat": 38.48786111,
+    "lng": 14.94558333,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "Itchan Kala",
+    "country": "Uzbekistan",
+    "lat": 41.378088,
+    "lng": 60.360253,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Itsukushima Shinto Shrine",
+    "country": "Japan",
+    "lat": 34.29441667,
+    "lng": 132.3246389,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Ivindo National Park",
+    "country": "Gabon",
+    "lat": 0.113,
+    "lng": 12.648,
+    "year": 2021,
+    "criteria": "N"
+  },
+  {
+    "name": "Ivrea, industrial city of the 20th century",
+    "country": "Italy",
+    "lat": 45.4575,
+    "lng": 7.869166667,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Iwami Ginzan Silver Mine and its Cultural Landscape",
+    "country": "Japan",
+    "lat": 35.11277778,
+    "lng": 132.435,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Jaipur City, Rajasthan",
+    "country": "India",
+    "lat": 26.92427778,
+    "lng": 75.82186111,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Jeju Volcanic Island and Lava Tubes",
+    "country": "Republic of Korea",
+    "lat": 33.46888889,
+    "lng": 126.7202778,
+    "year": 2007,
+    "criteria": "N"
+  },
+  {
+    "name": "Jelling Mounds, Runic Stones and Church",
+    "country": "Denmark",
+    "lat": 55.75638889,
+    "lng": 9.42,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Jesuit Missions of La Santísima Trinidad de Paraná and Jesús de Tavarangue",
+    "country": "Paraguay",
+    "lat": -27.131613,
+    "lng": -55.702672,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Jesuit Missions of the Chiquitos",
+    "country": "Bolivia (Plurinational State of)",
+    "lat": -16,
+    "lng": -60.5,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Jesuit Missions of the Guaranis: San Ignacio Mini, Santa Ana, Nuestra Señora de Loreto and Santa Maria Mayor (Argentina), Ruins of Sao Miguel das Missoes (Brazil)",
+    "country": "Argentina,Brazil",
+    "lat": -28.54333333,
+    "lng": -54.26583333,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Jewish-Medieval Heritage of Erfurt",
+    "country": "Germany",
+    "lat": 50.97866389,
+    "lng": 11.02923333,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Jiuzhaigou Valley Scenic and Historic Interest Area",
+    "country": "China",
+    "lat": 33.08333,
+    "lng": 103.91667,
+    "year": 1992,
+    "criteria": "N"
+  },
+  {
+    "name": "Jodrell Bank Observatory",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 53.23391667,
+    "lng": -2.303861111,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Joggins Fossil Cliffs",
+    "country": "Canada",
+    "lat": 45.70972222,
+    "lng": -64.43583333,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Jomon Prehistoric Sites in Northern Japan",
+    "country": "Japan",
+    "lat": 41.06555556,
+    "lng": 140.5522222,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Jongmyo Shrine",
+    "country": "Republic of Korea",
+    "lat": 37.57472222,
+    "lng": 126.9936111,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Joya de Cerén Archaeological Site",
+    "country": "El Salvador",
+    "lat": 13.8275,
+    "lng": -89.36916667,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "K’gari (Fraser Island)",
+    "country": "Australia",
+    "lat": -25.21666667,
+    "lng": 153.1333333,
+    "year": 1992,
+    "criteria": "N"
+  },
+  {
+    "name": "Kahuzi-Biega National Park",
+    "country": "Democratic Republic of the Congo",
+    "lat": -2.334053,
+    "lng": 28.180743,
+    "year": 1980,
+    "criteria": "N"
+  },
+  {
+    "name": "Kaiping Diaolou and Villages",
+    "country": "China",
+    "lat": 22.28551944,
+    "lng": 112.5658611,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Kairouan",
+    "country": "Tunisia",
+    "lat": 35.68167,
+    "lng": 10.10389,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Kakadu National Park",
+    "country": "Australia",
+    "lat": -12.83333333,
+    "lng": 132.8333333,
+    "year": 1981,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Kakatiya Rudreshwara (Ramappa) Temple, Telangana",
+    "country": "India",
+    "lat": 18.25913333,
+    "lng": 79.94320556,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Kasbah of Algiers",
+    "country": "Algeria",
+    "lat": 36.78333,
+    "lng": 3.06028,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Kathmandu Valley",
+    "country": "Nepal",
+    "lat": 27.70395,
+    "lng": 85.30858,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Kaziranga National Park",
+    "country": "India",
+    "lat": 26.66666667,
+    "lng": 93.41666667,
+    "year": 1985,
+    "criteria": "N"
+  },
+  {
+    "name": "Kenya Lake System in the Great Rift Valley",
+    "country": "Kenya",
+    "lat": -0.4425,
+    "lng": 36.24,
+    "year": 2011,
+    "criteria": "N"
+  },
+  {
+    "name": "Keoladeo National Park",
+    "country": "India",
+    "lat": 27.15888889,
+    "lng": 77.50861111,
+    "year": 1985,
+    "criteria": "N"
+  },
+  {
+    "name": "Khajuraho Group of Monuments",
+    "country": "India",
+    "lat": 24.85222,
+    "lng": 79.92222,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Khami Ruins National Monument",
+    "country": "Zimbabwe",
+    "lat": -20.15833333,
+    "lng": 28.37666667,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Khangchendzonga National Park",
+    "country": "India",
+    "lat": 27.76472222,
+    "lng": 88.37722222,
+    "year": 2016,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Kilimanjaro National Park",
+    "country": "United Republic of Tanzania",
+    "lat": -3.06667,
+    "lng": 37.36667,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Kinabalu Park",
+    "country": "Malaysia",
+    "lat": 6.25,
+    "lng": 116.5,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "Kizhi Pogost",
+    "country": "Russian Federation",
+    "lat": 62.06758333,
+    "lng": 35.22436111,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Kluane / Wrangell-St. Elias / Glacier Bay / Tatshenshini-Alsek",
+    "country": "Canada,United States of America",
+    "lat": 61.19758333,
+    "lng": -140.9919722,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Koh Ker: Archaeological Site of Ancient Lingapura or Chok Gargyar",
+    "country": "Cambodia",
+    "lat": 13.78305556,
+    "lng": 104.5372222,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Komodo National Park",
+    "country": "Indonesia",
+    "lat": -8.54333,
+    "lng": 119.48944,
+    "year": 1991,
+    "criteria": "N"
+  },
+  {
+    "name": "Kondoa Rock-Art Sites",
+    "country": "United Republic of Tanzania",
+    "lat": -4.724444444,
+    "lng": 35.83388889,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Konso Cultural Landscape",
+    "country": "Ethiopia",
+    "lat": 5.3,
+    "lng": 37.4,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Koutammakou, the Land of the Batammariba",
+    "country": "Benin,Togo",
+    "lat": 10.14808333,
+    "lng": 1.100222222,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Kremlin and Red Square, Moscow",
+    "country": "Russian Federation",
+    "lat": 55.75402778,
+    "lng": 37.62041667,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Kronborg Castle",
+    "country": "Denmark",
+    "lat": 56.03889,
+    "lng": 12.62083333,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Krzemionki Prehistoric Striped Flint Mining Region",
+    "country": "Poland",
+    "lat": 50.96797222,
+    "lng": 21.50230556,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Ksar of Ait-Ben-Haddou",
+    "country": "Morocco",
+    "lat": 31.04722,
+    "lng": -7.12889,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Kujataa Greenland: Norse and Inuit Farming at the Edge of the Ice Cap",
+    "country": "Denmark",
+    "lat": 61.16444444,
+    "lng": -45.59805556,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Kuk Early Agricultural Site",
+    "country": "Papua New Guinea",
+    "lat": -5.783711111,
+    "lng": 144.3317222,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Kulangsu, a Historic International Settlement",
+    "country": "China",
+    "lat": 24.4475,
+    "lng": 118.0619444,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Kunta Kinteh Island and Related Sites",
+    "country": "Gambia",
+    "lat": 13.31616667,
+    "lng": -16.35719444,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Kutná Hora: Historical Town Centre with the Church of St Barbara and the Cathedral of Our Lady at Sedlec",
+    "country": "Czechia",
+    "lat": 49.95,
+    "lng": 15.26666667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Kyiv: Saint-Sophia Cathedral and Related Monastic Buildings, Kyiv-Pechersk Lavra",
+    "country": "Ukraine",
+    "lat": 50.45258,
+    "lng": 30.51686,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "L’Anse aux Meadows National Historic Site",
+    "country": "Canada",
+    "lat": 51.58472222,
+    "lng": -55.55,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "La Chaux-de-Fonds / Le Locle, Watchmaking Town Planning",
+    "country": "Switzerland",
+    "lat": 47.10388889,
+    "lng": 6.832777778,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "La Fortaleza and San Juan National Historic Site in Puerto Rico",
+    "country": "United States of America",
+    "lat": 18.46666667,
+    "lng": -66.125,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "La Lonja de la Seda de Valencia",
+    "country": "Spain",
+    "lat": 39.47441667,
+    "lng": -0.378444444,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+    "country": "France",
+    "lat": -20.41194444,
+    "lng": 164.5663889,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Lake Baikal",
+    "country": "Russian Federation",
+    "lat": 53.17361111,
+    "lng": 107.6625,
+    "year": 1996,
+    "criteria": "N"
+  },
+  {
+    "name": "Lake Malawi National Park",
+    "country": "Malawi",
+    "lat": -14.03333,
+    "lng": 34.88333,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Lake Turkana National Parks",
+    "country": "Kenya",
+    "lat": 3.051305556,
+    "lng": 36.50366667,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "Lakes of Ounianga",
+    "country": "Chad",
+    "lat": 19.055,
+    "lng": 20.50555556,
+    "year": 2012,
+    "criteria": "N"
+  },
+  {
+    "name": "Lamu Old Town",
+    "country": "Kenya",
+    "lat": -2.284444444,
+    "lng": 40.8525,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Land of Frankincense",
+    "country": "Oman",
+    "lat": 18.25333,
+    "lng": 53.64759,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Landmarks of the Ancient Kingdom of Saba, Marib",
+    "country": "Yemen",
+    "lat": 15.42687778,
+    "lng": 45.33522778,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Landscape for Breeding and Training of Ceremonial Carriage Horses at Kladruby nad Labem",
+    "country": "Czechia",
+    "lat": 50.05665,
+    "lng": 15.48425833,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Landscape of Grand Pré",
+    "country": "Canada",
+    "lat": 45.11833333,
+    "lng": -64.30722222,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Landscape of the Pico Island Vineyard Culture",
+    "country": "Portugal",
+    "lat": 38.51344444,
+    "lng": -28.54116667,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Landscapes of Dauria",
+    "country": "Mongolia,Russian Federation",
+    "lat": 49.93022222,
+    "lng": 115.4254444,
+    "year": 2017,
+    "criteria": "N"
+  },
+  {
+    "name": "Laponian Area",
+    "country": "Sweden",
+    "lat": 67.33333,
+    "lng": 17.58333,
+    "year": 1996,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Las Médulas",
+    "country": "Spain",
+    "lat": 42.46939,
+    "lng": -6.77075,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Laurisilva of Madeira",
+    "country": "Portugal",
+    "lat": 32.76666667,
+    "lng": -17,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Lavaux, Vineyard Terraces",
+    "country": "Switzerland",
+    "lat": 46.49194444,
+    "lng": 6.746111111,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Le Colline del Prosecco di Conegliano e Valdobbiadene",
+    "country": "Italy",
+    "lat": 45.95302778,
+    "lng": 12.22611111,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Le Morne Cultural Landscape",
+    "country": "Mauritius",
+    "lat": -20.45194444,
+    "lng": 57.32833333,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Lednice-Valtice Cultural Landscape",
+    "country": "Czechia",
+    "lat": 48.77583,
+    "lng": 16.775,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Lena Pillars Nature Park",
+    "country": "Russian Federation",
+    "lat": 60.66666667,
+    "lng": 127,
+    "year": 2012,
+    "criteria": "N"
+  },
+  {
+    "name": "Lençóis Maranhenses National Park",
+    "country": "Brazil",
+    "lat": -2.536666667,
+    "lng": -43.06361111,
+    "year": 2024,
+    "criteria": "N"
+  },
+  {
+    "name": "León Cathedral",
+    "country": "Nicaragua",
+    "lat": 12.435,
+    "lng": -86.87805556,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Levuka Historical Port Town",
+    "country": "Fiji",
+    "lat": -17.68337778,
+    "lng": 178.8345333,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Lines and Geoglyphs of Nasca and Palpa",
+    "country": "Peru",
+    "lat": -14.72583,
+    "lng": -75.14861,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Longobards in Italy. Places of the Power (568-774 A.D.)",
+    "country": "Italy",
+    "lat": 46.09416667,
+    "lng": 13.43305556,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Lord Howe Island Group",
+    "country": "Australia",
+    "lat": -31.56555556,
+    "lng": 159.0883333,
+    "year": 1982,
+    "criteria": "N"
+  },
+  {
+    "name": "Lorentz National Park",
+    "country": "Indonesia",
+    "lat": -4.75,
+    "lng": 137.83333,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Los Alerces National Park",
+    "country": "Argentina",
+    "lat": -42.8528,
+    "lng": -71.8728,
+    "year": 2017,
+    "criteria": "N"
+  },
+  {
+    "name": "Los Glaciares National Park",
+    "country": "Argentina",
+    "lat": -50,
+    "lng": -73.24944,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Los Katíos National Park",
+    "country": "Colombia",
+    "lat": 7.803975,
+    "lng": -77.146271,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "Lower Valley of the Awash",
+    "country": "Ethiopia",
+    "lat": 11.10006,
+    "lng": 40.57939,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Lower Valley of the Omo",
+    "country": "Ethiopia",
+    "lat": 4.8,
+    "lng": 35.96666667,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Lumbini, the Birthplace of the Lord Buddha",
+    "country": "Nepal",
+    "lat": 27.46889,
+    "lng": 83.27611,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Lushan National Park",
+    "country": "China",
+    "lat": 29.43333333,
+    "lng": 115.8666667,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Lut Desert",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 30.21611111,
+    "lng": 58.83888889,
+    "year": 2016,
+    "criteria": "N"
+  },
+  {
+    "name": "Luther Memorials in Eisleben and Wittenberg",
+    "country": "Germany",
+    "lat": 51.86472,
+    "lng": 12.65278,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "M'Zab Valley",
+    "country": "Algeria",
+    "lat": 32.48333,
+    "lng": 3.68333,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Macquarie Island",
+    "country": "Australia",
+    "lat": -54.59472222,
+    "lng": 158.8955556,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "Madara Rider",
+    "country": "Bulgaria",
+    "lat": 43.277375,
+    "lng": 27.118894,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Madriu-Perafita-Claror Valley",
+    "country": "Andorra",
+    "lat": 42.49472222,
+    "lng": 1.595555556,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Maloti-Drakensberg Park",
+    "country": "Lesotho,South Africa",
+    "lat": -29.76527778,
+    "lng": 29.12305556,
+    "year": 2000,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Malpelo Fauna and Flora Sanctuary",
+    "country": "Colombia",
+    "lat": 4.003344,
+    "lng": -81.607572,
+    "year": 2006,
+    "criteria": "N"
+  },
+  {
+    "name": "Mammoth Cave National Park",
+    "country": "United States of America",
+    "lat": 37.18722222,
+    "lng": -86.10305556,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Mana Pools National Park, Sapi and Chewore Safari Areas",
+    "country": "Zimbabwe",
+    "lat": -15.81944444,
+    "lng": 29.40805556,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Manas Wildlife Sanctuary",
+    "country": "India",
+    "lat": 26.725,
+    "lng": 91.03055556,
+    "year": 1985,
+    "criteria": "N"
+  },
+  {
+    "name": "Manovo-Gounda St Floris National Park",
+    "country": "Central African Republic",
+    "lat": 9,
+    "lng": 21.5,
+    "year": 1988,
+    "criteria": "N"
+  },
+  {
+    "name": "Mantua and Sabbioneta",
+    "country": "Italy",
+    "lat": 45.15944444,
+    "lng": 10.79444444,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Manú National Park",
+    "country": "Peru",
+    "lat": -12.25,
+    "lng": -71.75,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Mapungubwe Cultural Landscape",
+    "country": "South Africa",
+    "lat": -22.1925,
+    "lng": 29.23889,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Maratha Military Landscapes of India",
+    "country": "India",
+    "lat": 20.7225,
+    "lng": 73.9425,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Maritime Greenwich",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.48116667,
+    "lng": -0.003777778,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Mathildenhöhe Darmstadt",
+    "country": "Germany",
+    "lat": 49.87638889,
+    "lng": 8.6675,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Maulbronn Monastery Complex",
+    "country": "Germany",
+    "lat": 49.00083,
+    "lng": 8.81306,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Mausoleum of Khoja Ahmed Yasawi",
+    "country": "Kazakhstan",
+    "lat": 43.29769444,
+    "lng": 68.27105556,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Mausoleum of the First Qin Emperor",
+    "country": "China",
+    "lat": 34.381311,
+    "lng": 109.259951,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Maya Site of Copan",
+    "country": "Honduras",
+    "lat": 14.85,
+    "lng": -89.13333,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Mbanza Kongo, Vestiges of the Capital of the former Kingdom of Kongo",
+    "country": "Angola",
+    "lat": -6.268888889,
+    "lng": 14.24972222,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Medici Villas and Gardens in Tuscany",
+    "country": "Italy",
+    "lat": 43.85777778,
+    "lng": 11.30416667,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Medieval City of Rhodes",
+    "country": "Greece",
+    "lat": 36.44722,
+    "lng": 28.22778,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Medieval Monuments in Kosovo",
+    "country": "Serbia",
+    "lat": 42.66111111,
+    "lng": 20.26555556,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Medieval Town of Toruń",
+    "country": "Poland",
+    "lat": 53.01055556,
+    "lng": 18.60416667,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Medina of Essaouira (formerly Mogador)",
+    "country": "Morocco",
+    "lat": 31.51411111,
+    "lng": -9.770305556,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Medina of Fez",
+    "country": "Morocco",
+    "lat": 34.06111,
+    "lng": -4.97778,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Medina of Marrakesh",
+    "country": "Morocco",
+    "lat": 31.63139,
+    "lng": -7.98667,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Medina of Sousse",
+    "country": "Tunisia",
+    "lat": 35.82778,
+    "lng": 10.63861,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Medina of Tétouan (formerly known as Titawin)",
+    "country": "Morocco",
+    "lat": 35.57083,
+    "lng": -5.36667,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Medina of Tunis",
+    "country": "Tunisia",
+    "lat": 36.81667,
+    "lng": 10.16667,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Megalithic Jar Sites in Xiengkhuang – Plain of Jars",
+    "country": "Lao People's Democratic Republic",
+    "lat": 19.43105556,
+    "lng": 103.1522222,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Megalithic Temples of Malta",
+    "country": "Malta",
+    "lat": 36.04908,
+    "lng": 14.26947,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Megaliths of Carnac and of the shores of Morbihan",
+    "country": "France",
+    "lat": 47.61611111,
+    "lng": -3.087222222,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Mehmed Paša Sokolović Bridge in Višegrad",
+    "country": "Bosnia and Herzegovina",
+    "lat": 43.78144444,
+    "lng": 19.288025,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Meidan Emam, Esfahan",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 32.65745,
+    "lng": 51.67777778,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Melaka and George Town, Historic Cities of the Straits of Malacca",
+    "country": "Malaysia",
+    "lat": 5.421388889,
+    "lng": 100.3458333,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Melka Kunture and Balchit: Archaeological and Palaeontological Sites in the Highland Area of Ethiopia",
+    "country": "Ethiopia",
+    "lat": 8.703472222,
+    "lng": 38.59908333,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Memorial sites of the Genocide: Nyamata, Murambi, Gisozi and Bisesero",
+    "country": "Rwanda",
+    "lat": -2.455527778,
+    "lng": 29.56772222,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+    "country": "Egypt",
+    "lat": 29.97604,
+    "lng": 31.13041,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Mesa Verde National Park",
+    "country": "United States of America",
+    "lat": 37.26166667,
+    "lng": -108.4855556,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "Meteora",
+    "country": "Greece",
+    "lat": 39.71667,
+    "lng": 21.63333,
+    "year": 1988,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Migratory Bird Sanctuaries along the Coast of Yellow Sea-Bohai Gulf of China",
+    "country": "China",
+    "lat": 31.51291667,
+    "lng": 121.9993889,
+    "year": 2019,
+    "criteria": "N"
+  },
+  {
+    "name": "Miguasha National Park",
+    "country": "Canada",
+    "lat": 48.105,
+    "lng": -66.35305556,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Mill Network at Kinderdijk-Elshout",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 51.8825,
+    "lng": 4.649444444,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Millenary Benedictine Abbey of Pannonhalma and its Natural Environment",
+    "country": "Hungary",
+    "lat": 47.55889,
+    "lng": 17.78444,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Mines of Rammelsberg, Historic Town of Goslar and Upper Harz Water Management System",
+    "country": "Germany",
+    "lat": 51.82,
+    "lng": 10.34,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Minoan Palatial Centres",
+    "country": "Greece",
+    "lat": 35.24861111,
+    "lng": 24.88722222,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Mistaken Point",
+    "country": "Canada",
+    "lat": 46.635,
+    "lng": -53.21111111,
+    "year": 2016,
+    "criteria": "N"
+  },
+  {
+    "name": "Modernist Kaunas: Architecture of Optimism, 1919-1939",
+    "country": "Lithuania",
+    "lat": 54.89694444,
+    "lng": 23.92916667,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Mogao Caves",
+    "country": "China",
+    "lat": 40.13333,
+    "lng": 94.81667,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Moidams – the Mound-Burial System of the Ahom Dynasty",
+    "country": "India",
+    "lat": 26.94117472,
+    "lng": 94.87635,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Monarch Butterfly Biosphere Reserve",
+    "country": "Mexico",
+    "lat": 19.60638889,
+    "lng": -100.2416667,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Monasteries of Daphni, Hosios Loukas and Nea Moni of Chios",
+    "country": "Greece",
+    "lat": 38.39527778,
+    "lng": 22.74666667,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Monasteries of Haghpat and Sanahin",
+    "country": "Armenia",
+    "lat": 41.095,
+    "lng": 44.71028,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Monastery and Site of the Escurial, Madrid",
+    "country": "Spain",
+    "lat": 40.58911111,
+    "lng": -4.14775,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Monastery of Alcobaça",
+    "country": "Portugal",
+    "lat": 39.55,
+    "lng": -8.97667,
+    "year": 1989,
+    "criteria": "C"
+  },
+  {
+    "name": "Monastery of Batalha",
+    "country": "Portugal",
+    "lat": 39.65778,
+    "lng": -8.82694,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Monastery of Geghard and the Upper Azat Valley",
+    "country": "Armenia",
+    "lat": 40.140439,
+    "lng": 44.818525,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Monastery of Horezu",
+    "country": "Romania",
+    "lat": 45.16972222,
+    "lng": 24.00722222,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Monastery of the Hieronymites and Tower of Belém in Lisbon",
+    "country": "Portugal",
+    "lat": 38.69194,
+    "lng": -9.21583,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Møns Klint",
+    "country": "Denmark",
+    "lat": 54.96777778,
+    "lng": 12.55027778,
+    "year": 2025,
+    "criteria": "N"
+  },
+  {
+    "name": "Mont-Saint-Michel and its Bay",
+    "country": "France",
+    "lat": 48.63556,
+    "lng": -1.51056,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Monte San Giorgio",
+    "country": "Italy,Switzerland",
+    "lat": 45.88888889,
+    "lng": 8.913888889,
+    "year": 2003,
+    "criteria": "N"
+  },
+  {
+    "name": "Monticello and the University of Virginia in Charlottesville",
+    "country": "United States of America",
+    "lat": 38.03277778,
+    "lng": -78.50388889,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Monumental Earthworks of Poverty Point",
+    "country": "United States of America",
+    "lat": 32.63694444,
+    "lng": -91.40638889,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Monuments of Oviedo and the Kingdom of the Asturias",
+    "country": "Spain",
+    "lat": 43.36262,
+    "lng": -5.84303,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Moravian Church Settlements",
+    "country": "Denmark,Germany,United Kingdom of Great Britain and Northern Ireland,United States of America",
+    "lat": 55.35555556,
+    "lng": 9.481388889,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Morne Trois Pitons National Park",
+    "country": "Dominica",
+    "lat": 15.331113,
+    "lng": -61.30661,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "Mosi-oa-Tunya / Victoria Falls",
+    "country": "Zambia,Zimbabwe",
+    "lat": -17.92453,
+    "lng": 25.85539,
+    "year": 1989,
+    "criteria": "N"
+  },
+  {
+    "name": "Mount Athos",
+    "country": "Greece",
+    "lat": 40.26667,
+    "lng": 24.21667,
+    "year": 1988,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+    "country": "China",
+    "lat": 29.5449,
+    "lng": 103.76925,
+    "year": 1996,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Mount Etna",
+    "country": "Italy",
+    "lat": 37.75611111,
+    "lng": 14.99666667,
+    "year": 2013,
+    "criteria": "N"
+  },
+  {
+    "name": "Mount Hamiguitan Range Wildlife Sanctuary",
+    "country": "Philippines",
+    "lat": 6.717169444,
+    "lng": 126.1734306,
+    "year": 2014,
+    "criteria": "N"
+  },
+  {
+    "name": "Mount Huangshan",
+    "country": "China",
+    "lat": 30.145333,
+    "lng": 118.155083,
+    "year": 1990,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Mount Kenya National Park/Natural Forest",
+    "country": "Kenya",
+    "lat": -0.155,
+    "lng": 37.31555556,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "Mount Kumgang – Diamond Mountain from the Sea",
+    "country": "Democratic People's Republic of Korea",
+    "lat": 38.66027778,
+    "lng": 128.1375,
+    "year": 2025,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Mount Mulanje Cultural Landscape",
+    "country": "Malawi",
+    "lat": -15.91166667,
+    "lng": 35.65805556,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Mount Nimba Strict Nature Reserve",
+    "country": "Côte d'Ivoire,Guinea",
+    "lat": 7.60318,
+    "lng": -8.39097,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Mount Sanqingshan National Park",
+    "country": "China",
+    "lat": 28.91583333,
+    "lng": 118.0644444,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Mount Taishan",
+    "country": "China",
+    "lat": 36.26667,
+    "lng": 117.1,
+    "year": 1987,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Mount Wutai",
+    "country": "China",
+    "lat": 39.03055556,
+    "lng": 113.5633333,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Mountain Resort and its Outlying Temples, Chengde",
+    "country": "China",
+    "lat": 40.98694,
+    "lng": 117.93833,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Mozu-Furuichi Kofun Group: Mounded Tombs of Ancient Japan",
+    "country": "Japan",
+    "lat": 34.56222222,
+    "lng": 135.6094444,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Mudejar Architecture of Aragon",
+    "country": "Spain",
+    "lat": 40.34389,
+    "lng": -1.10722,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Murujuga Cultural Landscape",
+    "country": "Australia",
+    "lat": -20.56502778,
+    "lng": 116.6685278,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Nahanni National Park",
+    "country": "Canada",
+    "lat": 61.54722222,
+    "lng": -125.5894444,
+    "year": 1978,
+    "criteria": "N"
+  },
+  {
+    "name": "Namhansanseong",
+    "country": "Republic of Korea",
+    "lat": 37.47888889,
+    "lng": 127.1811111,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Namib Sand Sea",
+    "country": "Namibia",
+    "lat": -24.88527778,
+    "lng": 15.40777778,
+    "year": 2013,
+    "criteria": "N"
+  },
+  {
+    "name": "Nan Madol: Ceremonial Centre of Eastern Micronesia",
+    "country": "Micronesia (Federated States of)",
+    "lat": 6.839722222,
+    "lng": 158.3308333,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "National Archaeological Park Tak’alik Ab’aj",
+    "country": "Guatemala",
+    "lat": 14.63861111,
+    "lng": -91.7325,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "National Archeological Park of Tierradentro",
+    "country": "Colombia",
+    "lat": 2.583333333,
+    "lng": -76.03333333,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "National History Park – Citadel, Sans Souci, Ramiers",
+    "country": "Haiti",
+    "lat": 19.573025,
+    "lng": -72.234268,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Natural and Cultural Heritage of the Ohrid region",
+    "country": "Albania,North Macedonia",
+    "lat": 40.99183333,
+    "lng": 20.70416667,
+    "year": 1979,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Natural and Culturo-Historical Region of Kotor",
+    "country": "Montenegro",
+    "lat": 42.48333,
+    "lng": 18.7,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Naumburg Cathedral",
+    "country": "Germany",
+    "lat": 51.15480556,
+    "lng": 11.804,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Necropolis of Bet She’arim: A Landmark of Jewish Renewal",
+    "country": "Israel",
+    "lat": 32.70222222,
+    "lng": 35.12694444,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Nemrut Dağ",
+    "country": "Türkiye",
+    "lat": 38.03661,
+    "lng": 38.76369,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Ngorongoro Conservation Area",
+    "country": "United Republic of Tanzania",
+    "lat": -3.18722,
+    "lng": 35.54083,
+    "year": 1979,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Nice, Winter Resort Town of the Riviera",
+    "country": "France",
+    "lat": 43.70169444,
+    "lng": 7.272305556,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Ningaloo Coast",
+    "country": "Australia",
+    "lat": -22.5625,
+    "lng": 113.8102778,
+    "year": 2011,
+    "criteria": "N"
+  },
+  {
+    "name": "Niokolo-Koba National Park",
+    "country": "Senegal",
+    "lat": 12.841271,
+    "lng": -12.899781,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Noel Kempff Mercado National Park",
+    "country": "Bolivia (Plurinational State of)",
+    "lat": -14.26667,
+    "lng": -60.86667,
+    "year": 2000,
+    "criteria": "N"
+  },
+  {
+    "name": "Nubian Monuments from Abu Simbel to Philae",
+    "country": "Egypt",
+    "lat": 22.33722222,
+    "lng": 31.62580556,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Nyungwe National Park",
+    "country": "Rwanda",
+    "lat": -2.5553,
+    "lng": 29.24733333,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Ogasawara Islands",
+    "country": "Japan",
+    "lat": 27.71833333,
+    "lng": 142.0997222,
+    "year": 2011,
+    "criteria": "N"
+  },
+  {
+    "name": "Okapi Wildlife Reserve",
+    "country": "Democratic Republic of the Congo",
+    "lat": 2,
+    "lng": 28.5,
+    "year": 1996,
+    "criteria": "N"
+  },
+  {
+    "name": "Okavango Delta",
+    "country": "Botswana",
+    "lat": -19.28333333,
+    "lng": 22.9,
+    "year": 2014,
+    "criteria": "N"
+  },
+  {
+    "name": "Old and New Towns of Edinburgh",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 55.95,
+    "lng": -3.216666667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Bridge Area of the Old City of Mostar",
+    "country": "Bosnia and Herzegovina",
+    "lat": 43.33730556,
+    "lng": 17.815,
+    "year": 2005,
+    "criteria": "C"
+  },
+  {
+    "name": "Old City of Berne",
+    "country": "Switzerland",
+    "lat": 46.94806,
+    "lng": 7.45028,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Old City of Dubrovnik",
+    "country": "Croatia",
+    "lat": 42.64142111,
+    "lng": 18.10886111,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Old City of Jerusalem and its Walls",
+    "country": "Jerusalem (Site proposed by Jordan)",
+    "lat": 31.77777778,
+    "lng": 35.23166667,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Old City of Salamanca",
+    "country": "Spain",
+    "lat": 40.96525,
+    "lng": -5.6645,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Old City of Sana'a",
+    "country": "Yemen",
+    "lat": 15.35555556,
+    "lng": 44.20805556,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Old City of Zamość",
+    "country": "Poland",
+    "lat": 50.71694444,
+    "lng": 23.25277778,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Havana and its Fortification System",
+    "country": "Cuba",
+    "lat": 23.13333333,
+    "lng": -82.35,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Rauma",
+    "country": "Finland",
+    "lat": 61.12806,
+    "lng": 21.51167,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town Lunenburg",
+    "country": "Canada",
+    "lat": 44.37611111,
+    "lng": -64.30916667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town of Ávila with its Extra-Muros Churches",
+    "country": "Spain",
+    "lat": 40.65645,
+    "lng": -4.70012,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town of Cáceres",
+    "country": "Spain",
+    "lat": 39.47444,
+    "lng": -6.37,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town of Galle and its Fortifications",
+    "country": "Sri Lanka",
+    "lat": 6.028051,
+    "lng": 80.216346,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town of Ghadamès",
+    "country": "Libya",
+    "lat": 30.13333333,
+    "lng": 9.5,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Old town of Kuldīga",
+    "country": "Latvia",
+    "lat": 56.96775,
+    "lng": 21.97152778,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town of Lijiang",
+    "country": "China",
+    "lat": 26.86667,
+    "lng": 100.23333,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Old town of Regensburg with Stadtamhof",
+    "country": "Germany",
+    "lat": 49.02055556,
+    "lng": 12.09916667,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Town of Segovia and its Aqueduct",
+    "country": "Spain",
+    "lat": 40.94847222,
+    "lng": -4.11675,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Towns of Djenné",
+    "country": "Mali",
+    "lat": 13.90639,
+    "lng": -4.555,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Village of Hollókő and its Surroundings",
+    "country": "Hungary",
+    "lat": 47.99444,
+    "lng": 19.52917,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Old Walled City of Shibam",
+    "country": "Yemen",
+    "lat": 15.92694,
+    "lng": 48.62667,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Olympic National Park",
+    "country": "United States of America",
+    "lat": 47.74833333,
+    "lng": -123.4488889,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Ombilin Coal Mining Heritage of Sawahlunto",
+    "country": "Indonesia",
+    "lat": -0.766625556,
+    "lng": 100.7378833,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Ouadi Qadisha (the Holy Valley) and the Forest of the Cedars of God (Horsh Arz el-Rab)",
+    "country": "Lebanon",
+    "lat": 34.25388889,
+    "lng": 36.95111111,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Padua’s fourteenth-century fresco cycles",
+    "country": "Italy",
+    "lat": 45.41188889,
+    "lng": 11.87961111,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Painted Churches in the Troodos Region",
+    "country": "Cyprus",
+    "lat": 34.92027778,
+    "lng": 33.09583333,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Palace and Gardens of Schönbrunn",
+    "country": "Austria",
+    "lat": 48.18666667,
+    "lng": 16.31333333,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Palace and Park of Fontainebleau",
+    "country": "France",
+    "lat": 48.40194444,
+    "lng": 2.698055556,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Palace and Park of Versailles",
+    "country": "France",
+    "lat": 48.805,
+    "lng": 2.119444444,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Palace of Westminster and Westminster Abbey including Saint Margaret’s Church",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.499,
+    "lng": -0.127,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Palaces and Parks of Potsdam and Berlin",
+    "country": "Germany",
+    "lat": 52.4,
+    "lng": 13.03333333,
+    "year": 1990,
+    "criteria": "C"
+  },
+  {
+    "name": "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
+    "country": "Spain",
+    "lat": 41.38778,
+    "lng": 2.175,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Paleochristian and Byzantine Monuments of Thessalonika",
+    "country": "Greece",
+    "lat": 40.63833,
+    "lng": 22.965,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Pampulha Modern Ensemble",
+    "country": "Brazil",
+    "lat": -19.85194444,
+    "lng": -43.97361111,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Papahānaumokuākea",
+    "country": "United States of America",
+    "lat": 25.34907,
+    "lng": -170.14582,
+    "year": 2010,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Paphos",
+    "country": "Cyprus",
+    "lat": 34.75833,
+    "lng": 32.40556,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Paraty and Ilha Grande – Culture and Biodiversity",
+    "country": "Brazil",
+    "lat": -23.01860556,
+    "lng": -44.68536944,
+    "year": 2019,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Paris, Banks of the Seine",
+    "country": "France",
+    "lat": 48.8655,
+    "lng": 2.321138889,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Parthian Fortresses of Nisa",
+    "country": "Turkmenistan",
+    "lat": 37.99972222,
+    "lng": 58.19861111,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+    "country": "Spain",
+    "lat": 40.41533333,
+    "lng": -3.687055556,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Pearling, Testimony of an Island Economy",
+    "country": "Bahrain",
+    "lat": 26.24128,
+    "lng": 50.61351,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Peking Man Site at Zhoukoudian",
+    "country": "China",
+    "lat": 39.689449,
+    "lng": 115.922702,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Península Valdés",
+    "country": "Argentina",
+    "lat": -42.5,
+    "lng": -64,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Pergamon and its Multi-Layered Cultural Landscape",
+    "country": "Türkiye",
+    "lat": 39.12583333,
+    "lng": 27.18,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Persepolis",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 29.93444,
+    "lng": 52.89028,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Peruaçu River Canyon",
+    "country": "Brazil",
+    "lat": -15.075,
+    "lng": -44.20833333,
+    "year": 2025,
+    "criteria": "N"
+  },
+  {
+    "name": "Petäjävesi Old Church",
+    "country": "Finland",
+    "lat": 62.25,
+    "lng": 25.18333,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Petra",
+    "country": "Jordan",
+    "lat": 30.33056,
+    "lng": 35.44333,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Petroglyphic Complexes of the Mongolian Altai",
+    "country": "Mongolia",
+    "lat": 49.33388889,
+    "lng": 88.39527778,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Petroglyphs along the Bangucheon Stream",
+    "country": "Republic of Korea",
+    "lat": 35.60845,
+    "lng": 129.1739972,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Petroglyphs of Lake Onega and the White Sea",
+    "country": "Russian Federation",
+    "lat": 61.7299,
+    "lng": 36.01263889,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Petroglyphs of the Archaeological Landscape of Tanbaly",
+    "country": "Kazakhstan",
+    "lat": 43.80333333,
+    "lng": 75.535,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Phoenix Islands Protected Area",
+    "country": "Kiribati",
+    "lat": -3.864454,
+    "lng": -172.650203,
+    "year": 2010,
+    "criteria": "N"
+  },
+  {
+    "name": "Phong Nha-Ke Bang National Park and Hin Nam No National Park",
+    "country": "Lao People's Democratic Republic,Viet Nam",
+    "lat": 17.42755556,
+    "lng": 105.9052778,
+    "year": 2003,
+    "criteria": "N"
+  },
+  {
+    "name": "Phu Phrabat, a testimony to the Sīma stone tradition of the Dvaravati period",
+    "country": "Thailand",
+    "lat": 17.73105833,
+    "lng": 102.3562667,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Piazza del Duomo, Pisa",
+    "country": "Italy",
+    "lat": 43.72305556,
+    "lng": 10.39638889,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Pilgrimage Church of St John of Nepomuk at Zelená Hora",
+    "country": "Czechia",
+    "lat": 49.5802,
+    "lng": 15.94205833,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Pilgrimage Church of Wies",
+    "country": "Germany",
+    "lat": 47.68127778,
+    "lng": 10.90013889,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Pimachiowin Aki",
+    "country": "Canada",
+    "lat": 51.82641667,
+    "lng": -95.41127778,
+    "year": 2018,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Pirin National Park",
+    "country": "Bulgaria",
+    "lat": 41.74272222,
+    "lng": 23.43047222,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Pitons, cirques and remparts of Reunion Island",
+    "country": "France",
+    "lat": -21.09944444,
+    "lng": 55.48,
+    "year": 2010,
+    "criteria": "N"
+  },
+  {
+    "name": "Place Stanislas, Place de la Carrière and Place d'Alliance in Nancy",
+    "country": "France",
+    "lat": 48.69361111,
+    "lng": 6.183333333,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Plitvice Lakes National Park",
+    "country": "Croatia",
+    "lat": 44.87778,
+    "lng": 15.61444,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Poblet Monastery",
+    "country": "Spain",
+    "lat": 41.38083,
+    "lng": 1.0825,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Pont du Gard (Roman Aqueduct)",
+    "country": "France",
+    "lat": 43.94722222,
+    "lng": 4.535277778,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Pontcysyllte Aqueduct and Canal",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 52.97027778,
+    "lng": -3.087777778,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Port, Fortresses and Group of Monuments, Cartagena",
+    "country": "Colombia",
+    "lat": 10.41666667,
+    "lng": -75.53333333,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Portovenere, Cinque Terre, and the Islands (Palmaria, Tino and Tinetto)",
+    "country": "Italy",
+    "lat": 44.10694,
+    "lng": 9.72917,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Prambanan Temple Compounds",
+    "country": "Indonesia",
+    "lat": -7.75222,
+    "lng": 110.49167,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Pre-Hispanic City and National Park of Palenque",
+    "country": "Mexico",
+    "lat": 17.48333,
+    "lng": -92.05,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Pre-Hispanic City of Chichen-Itza",
+    "country": "Mexico",
+    "lat": 20.682739,
+    "lng": -88.568654,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Pre-Hispanic City of Teotihuacan",
+    "country": "Mexico",
+    "lat": 19.69167,
+    "lng": -98.84167,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Pre-Hispanic Town of Uxmal",
+    "country": "Mexico",
+    "lat": 20.36166667,
+    "lng": -89.77027778,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Precolumbian Chiefdom Settlements with Stone Spheres of the Diquís",
+    "country": "Costa Rica",
+    "lat": 8.938453,
+    "lng": -83.502539,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Prehistoric Caves of Yagul and Mitla in the Central Valley of Oaxaca",
+    "country": "Mexico",
+    "lat": 16.95083333,
+    "lng": -96.42111111,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Prehistoric Pile Dwellings around the Alps",
+    "country": "Austria,France,Germany,Italy,Slovenia,Switzerland",
+    "lat": 47.27833333,
+    "lng": 8.2075,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Prehistoric Sites and Decorated Caves of the Vézère Valley",
+    "country": "France",
+    "lat": 45.0575,
+    "lng": 1.17,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Prehistoric Sites of the Khorramabad Valley",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 33.49210833,
+    "lng": 48.34557222,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Protective town of San Miguel and the Sanctuary of Jesús Nazareno de Atotonilco",
+    "country": "Mexico",
+    "lat": 20.91444444,
+    "lng": -100.7463889,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Proto-urban Site of Sarazm",
+    "country": "Tajikistan",
+    "lat": 39.50788889,
+    "lng": 67.45872222,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Puerto-Princesa Subterranean River National Park",
+    "country": "Philippines",
+    "lat": 10.16666667,
+    "lng": 118.9166667,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Punic Town of Kerkuane and its Necropolis",
+    "country": "Tunisia",
+    "lat": 36.94639,
+    "lng": 11.09917,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Putorana Plateau",
+    "country": "Russian Federation",
+    "lat": 69.04694444,
+    "lng": 94.15805556,
+    "year": 2010,
+    "criteria": "N"
+  },
+  {
+    "name": "Pyrénées - Mont Perdu",
+    "country": "France,Spain",
+    "lat": 42.68542,
+    "lng": -0.0005,
+    "year": 1997,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Pythagoreion and Heraion of Samos",
+    "country": "Greece",
+    "lat": 37.69083,
+    "lng": 26.94333,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Pyu Ancient Cities",
+    "country": "Myanmar",
+    "lat": 22.47,
+    "lng": 95.81861111,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Qinghai Hoh Xil",
+    "country": "China",
+    "lat": 35.38027778,
+    "lng": 92.43916667,
+    "year": 2017,
+    "criteria": "N"
+  },
+  {
+    "name": "Quanzhou: Emporium of the World in Song-Yuan China",
+    "country": "China",
+    "lat": 24.71027778,
+    "lng": 118.4441667,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Quseir Amra",
+    "country": "Jordan",
+    "lat": 31.80180556,
+    "lng": 36.58730556,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Qutb Minar and its Monuments, Delhi",
+    "country": "India",
+    "lat": 28.52583,
+    "lng": 77.18528,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Rabat, Modern Capital and Historic City: a Shared Heritage",
+    "country": "Morocco",
+    "lat": 34.02416667,
+    "lng": -6.822777778,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Rachid Karami International Fair-Tripoli",
+    "country": "Lebanon",
+    "lat": 34.43777778,
+    "lng": 35.82416667,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Rainforests of the Atsinanana",
+    "country": "Madagascar",
+    "lat": -14.45972222,
+    "lng": 49.7025,
+    "year": 2007,
+    "criteria": "N"
+  },
+  {
+    "name": "Rangiri Dambulla Cave Temple",
+    "country": "Sri Lanka",
+    "lat": 7.856666667,
+    "lng": 80.64916667,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Rani-ki-Vav (the Queen’s Stepwell) at Patan, Gujarat",
+    "country": "India",
+    "lat": 23.85888889,
+    "lng": 72.10166667,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Rapa Nui National Park",
+    "country": "Chile",
+    "lat": -27.074403,
+    "lng": -109.365683,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Red Bay Basque Whaling Station",
+    "country": "Canada",
+    "lat": 51.726925,
+    "lng": -56.42952222,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Redwood National and State Parks",
+    "country": "United States of America",
+    "lat": 41.37388889,
+    "lng": -123.9980556,
+    "year": 1980,
+    "criteria": "N"
+  },
+  {
+    "name": "Residence of Bukovinian and Dalmatian Metropolitans",
+    "country": "Ukraine",
+    "lat": 48.29666667,
+    "lng": 25.92472222,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Residences of the Royal House of Savoy",
+    "country": "Italy",
+    "lat": 45.07253,
+    "lng": 7.68572,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Rhaetian Railway in the Albula / Bernina Landscapes",
+    "country": "Italy,Switzerland",
+    "lat": 46.49833333,
+    "lng": 9.846388889,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Rice Terraces of the Philippine Cordilleras",
+    "country": "Philippines",
+    "lat": 16.93389,
+    "lng": 121.13667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Richtersveld Cultural and Botanical Landscape",
+    "country": "South Africa",
+    "lat": -28.6,
+    "lng": 17.20388889,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Rideau Canal",
+    "country": "Canada",
+    "lat": 44.99438611,
+    "lng": -75.765125,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Rila Monastery",
+    "country": "Bulgaria",
+    "lat": 42.133298,
+    "lng": 23.340187,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Río Abiseo National Park",
+    "country": "Peru",
+    "lat": -7.75,
+    "lng": -77.25,
+    "year": 1990,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Rio de Janeiro: Carioca Landscapes between the Mountain and the Sea",
+    "country": "Brazil",
+    "lat": -22.94777778,
+    "lng": -43.29138889,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Río Plátano Biosphere Reserve",
+    "country": "Honduras",
+    "lat": 15.74444444,
+    "lng": -84.675,
+    "year": 1982,
+    "criteria": "N"
+  },
+  {
+    "name": "Risco Caido and the Sacred Mountains of Gran Canaria Cultural Landscape",
+    "country": "Spain",
+    "lat": 28.04438889,
+    "lng": -15.66119444,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Rjukan-Notodden Industrial Heritage Site",
+    "country": "Norway",
+    "lat": 59.87861111,
+    "lng": 8.593611111,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Robben Island",
+    "country": "South Africa",
+    "lat": -33.8,
+    "lng": 18.36666667,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Art in the Hail Region of Saudi Arabia",
+    "country": "Saudi Arabia",
+    "lat": 28.01055556,
+    "lng": 40.91305556,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Art of Alta",
+    "country": "Norway",
+    "lat": 69.95,
+    "lng": 23.18333,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Art of the Mediterranean Basin on the Iberian Peninsula",
+    "country": "Spain",
+    "lat": 39.78995,
+    "lng": -1.03331,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Carvings in Tanum",
+    "country": "Sweden",
+    "lat": 58.70111,
+    "lng": 11.34111,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Drawings in Valcamonica",
+    "country": "Italy",
+    "lat": 45.95705556,
+    "lng": 10.29733333,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Islands Southern Lagoon",
+    "country": "Palau",
+    "lat": 7.246925,
+    "lng": 134.3525,
+    "year": 2012,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Rock Paintings of Shulgan-Tash Cave",
+    "country": "Russian Federation",
+    "lat": 53.04944444,
+    "lng": 57.07202778,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Paintings of the Sierra de San Francisco",
+    "country": "Mexico",
+    "lat": 27.626963,
+    "lng": -113.020427,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock Shelters of Bhimbetka",
+    "country": "India",
+    "lat": 22.92777778,
+    "lng": 77.58333333,
+    "year": 2003,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock-Art Sites of Tadrart Acacus",
+    "country": "Libya",
+    "lat": 24.83333,
+    "lng": 10.33333,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock-Hewn Churches of Ivanovo",
+    "country": "Bulgaria",
+    "lat": 43.694858,
+    "lng": 25.987893,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Rock-Hewn Churches, Lalibela",
+    "country": "Ethiopia",
+    "lat": 12.02935,
+    "lng": 39.04042,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "Rohtas Fort",
+    "country": "Pakistan",
+    "lat": 32.9625,
+    "lng": 73.58888889,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Roman Monuments, Cathedral of St Peter and Church of Our Lady in Trier",
+    "country": "Germany",
+    "lat": 49.75,
+    "lng": 6.633333333,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Roman Theatre and its Surroundings and the Triumphal Arch of Orange",
+    "country": "France",
+    "lat": 44.13572222,
+    "lng": 4.808416667,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Roman Walls of Lugo",
+    "country": "Spain",
+    "lat": 43.01064079,
+    "lng": -7.553069941,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Røros Mining Town and the Circumference",
+    "country": "Norway",
+    "lat": 62.57388889,
+    "lng": 11.38555556,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Roșia Montană Mining Landscape",
+    "country": "Romania",
+    "lat": 46.30611111,
+    "lng": 23.13055556,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Roskilde Cathedral",
+    "country": "Denmark",
+    "lat": 55.64266541,
+    "lng": 12.07989985,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Routes of Santiago de Compostela: <i>Camino Francés</i> and Routes of Northern Spain",
+    "country": "Spain",
+    "lat": 43.335,
+    "lng": -6.414722222,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Building of <i>Mafra</i> – Palace, Basilica, Convent, <i>Cerco</i> Garden and Hunting Park (<i>Tapada</i>)",
+    "country": "Portugal",
+    "lat": 38.93716667,
+    "lng": -9.325527778,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Court of Tiébélé",
+    "country": "Burkina Faso",
+    "lat": 11.08922222,
+    "lng": -0.961861111,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Domain of Drottningholm",
+    "country": "Sweden",
+    "lat": 59.32306,
+    "lng": 17.88333,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Exhibition Building and Carlton Gardens",
+    "country": "Australia",
+    "lat": -37.80611111,
+    "lng": 144.9702778,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Hill of Ambohimanga",
+    "country": "Madagascar",
+    "lat": -18.75917,
+    "lng": 47.56278,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Monastery of Santa María de Guadalupe",
+    "country": "Spain",
+    "lat": 39.45285,
+    "lng": -5.3275,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Palaces of Abomey",
+    "country": "Benin",
+    "lat": 7.183333333,
+    "lng": 1.983333333,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Royal Tombs of the Joseon Dynasty",
+    "country": "Republic of Korea",
+    "lat": 37.19722222,
+    "lng": 128.4527778,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Ruins of Kilwa Kisiwani and Ruins of Songo Mnara",
+    "country": "United Republic of Tanzania",
+    "lat": -8.95778,
+    "lng": 39.52278,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Ruins of León Viejo",
+    "country": "Nicaragua",
+    "lat": 12.40047,
+    "lng": -86.616336,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Ruins of Loropéni",
+    "country": "Burkina Faso",
+    "lat": 10.25,
+    "lng": -3.583333333,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Ruins of the Buddhist Vihara at Paharpur",
+    "country": "Bangladesh",
+    "lat": 25.03333333,
+    "lng": 88.98333333,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Rwenzori Mountains National Park",
+    "country": "Uganda",
+    "lat": 0.223611111,
+    "lng": 29.92416667,
+    "year": 1994,
+    "criteria": "N"
+  },
+  {
+    "name": "S<U>G</U>ang Gwaay",
+    "country": "Canada",
+    "lat": 52.095,
+    "lng": -131.2202778,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Sacred City of Anuradhapura",
+    "country": "Sri Lanka",
+    "lat": 8.333333333,
+    "lng": 80.38333333,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Sacred City of Caral-Supe",
+    "country": "Peru",
+    "lat": -10.89166667,
+    "lng": -77.52138889,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Sacred City of Kandy",
+    "country": "Sri Lanka",
+    "lat": 7.293611111,
+    "lng": 80.64027778,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Sacred Ensembles of the Hoysalas",
+    "country": "India",
+    "lat": 13.21245278,
+    "lng": 75.99407222,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Sacred Island of Okinoshima and Associated Sites in the Munakata Region",
+    "country": "Japan",
+    "lat": 34.245,
+    "lng": 130.1055556,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Sacred Mijikenda Kaya Forests",
+    "country": "Kenya",
+    "lat": -3.931944444,
+    "lng": 39.59611111,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Sagarmatha National Park",
+    "country": "Nepal",
+    "lat": 27.96528,
+    "lng": 86.91306,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Salonga National Park",
+    "country": "Democratic Republic of the Congo",
+    "lat": -2,
+    "lng": 21,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Samarra Archaeological City",
+    "country": "Iraq",
+    "lat": 34.34098944,
+    "lng": 43.82354306,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "San Agustín Archaeological Park",
+    "country": "Colombia",
+    "lat": 1.916666667,
+    "lng": -76.23333333,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "San Cristóbal de La Laguna",
+    "country": "Spain",
+    "lat": 28.47788889,
+    "lng": -16.31177778,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "San Marino Historic Centre and Mount Titano",
+    "country": "San Marino",
+    "lat": 43.93277778,
+    "lng": 12.45194444,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "San Millán Yuso and Suso Monasteries",
+    "country": "Spain",
+    "lat": 42.32586,
+    "lng": -2.86496,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "San Pedro de la Roca Castle, Santiago de Cuba",
+    "country": "Cuba",
+    "lat": 19.968446,
+    "lng": -75.870441,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Sanctuary of Asklepios at Epidaurus",
+    "country": "Greece",
+    "lat": 37.6,
+    "lng": 23.08055556,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Sanctuary of Bom Jesus do Congonhas",
+    "country": "Brazil",
+    "lat": -20.508201,
+    "lng": -43.860806,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Sanctuary of Bom Jesus do Monte in Braga",
+    "country": "Portugal",
+    "lat": 41.55494444,
+    "lng": -8.377027778,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Sanganeb Marine National Park and Dungonab Bay – Mukkawar Island Marine National Park",
+    "country": "Sudan",
+    "lat": 19.73611111,
+    "lng": 37.44305556,
+    "year": 2016,
+    "criteria": "N"
+  },
+  {
+    "name": "Sangay National Park",
+    "country": "Ecuador",
+    "lat": -1.83333,
+    "lng": -78.33333,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Sangha Trinational",
+    "country": "Cameroon,Central African Republic,Congo",
+    "lat": 2.609444444,
+    "lng": 16.55416667,
+    "year": 2012,
+    "criteria": "N"
+  },
+  {
+    "name": "Sangiran Early Man Site",
+    "country": "Indonesia",
+    "lat": -7.4,
+    "lng": 110.8166667,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Sansa, Buddhist Mountain Monasteries in Korea",
+    "country": "Republic of Korea",
+    "lat": 36.54194444,
+    "lng": 127.8333333,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Santiago de Compostela (Old Town)",
+    "country": "Spain",
+    "lat": 42.88076,
+    "lng": -8.54468,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Santiniketan",
+    "country": "India",
+    "lat": 23.68027778,
+    "lng": 87.68497222,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "São Francisco Square in the Town of São Cristóvão",
+    "country": "Brazil",
+    "lat": -11.01365544,
+    "lng": -37.20537476,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Sardis and the Lydian Tumuli of Bin Tepe",
+    "country": "Türkiye",
+    "lat": 38.48194444,
+    "lng": 28.04527778,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Saryarka – Steppe and Lakes of Northern Kazakhstan",
+    "country": "Kazakhstan",
+    "lat": 50.43333333,
+    "lng": 69.18888889,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Sassanid Archaeological Landscape of Fars Region",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 29.77748056,
+    "lng": 51.57045,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Sceilg Mhichíl",
+    "country": "Ireland",
+    "lat": 51.77194,
+    "lng": -10.53861,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Schokland and Surroundings",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 52.63861111,
+    "lng": 5.771666667,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Schwerin Residence Ensemble",
+    "country": "Germany",
+    "lat": 53.62416667,
+    "lng": 11.41888889,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Selimiye Mosque and its Social Complex",
+    "country": "Türkiye",
+    "lat": 41.67777778,
+    "lng": 26.55944444,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "Selous Game Reserve",
+    "country": "United Republic of Tanzania",
+    "lat": -9,
+    "lng": 37.4,
+    "year": 1982,
+    "criteria": "N"
+  },
+  {
+    "name": "Seokguram Grotto and Bulguksa Temple",
+    "country": "Republic of Korea",
+    "lat": 35.791498,
+    "lng": 129.349029,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Seowon, Korean Neo-Confucian Academies",
+    "country": "Republic of Korea",
+    "lat": 36.72729722,
+    "lng": 128.8434278,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Serengeti National Park",
+    "country": "United Republic of Tanzania",
+    "lat": -2.33333,
+    "lng": 34.56667,
+    "year": 1981,
+    "criteria": "N"
+  },
+  {
+    "name": "Serra da Capivara National Park",
+    "country": "Brazil",
+    "lat": -8.718634,
+    "lng": -42.652436,
+    "year": 1991,
+    "criteria": "C"
+  },
+  {
+    "name": "Settlement and Artificial Mummification of the Chinchorro Culture in the Arica and Parinacota Region",
+    "country": "Chile",
+    "lat": -18.48196111,
+    "lng": -70.32157222,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Seventeenth-Century Canal Ring Area of Amsterdam inside the Singelgracht",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 52.365,
+    "lng": 4.887777778,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Sewell Mining Town",
+    "country": "Chile",
+    "lat": -34.08444444,
+    "lng": -70.38277778,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Shahr-i Sokhta",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 30.59388889,
+    "lng": 61.32777778,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Shark Bay, Western Australia",
+    "country": "Australia",
+    "lat": -25.48611111,
+    "lng": 113.4361111,
+    "year": 1991,
+    "criteria": "N"
+  },
+  {
+    "name": "Sheikh Safi al-din Khānegāh and Shrine Ensemble in Ardabil",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 38.24861111,
+    "lng": 48.29138889,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Shirakami-Sanchi",
+    "country": "Japan",
+    "lat": 40.4525,
+    "lng": 140.1155556,
+    "year": 1993,
+    "criteria": "N"
+  },
+  {
+    "name": "ShUM Sites of Speyer, Worms and Mainz",
+    "country": "Germany",
+    "lat": 49.31621111,
+    "lng": 8.439538889,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Shushtar Historical Hydraulic System",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 32.01861111,
+    "lng": 48.83583333,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Sian Ka'an",
+    "country": "Mexico",
+    "lat": 19.38333,
+    "lng": -87.79167,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Sichuan Giant Panda Sanctuaries - Wolong, Mt Siguniang and Jiajin Mountains",
+    "country": "China",
+    "lat": 30.83333333,
+    "lng": 103,
+    "year": 2006,
+    "criteria": "N"
+  },
+  {
+    "name": "Silk Roads: the Routes Network of Chang'an-Tianshan Corridor",
+    "country": "China,Kazakhstan,Kyrgyzstan",
+    "lat": 34.30444444,
+    "lng": 108.8572222,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Silk Roads: Zarafshan-Karakum Corridor",
+    "country": "Tajikistan,Turkmenistan,Uzbekistan",
+    "lat": 39.44148889,
+    "lng": 69.68555833,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Simien National Park",
+    "country": "Ethiopia",
+    "lat": 13.18333333,
+    "lng": 38.06666667,
+    "year": 1978,
+    "criteria": "N"
+  },
+  {
+    "name": "Singapore Botanic Gardens",
+    "country": "Singapore",
+    "lat": 1.315277778,
+    "lng": 103.8161111,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Sinharaja Forest Reserve",
+    "country": "Sri Lanka",
+    "lat": 6.416666667,
+    "lng": 80.5,
+    "year": 1988,
+    "criteria": "N"
+  },
+  {
+    "name": "Site of Palmyra",
+    "country": "Syrian Arab Republic",
+    "lat": 34.55416667,
+    "lng": 38.26666667,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Site of Xanadu",
+    "country": "China",
+    "lat": 42.358,
+    "lng": 116.1851278,
+    "year": 2012,
+    "criteria": "C"
+  },
+  {
+    "name": "Sites of Japan’s Meiji Industrial Revolution: Iron and Steel, Shipbuilding and Coal Mining",
+    "country": "Japan",
+    "lat": 34.43055556,
+    "lng": 131.4122222,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Sítio Roberto Burle Marx",
+    "country": "Brazil",
+    "lat": -23.02237778,
+    "lng": -43.54622222,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Škocjan Caves",
+    "country": "Slovenia",
+    "lat": 45.66667,
+    "lng": 14,
+    "year": 1986,
+    "criteria": "N"
+  },
+  {
+    "name": "Skogskyrkogården",
+    "country": "Sweden",
+    "lat": 59.27556,
+    "lng": 18.09944,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Socotra Archipelago",
+    "country": "Yemen",
+    "lat": 12.5,
+    "lng": 53.83333333,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "South China Karst",
+    "country": "China",
+    "lat": 24.92333333,
+    "lng": 110.3544444,
+    "year": 2007,
+    "criteria": "N"
+  },
+  {
+    "name": "Speicherstadt and Kontorhaus District with Chilehaus",
+    "country": "Germany",
+    "lat": 53.54555556,
+    "lng": 9.999444444,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Speyer Cathedral",
+    "country": "Germany",
+    "lat": 49.31722222,
+    "lng": 8.442388889,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Srebarna Nature Reserve",
+    "country": "Bulgaria",
+    "lat": 44.11444,
+    "lng": 27.07806,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "St Kilda",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 57.81722222,
+    "lng": -8.576666667,
+    "year": 1986,
+    "criteria": "C/N"
+  },
+  {
+    "name": "St Mary's Cathedral and St Michael's Church at Hildesheim",
+    "country": "Germany",
+    "lat": 52.15278,
+    "lng": 9.94389,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Stari Grad Plain",
+    "country": "Croatia",
+    "lat": 43.18166667,
+    "lng": 16.63861111,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Stari Ras and Sopoćani",
+    "country": "Serbia",
+    "lat": 43.11889,
+    "lng": 20.42278,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Statue of Liberty",
+    "country": "United States of America",
+    "lat": 40.68944444,
+    "lng": -74.04472222,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Stećci Medieval Tombstone Graveyards",
+    "country": "Bosnia and Herzegovina,Croatia,Montenegro,Serbia",
+    "lat": 43.09221389,
+    "lng": 17.92405278,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "Stevns Klint",
+    "country": "Denmark",
+    "lat": 55.26722222,
+    "lng": 12.42333333,
+    "year": 2014,
+    "criteria": "N"
+  },
+  {
+    "name": "Stoclet House",
+    "country": "Belgium",
+    "lat": 50.835,
+    "lng": 4.416111111,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Stone Circles of Senegambia",
+    "country": "Gambia,Senegal",
+    "lat": 13.69111111,
+    "lng": -15.5225,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Stonehenge, Avebury and Associated Sites",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.17888889,
+    "lng": -1.825277778,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Strasbourg, Grande-Île and <em>Neustadt</em>",
+    "country": "France",
+    "lat": 48.58444444,
+    "lng": 7.748888889,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Studenica Monastery",
+    "country": "Serbia",
+    "lat": 43.48652778,
+    "lng": 20.53166667,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Studley Royal Park including the Ruins of Fountains Abbey",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 54.11611111,
+    "lng": -1.573055556,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Su Nuraxi di Barumini",
+    "country": "Italy",
+    "lat": 39.70583333,
+    "lng": 8.991388889,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Sudanese style mosques in northern Côte d’Ivoire",
+    "country": "Côte d'Ivoire",
+    "lat": 10.49031667,
+    "lng": -6.410166667,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Sukur Cultural Landscape",
+    "country": "Nigeria",
+    "lat": 10.74056,
+    "lng": 13.57194,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Sulaiman-Too Sacred Mountain",
+    "country": "Kyrgyzstan",
+    "lat": 40.53111111,
+    "lng": 72.78277778,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Summer Palace, an Imperial Garden in Beijing",
+    "country": "China",
+    "lat": 39.91055556,
+    "lng": 116.1411111,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Sun Temple, Konârak",
+    "country": "India",
+    "lat": 19.8875,
+    "lng": 86.09472,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Sundarbans National Park",
+    "country": "India",
+    "lat": 21.945,
+    "lng": 88.89583333,
+    "year": 1987,
+    "criteria": "N"
+  },
+  {
+    "name": "Surtsey",
+    "country": "Iceland",
+    "lat": 63.30305556,
+    "lng": -20.60222222,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Susa",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 32.18944444,
+    "lng": 48.25611111,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Swiss Alps Jungfrau-Aletsch",
+    "country": "Switzerland",
+    "lat": 46.5,
+    "lng": 8.033333333,
+    "year": 2001,
+    "criteria": "N"
+  },
+  {
+    "name": "Swiss Tectonic Arena Sardona",
+    "country": "Switzerland",
+    "lat": 46.91666667,
+    "lng": 9.25,
+    "year": 2008,
+    "criteria": "N"
+  },
+  {
+    "name": "Sydney Opera House",
+    "country": "Australia",
+    "lat": -33.85666667,
+    "lng": 151.2152778,
+    "year": 2007,
+    "criteria": "C"
+  },
+  {
+    "name": "Tabriz Historic Bazaar Complex",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 38.08138889,
+    "lng": 46.29305556,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "Taï National Park",
+    "country": "Côte d'Ivoire",
+    "lat": 5.648888889,
+    "lng": -7.095277778,
+    "year": 1982,
+    "criteria": "N"
+  },
+  {
+    "name": "Taj Mahal",
+    "country": "India",
+    "lat": 27.17417,
+    "lng": 78.04222,
+    "year": 1983,
+    "criteria": "C"
+  },
+  {
+    "name": "Tajik National Park (Mountains of the Pamirs)",
+    "country": "Tajikistan",
+    "lat": 38.765,
+    "lng": 72.30527778,
+    "year": 2013,
+    "criteria": "N"
+  },
+  {
+    "name": "Talamanca Range-La Amistad Reserves / La Amistad National Park",
+    "country": "Costa Rica,Panama",
+    "lat": 9.407083333,
+    "lng": -82.93880556,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Talayotic Menorca",
+    "country": "Spain",
+    "lat": 39.9975,
+    "lng": 3.908888889,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Taos Pueblo",
+    "country": "United States of America",
+    "lat": 36.438,
+    "lng": -105.546,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Taputapuātea",
+    "country": "France",
+    "lat": -16.8414,
+    "lng": -151.3723778,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Tarnowskie Góry Lead-Silver-Zinc Mine and its Underground Water Management System",
+    "country": "Poland",
+    "lat": 50.44269722,
+    "lng": 18.85122778,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Tasmanian Wilderness",
+    "country": "Australia",
+    "lat": -43.11847222,
+    "lng": 146.2305556,
+    "year": 1982,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Tassili n'Ajjer",
+    "country": "Algeria",
+    "lat": 25.5,
+    "lng": 9,
+    "year": 1982,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Taxila",
+    "country": "Pakistan",
+    "lat": 33.77916667,
+    "lng": 72.8875,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Tchogha Zanbil",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 32.00857,
+    "lng": 48.522118,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Te Henua Enata – The Marquesas Islands",
+    "country": "France",
+    "lat": -7.969894444,
+    "lng": -140.6460475,
+    "year": 2024,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Te Wahipounamu – South West New Zealand",
+    "country": "New Zealand",
+    "lat": -45.03602778,
+    "lng": 167.3196111,
+    "year": 1990,
+    "criteria": "N"
+  },
+  {
+    "name": "Tehuacán-Cuicatlán Valley: originary habitat of Mesoamerica",
+    "country": "Mexico",
+    "lat": 17.98996111,
+    "lng": -97.18715278,
+    "year": 2018,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Teide National Park",
+    "country": "Spain",
+    "lat": 28.27138889,
+    "lng": -16.64361111,
+    "year": 2007,
+    "criteria": "N"
+  },
+  {
+    "name": "Temple and Cemetery of Confucius and the Kong Family Mansion in Qufu",
+    "country": "China",
+    "lat": 35.613215,
+    "lng": 116.994561,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Temple of Apollo Epicurius at Bassae",
+    "country": "Greece",
+    "lat": 37.43498,
+    "lng": 21.89694,
+    "year": 1986,
+    "criteria": "C"
+  },
+  {
+    "name": "Temple of Heaven: an Imperial Sacrificial Altar in Beijing",
+    "country": "China",
+    "lat": 39.84555556,
+    "lng": 116.4447222,
+    "year": 1998,
+    "criteria": "C"
+  },
+  {
+    "name": "Temple of Preah Vihear",
+    "country": "Cambodia",
+    "lat": 14.38833333,
+    "lng": 104.6838889,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Temple Zone of Sambor Prei Kuk, Archaeological Site of Ancient Ishanapura",
+    "country": "Cambodia",
+    "lat": 12.8725,
+    "lng": 105.0430556,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "The <I>Trulli</I> of Alberobello",
+    "country": "Italy",
+    "lat": 40.7825,
+    "lng": 17.23694,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "The 20th-Century Architecture of Frank Lloyd Wright",
+    "country": "United States of America",
+    "lat": 39.90557083,
+    "lng": -79.46647556,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "The Ahwar of Southern Iraq: Refuge of Biodiversity and the Relict Landscape of the Mesopotamian Cities",
+    "country": "Iraq",
+    "lat": 31.56222222,
+    "lng": 47.65777778,
+    "year": 2016,
+    "criteria": "C/N"
+  },
+  {
+    "name": "The Ancient Town of Si Thep and its Associated Dvaravati Monuments",
+    "country": "Thailand",
+    "lat": 15.46581667,
+    "lng": 101.1511139,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "The Archaeological Ensemble of 17th Century Port Royal",
+    "country": "Jamaica",
+    "lat": 17.93861389,
+    "lng": -76.84337778,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "The Archaeological Heritage of Niah National Park’s Caves Complex",
+    "country": "Malaysia",
+    "lat": 3.804291667,
+    "lng": 113.7807667,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement",
+    "country": "Argentina,Belgium,France,Germany,India,Japan,Switzerland",
+    "lat": 46.46841389,
+    "lng": 6.829336111,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "The Cathedral of St James in Šibenik",
+    "country": "Croatia",
+    "lat": 43.73629,
+    "lng": 15.89038,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "The Causses and the Cévennes, Mediterranean agro-pastoral Cultural Landscape",
+    "country": "France",
+    "lat": 44.22027778,
+    "lng": 3.473055556,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "The Climats, terroirs of Burgundy",
+    "country": "France",
+    "lat": 47.05805556,
+    "lng": 4.864444444,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "The Colonial Transisthmian Route of Panamá",
+    "country": "Panama",
+    "lat": 9.323172222,
+    "lng": -79.999775,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "The Cosmological Axis of Yogyakarta and its Historic Landmarks",
+    "country": "Indonesia",
+    "lat": -7.801388889,
+    "lng": 110.3647778,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "The Cultural Landscape of Al-Faw Archaeological Area",
+    "country": "Saudi Arabia",
+    "lat": 19.76491667,
+    "lng": 45.16338889,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "The Dolomites",
+    "country": "Italy",
+    "lat": 46.61305556,
+    "lng": 12.16305556,
+    "year": 2009,
+    "criteria": "N"
+  },
+  {
+    "name": "The Emergence of Modern Human Behaviour: The Pleistocene Occupation Sites of South Africa",
+    "country": "South Africa",
+    "lat": -32.38638889,
+    "lng": 18.4525,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "The English Lake District",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 54.47661111,
+    "lng": -3.082416667,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "The Flow Country",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 58.39916667,
+    "lng": -4.046111111,
+    "year": 2024,
+    "criteria": "N"
+  },
+  {
+    "name": "The Forth Bridge",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 56.00111111,
+    "lng": -3.388888889,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "The Gedeo Cultural Landscape",
+    "country": "Ethiopia",
+    "lat": 6.248888889,
+    "lng": 38.28777778,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "The Grand Canal",
+    "country": "China",
+    "lat": 34.69388889,
+    "lng": 112.4683333,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "The Great Spa Towns of Europe",
+    "country": "Austria,Belgium,Czechia,France,Germany,Italy,United Kingdom of Great Britain and Northern Ireland",
+    "lat": 50.49222222,
+    "lng": 5.866944444,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "The Great Wall",
+    "country": "China",
+    "lat": 40.41667,
+    "lng": 116.08333,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "The Historic Centre of Odesa",
+    "country": "Ukraine",
+    "lat": 46.48645,
+    "lng": 30.74161389,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "The Historic Town and Archaeological Site of Gedi",
+    "country": "Kenya",
+    "lat": -3.310263889,
+    "lng": 40.01726389,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "The Jantar Mantar, Jaipur",
+    "country": "India",
+    "lat": 26.92472222,
+    "lng": 75.825,
+    "year": 2010,
+    "criteria": "C"
+  },
+  {
+    "name": "The Maison Carrée of Nîmes",
+    "country": "France",
+    "lat": 43.83822222,
+    "lng": 4.356194444,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "The Palaces of King Ludwig II of Bavaria: Neuschwanstein, Linderhof, Schachen and Herrenchiemsee",
+    "country": "Germany",
+    "lat": 47.5575,
+    "lng": 10.74944444,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "The par force hunting landscape in North Zealand",
+    "country": "Denmark",
+    "lat": 55.91361111,
+    "lng": 12.35777778,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "The Persian Caravanserai",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 35.05835278,
+    "lng": 51.42013611,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "The Persian Garden",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 30.16666667,
+    "lng": 53.16666667,
+    "year": 2011,
+    "criteria": "C"
+  },
+  {
+    "name": "The Persian Qanat",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 34.29,
+    "lng": 58.65444444,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "The Porticoes of Bologna",
+    "country": "Italy",
+    "lat": 44.49138889,
+    "lng": 11.33277778,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "The Sassi and the Park of the Rupestrian Churches of Matera",
+    "country": "Italy",
+    "lat": 40.66638889,
+    "lng": 16.61027778,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "The Slate Landscape of Northwest Wales",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 53.12083333,
+    "lng": -4.115,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "The Sundarbans",
+    "country": "Bangladesh",
+    "lat": 21.95,
+    "lng": 89.18333,
+    "year": 1997,
+    "criteria": "N"
+  },
+  {
+    "name": "The work of engineer Eladio Dieste: Church of Atlántida",
+    "country": "Uruguay",
+    "lat": -34.74391944,
+    "lng": -55.76640833,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "The works of Jože Plečnik in Ljubljana – Human Centred Urban Design",
+    "country": "Slovenia",
+    "lat": 46.04333333,
+    "lng": 14.50222222,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Thimlich Ohinga Archaeological Site",
+    "country": "Kenya",
+    "lat": -0.891338056,
+    "lng": 34.326107,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Thracian Tomb of Kazanlak",
+    "country": "Bulgaria",
+    "lat": 42.625774,
+    "lng": 25.399172,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Thracian Tomb of Sveshtari",
+    "country": "Bulgaria",
+    "lat": 43.66667,
+    "lng": 26.66667,
+    "year": 1985,
+    "criteria": "C"
+  },
+  {
+    "name": "Three Castles, Defensive Wall and Ramparts of the Market-Town of Bellinzona",
+    "country": "Switzerland",
+    "lat": 46.19314,
+    "lng": 9.02242,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Thungyai-Huai Kha Khaeng Wildlife Sanctuaries",
+    "country": "Thailand",
+    "lat": 15.33333,
+    "lng": 98.91667,
+    "year": 1991,
+    "criteria": "N"
+  },
+  {
+    "name": "Tikal National Park",
+    "country": "Guatemala",
+    "lat": 17.21666667,
+    "lng": -89.61666667,
+    "year": 1979,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Timbuktu",
+    "country": "Mali",
+    "lat": 16.77333333,
+    "lng": -2.999444444,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Timgad",
+    "country": "Algeria",
+    "lat": 35.48416667,
+    "lng": 6.468861111,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Tipasa",
+    "country": "Algeria",
+    "lat": 36.55,
+    "lng": 2.383333333,
+    "year": 1982,
+    "criteria": "C"
+  },
+  {
+    "name": "Tiya",
+    "country": "Ethiopia",
+    "lat": 8.43491,
+    "lng": 38.6121,
+    "year": 1980,
+    "criteria": "C"
+  },
+  {
+    "name": "Tomb of Askia",
+    "country": "Mali",
+    "lat": 16.2898,
+    "lng": -0.04456,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Tombs of Buganda Kings at Kasubi",
+    "country": "Uganda",
+    "lat": 0.348611111,
+    "lng": 32.55138889,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Tongariro National Park",
+    "country": "New Zealand",
+    "lat": -39.29083333,
+    "lng": 175.5622222,
+    "year": 1990,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Tower of Hercules",
+    "country": "Spain",
+    "lat": 43.38583333,
+    "lng": -8.406388889,
+    "year": 2009,
+    "criteria": "C"
+  },
+  {
+    "name": "Tower of London",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "lat": 51.50805556,
+    "lng": -0.076111111,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Town of Bamberg",
+    "country": "Germany",
+    "lat": 49.89166667,
+    "lng": 10.88888889,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Town of Luang Prabang",
+    "country": "Lao People's Democratic Republic",
+    "lat": 19.88889,
+    "lng": 102.13333,
+    "year": 1995,
+    "criteria": "C"
+  },
+  {
+    "name": "Tr’ondëk-Klondike",
+    "country": "Canada",
+    "lat": 64.05034722,
+    "lng": -139.4399472,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Trang An Landscape Complex",
+    "country": "Viet Nam",
+    "lat": 20.25666667,
+    "lng": 105.8963889,
+    "year": 2014,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Trans-Iranian Railway",
+    "country": "Iran (Islamic Republic of)",
+    "lat": 35.65830556,
+    "lng": 51.39833333,
+    "year": 2021,
+    "criteria": "C"
+  },
+  {
+    "name": "Trinidad and the Valley de los Ingenios",
+    "country": "Cuba",
+    "lat": 21.80305556,
+    "lng": -79.98444444,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Tubbataha Reefs Natural Park",
+    "country": "Philippines",
+    "lat": 8.953333333,
+    "lng": 119.8675,
+    "year": 1993,
+    "criteria": "N"
+  },
+  {
+    "name": "Tugay forests of the Tigrovaya Balka Nature Reserve",
+    "country": "Tajikistan",
+    "lat": 37.20472222,
+    "lng": 68.34138889,
+    "year": 2023,
+    "criteria": "N"
+  },
+  {
+    "name": "Tusi Sites",
+    "country": "China",
+    "lat": 28.99861111,
+    "lng": 109.9669444,
+    "year": 2015,
+    "criteria": "C"
+  },
+  {
+    "name": "Tyre",
+    "country": "Lebanon",
+    "lat": 33.26916667,
+    "lng": 35.19583333,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Ujung Kulon National Park",
+    "country": "Indonesia",
+    "lat": -6.75,
+    "lng": 105.3333333,
+    "year": 1991,
+    "criteria": "N"
+  },
+  {
+    "name": "Ulu<U>r</U>u-Kata Tju<U>t</U>a National Park",
+    "country": "Australia",
+    "lat": -25.33333333,
+    "lng": 131,
+    "year": 1987,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Umm Al-Jimāl",
+    "country": "Jordan",
+    "lat": 32.32694444,
+    "lng": 36.37,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "University of Coimbra – Alta and Sofia",
+    "country": "Portugal",
+    "lat": 40.20781111,
+    "lng": -8.425775,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Upper Svaneti",
+    "country": "Georgia",
+    "lat": 42.914,
+    "lng": 43.009,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Urnes Stave Church",
+    "country": "Norway",
+    "lat": 61.29825949,
+    "lng": 7.322678289,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Vallée de Mai Nature Reserve",
+    "country": "Seychelles",
+    "lat": -4.331,
+    "lng": 55.738,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Valongo Wharf Archaeological Site",
+    "country": "Brazil",
+    "lat": -22.89711111,
+    "lng": -43.18739444,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Van Nellefabriek",
+    "country": "Netherlands (Kingdom of the)",
+    "lat": 51.92444444,
+    "lng": 4.4325,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Vat Phou and Associated Ancient Settlements within the Champasak Cultural Landscape",
+    "country": "Lao People's Democratic Republic",
+    "lat": 14.84833333,
+    "lng": 105.8222222,
+    "year": 2001,
+    "criteria": "C"
+  },
+  {
+    "name": "Vatican City",
+    "country": "Holy See",
+    "lat": 41.90216,
+    "lng": 12.45736,
+    "year": 1984,
+    "criteria": "C"
+  },
+  {
+    "name": "Vatnajökull National Park - Dynamic Nature of Fire and Ice",
+    "country": "Iceland",
+    "lat": 64.577363,
+    "lng": -16.88154044,
+    "year": 2019,
+    "criteria": "N"
+  },
+  {
+    "name": "Vegaøyan – The Vega Archipelago",
+    "country": "Norway",
+    "lat": 65.61667,
+    "lng": 11.75,
+    "year": 2004,
+    "criteria": "C"
+  },
+  {
+    "name": "Venetian Works of Defence between the 16th and 17th Centuries: <em>Stato da Terra</em> – Western <em>Stato da Mar</em>",
+    "country": "Croatia,Italy,Montenegro",
+    "lat": 45.70333333,
+    "lng": 9.663611111,
+    "year": 2017,
+    "criteria": "C"
+  },
+  {
+    "name": "Venice and its Lagoon",
+    "country": "Italy",
+    "lat": 45.43430556,
+    "lng": 12.33894444,
+    "year": 1987,
+    "criteria": "C"
+  },
+  {
+    "name": "Verla Groundwood and Board Mill",
+    "country": "Finland",
+    "lat": 61.06194,
+    "lng": 26.64083,
+    "year": 1996,
+    "criteria": "C"
+  },
+  {
+    "name": "Vézelay, Church and Hill",
+    "country": "France",
+    "lat": 47.46638889,
+    "lng": 3.748333333,
+    "year": 1979,
+    "criteria": "C"
+  },
+  {
+    "name": "Via Appia. <em>Regina Viarum</em>",
+    "country": "Italy",
+    "lat": 41.29272222,
+    "lng": 13.26272222,
+    "year": 2024,
+    "criteria": "C"
+  },
+  {
+    "name": "Victorian Gothic and Art Deco Ensembles of Mumbai",
+    "country": "India",
+    "lat": 18.92980556,
+    "lng": 72.83008333,
+    "year": 2018,
+    "criteria": "C"
+  },
+  {
+    "name": "Viking-Age Ring Fortresses",
+    "country": "Denmark",
+    "lat": 56.99527778,
+    "lng": 9.254722222,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Villa Romana del Casale",
+    "country": "Italy",
+    "lat": 37.36611,
+    "lng": 14.33417,
+    "year": 1997,
+    "criteria": "C"
+  },
+  {
+    "name": "Villages with Fortified Churches in Transylvania",
+    "country": "Romania",
+    "lat": 46.13583333,
+    "lng": 24.77305556,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Vilnius Historic Centre",
+    "country": "Lithuania",
+    "lat": 54.68667,
+    "lng": 25.29306,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Viñales Valley",
+    "country": "Cuba",
+    "lat": 22.61667,
+    "lng": -83.71667,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato",
+    "country": "Italy",
+    "lat": 44.60861111,
+    "lng": 7.963611111,
+    "year": 2014,
+    "criteria": "C"
+  },
+  {
+    "name": "Virgin Komi Forests",
+    "country": "Russian Federation",
+    "lat": 63.62583333,
+    "lng": 58.9525,
+    "year": 1995,
+    "criteria": "N"
+  },
+  {
+    "name": "Virunga National Park",
+    "country": "Democratic Republic of the Congo",
+    "lat": 0.916666667,
+    "lng": 29.16666667,
+    "year": 1979,
+    "criteria": "N"
+  },
+  {
+    "name": "Vizcaya Bridge",
+    "country": "Spain",
+    "lat": 43.323175,
+    "lng": -3.016833333,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Vjetrenica Cave, Ravno",
+    "country": "Bosnia and Herzegovina",
+    "lat": 42.845,
+    "lng": 17.98888889,
+    "year": 2024,
+    "criteria": "N"
+  },
+  {
+    "name": "Vlkolínec",
+    "country": "Slovakia",
+    "lat": 49.03916667,
+    "lng": 19.27833333,
+    "year": 1993,
+    "criteria": "C"
+  },
+  {
+    "name": "Völklingen Ironworks",
+    "country": "Germany",
+    "lat": 49.24872222,
+    "lng": 6.844222222,
+    "year": 1994,
+    "criteria": "C"
+  },
+  {
+    "name": "Vredefort Dome",
+    "country": "South Africa",
+    "lat": -26.86,
+    "lng": 27.26,
+    "year": 2005,
+    "criteria": "N"
+  },
+  {
+    "name": "W-Arly-Pendjari Complex",
+    "country": "Benin,Burkina Faso,Niger",
+    "lat": 11.88416667,
+    "lng": 2.487777778,
+    "year": 1996,
+    "criteria": "N"
+  },
+  {
+    "name": "Wadden Sea",
+    "country": "Denmark,Germany,Netherlands (Kingdom of the)",
+    "lat": 53.52861111,
+    "lng": 8.556111111,
+    "year": 2009,
+    "criteria": "N"
+  },
+  {
+    "name": "Wadi Al-Hitan (Whale Valley)",
+    "country": "Egypt",
+    "lat": 29.33333,
+    "lng": 30.18333,
+    "year": 2005,
+    "criteria": "N"
+  },
+  {
+    "name": "Wadi Rum Protected Area",
+    "country": "Jordan",
+    "lat": 29.63972222,
+    "lng": 35.43388889,
+    "year": 2011,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Walled City of Baku with the Shirvanshah's Palace and Maiden Tower",
+    "country": "Azerbaijan",
+    "lat": 40.36666667,
+    "lng": 49.83333333,
+    "year": 2000,
+    "criteria": "C"
+  },
+  {
+    "name": "Water Management System of Augsburg",
+    "country": "Germany",
+    "lat": 48.36547222,
+    "lng": 10.902,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Waterton Glacier International Peace Park",
+    "country": "Canada,United States of America",
+    "lat": 48.99605556,
+    "lng": -113.9041667,
+    "year": 1995,
+    "criteria": "N"
+  },
+  {
+    "name": "Western Caucasus",
+    "country": "Russian Federation",
+    "lat": 44,
+    "lng": 40,
+    "year": 1999,
+    "criteria": "N"
+  },
+  {
+    "name": "Western Tien-Shan",
+    "country": "Kazakhstan,Kyrgyzstan,Uzbekistan",
+    "lat": 43.71833333,
+    "lng": 68.67888889,
+    "year": 2016,
+    "criteria": "N"
+  },
+  {
+    "name": "Wet Tropics of Queensland",
+    "country": "Australia",
+    "lat": -15.65,
+    "lng": 144.9666667,
+    "year": 1988,
+    "criteria": "N"
+  },
+  {
+    "name": "Whale Sanctuary of El Vizcaino",
+    "country": "Mexico",
+    "lat": 27.79222,
+    "lng": -114.22778,
+    "year": 1993,
+    "criteria": "N"
+  },
+  {
+    "name": "White Monuments of Vladimir and Suzdal",
+    "country": "Russian Federation",
+    "lat": 56.15,
+    "lng": 40.41666667,
+    "year": 1992,
+    "criteria": "C"
+  },
+  {
+    "name": "Wieliczka and Bochnia Royal Salt Mines",
+    "country": "Poland",
+    "lat": 49.97916667,
+    "lng": 20.06388889,
+    "year": 1978,
+    "criteria": "C"
+  },
+  {
+    "name": "Willandra Lakes Region",
+    "country": "Australia",
+    "lat": -34,
+    "lng": 143,
+    "year": 1981,
+    "criteria": "C/N"
+  },
+  {
+    "name": "Wixárika Route through Sacred Sites to Wirikuta (Tatehuarí Huajuyé)",
+    "country": "Mexico",
+    "lat": 22.59786389,
+    "lng": -103.2801528,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Wood Buffalo National Park",
+    "country": "Canada",
+    "lat": 59.35833333,
+    "lng": -112.2933333,
+    "year": 1983,
+    "criteria": "N"
+  },
+  {
+    "name": "Wooden <em>Tserkvas</em> of the Carpathian Region in Poland and Ukraine",
+    "country": "Poland,Ukraine",
+    "lat": 49.53388889,
+    "lng": 21.03222222,
+    "year": 2013,
+    "criteria": "C"
+  },
+  {
+    "name": "Wooden Churches of Maramureş",
+    "country": "Romania",
+    "lat": 47.82083333,
+    "lng": 24.05583333,
+    "year": 1999,
+    "criteria": "C"
+  },
+  {
+    "name": "Wooden Churches of the Slovak part of the Carpathian Mountain Area",
+    "country": "Slovakia",
+    "lat": 49.33611111,
+    "lng": 19.55833333,
+    "year": 2008,
+    "criteria": "C"
+  },
+  {
+    "name": "Wooden Hypostyle Mosques of Medieval Anatolia",
+    "country": "Türkiye",
+    "lat": 38.75503611,
+    "lng": 30.529575,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Writing-on-Stone / Áísínai’pi",
+    "country": "Canada",
+    "lat": 49.075,
+    "lng": -111.6333333,
+    "year": 2019,
+    "criteria": "C"
+  },
+  {
+    "name": "Wulingyuan Scenic and Historic Interest Area",
+    "country": "China",
+    "lat": 29.33333,
+    "lng": 110.5,
+    "year": 1992,
+    "criteria": "N"
+  },
+  {
+    "name": "Würzburg Residence with the Court Gardens and Residence Square",
+    "country": "Germany",
+    "lat": 49.79278,
+    "lng": 9.93889,
+    "year": 1981,
+    "criteria": "C"
+  },
+  {
+    "name": "Xanthos-Letoon",
+    "country": "Türkiye",
+    "lat": 36.335,
+    "lng": 29.32028,
+    "year": 1988,
+    "criteria": "C"
+  },
+  {
+    "name": "Xinjiang Tianshan",
+    "country": "China",
+    "lat": 41.96833333,
+    "lng": 80.35416667,
+    "year": 2013,
+    "criteria": "N"
+  },
+  {
+    "name": "Xixia Imperial Tombs",
+    "country": "China",
+    "lat": 38.41583333,
+    "lng": 105.9711111,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Yakushima",
+    "country": "Japan",
+    "lat": 30.315,
+    "lng": 130.5086111,
+    "year": 1993,
+    "criteria": "N"
+  },
+  {
+    "name": "Yellowstone National Park",
+    "country": "United States of America",
+    "lat": 44.46056,
+    "lng": -110.82778,
+    "year": 1978,
+    "criteria": "N"
+  },
+  {
+    "name": "Yen Tu-Vinh Nghiem-Con Son, Kiep Bac Complex of Monuments and Landscapes",
+    "country": "Viet Nam",
+    "lat": 21.11925556,
+    "lng": 106.5353972,
+    "year": 2025,
+    "criteria": "C"
+  },
+  {
+    "name": "Yin Xu",
+    "country": "China",
+    "lat": 36.12666667,
+    "lng": 114.3138889,
+    "year": 2006,
+    "criteria": "C"
+  },
+  {
+    "name": "Yosemite National Park",
+    "country": "United States of America",
+    "lat": 37.74611111,
+    "lng": -119.5966667,
+    "year": 1984,
+    "criteria": "N"
+  },
+  {
+    "name": "Zagori Cultural Landscape",
+    "country": "Greece",
+    "lat": 39.90527778,
+    "lng": 20.81972222,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Žatec and the Landscape of Saaz Hops",
+    "country": "Czechia",
+    "lat": 50.32027778,
+    "lng": 13.62,
+    "year": 2023,
+    "criteria": "C"
+  },
+  {
+    "name": "Zuojiang Huashan Rock Art Cultural Landscape",
+    "country": "China",
+    "lat": 22.25555556,
+    "lng": 107.0230556,
+    "year": 2016,
+    "criteria": "C"
+  },
+  {
+    "name": "ǂKhomani Cultural Landscape",
+    "country": "South Africa",
+    "lat": -25.68761111,
+    "lng": 20.37458333,
+    "year": 2017,
+    "criteria": "C"
+  }
+]

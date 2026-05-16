@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 
-export default function DropdownMenu({ theme, setTheme, onReset, children }) {
+export default function DropdownMenu({ theme, setTheme, children }) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -26,10 +26,6 @@ export default function DropdownMenu({ theme, setTheme, onReset, children }) {
           <span className="dropdown-label">Theme</span>
           <ThemeToggle theme={theme} setTheme={setTheme} />
         </div>
-        <div className="dropdown-divider" />
-        <button className="dropdown-action" onClick={() => { onReset(); setOpen(false); }}>
-          Reset All Visited
-        </button>
       </div>
     </div>
   );

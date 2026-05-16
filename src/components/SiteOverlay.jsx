@@ -1,4 +1,4 @@
-export default function SiteOverlay({ site, details, isVisited, onToggle, onClose, onZoom, linkLabel, linkUrl }) {
+export default function SiteOverlay({ site, details, isVisited, onClose, onZoom, linkLabel, linkUrl }) {
   if (!site) return null;
 
   return (
@@ -57,12 +57,6 @@ export default function SiteOverlay({ site, details, isVisited, onToggle, onClos
             </div>
 
             <div className="overlay-actions">
-              <button
-                className={`action-button ${isVisited ? 'visited' : ''}`}
-                onClick={() => onToggle(site.name)}
-              >
-                {isVisited ? '✓ Visited' : 'Mark as Visited'}
-              </button>
               {linkUrl && (
                 <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="action-button wikipedia-link">
                   {linkLabel}
