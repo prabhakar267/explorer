@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Unesco from './pages/Unesco';
 import Parks from './pages/Parks';
@@ -16,6 +16,7 @@ function App() {
       <Route path="/unesco" element={<Unesco />} />
       <Route path="/parks" element={<Parks />} />
       <Route path="/games" element={<Games />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }
