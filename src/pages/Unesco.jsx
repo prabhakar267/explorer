@@ -7,12 +7,17 @@ import { useTheme } from '../hooks/useTheme';
 import { useVisited } from '../hooks/useVisited';
 import '../styles/explorer.css';
 
+const CATEGORY_FILTERS = [
+  { value: 'C', label: 'Cultural' },
+  { value: 'N', label: 'Natural' },
+];
+
 export default function Unesco() {
   const [sites, setSites] = useState([]);
   const [loading, setLoading] = useState(true);
   const [previewSite, setPreviewSite] = useState(null);
-  const [previewDetails, setPreviewDetails] = useState(null);
   const [descVisible, setDescVisible] = useState(false);
+  const [categoryFilter, setCategoryFilter] = useState(new Set(['C', 'N']));
   const [theme, setTheme] = useTheme();
   const { visited } = useVisited(import.meta.env.BASE_URL + 'data/visited-unesco.json');
 
@@ -29,24 +34,21 @@ export default function Unesco() {
       });
   }, []);
 
-  const handlePreview = useCallback(async (siteName) => {
+  const filteredSites = categoryFilter.size === 2
+    ? sites
+    : sites.filter((s) => categoryFilter.has(s.criteria) || s.criteria === 'C/N');
+
+  const handlePreview = useCallback((siteName) => {
     if (!siteName) {
       setPreviewSite(null);
-      setPreviewDetails(null);
       return;
     }
     const site = sites.find((s) => s.name === siteName);
-    if (!site) return;
-    setPreviewSite(site);
-    setPreviewDetails(null);
-
-    const details = await fetchSiteDetails(site);
-    setPreviewDetails(details);
+    if (site) setPreviewSite(site);
   }, [sites]);
 
   const handleZoom = (lat, lng) => {
     setPreviewSite(null);
-    setPreviewDetails(null);
     window._explorerMapZoom?.(lat, lng);
   };
 
@@ -61,8 +63,19 @@ export default function Unesco() {
     </div>
   `;
 
-  const totalSites = sites.length;
-  const visitedCount = visited.size;
+  const totalSites = filteredSites.length;
+  const visitedCount = filteredSites.filter((s) => visited.has(s.name)).length;
+
+  const overlayDetails = previewSite ? {
+    image: previewSite.wikipedia?.image || null,
+    description: previewSite.wikipedia?.description ||
+      `${previewSite.name} is a UNESCO World Heritage Site located in ${previewSite.country}. It was inscribed in ${previewSite.year}.`,
+    fields: [
+      { label: 'Country', value: previewSite.country },
+      { label: 'Year Inscribed', value: previewSite.year },
+      { label: 'Criteria', value: previewSite.criteria },
+    ],
+  } : null;
 
   return (
     <div className="explorer-page">
@@ -93,7 +106,7 @@ export default function Unesco() {
       )}
 
       <ExplorerMap
-        sites={sites}
+        sites={filteredSites}
         visited={visited}
         onPreview={handlePreview}
         mapOptions={{
@@ -107,6 +120,25 @@ export default function Unesco() {
       />
 
       <div className="explorer-stats">
+        <div className="stats-filter">
+          {CATEGORY_FILTERS.map((f) => (
+            <button
+              key={f.value}
+              className={`filter-button ${categoryFilter.has(f.value) ? 'active' : ''}`}
+              onClick={() => setCategoryFilter((prev) => {
+                const next = new Set(prev);
+                if (next.has(f.value)) {
+                  if (next.size > 1) next.delete(f.value);
+                } else {
+                  next.add(f.value);
+                }
+                return next;
+              })}
+            >
+              {f.label}
+            </button>
+          ))}
+        </div>
         <div>Total Sites: <span>{totalSites || 'Loading...'}</span></div>
         <div>Visited: <span>{visitedCount}</span></div>
         <div>Remaining: <span>{totalSites ? totalSites - visitedCount : 'Loading...'}</span></div>
@@ -115,55 +147,14 @@ export default function Unesco() {
       {previewSite && (
         <SiteOverlay
           site={previewSite}
-          details={previewDetails ? {
-            image: previewDetails.image,
-            description: previewDetails.description,
-            fields: [
-              { label: 'Country', value: previewSite.country },
-              { label: 'Year Inscribed', value: previewSite.year },
-              { label: 'Criteria', value: previewSite.criteria },
-            ],
-          } : null}
+          details={overlayDetails}
           isVisited={visited.has(previewSite.name)}
-          onClose={() => { setPreviewSite(null); setPreviewDetails(null); }}
+          onClose={() => setPreviewSite(null)}
           onZoom={handleZoom}
           linkLabel="View on Wikipedia"
-          linkUrl={previewDetails?.wikipediaUrl}
+          linkUrl={previewSite.wikipedia?.url}
         />
       )}
     </div>
   );
-}
-
-async function fetchSiteDetails(site) {
-  const searchQuery = encodeURIComponent(site.name + ' UNESCO World Heritage Site');
-  try {
-    const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${searchQuery}`);
-    if (response.ok) {
-      const data = await response.json();
-      return {
-        description: data.extract || 'No description available.',
-        image: data.thumbnail?.source || null,
-        wikipediaUrl: data.content_urls?.desktop?.page || null,
-      };
-    }
-  } catch { /* fall through */ }
-
-  try {
-    const response = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(site.name)}`);
-    if (response.ok) {
-      const data = await response.json();
-      return {
-        description: data.extract || 'No description available.',
-        image: data.thumbnail?.source || null,
-        wikipediaUrl: data.content_urls?.desktop?.page || null,
-      };
-    }
-  } catch { /* fall through */ }
-
-  return {
-    description: `${site.name} is a UNESCO World Heritage Site located in ${site.country}. It was inscribed in ${site.year} under the criteria: ${site.criteria}.`,
-    image: null,
-    wikipediaUrl: null,
-  };
 }

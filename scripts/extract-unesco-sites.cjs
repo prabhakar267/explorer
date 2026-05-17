@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 /**
- * Extract UNESCO World Heritage Sites from the official UNESCO dataset
- * and emit data/unesco-sites.json.
+ * Extract UNESCO World Heritage Sites from the official UNESCO dataset,
+ * enrich with Wikipedia data, and emit public/data/unesco-sites.json.
+ *
+ * Preserves existing Wikipedia data from a prior run — only fetches
+ * Wikipedia for sites that don't already have it.
  *
  * Usage:
- *   node scripts/extract-unesco-sites.js
+ *   node scripts/extract-unesco-sites.cjs
+ *   node scripts/extract-unesco-sites.cjs --force-wiki   # re-fetch all Wikipedia data
  *
  * No dependencies — vanilla Node (https + fs).
  */
@@ -21,6 +25,8 @@ const CSV_URL =
   'https://ihp-wins.unesco.org/dataset/88c8eff6-b94d-4826-bb13-7107ac4c02a9/resource/2f46f6b2-45f9-402b-ace9-1e02c9c97a3d/download/whc-sites-2025.csv';
 const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'data', 'unesco-sites.json');
 
+const FORCE_WIKI = process.argv.includes('--force-wiki');
+
 function fetchText(url, maxRedirects = 5) {
   return new Promise((resolve, reject) => {
     if (maxRedirects <= 0) {
@@ -36,7 +42,6 @@ function fetchText(url, maxRedirects = 5) {
           headers: {
             'User-Agent':
               'explorer-unesco-extractor/1.0 (https://github.com/prabhakar267/explorer)',
-            Accept: 'text/csv',
           },
         },
         (res) => {
@@ -47,7 +52,7 @@ function fetchText(url, maxRedirects = 5) {
           }
           if (res.statusCode !== 200) {
             reject(
-              new Error(`UNESCO CSV returned ${res.statusCode} ${res.statusMessage}`)
+              new Error(`Fetch ${url} returned ${res.statusCode} ${res.statusMessage}`)
             );
             res.resume();
             return;
@@ -60,6 +65,14 @@ function fetchText(url, maxRedirects = 5) {
       )
       .on('error', reject);
   });
+}
+
+function fetchJson(url) {
+  return fetchText(url).then(JSON.parse);
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 function parseCSVLine(line) {
@@ -121,6 +134,59 @@ function parseCSV(csvText) {
   return sites;
 }
 
+async function fetchWikipedia(siteName) {
+  const queries = [
+    siteName + ' UNESCO World Heritage Site',
+    siteName,
+  ];
+
+  for (const query of queries) {
+    try {
+      const encoded = encodeURIComponent(query);
+      const data = await fetchJson(
+        `https://en.wikipedia.org/api/rest_v1/page/summary/${encoded}`
+      );
+      if (data.extract) {
+        return {
+          description: data.extract,
+          image: data.thumbnail?.source || null,
+          url: data.content_urls?.desktop?.page || null,
+        };
+      }
+    } catch { /* try next */ }
+  }
+
+  // Fallback: use Wikipedia search API to find the article
+  try {
+    const searchUrl =
+      `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(siteName)}&format=json&srlimit=1`;
+    const searchResult = await fetchJson(searchUrl);
+    const title = searchResult?.query?.search?.[0]?.title;
+    if (title) {
+      const data = await fetchJson(
+        `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`
+      );
+      if (data.extract) {
+        return {
+          description: data.extract,
+          image: data.thumbnail?.source || null,
+          url: data.content_urls?.desktop?.page || null,
+        };
+      }
+    }
+  } catch { /* give up */ }
+
+  return null;
+}
+
+function loadExisting() {
+  try {
+    return JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
+  } catch {
+    return [];
+  }
+}
+
 async function main() {
   console.log('Fetching UNESCO World Heritage Sites CSV...');
   const csvText = await fetchText(CSV_URL);
@@ -129,13 +195,42 @@ async function main() {
   const sites = parseCSV(csvText);
   console.log(`Parsed ${sites.length} sites`);
 
+  // Load existing data to preserve Wikipedia info
+  const existing = loadExisting();
+  const existingByName = new Map(existing.map((s) => [s.name, s]));
+
+  let fetched = 0;
+  let skipped = 0;
+
+  for (let i = 0; i < sites.length; i++) {
+    const site = sites[i];
+    const prev = existingByName.get(site.name);
+
+    if (!FORCE_WIKI && prev?.wikipedia) {
+      site.wikipedia = prev.wikipedia;
+      skipped++;
+    } else {
+      const wiki = await fetchWikipedia(site.name);
+      if (wiki) {
+        site.wikipedia = wiki;
+      }
+      fetched++;
+      if (fetched % 50 === 0) {
+        console.log(`  Wikipedia: ${fetched} fetched, ${skipped} cached (${i + 1}/${sites.length})`);
+      }
+      // Rate limit: ~50ms between requests
+      await sleep(50);
+    }
+  }
+
+  console.log(`Wikipedia: ${fetched} fetched, ${skipped} reused from cache`);
+
   sites.sort((a, b) => a.name.localeCompare(b.name));
 
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(sites, null, 2) + '\n');
 
   console.log(`Wrote ${sites.length} sites to ${OUTPUT_PATH}`);
-  console.log('First entry:', JSON.stringify(sites[0], null, 2));
 }
 
 main().catch((err) => {

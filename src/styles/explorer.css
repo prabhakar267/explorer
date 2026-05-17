@@ -150,6 +150,33 @@
   color: var(--primary-color);
 }
 
+.stats-filter {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.filter-button {
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.filter-button.active {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
 .explorer-map {
   height: 100vh;
   width: 100%;
