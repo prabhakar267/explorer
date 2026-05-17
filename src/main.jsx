@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Unesco from './pages/Unesco';
 import Parks from './pages/Parks';
+import Games from './pages/Games';
 import { useTheme } from './hooks/useTheme';
 import './styles/global.css';
 
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/unesco" element={<Unesco />} />
       <Route path="/parks" element={<Parks />} />
+      <Route path="/games" element={<Games />} />
     </Routes>
   );
 }

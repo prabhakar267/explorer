@@ -52,6 +52,18 @@ export default function Home() {
               </div>
             </Link>
           </div>
+
+          <div
+            className="tracker-tile"
+            style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/ps-games-banner.jpeg)` }}
+          >
+            <Link to="/games">
+              <div className="tile-overlay">
+                <h3>PlayStation Games</h3>
+                <p>PS games I've played across all generations</p>
+              </div>
+            </Link>
+          </div>
         </section>
       </main>
 

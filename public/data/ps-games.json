@@ -1,0 +1,349 @@
+[
+  {
+    "title": "God of War Ragnarök",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coba3d.jpg",
+    "rating": 91,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Fantasy",
+      "Open world"
+    ],
+    "developer": "SIE Santa Monica Studio"
+  },
+  {
+    "title": "God of War",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobkt6.jpg",
+    "rating": 92,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Fantasy",
+      "Historical"
+    ],
+    "developer": "SIE Santa Monica Studio"
+  },
+  {
+    "title": "The Last of Us Part I",
+    "platform": "PS5",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa1gq.jpg",
+    "rating": 93,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Stealth"
+    ],
+    "developer": "Naughty Dog"
+  },
+  {
+    "title": "The Last of Us Part II",
+    "platform": "PS4",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ziw.jpg",
+    "rating": 90,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Stealth"
+    ],
+    "developer": "Naughty Dog"
+  },
+  {
+    "title": "Days Gone",
+    "platform": "PS4",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co94bn.jpg",
+    "rating": 80,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Horror",
+      "Survival",
+      "Sandbox",
+      "Open world"
+    ],
+    "developer": "Bend Studio"
+  },
+  {
+    "title": "Ghost of Yotei",
+    "platform": "PS5",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9coo.jpg",
+    "rating": 86,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Historical",
+      "Stealth",
+      "Open world"
+    ],
+    "developer": "Sucker Punch Productions"
+  },
+  {
+    "title": "Grand Theft Auto V",
+    "platform": "PS4",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9751.jpg",
+    "rating": 87,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Comedy",
+      "Sandbox",
+      "Open world"
+    ],
+    "developer": "Rockstar North"
+  },
+  {
+    "title": "NieR: Automata",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pcj.jpg",
+    "rating": 90,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Fantasy",
+      "Science fiction",
+      "Drama",
+      "Open world"
+    ],
+    "developer": "PlatinumGames"
+  },
+  {
+    "title": "Marvel's Spider-Man",
+    "platform": "PS4",
+    "genre": "Hack and slash/Beat 'em up",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.jpg",
+    "rating": 87,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Stealth",
+      "Drama",
+      "Open world"
+    ],
+    "developer": "Insomniac Games"
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "platform": "PS4",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.jpg",
+    "rating": 93,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Drama",
+      "Open world"
+    ],
+    "developer": "Rockstar Games"
+  },
+  {
+    "title": "Red Dead Redemption",
+    "platform": "PS3",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lcv.jpg",
+    "rating": 89,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Sandbox",
+      "Open world"
+    ],
+    "developer": "Rockstar North"
+  },
+  {
+    "title": "Uncharted 4: A Thief's End",
+    "platform": "PS4",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7h.jpg",
+    "rating": 91,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Fantasy",
+      "Historical",
+      "Stealth"
+    ],
+    "developer": "Naughty Dog"
+  },
+  {
+    "title": "Uncharted: The Lost Legacy",
+    "platform": "PS4",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tp9.jpg",
+    "rating": 82,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Historical"
+    ],
+    "developer": "Naughty Dog"
+  },
+  {
+    "title": "Mafia: The Old Country",
+    "platform": "PS5",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coa9dq.jpg",
+    "rating": 80,
+    "collection": null,
+    "themes": [
+      "Action"
+    ],
+    "developer": "Hangar 13"
+  },
+  {
+    "title": "Death Stranding 2: On the Beach",
+    "platform": "PS5",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9ipx.jpg",
+    "rating": 92,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Science fiction",
+      "Horror",
+      "Stealth",
+      "Open world"
+    ],
+    "developer": "Kojima Productions"
+  },
+  {
+    "title": "Hogwarts Legacy",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaav6.jpg",
+    "rating": 79,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Fantasy",
+      "Open world"
+    ],
+    "developer": "Avalanche Software"
+  },
+  {
+    "title": "Assassin's Creed Origins",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbe.jpg",
+    "rating": 81,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Historical",
+      "Stealth",
+      "Open world"
+    ],
+    "developer": "Ubisoft Montreal"
+  },
+  {
+    "title": "NieR Replicant ver.1.22474487139...",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5h0n.jpg",
+    "rating": 84,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Science fiction",
+      "Drama",
+      "Open world"
+    ],
+    "developer": "Toylogic"
+  },
+  {
+    "title": "Marvel's Spider-Man 2",
+    "platform": "PS5",
+    "genre": "Hack and slash/Beat 'em up",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1k.jpg",
+    "rating": 85,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Science fiction",
+      "Stealth",
+      "Drama",
+      "Open world"
+    ],
+    "developer": "Insomniac Games"
+  },
+  {
+    "title": "Marvel's Spider-Man: Miles Morales",
+    "platform": "PS4",
+    "genre": "Hack and slash/Beat 'em up",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1j.jpg",
+    "rating": 80,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Stealth",
+      "Open world"
+    ],
+    "developer": "Insomniac Games"
+  },
+  {
+    "title": "Ghost of Tsushima",
+    "platform": "PS4",
+    "genre": "Role-playing (RPG)",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2crj.jpg",
+    "rating": 89,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Historical",
+      "Stealth",
+      "Drama",
+      "Open world"
+    ],
+    "developer": "Sucker Punch Productions"
+  },
+  {
+    "title": "Street Fighter 6",
+    "platform": "PS4",
+    "genre": "Fighting",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9wxo.jpg",
+    "rating": 80,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Fantasy"
+    ],
+    "developer": "Capcom"
+  },
+  {
+    "title": "Horizon Chase Turbo",
+    "platform": "PS Vita",
+    "genre": "Racing",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co27ow.jpg",
+    "rating": 74,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Kids"
+    ],
+    "developer": "Aquiris Game Studio"
+  },
+  {
+    "title": "It Takes Two",
+    "platform": "PS4",
+    "genre": "Platform",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob22v.jpg",
+    "rating": 88,
+    "collection": null,
+    "themes": [
+      "Action"
+    ],
+    "developer": "Hazelight Studios"
+  }
+]
