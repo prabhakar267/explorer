@@ -77,7 +77,7 @@ async function searchGames(query) {
   const platformFilter = PS_IDS.join(',');
   const results = await igdbQuery('games', `
     search "${query}";
-    fields name, platforms, genres.name, cover.image_id, first_release_date, rating, collection.name, themes.name, involved_companies.company.name, involved_companies.developer;
+    fields name, platforms, genres.name, cover.image_id, first_release_date, rating, collection.name, themes.name, involved_companies.company.name, involved_companies.developer, url, websites.url, websites.category;
     where platforms = (${platformFilter});
     limit 10;
   `);
@@ -172,6 +172,8 @@ async function run() {
     const themes = game.themes?.map((t) => t.name) || [];
     const developer = game.involved_companies
       ?.find((c) => c.developer)?.company?.name || null;
+    const psStoreUrl = game.websites?.find((w) => w.url?.includes('store.playstation.com'))?.url || null;
+    const url = psStoreUrl || game.url || null;
 
     console.log(`\n  Title:      ${game.name}`);
     console.log(`  Platform:   ${platform}`);
@@ -181,12 +183,13 @@ async function run() {
     console.log(`  Collection: ${collection || '—'}`);
     console.log(`  Themes:     ${themes.length ? themes.join(', ') : '—'}`);
     console.log(`  Developer:  ${developer || '—'}`);
+    console.log(`  URL:        ${url || '—'}`);
     console.log(`  Cover:      ${cover ? 'yes' : 'no'}`);
 
     const ok = await confirm({ message: `Add "${game.name}" to your list?`, default: true });
 
     if (ok) {
-      const entry = { title: game.name, platform, genre, cover, rating, collection, themes, developer };
+      const entry = { title: game.name, platform, genre, cover, rating, collection, themes, developer, url };
       games.push(entry);
       existing.add(game.name);
       saveGames(games);

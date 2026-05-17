@@ -40,7 +40,7 @@ export default function Games() {
       <div className="games-header">
         <div className="games-header-content">
           <div className="games-header-text">
-            <h1>PlayStation Games</h1>
+            <h1><i class="fa-brands fa-playstation"></i> PlayStation Games</h1>
             <span className="games-count">{games.length} played</span>
           </div>
           <div className="header-actions">
@@ -78,7 +78,13 @@ export default function Games() {
 
       <div className="games-grid">
         {filtered.map((game) => (
-          <div key={game.title} className="game-card">
+          <a
+            key={game.title}
+            className="game-card"
+            href={game.url || `https://store.playstation.com/search/${encodeURIComponent(game.title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="game-cover">
               {game.cover ? (
                 <img src={game.cover} alt={game.title} loading="lazy" />
@@ -103,7 +109,7 @@ export default function Games() {
               )}
               {game.collection && <div className="game-collection">{game.collection}</div>}
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
