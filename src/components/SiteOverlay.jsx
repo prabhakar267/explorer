@@ -38,9 +38,9 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
       onTransitionEnd={handleTransitionEnd}
     >
       <div className="overlay-header">
-        <button className="back-button" onClick={handleClose} title="Go back">&larr;</button>
+        <button className="back-button" onClick={handleClose} title="Go back"><i className="fa-solid fa-arrow-left"></i></button>
         <h2>{displaySite?.name}</h2>
-        <button className="close-overlay" onClick={handleClose}>&times;</button>
+        <button className="close-overlay" onClick={handleClose}><i className="fa-solid fa-xmark"></i></button>
       </div>
       <div className="overlay-content">
         {!details ? (
@@ -78,7 +78,7 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
                 <div className="info-item">
                   <strong>Coordinates:</strong>{' '}
                   <span className="coordinates-link" onClick={() => onZoom(displaySite.lat, displaySite.lng)}>
-                    {displaySite?.lat.toFixed(4)}, {displaySite?.lng.toFixed(4)}
+                    <i className="fa-solid fa-location-crosshairs"></i> {displaySite?.lat.toFixed(4)}, {displaySite?.lng.toFixed(4)}
                   </span>
                 </div>
                 <div className="info-item">

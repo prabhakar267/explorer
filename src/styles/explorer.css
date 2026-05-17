@@ -59,22 +59,20 @@
 
 .explorer-header {
   position: absolute;
-  top: 16px;
-  left: 16px;
-  right: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   background: var(--background-glass);
-  padding: 20px 24px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-lg);
+  padding: 12px 24px;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .explorer-header-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
 }
 
@@ -84,37 +82,21 @@
 
 .explorer-header-text h1 {
   color: var(--text-primary);
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: -0.025em;
-  cursor: pointer;
-}
-
-.explorer-header-text p {
-  color: var(--text-secondary);
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-.explorer-header-text p a {
-  color: var(--primary-color);
-  text-decoration: none;
 }
 
 .header-actions {
   display: flex;
-  align-items: flex-start;
-  margin-top: -4px;
+  align-items: center;
 }
 
 .home-link {
-  align-self: center;
-  margin-right: 12px;
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.2s;
 }
 
 .home-link:hover {

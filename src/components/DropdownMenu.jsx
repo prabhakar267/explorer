@@ -18,7 +18,7 @@ export default function DropdownMenu({ theme, setTheme, children }) {
   return (
     <div className="dropdown-menu" ref={menuRef}>
       <button className="dropdown-button" onClick={(e) => { e.stopPropagation(); setOpen(!open); }}>
-        &#8942;
+        <i className="fa-solid fa-ellipsis-vertical"></i>
       </button>
       <div className={`dropdown-content ${open ? 'show' : ''}`}>
         {children}

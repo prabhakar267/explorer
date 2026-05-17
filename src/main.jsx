@@ -4,16 +4,24 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Unesco from './pages/Unesco';
 import Parks from './pages/Parks';
+import { useTheme } from './hooks/useTheme';
 import './styles/global.css';
+
+function App() {
+  useTheme();
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/unesco" element={<Unesco />} />
+      <Route path="/parks" element={<Parks />} />
+    </Routes>
+  );
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/unesco" element={<Unesco />} />
-        <Route path="/parks" element={<Parks />} />
-      </Routes>
+      <App />
     </HashRouter>
   </StrictMode>
 );

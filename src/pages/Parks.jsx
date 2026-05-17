@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import ExplorerMap from '../components/ExplorerMap';
 import SiteOverlay from '../components/SiteOverlay';
-import DropdownMenu from '../components/DropdownMenu';
-import { useTheme } from '../hooks/useTheme';
 import { useVisited } from '../hooks/useVisited';
 import '../styles/explorer.css';
 
@@ -15,8 +13,6 @@ export default function Parks() {
   const [sites, setSites] = useState([]);
   const [loading, setLoading] = useState(true);
   const [previewSite, setPreviewSite] = useState(null);
-  const [descVisible, setDescVisible] = useState(false);
-  const [theme, setTheme] = useTheme();
   const { visited } = useVisited(import.meta.env.BASE_URL + 'data/visited-parks.json');
 
   useEffect(() => {
@@ -85,18 +81,10 @@ export default function Parks() {
       <div className="explorer-header">
         <div className="explorer-header-content">
           <div className="explorer-header-text">
-            <h1 onClick={() => setDescVisible(!descVisible)}>US National Parks Explorer</h1>
-            {descVisible && (
-              <p>
-                Discover and track your visits to the 63 US National Parks.<br />
-                A companion to the <Link to="/unesco" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>UNESCO Sites</Link> explorer.{' '}
-                <a href="https://github.com/prabhakar267/explorer" target="_blank" rel="noopener noreferrer">View Source Code</a>
-              </p>
-            )}
+            <h1>US National Parks</h1>
           </div>
           <div className="header-actions">
-            <Link to="/" className="home-link">&larr; Home</Link>
-            <DropdownMenu theme={theme} setTheme={setTheme} />
+            <Link to="/" className="home-link" title="Home"><i className="fa-solid fa-circle-arrow-left"></i></Link>
           </div>
         </div>
       </div>

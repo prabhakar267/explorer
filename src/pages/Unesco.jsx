@@ -2,8 +2,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import ExplorerMap from '../components/ExplorerMap';
 import SiteOverlay from '../components/SiteOverlay';
-import DropdownMenu from '../components/DropdownMenu';
-import { useTheme } from '../hooks/useTheme';
 import { useVisited } from '../hooks/useVisited';
 import '../styles/explorer.css';
 
@@ -16,9 +14,7 @@ export default function Unesco() {
   const [sites, setSites] = useState([]);
   const [loading, setLoading] = useState(true);
   const [previewSite, setPreviewSite] = useState(null);
-  const [descVisible, setDescVisible] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState(new Set(['C', 'N']));
-  const [theme, setTheme] = useTheme();
   const { visited } = useVisited(import.meta.env.BASE_URL + 'data/visited-unesco.json');
 
   useEffect(() => {
@@ -82,18 +78,10 @@ export default function Unesco() {
       <div className="explorer-header">
         <div className="explorer-header-content">
           <div className="explorer-header-text">
-            <h1 onClick={() => setDescVisible(!descVisible)}>UNESCO World Heritage Sites Explorer</h1>
-            {descVisible && (
-              <p>
-                Discover and track your visits to UNESCO World Heritage Sites around the world.<br />
-                A vibe coding project by Prabhakar Gupta.{' '}
-                <a href="https://github.com/prabhakar267/explorer" target="_blank" rel="noopener noreferrer">View Source Code</a>
-              </p>
-            )}
+            <h1>UNESCO World Heritage Sites</h1>
           </div>
           <div className="header-actions">
-            <Link to="/" className="home-link">&larr; Home</Link>
-            <DropdownMenu theme={theme} setTheme={setTheme} />
+            <Link to="/" className="home-link" title="Home"><i className="fa-solid fa-circle-arrow-left"></i></Link>
           </div>
         </div>
       </div>
