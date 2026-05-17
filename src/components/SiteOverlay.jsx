@@ -1,12 +1,46 @@
+import { useState, useEffect, useRef } from 'react';
+
 export default function SiteOverlay({ site, details, isVisited, onClose, onZoom, linkLabel, linkUrl }) {
-  if (!site) return null;
+  const [showing, setShowing] = useState(false);
+  const [rendered, setRendered] = useState(false);
+  const prevSite = useRef(null);
+
+  useEffect(() => {
+    if (site) {
+      prevSite.current = site;
+      setRendered(true);
+      const id = setTimeout(() => setShowing(true), 10);
+      return () => clearTimeout(id);
+    } else {
+      setShowing(false);
+    }
+  }, [site]);
+
+  const handleTransitionEnd = () => {
+    if (!showing && !site) {
+      setRendered(false);
+      prevSite.current = null;
+    }
+  };
+
+  const handleClose = () => {
+    setShowing(false);
+    setTimeout(onClose, 300);
+  };
+
+  if (!rendered) return null;
+
+  const displaySite = site || prevSite.current;
 
   return (
-    <div className={`site-overlay ${site ? 'show' : ''}`}>
+    <div
+      className={`site-overlay ${showing ? 'show' : ''}`}
+      onTransitionEnd={handleTransitionEnd}
+    >
       <div className="overlay-header">
-        <button className="back-button" onClick={onClose} title="Go back">&larr;</button>
-        <h2>{site.name}</h2>
-        <button className="close-overlay" onClick={onClose}>&times;</button>
+        <button className="back-button" onClick={handleClose} title="Go back">&larr;</button>
+        <h2>{displaySite?.name}</h2>
+        <button className="close-overlay" onClick={handleClose}>&times;</button>
       </div>
       <div className="overlay-content">
         {!details ? (
@@ -17,7 +51,7 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
               <div className="site-image">
                 <img
                   src={details.image}
-                  alt={site.name}
+                  alt={displaySite?.name}
                   onError={(e) => { e.target.style.display = 'none'; }}
                 />
                 {details.imageCaption && (
@@ -43,8 +77,8 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
                 ))}
                 <div className="info-item">
                   <strong>Coordinates:</strong>{' '}
-                  <span className="coordinates-link" onClick={() => onZoom(site.lat, site.lng)}>
-                    {site.lat.toFixed(4)}, {site.lng.toFixed(4)}
+                  <span className="coordinates-link" onClick={() => onZoom(displaySite.lat, displaySite.lng)}>
+                    {displaySite?.lat.toFixed(4)}, {displaySite?.lng.toFixed(4)}
                   </span>
                 </div>
                 <div className="info-item">

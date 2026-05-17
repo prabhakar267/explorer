@@ -89,7 +89,7 @@ export default function Parks() {
             {descVisible && (
               <p>
                 Discover and track your visits to the 63 US National Parks.<br />
-                A companion to the <Link to="/unesco" style={{ color: '#3498db', textDecoration: 'none' }}>UNESCO Sites</Link> explorer.{' '}
+                A companion to the <Link to="/unesco" style={{ color: 'var(--primary-color)', textDecoration: 'none' }}>UNESCO Sites</Link> explorer.{' '}
                 <a href="https://github.com/prabhakar267/explorer" target="_blank" rel="noopener noreferrer">View Source Code</a>
               </p>
             )}
@@ -129,17 +129,15 @@ export default function Parks() {
         <div>Remaining: <span>{totalSites ? totalSites - visitedCount : 'Loading...'}</span></div>
       </div>
 
-      {previewSite && (
-        <SiteOverlay
-          site={previewSite}
-          details={overlayDetails}
-          isVisited={visited.has(previewSite.name)}
-          onClose={() => setPreviewSite(null)}
-          onZoom={handleZoom}
-          linkLabel="View on nps.gov"
-          linkUrl={previewSite.url}
-        />
-      )}
+      <SiteOverlay
+        site={previewSite}
+        details={overlayDetails}
+        isVisited={previewSite ? visited.has(previewSite.name) : false}
+        onClose={() => setPreviewSite(null)}
+        onZoom={handleZoom}
+        linkLabel="View on nps.gov"
+        linkUrl={previewSite?.url}
+      />
     </div>
   );
 }

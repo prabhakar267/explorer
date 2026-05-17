@@ -1,5 +1,5 @@
 .home-page {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(160deg, #1a4a3a 0%, #2d5a3a 40%, #1a3a2a 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,9 +7,9 @@
 }
 
 .home-container {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(253, 250, 243, 0.97);
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(26, 50, 42, 0.25);
   padding: 40px;
   max-width: 1200px;
   width: 100%;
@@ -24,14 +24,14 @@
 
 .home-header h1 {
   font-size: 2.5em;
-  color: #333;
+  color: #2c3e2d;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .home-subtitle {
   font-size: 1.1em;
-  color: #666;
+  color: #5a6b5c;
   font-weight: 300;
 }
 
@@ -72,13 +72,13 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+  background: linear-gradient(to top, rgba(26, 50, 42, 0.92) 0%, rgba(26, 50, 42, 0.7) 70%, transparent 100%);
   padding: 20px;
   transition: background 0.3s ease;
 }
 
 .tracker-tile:hover .tile-overlay {
-  background: linear-gradient(to top, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.85) 70%, transparent 100%);
+  background: linear-gradient(to top, rgba(196, 125, 46, 0.92) 0%, rgba(168, 105, 31, 0.8) 70%, transparent 100%);
 }
 
 .tile-overlay h3 {
@@ -95,7 +95,7 @@
 }
 
 .home-footer {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(26, 50, 42, 0.3);
   backdrop-filter: blur(10px);
   padding: 20px;
   text-align: center;

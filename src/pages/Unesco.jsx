@@ -144,17 +144,15 @@ export default function Unesco() {
         <div>Remaining: <span>{totalSites ? totalSites - visitedCount : 'Loading...'}</span></div>
       </div>
 
-      {previewSite && (
-        <SiteOverlay
-          site={previewSite}
-          details={overlayDetails}
-          isVisited={visited.has(previewSite.name)}
-          onClose={() => setPreviewSite(null)}
-          onZoom={handleZoom}
-          linkLabel="View on Wikipedia"
-          linkUrl={previewSite.wikipedia?.url}
-        />
-      )}
+      <SiteOverlay
+        site={previewSite}
+        details={overlayDetails}
+        isVisited={previewSite ? visited.has(previewSite.name) : false}
+        onClose={() => setPreviewSite(null)}
+        onZoom={handleZoom}
+        linkLabel="View on Wikipedia"
+        linkUrl={previewSite?.wikipedia?.url}
+      />
     </div>
   );
 }

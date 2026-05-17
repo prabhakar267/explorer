@@ -5,8 +5,8 @@ import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
-const VISITED_STYLE = { fillColor: '#27ae60', color: '#2ecc71' };
-const UNVISITED_STYLE = { fillColor: '#e74c3c', color: '#c0392b' };
+const VISITED_STYLE = { fillColor: '#c47d2e', color: '#a8691f' };
+const UNVISITED_STYLE = { fillColor: '#94a3b8', color: '#64748b' };
 const BASE_MARKER_OPTS = { radius: 8, weight: 2, opacity: 1, fillOpacity: 0.8 };
 
 export default function ExplorerMap({
@@ -139,28 +139,38 @@ export default function ExplorerMap({
   return <div ref={mapRef} className="explorer-map" />;
 }
 
+function lerpColor(r1, g1, b1, r2, g2, b2, t) {
+  return [
+    Math.round(r1 + (r2 - r1) * t),
+    Math.round(g1 + (g2 - g1) * t),
+    Math.round(b1 + (b2 - b1) * t),
+  ];
+}
+
 function createClusterIcon(cluster, visited) {
   const markers = cluster.getAllChildMarkers();
   const childCount = cluster.getChildCount();
 
-  let allVisited = true;
+  let visitedCount = 0;
   for (const marker of markers) {
-    if (!marker.siteData?.name || !visited.has(marker.siteData.name)) {
-      allVisited = false;
-      break;
+    if (marker.siteData?.name && visited.has(marker.siteData.name)) {
+      visitedCount++;
     }
   }
 
-  const sizeClass = childCount < 10 ? 'marker-cluster-small' :
-    childCount < 100 ? 'marker-cluster-medium' : 'marker-cluster-large';
+  const ratio = childCount > 0 ? visitedCount / childCount : 0;
 
-  const colors = allVisited
-    ? { background: 'rgba(39, 174, 96, 0.6)', inner: 'rgba(46, 204, 113, 0.6)' }
-    : { background: 'rgba(231, 76, 60, 0.6)', inner: 'rgba(192, 57, 43, 0.6)' };
+  // Blend from gray (0%) to amber (100%)
+  const [r, g, b] = lerpColor(148, 163, 184, 196, 125, 46, ratio);
+  const [ri, gi, bi] = lerpColor(100, 116, 139, 168, 105, 31, ratio);
+
+  const size = childCount < 10 ? 36 : childCount < 100 ? 44 : 52;
+  const innerSize = size - 10;
+  const fontSize = childCount < 10 ? 12 : childCount < 100 ? 13 : 14;
 
   return new L.DivIcon({
-    html: `<div style="background-color: ${colors.inner}"><span>${childCount}</span></div>`,
-    className: `marker-cluster ${sizeClass} ${allVisited ? 'cluster-visited' : 'cluster-unvisited'}`,
-    iconSize: new L.Point(40, 40),
+    html: `<div style="background-color: rgba(${r}, ${g}, ${b}, 0.6); width: ${size}px; height: ${size}px; border-radius: ${size / 2}px; display: flex; align-items: center; justify-content: center;"><div style="background-color: rgba(${ri}, ${gi}, ${bi}, 0.7); width: ${innerSize}px; height: ${innerSize}px; border-radius: ${innerSize / 2}px; display: flex; align-items: center; justify-content: center;"><span style="color: white; font-weight: bold; font-size: ${fontSize}px;">${childCount}</span></div></div>`,
+    className: 'marker-cluster-custom',
+    iconSize: new L.Point(size, size),
   });
 }
