@@ -4,7 +4,6 @@ import ThemeToggle from '../components/ThemeToggle';
 import { useTheme } from '../hooks/useTheme';
 import '../styles/home.css';
 
-const worldMapImg = import.meta.env.BASE_URL + 'assets/molumen-world-map-1.png';
 
 export default function Home() {
   const [theme, setTheme] = useTheme();
@@ -32,7 +31,7 @@ export default function Home() {
         <section className="trackers-grid">
           <div
             className="tracker-tile"
-            style={{ backgroundImage: `url(${worldMapImg})`, backgroundColor: '#f0f4ff' }}
+            style={{ backgroundImage: 'url(https://live.staticflickr.com/5048/5250912829_e288600226_b.jpg)' }}
           >
             <Link to="/unesco">
               <div className="tile-overlay">
@@ -44,7 +43,7 @@ export default function Home() {
 
           <div
             className="tracker-tile"
-            style={{ background: 'linear-gradient(135deg, #2d5016 0%, #4a7c23 50%, #1a5276 100%)' }}
+            style={{ backgroundImage: 'url(https://capitolreefresort.com/wp-content/uploads/2020/01/CRNP-sunset-stock-750x375.jpg)' }}
           >
             <Link to="/parks">
               <div className="tile-overlay">
