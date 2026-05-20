@@ -57,6 +57,7 @@ export default function TrackerPage({
     const site = sites.find((s) => s.name === siteName);
     if (!site) return;
     setPreviewSite(site);
+    window._explorerMapFocusSite?.(site);
     if (fetchOverlayDetails) {
       setOverlayDetails(null);
       const enriched = await fetchOverlayDetails(site);

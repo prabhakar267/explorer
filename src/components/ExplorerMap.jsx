@@ -7,11 +7,27 @@ import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
 const VISITED_STYLE = { fillColor: '#c47d2e', color: '#a8691f' };
 const UNVISITED_STYLE = { fillColor: '#94a3b8', color: '#64748b' };
-const BASE_MARKER_OPTS = { radius: 8, weight: 2, opacity: 1, fillOpacity: 0.8 };
 
 const BOUNDARY_BASE = { weight: 2, opacity: 0.9, fillOpacity: 0.18 };
 const VISITED_BOUNDARY_STYLE = { ...BOUNDARY_BASE, ...VISITED_STYLE };
 const UNVISITED_BOUNDARY_STYLE = { ...BOUNDARY_BASE, ...UNVISITED_STYLE };
+
+// Dots are rendered as L.marker with a divIcon (DOM element in the marker
+// pane) instead of L.circleMarker. The marker pane is only translated
+// during zoom animations, never scaled, so the dot stays a fixed pixel
+// size as the map zooms — circleMarkers, which live in the SVG/canvas
+// overlay pane, visibly grow under flyTo animations.
+const DOT_DIAMETER = 16;
+function dotIcon(isVisited) {
+  const { fillColor, color } = isVisited ? VISITED_STYLE : UNVISITED_STYLE;
+  const html = `<span class="park-dot" style="background:${fillColor};border-color:${color};"></span>`;
+  return L.divIcon({
+    html,
+    className: 'park-dot-wrapper',
+    iconSize: [DOT_DIAMETER, DOT_DIAMETER],
+    iconAnchor: [DOT_DIAMETER / 2, DOT_DIAMETER / 2],
+  });
+}
 
 export default function ExplorerMap({
   sites,
@@ -179,8 +195,8 @@ export default function ExplorerMap({
     markersRef.current.clear();
 
     sites.forEach((site) => {
-      const style = visited.has(site.name) ? VISITED_STYLE : UNVISITED_STYLE;
-      const marker = L.circleMarker([site.lat, site.lng], { ...BASE_MARKER_OPTS, ...style });
+      const isVisited = visited.has(site.name);
+      const marker = L.marker([site.lat, site.lng], { icon: dotIcon(isVisited) });
       marker.siteData = site;
       marker.bindPopup(() => popupContent(site, visitedRef.current.has(site.name)), { closeButton: false });
       markersRef.current.set(site.name, marker);
@@ -226,8 +242,7 @@ export default function ExplorerMap({
   // Update marker styles when visited state changes
   useEffect(() => {
     markersRef.current.forEach((marker, name) => {
-      const style = visited.has(name) ? VISITED_STYLE : UNVISITED_STYLE;
-      marker.setStyle(style);
+      marker.setIcon(dotIcon(visited.has(name)));
     });
     boundaryLayersRef.current.forEach((layer, name) => {
       const style = visited.has(name) ? VISITED_BOUNDARY_STYLE : UNVISITED_BOUNDARY_STYLE;
@@ -239,14 +254,77 @@ export default function ExplorerMap({
     }
   }, [visited]);
 
-  // Expose zoom method
+  // Expose imperative focus methods. window._explorerMapZoom is the legacy
+  // setView-by-coords entry point used by SiteOverlay's coordinates link;
+  // window._explorerMapFocusSite is the richer one — given a site object,
+  // it flies to the park's boundary polygon if we have one (so the entire
+  // polygon fits the visible map area), otherwise falls back to a fixed
+  // zoom centred on the site's coords. Padding accounts for the side
+  // overlay that covers ~40% of the screen on the right.
   useEffect(() => {
-    window._explorerMapZoom = (lat, lng) => {
-      if (mapInstanceRef.current) {
-        mapInstanceRef.current.setView([lat, lng], 8, { animate: true, duration: 1.5 });
-      }
+    const overlayPaddingPx = () => {
+      const w = mapInstanceRef.current?.getSize().x || 0;
+      // Overlay covers 40% of the viewport from the right. Pad the map's
+      // visible bounds by that amount so the focused park settles in the
+      // centre of the *visible* area, not behind the overlay.
+      return Math.round(w * 0.4);
     };
-    return () => { delete window._explorerMapZoom; };
+
+    window._explorerMapZoom = (lat, lng) => {
+      const map = mapInstanceRef.current;
+      if (!map) return;
+      map.flyTo([lat, lng], 8, { animate: true, duration: 1.0 });
+    };
+
+    window._explorerMapFocusSite = async (site) => {
+      const map = mapInstanceRef.current;
+      if (!map || !site) return;
+
+      // flyToBounds accepts paddingTopLeft/paddingBottomRight; we shift
+      // padding to the right so the polygon centres in the visible area
+      // to the left of the overlay rather than behind it.
+      const fitOpts = {
+        animate: true,
+        duration: 1.0,
+        paddingTopLeft: [20, 20],
+        paddingBottomRight: [overlayPaddingPx() + 20, 20],
+        maxZoom: 12,
+      };
+
+      const loader = boundaryLoaderRef.current;
+      if (loader) {
+        const cache = boundaryCacheRef.current;
+        if (!cache.has(site.name)) {
+          cache.set(
+            site.name,
+            Promise.resolve(loader(site)).catch(() => null)
+          );
+        }
+        const geojson = await cache.get(site.name);
+        if (geojson) {
+          const bounds = L.geoJSON(geojson).getBounds();
+          if (bounds.isValid()) {
+            map.flyToBounds(bounds, fitOpts);
+            return;
+          }
+        }
+      }
+
+      // No boundary available — flyTo doesn't take padding options, so we
+      // offset the centre west by half the overlay's longitude span so the
+      // park sits in the visible area rather than behind the overlay.
+      const overlayShareOfWidth = overlayPaddingPx() / (map.getSize().x || 1);
+      const targetZoom = 8;
+      const proj = map.project([site.lat, site.lng], targetZoom);
+      const offsetX = (overlayShareOfWidth * map.getSize().x) / 2;
+      const adjusted = map.unproject([proj.x + offsetX, proj.y], targetZoom);
+      map.flyTo(adjusted, targetZoom, { animate: true, duration: 1.0 });
+    };
+
+    return () => {
+      delete window._explorerMapZoom;
+      delete window._explorerMapFocusSite;
+    };
   }, []);
 
   return <div ref={mapRef} className="explorer-map" />;
