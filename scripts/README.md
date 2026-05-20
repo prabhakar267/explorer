@@ -24,3 +24,23 @@ Get credentials at https://dev.twitch.tv/console/apps
 ```bash
 npm run games
 ```
+
+## extract-us-parks.cjs
+
+Fetches the canonical 63 US National Parks from the NPS API and writes `public/data/us-parks.json`.
+
+```bash
+node scripts/extract-us-parks.cjs
+```
+
+Optionally set `NPS_API_KEY` in `.env` to avoid the `DEMO_KEY` rate limit. Get a key at https://developer.nps.gov.
+
+## extract-park-boundaries.cjs
+
+Fetches park boundary polygons (GeoJSON `MultiPolygon`) from `/mapdata/parkboundaries/{parkCode}` for every park in `us-parks.json`. Writes one file per park to `public/data/park-boundaries/{parkCode}.json` and an index at `public/data/park-boundaries/index.json`.
+
+```bash
+node scripts/extract-park-boundaries.cjs
+```
+
+Requires `NPS_API_KEY` in `.env` (the boundaries endpoint is rate-limited and `DEMO_KEY` runs out quickly across 63 calls).

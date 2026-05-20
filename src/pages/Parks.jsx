@@ -2,14 +2,12 @@ import TrackerPage from '../components/TrackerPage';
 import { escapeHtml } from '../utils/escapeHtml';
 
 const MAP_OPTIONS = {
-  worldCopyJump: false,
-  maxBounds: [[-16, -180], [72, -64]],
-  maxBoundsViscosity: 1.0,
+  worldCopyJump: true,
   center: [39.5, -98.35],
   zoom: 4,
 };
 
-const TILE_OPTIONS = { noWrap: true };
+const TILE_OPTIONS = {};
 
 function popupContent(site, isVisited) {
   return `
@@ -42,6 +40,15 @@ function buildLink(site) {
   return site.url ? { label: 'View on nps.gov', url: site.url } : null;
 }
 
+const BOUNDARIES_BASE = import.meta.env.BASE_URL + 'data/park-boundaries/';
+
+async function loadParkBoundary(site) {
+  if (!site?.parkCode) return null;
+  const res = await fetch(`${BOUNDARIES_BASE}${site.parkCode}.json`);
+  if (!res.ok) return null;
+  return res.json();
+}
+
 function computeStats(sites, visited) {
   const total = sites.length;
   return [
@@ -64,6 +71,7 @@ export default function Parks() {
       buildLink={buildLink}
       computeStats={computeStats}
       loadingLabel="Loading US National Parks..."
+      boundaryLoader={loadParkBoundary}
     />
   );
 }

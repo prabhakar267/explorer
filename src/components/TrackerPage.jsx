@@ -19,6 +19,7 @@ export default function TrackerPage({
   computeStats,
   loadingLabel,
   fetchOverlayDetails,
+  boundaryLoader,
 }) {
   const [sites, setSites] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -102,6 +103,7 @@ export default function TrackerPage({
         mapOptions={mapOptions}
         tileOptions={tileOptions}
         popupContent={popupContent}
+        boundaryLoader={boundaryLoader}
       />
 
       <div className="explorer-stats">
