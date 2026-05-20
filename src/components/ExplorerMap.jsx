@@ -21,6 +21,8 @@ export default function ExplorerMap({
   const mapInstanceRef = useRef(null);
   const clusterRef = useRef(null);
   const markersRef = useRef(new Map());
+  const visitedRef = useRef(visited);
+  visitedRef.current = visited;
 
   // Initialize map
   useEffect(() => {
@@ -75,7 +77,7 @@ export default function ExplorerMap({
       const style = visited.has(site.name) ? VISITED_STYLE : UNVISITED_STYLE;
       const marker = L.circleMarker([site.lat, site.lng], { ...BASE_MARKER_OPTS, ...style });
       marker.siteData = site;
-      marker.bindPopup(() => popupContent(site, visited.has(site.name)));
+      marker.bindPopup(() => popupContent(site, visitedRef.current.has(site.name)), { closeButton: false });
       markersRef.current.set(site.name, marker);
       cluster.addLayer(marker);
     });

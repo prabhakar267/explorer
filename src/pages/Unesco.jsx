@@ -1,146 +1,119 @@
-import { useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
-import ExplorerMap from '../components/ExplorerMap';
-import SiteOverlay from '../components/SiteOverlay';
-import { useVisited } from '../hooks/useVisited';
-import '../styles/explorer.css';
+import TrackerPage from '../components/TrackerPage';
+import { escapeHtml } from '../utils/escapeHtml';
 
 const CATEGORY_FILTERS = [
   { value: 'C', label: 'Cultural' },
   { value: 'N', label: 'Natural' },
 ];
 
-export default function Unesco() {
-  const [sites, setSites] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [previewSite, setPreviewSite] = useState(null);
-  const [categoryFilter, setCategoryFilter] = useState(new Set(['C', 'N']));
-  const { visited } = useVisited(import.meta.env.BASE_URL + 'data/visited-unesco.json');
+const MAP_OPTIONS = {
+  worldCopyJump: true,
+  maxBounds: [[-90, -Infinity], [90, Infinity]],
+  center: [20, 0],
+  zoom: 3,
+};
 
-  useEffect(() => {
-    fetch(import.meta.env.BASE_URL + 'data/unesco-sites.json')
-      .then((r) => r.json())
-      .then((data) => {
-        setSites(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error('Error loading UNESCO sites:', err);
-        setLoading(false);
-      });
-  }, []);
+const TILE_OPTIONS = { noWrap: false };
 
-  const filteredSites = categoryFilter.size === 2
-    ? sites
-    : sites.filter((s) => categoryFilter.has(s.criteria) || s.criteria === 'C/N');
+let wikiCache = null;
+let wikiPromise = null;
 
-  const handlePreview = useCallback((siteName) => {
-    if (!siteName) {
-      setPreviewSite(null);
-      return;
-    }
-    const site = sites.find((s) => s.name === siteName);
-    if (site) setPreviewSite(site);
-  }, [sites]);
+function loadWiki() {
+  if (wikiCache) return Promise.resolve(wikiCache);
+  if (wikiPromise) return wikiPromise;
+  wikiPromise = fetch(import.meta.env.BASE_URL + 'data/unesco-wiki.json')
+    .then((r) => r.json())
+    .then((data) => { wikiCache = data; return data; })
+    .catch((err) => { console.error('Error loading UNESCO wiki:', err); wikiPromise = null; return {}; });
+  return wikiPromise;
+}
 
-  const handleZoom = (lat, lng) => {
-    setPreviewSite(null);
-    window._explorerMapZoom?.(lat, lng);
-  };
-
-  const popupContent = (site) => `
+function popupContent(site) {
+  return `
     <div class="custom-popup">
-      <div class="popup-title">${site.name}</div>
+      <div class="popup-title">${escapeHtml(site.name)}</div>
       <div class="popup-info">
-        <strong>Country:</strong> ${site.country}<br>
-        <strong>Year Inscribed:</strong> ${site.year}<br>
-        <strong>Criteria:</strong> ${site.criteria}
+        <strong>Country:</strong> ${escapeHtml(site.country)}<br>
+        <strong>Year Inscribed:</strong> ${escapeHtml(site.year)}<br>
+        <strong>Criteria:</strong> ${escapeHtml(site.criteria)}
       </div>
     </div>
   `;
+}
 
-  const totalSites = filteredSites.length;
-  const visitedCount = filteredSites.filter((s) => visited.has(s.name)).length;
+function applyFilter(sites, filterSet) {
+  if (!filterSet || filterSet.size === 2) return sites;
+  return sites.filter((s) => filterSet.has(s.criteria) || s.criteria === 'C/N');
+}
 
-  const overlayDetails = previewSite ? {
-    image: previewSite.wikipedia?.image || null,
-    description: previewSite.wikipedia?.description ||
-      `${previewSite.name} is a UNESCO World Heritage Site located in ${previewSite.country}. It was inscribed in ${previewSite.year}.`,
+function renderFilters(filterSet, setFilterSet) {
+  return CATEGORY_FILTERS.map((f) => (
+    <button
+      key={f.value}
+      className={`filter-button ${filterSet.has(f.value) ? 'active' : ''}`}
+      onClick={() => setFilterSet((prev) => {
+        const next = new Set(prev);
+        if (next.has(f.value)) {
+          if (next.size > 1) next.delete(f.value);
+        } else {
+          next.add(f.value);
+        }
+        return next;
+      })}
+    >
+      {f.label}
+    </button>
+  ));
+}
+
+function buildOverlayDetails(site) {
+  return {
+    image: site.wikipedia?.image || null,
+    description: site.wikipedia?.description ||
+      `${site.name} is a UNESCO World Heritage Site located in ${site.country}. It was inscribed in ${site.year}.`,
     fields: [
-      { label: 'Country', value: previewSite.country },
-      { label: 'Year Inscribed', value: previewSite.year },
-      { label: 'Criteria', value: previewSite.criteria },
+      { label: 'Country', value: site.country },
+      { label: 'Year Inscribed', value: site.year },
+      { label: 'Criteria', value: site.criteria },
     ],
-  } : null;
+  };
+}
 
+function buildLink(site) {
+  return site.wikipedia?.url ? { label: 'View on Wikipedia', url: site.wikipedia.url } : null;
+}
+
+function computeStats(filteredSites, visited) {
+  const total = filteredSites.length;
+  const visitedCount = filteredSites.filter((s) => visited.has(s.name)).length;
+  return [
+    { label: 'Total Sites', value: total || 'Loading...' },
+    { label: 'Visited', value: visitedCount },
+    { label: 'Remaining', value: total ? total - visitedCount : 'Loading...' },
+  ];
+}
+
+async function fetchOverlayDetails(site) {
+  const wiki = await loadWiki();
+  return { ...site, wikipedia: wiki[site.name] || site.wikipedia };
+}
+
+export default function Unesco() {
   return (
-    <div className="explorer-page">
-      <div className="explorer-header">
-        <div className="explorer-header-content">
-          <div className="explorer-header-text">
-            <h1>UNESCO World Heritage Sites</h1>
-          </div>
-          <div className="header-actions">
-            <Link to="/" className="home-link" title="Home"><i className="fa-solid fa-circle-arrow-left"></i></Link>
-          </div>
-        </div>
-      </div>
-
-      {loading && (
-        <div className="loading-indicator">
-          <div className="spinner" />
-          <div>Loading UNESCO World Heritage Sites...</div>
-        </div>
-      )}
-
-      <ExplorerMap
-        sites={filteredSites}
-        visited={visited}
-        onPreview={handlePreview}
-        mapOptions={{
-          worldCopyJump: true,
-          maxBounds: [[-90, -Infinity], [90, Infinity]],
-          center: [20, 0],
-          zoom: 3,
-        }}
-        tileOptions={{ noWrap: false }}
-        popupContent={popupContent}
-      />
-
-      <div className="explorer-stats">
-        <div className="stats-filter">
-          {CATEGORY_FILTERS.map((f) => (
-            <button
-              key={f.value}
-              className={`filter-button ${categoryFilter.has(f.value) ? 'active' : ''}`}
-              onClick={() => setCategoryFilter((prev) => {
-                const next = new Set(prev);
-                if (next.has(f.value)) {
-                  if (next.size > 1) next.delete(f.value);
-                } else {
-                  next.add(f.value);
-                }
-                return next;
-              })}
-            >
-              {f.label}
-            </button>
-          ))}
-        </div>
-        <div>Total Sites: <span>{totalSites || 'Loading...'}</span></div>
-        <div>Visited: <span>{visitedCount}</span></div>
-        <div>Remaining: <span>{totalSites ? totalSites - visitedCount : 'Loading...'}</span></div>
-      </div>
-
-      <SiteOverlay
-        site={previewSite}
-        details={overlayDetails}
-        isVisited={previewSite ? visited.has(previewSite.name) : false}
-        onClose={() => setPreviewSite(null)}
-        onZoom={handleZoom}
-        linkLabel="View on Wikipedia"
-        linkUrl={previewSite?.wikipedia?.url}
-      />
-    </div>
+    <TrackerPage
+      title="UNESCO World Heritage Sites"
+      dataUrl={import.meta.env.BASE_URL + 'data/unesco-sites.json'}
+      visitedUrl={import.meta.env.BASE_URL + 'data/visited-unesco.json'}
+      mapOptions={MAP_OPTIONS}
+      tileOptions={TILE_OPTIONS}
+      popupContent={popupContent}
+      buildOverlayDetails={buildOverlayDetails}
+      buildLink={buildLink}
+      filters={{ initial: new Set(['C', 'N']), render: renderFilters }}
+      applyFilter={applyFilter}
+      computeStats={computeStats}
+      loadingLabel="Loading UNESCO World Heritage Sites..."
+      fetchOverlayDetails={fetchOverlayDetails}
+    />
   );
 }

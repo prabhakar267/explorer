@@ -24,6 +24,7 @@ const { URL } = require('url');
 const CSV_URL =
   'https://ihp-wins.unesco.org/dataset/88c8eff6-b94d-4826-bb13-7107ac4c02a9/resource/2f46f6b2-45f9-402b-ace9-1e02c9c97a3d/download/whc-sites-2025.csv';
 const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'data', 'unesco-sites.json');
+const WIKI_PATH = path.join(__dirname, '..', 'public', 'data', 'unesco-wiki.json');
 
 const FORCE_WIKI = process.argv.includes('--force-wiki');
 
@@ -181,7 +182,16 @@ async function fetchWikipedia(siteName) {
 
 function loadExisting() {
   try {
-    return JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
+    const sites = JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf8'));
+    let wiki = {};
+    try {
+      wiki = JSON.parse(fs.readFileSync(WIKI_PATH, 'utf8'));
+    } catch { /* no wiki file yet */ }
+    // Re-attach wiki for cache lookup during this run.
+    for (const s of sites) {
+      if (wiki[s.name]) s.wikipedia = wiki[s.name];
+    }
+    return sites;
   } catch {
     return [];
   }
@@ -227,10 +237,19 @@ async function main() {
 
   sites.sort((a, b) => a.name.localeCompare(b.name));
 
-  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(sites, null, 2) + '\n');
+  const wiki = {};
+  const lite = sites.map((s) => {
+    const { wikipedia, ...rest } = s;
+    if (wikipedia) wiki[s.name] = wikipedia;
+    return rest;
+  });
 
-  console.log(`Wrote ${sites.length} sites to ${OUTPUT_PATH}`);
+  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(lite) + '\n');
+  fs.writeFileSync(WIKI_PATH, JSON.stringify(wiki) + '\n');
+
+  console.log(`Wrote ${lite.length} sites to ${OUTPUT_PATH}`);
+  console.log(`Wrote ${Object.keys(wiki).length} wiki entries to ${WIKI_PATH}`);
 }
 
 main().catch((err) => {

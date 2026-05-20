@@ -40,7 +40,7 @@ export default function Games() {
       <div className="games-header">
         <div className="games-header-content">
           <div className="games-header-text">
-            <h1><i class="fa-brands fa-playstation"></i> PlayStation Games</h1>
+            <h1><i className="fa-brands fa-playstation"></i> PlayStation Games</h1>
             <span className="games-count">{games.length} played</span>
           </div>
           <div className="header-actions">

@@ -39,8 +39,8 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
     >
       <div className="overlay-header">
         <button className="back-button" onClick={handleClose} title="Go back"><i className="fa-solid fa-arrow-left"></i></button>
-        <h2>{displaySite?.name}</h2>
-        <button className="close-overlay" onClick={handleClose}><i className="fa-solid fa-xmark"></i></button>
+        <h2>{details?.title || displaySite?.name}</h2>
+        <span className="overlay-header-spacer" aria-hidden="true" />
       </div>
       <div className="overlay-content">
         {!details ? (
