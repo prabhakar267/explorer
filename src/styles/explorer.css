@@ -52,7 +52,7 @@
 
 .explorer-page {
   --explorer-header-height: 56px;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   background: linear-gradient(160deg, #1a4a3a 0%, #2d5a3a 40%, #1a3a2a 100%);
   position: relative;
@@ -164,7 +164,7 @@
 }
 
 .explorer-map {
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
 }
 
@@ -783,17 +783,82 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .explorer-header {
+    padding: 12px 16px;
+  }
+
   .site-overlay {
     width: 100%;
+    top: auto;
+    bottom: 0;
+    height: 60vh;
+    height: 60dvh;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+    transform: translateY(100%);
+  }
+
+  .site-overlay.show {
+    transform: translateY(0);
+  }
+
+  .overlay-header {
+    padding: 16px;
+  }
+
+  .overlay-header h2 {
+    font-size: 16px;
+  }
+
+  .overlay-content {
+    padding: 16px;
+  }
+
+  .explorer-stats {
+    display: none;
+  }
+
+  .filter-button {
+    padding: 8px 14px;
+    font-size: 13px;
+    min-height: 36px;
   }
 
   .popup-buttons {
     flex-direction: column;
   }
 
+  .popup-button {
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+
   .info-item strong {
     min-width: auto;
     display: block;
     margin-bottom: 4px;
+  }
+
+  .gallery-dots {
+    flex-wrap: wrap;
+    padding: 8px 4px;
+  }
+
+  .gallery-nav {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .dropdown-button {
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .back-button,
+  .close-overlay {
+    width: 44px;
+    height: 44px;
   }
 }

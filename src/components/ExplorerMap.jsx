@@ -140,9 +140,11 @@ export default function ExplorerMap({
   useEffect(() => {
     if (mapInstanceRef.current) return;
 
+    const mobileZoomAdjust = window.innerWidth <= 768 && mapOptions.zoom != null ? -1 : 0;
     const map = L.map(mapRef.current, {
       zoomControl: false,
       ...mapOptions,
+      zoom: (mapOptions.zoom || 3) + mobileZoomAdjust,
     });
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
@@ -260,23 +262,24 @@ export default function ExplorerMap({
   // coords. Padding accounts for the side overlay that covers ~40% of the
   // screen on the right.
   useEffect(() => {
-    const overlayPaddingPx = () => {
-      const w = mapInstanceRef.current?.getSize().x || 0;
-      return Math.round(w * 0.4);
-    };
+    const isMobile = () => window.innerWidth <= 768;
 
     window._explorerMapFocusSite = async (site) => {
       const map = mapInstanceRef.current;
       if (!map || !site) return;
 
-      // flyToBounds accepts paddingTopLeft/paddingBottomRight; we shift
-      // padding to the right so the polygon centres in the visible area
-      // to the left of the overlay rather than behind it.
+      const mobile = isMobile();
+      const mapSize = map.getSize();
+
+      // On desktop, overlay is 40% width on the right.
+      // On mobile, overlay is 70% height from the bottom.
       const fitOpts = {
         animate: true,
         duration: 1.0,
         paddingTopLeft: [20, 20],
-        paddingBottomRight: [overlayPaddingPx() + 20, 20],
+        paddingBottomRight: mobile
+          ? [20, Math.round(mapSize.y * 0.6) + 20]
+          : [Math.round(mapSize.x * 0.4) + 20, 20],
         maxZoom: 12,
       };
 
@@ -299,15 +302,28 @@ export default function ExplorerMap({
         }
       }
 
-      // No boundary available — flyTo doesn't take padding options, so we
-      // offset the centre west by half the overlay's longitude span so the
-      // park sits in the visible area rather than behind the overlay.
-      const overlayShareOfWidth = overlayPaddingPx() / (map.getSize().x || 1);
-      const targetZoom = 8;
-      const proj = map.project([site.lat, site.lng], targetZoom);
-      const offsetX = (overlayShareOfWidth * map.getSize().x) / 2;
-      const adjusted = map.unproject([proj.x + offsetX, proj.y], targetZoom);
-      map.flyTo(adjusted, targetZoom, { animate: true, duration: 1.0 });
+      const targetZoom = mobile ? 6 : 8;
+      const sitePoint = map.project([site.lat, site.lng], targetZoom);
+      if (mobile) {
+        // Bottom sheet = 60% of viewport. Visible strip = top 40%.
+        // Place the site at the vertical center of the visible strip.
+        const sheetFraction = 0.6;
+        const visibleCenterY = (mapSize.y * (1 - sheetFraction)) / 2;
+        const mapCenterY = mapSize.y / 2;
+        const offsetY = mapCenterY - visibleCenterY;
+        const adjusted = map.unproject(
+          [sitePoint.x, sitePoint.y + offsetY],
+          targetZoom
+        );
+        map.flyTo(adjusted, targetZoom, { animate: true, duration: 1.0 });
+      } else {
+        const offsetX = mapSize.x * 0.2;
+        const adjusted = map.unproject(
+          [sitePoint.x + offsetX, sitePoint.y],
+          targetZoom
+        );
+        map.flyTo(adjusted, targetZoom, { animate: true, duration: 1.0 });
+      }
     };
 
     return () => {

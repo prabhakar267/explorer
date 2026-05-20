@@ -191,6 +191,14 @@
 }
 
 @media (max-width: 768px) {
+  .home-page {
+    padding: 16px 16px 0;
+  }
+
+  .home-page > main {
+    padding: 0 8px;
+  }
+
   .trackers-grid {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -207,6 +215,28 @@
   .tile-overlay p {
     font-size: 0.9em;
   }
+
+  .home-footer {
+    margin-left: -16px;
+    margin-right: -16px;
+    width: calc(100% + 32px);
+  }
+
+  .settings-bubble {
+    bottom: auto;
+    top: 100%;
+    margin-top: 12px;
+    margin-bottom: 0;
+    right: 0;
+  }
+
+  .settings-button {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -220,5 +250,9 @@
 
   .tile-overlay {
     padding: 15px;
+  }
+
+  .tracker-tile {
+    height: 180px;
   }
 }
