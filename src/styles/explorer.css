@@ -51,6 +51,7 @@
 }
 
 .explorer-page {
+  --explorer-header-height: 56px;
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(160deg, #1a4a3a 0%, #2d5a3a 40%, #1a3a2a 100%);
@@ -67,6 +68,8 @@
   padding: 12px 24px;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
+  height: var(--explorer-header-height);
+  box-sizing: border-box;
 }
 
 .explorer-header-content {
@@ -424,15 +427,17 @@
 /* Site overlay */
 .site-overlay {
   position: fixed;
-  top: 0;
+  top: var(--explorer-header-height, 56px);
   right: 0;
   width: 40%;
-  height: 100vh;
+  height: calc(100vh - var(--explorer-header-height, 56px));
   background: var(--background-white);
   backdrop-filter: blur(20px);
   box-shadow: var(--shadow-xl);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 2000;
+  /* Sits behind the page header (z-index 1000) so the title bar stays
+     visible when the overlay is open. */
+  z-index: 999;
   transform: translateX(100%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
@@ -444,15 +449,23 @@
 
 .overlay-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 6px;
   padding: 24px;
   border-bottom: 1px solid var(--border-color);
   background: var(--background-glass);
   backdrop-filter: blur(20px);
   position: sticky;
   top: 0;
-  z-index: 2001;
+  /* Local stacking within the overlay only — the page header (1000) still
+     sits on top because .site-overlay is now at 999. */
+  z-index: 1;
+}
+
+.overlay-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .overlay-header h2 {
@@ -463,6 +476,26 @@
   flex: 1;
   text-align: center;
   letter-spacing: -0.025em;
+}
+
+.next-site-link {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--primary-color);
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.next-site-link:hover {
+  color: var(--primary-hover);
 }
 
 .overlay-header-spacer {
@@ -615,6 +648,14 @@
   padding-bottom: 8px;
 }
 
+.description-prefix {
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
 .info-section p {
   color: var(--text-secondary);
   line-height: 1.6;
@@ -665,63 +706,32 @@
   color: var(--success-color);
 }
 
-.overlay-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-color);
-}
-
-.action-button {
-  flex: 1;
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 14px 20px;
-  border-radius: var(--border-radius-sm);
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  text-align: center;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow-sm);
-}
-
-.action-button:hover {
-  background: var(--primary-hover);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.action-button.visited {
-  background: var(--success-color);
-}
-
-.action-button.visited:hover {
-  background: var(--success-hover);
-}
-
-.wikipedia-link {
-  background: var(--accent-color) !important;
-}
-
-.wikipedia-link:hover {
-  background: var(--accent-hover) !important;
-}
-
-.coordinates-link {
-  color: var(--primary-color);
-  cursor: pointer;
+.overlay-title-link {
+  color: inherit;
   text-decoration: underline;
-  transition: all 0.2s ease;
-  font-weight: 500;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
 }
 
-.coordinates-link:hover {
+.overlay-title-link:hover {
+  color: var(--primary-color);
+}
+
+.visited-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(196, 125, 46, 0.15);
   color: var(--primary-hover);
-  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
 /* Cluster styling */
@@ -778,10 +788,6 @@
   }
 
   .popup-buttons {
-    flex-direction: column;
-  }
-
-  .overlay-actions {
     flex-direction: column;
   }
 

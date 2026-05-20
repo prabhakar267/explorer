@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 
-export default function SiteOverlay({ site, details, isVisited, onClose, onZoom, linkLabel, linkUrl }) {
+export default function SiteOverlay({ site, details, isVisited, onClose, linkUrl, nextSiteName, onNext }) {
   const [showing, setShowing] = useState(false);
   const [rendered, setRendered] = useState(false);
   const [galleryIndex, setGalleryIndex] = useState(0);
+  const [brokenUrls, setBrokenUrls] = useState(() => new Set());
   const prevSite = useRef(null);
 
   useEffect(() => {
@@ -24,11 +25,23 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
     setGalleryIndex(0);
   }, [details?.images]);
 
-  const images = details?.images || [];
+  // Filter out images whose URL already 404'd in this session. brokenUrls
+  // accumulates across site changes so a given URL is never retried.
+  const allImages = details?.images || [];
+  const images = allImages.filter((img) => !brokenUrls.has(img.url));
   const galleryCount = images.length;
   const currentImage = galleryCount > 0 ? images[Math.min(galleryIndex, galleryCount - 1)] : null;
   const goPrev = () => setGalleryIndex((i) => (i - 1 + galleryCount) % galleryCount);
   const goNext = () => setGalleryIndex((i) => (i + 1) % galleryCount);
+
+  const handleImageError = (url) => {
+    setBrokenUrls((prev) => {
+      if (prev.has(url)) return prev;
+      const next = new Set(prev);
+      next.add(url);
+      return next;
+    });
+  };
 
   // Arrow keys navigate the gallery while the overlay is open.
   useEffect(() => {
@@ -63,9 +76,29 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
       onTransitionEnd={handleTransitionEnd}
     >
       <div className="overlay-header">
-        <button className="back-button" onClick={handleClose} title="Go back"><i className="fa-solid fa-arrow-left"></i></button>
-        <h2>{details?.title || displaySite?.name}</h2>
-        <span className="overlay-header-spacer" aria-hidden="true" />
+        <div className="overlay-header-row">
+          <button className="back-button" onClick={handleClose} title="Go back"><i className="fa-solid fa-arrow-left"></i></button>
+          <h2>
+            {linkUrl ? (
+              <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="overlay-title-link">
+                {details?.title || displaySite?.name}
+              </a>
+            ) : (
+              details?.title || displaySite?.name
+            )}
+            {isVisited && (
+              <span className="visited-badge" title="Visited">
+                <i className="fa-solid fa-check"></i> Visited
+              </span>
+            )}
+          </h2>
+          <span className="overlay-header-spacer" aria-hidden="true" />
+        </div>
+        {nextSiteName && onNext && (
+          <button type="button" className="next-site-link" onClick={onNext}>
+            Next: {nextSiteName} <i className="fa-solid fa-angles-right"></i>
+          </button>
+        )}
       </div>
       <div className="overlay-content">
         {!details ? (
@@ -79,7 +112,7 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
                     key={currentImage.url}
                     src={currentImage.url}
                     alt={currentImage.altText || displaySite?.name}
-                    onError={(e) => { e.target.style.display = 'none'; }}
+                    onError={() => handleImageError(currentImage.url)}
                   />
                   {galleryCount > 1 && (
                     <>
@@ -127,40 +160,25 @@ export default function SiteOverlay({ site, details, isVisited, onClose, onZoom,
             )}
 
             <div className="info-section">
-              <h3>Description</h3>
+              {details.descriptionPrefix && (
+                <div className="description-prefix">{details.descriptionPrefix}</div>
+              )}
               <p>{details.description}</p>
             </div>
 
-            <div className="info-section">
-              <h3>Basic Information</h3>
-              <div className="info-grid">
-                {details.fields.map(({ label, value }) => (
-                  <div className="info-item" key={label}>
-                    <strong>{label}:</strong> {value}
-                  </div>
-                ))}
-                <div className="info-item">
-                  <strong>Coordinates:</strong>{' '}
-                  <span className="coordinates-link" onClick={() => onZoom(displaySite.lat, displaySite.lng)}>
-                    <i className="fa-solid fa-location-crosshairs"></i> {displaySite?.lat.toFixed(4)}, {displaySite?.lng.toFixed(4)}
-                  </span>
-                </div>
-                <div className="info-item">
-                  <strong>Status:</strong>{' '}
-                  <span className={`status ${isVisited ? 'visited' : 'unvisited'}`}>
-                    {isVisited ? 'Visited' : 'Not Visited'}
-                  </span>
+            {details.fields && details.fields.length > 0 && (
+              <div className="info-section">
+                <h3>Basic Information</h3>
+                <div className="info-grid">
+                  {details.fields.map(({ label, value }) => (
+                    <div className="info-item" key={label}>
+                      <strong>{label}:</strong> {value}
+                    </div>
+                  ))}
                 </div>
               </div>
-            </div>
+            )}
 
-            <div className="overlay-actions">
-              {linkUrl && (
-                <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="action-button wikipedia-link">
-                  {linkLabel}
-                </a>
-              )}
-            </div>
           </div>
         )}
       </div>

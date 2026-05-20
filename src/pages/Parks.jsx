@@ -21,8 +21,12 @@ function popupContent(site, isVisited) {
 }
 
 function buildOverlayDetails(site) {
-  const stateLabel = Array.isArray(site.states) && site.states.length > 1 ? 'States' : 'State';
-  const stateValue = site.state || (Array.isArray(site.states) ? site.states.join(', ') : '');
+  const states = Array.isArray(site.states) && site.states.length > 0
+    ? site.states
+    : (site.state ? [site.state] : []);
+  // Each state gets its own pin emoji so multi-state parks read as a
+  // sequence of locations rather than a comma-joined string.
+  const stateValue = states.map((s) => `📍 ${s}`).join('   ');
   const sourceImages = Array.isArray(site.images) && site.images.length > 0
     ? site.images
     : site.image ? [site.image] : [];
@@ -37,9 +41,7 @@ function buildOverlayDetails(site) {
     title: site.fullName || site.name,
     images,
     description: site.description || `${site.name} National Park.`,
-    fields: [
-      { label: stateLabel, value: stateValue },
-    ],
+    descriptionPrefix: stateValue || null,
   };
 }
 

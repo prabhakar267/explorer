@@ -68,14 +68,20 @@ export default function TrackerPage({
     setOverlayDetails(buildOverlayDetails(site));
   }, [sites, fetchOverlayDetails, buildOverlayDetails]);
 
-  const handleZoom = (lat, lng) => {
-    setPreviewSite(null);
-    setOverlayDetails(null);
-    window._explorerMapZoom?.(lat, lng);
-  };
-
   const stats = computeStats(filteredSites, visited);
   const link = previewSite ? buildLink(previewSite) : null;
+
+  // Alphabetical "next site" link inside the overlay. We navigate within
+  // the currently visible (filtered) list so the link respects whatever
+  // filters the user has applied. Wraps back to the first site after the
+  // last one.
+  let nextSite = null;
+  if (previewSite && filteredSites.length > 1) {
+    const idx = filteredSites.findIndex((s) => s.name === previewSite.name);
+    if (idx >= 0) {
+      nextSite = filteredSites[(idx + 1) % filteredSites.length];
+    }
+  }
 
   return (
     <div className="explorer-page">
@@ -123,9 +129,9 @@ export default function TrackerPage({
         details={overlayDetails}
         isVisited={previewSite ? visited.has(previewSite.name) : false}
         onClose={() => { setPreviewSite(null); setOverlayDetails(null); }}
-        onZoom={handleZoom}
-        linkLabel={link?.label}
         linkUrl={link?.url}
+        nextSiteName={nextSite ? (nextSite.fullName || nextSite.name) : null}
+        onNext={nextSite ? () => handlePreview(nextSite.name) : null}
       />
     </div>
   );

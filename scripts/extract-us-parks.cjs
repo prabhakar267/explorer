@@ -131,6 +131,63 @@ function fetchJson(url) {
     });
 }
 
+// HEAD-probe an image URL to verify it exists. NPS occasionally returns
+// image entries pointing at files that have since been removed from their
+// CDN; we drop those at extraction time so the client never has to render
+// a broken <img>. Returns true on 2xx, false on anything else (including
+// network errors, redirects to error pages, etc.).
+function probeImage(url) {
+    return new Promise((resolve) => {
+        let settled = false;
+        const finish = (ok) => {
+            if (settled) return;
+            settled = true;
+            resolve(ok);
+        };
+        try {
+            const req = https.request(
+                url,
+                {
+                    method: 'HEAD',
+                    headers: {
+                        'User-Agent':
+                            'explorer-us-parks-extractor/2.0 (https://github.com/prabhakar267/explorer)',
+                    },
+                    timeout: 8000,
+                },
+                (res) => {
+                    res.resume();
+                    finish(res.statusCode >= 200 && res.statusCode < 300);
+                }
+            );
+            req.on('error', () => finish(false));
+            req.on('timeout', () => {
+                req.destroy();
+                finish(false);
+            });
+            req.end();
+        } catch {
+            finish(false);
+        }
+    });
+}
+
+async function probeImagesParallel(images, concurrency = 8) {
+    const results = new Array(images.length);
+    let next = 0;
+    async function worker() {
+        while (true) {
+            const i = next++;
+            if (i >= images.length) return;
+            results[i] = await probeImage(images[i].url);
+        }
+    }
+    await Promise.all(
+        Array.from({ length: Math.min(concurrency, images.length) }, worker)
+    );
+    return images.filter((_, i) => results[i]);
+}
+
 /**
  * Does this NPS record represent one of the 63 canonical National Parks?
  *
@@ -256,6 +313,25 @@ async function main() {
             `Expected 63 parks, got ${parks.length}. NPS API inventory may have drifted.`
         );
     }
+
+    // Verify every image URL still resolves on the NPS CDN. NPS records
+    // occasionally reference files that have been removed; we drop them
+    // here so the client never has to render a broken <img>.
+    console.log('Probing image URLs...');
+    let totalBefore = 0;
+    let totalAfter = 0;
+    for (const park of parks) {
+        totalBefore += park.images.length;
+        const live = await probeImagesParallel(park.images);
+        if (live.length !== park.images.length) {
+            const dropped = park.images.length - live.length;
+            console.log(`  ${park.name}: dropped ${dropped} broken image${dropped === 1 ? '' : 's'}`);
+        }
+        park.images = live;
+        park.image = live[0] || null;
+        totalAfter += live.length;
+    }
+    console.log(`Image probe done: kept ${totalAfter} / ${totalBefore} URLs`);
 
     parks.sort((a, b) => a.name.localeCompare(b.name));
 

@@ -254,26 +254,15 @@ export default function ExplorerMap({
     }
   }, [visited]);
 
-  // Expose imperative focus methods. window._explorerMapZoom is the legacy
-  // setView-by-coords entry point used by SiteOverlay's coordinates link;
-  // window._explorerMapFocusSite is the richer one — given a site object,
-  // it flies to the park's boundary polygon if we have one (so the entire
-  // polygon fits the visible map area), otherwise falls back to a fixed
-  // zoom centred on the site's coords. Padding accounts for the side
-  // overlay that covers ~40% of the screen on the right.
+  // Expose an imperative focus method. Given a site, fly to its boundary
+  // polygon if we have one (so the entire polygon fits the visible map
+  // area), otherwise fall back to a fixed zoom centred on the site's
+  // coords. Padding accounts for the side overlay that covers ~40% of the
+  // screen on the right.
   useEffect(() => {
     const overlayPaddingPx = () => {
       const w = mapInstanceRef.current?.getSize().x || 0;
-      // Overlay covers 40% of the viewport from the right. Pad the map's
-      // visible bounds by that amount so the focused park settles in the
-      // centre of the *visible* area, not behind the overlay.
       return Math.round(w * 0.4);
-    };
-
-    window._explorerMapZoom = (lat, lng) => {
-      const map = mapInstanceRef.current;
-      if (!map) return;
-      map.flyTo([lat, lng], 8, { animate: true, duration: 1.0 });
     };
 
     window._explorerMapFocusSite = async (site) => {
@@ -322,7 +311,6 @@ export default function ExplorerMap({
     };
 
     return () => {
-      delete window._explorerMapZoom;
       delete window._explorerMapFocusSite;
     };
   }, []);
