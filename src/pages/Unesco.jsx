@@ -67,8 +67,9 @@ function renderFilters(filterSet, setFilterSet) {
 }
 
 function buildOverlayDetails(site) {
+  const images = site.wikipedia?.image ? [{ url: site.wikipedia.image, caption: null }] : [];
   return {
-    image: site.wikipedia?.image || null,
+    images,
     description: site.wikipedia?.description ||
       `${site.name} is a UNESCO World Heritage Site located in ${site.country}. It was inscribed in ${site.year}.`,
     fields: [

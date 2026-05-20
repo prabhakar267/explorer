@@ -23,12 +23,19 @@ function popupContent(site, isVisited) {
 function buildOverlayDetails(site) {
   const stateLabel = Array.isArray(site.states) && site.states.length > 1 ? 'States' : 'State';
   const stateValue = site.state || (Array.isArray(site.states) ? site.states.join(', ') : '');
+  const sourceImages = Array.isArray(site.images) && site.images.length > 0
+    ? site.images
+    : site.image ? [site.image] : [];
+  const images = sourceImages.map((img) => ({
+    url: img.url,
+    altText: img.altText || '',
+    caption: img.caption
+      ? `${img.caption}${img.credit ? ` (© ${img.credit})` : ''}`
+      : null,
+  }));
   return {
     title: site.fullName || site.name,
-    image: site.image?.url || null,
-    imageCaption: site.image?.caption
-      ? `${site.image.caption}${site.image.credit ? ` (© ${site.image.credit})` : ''}`
-      : null,
+    images,
     description: site.description || `${site.name} National Park.`,
     fields: [
       { label: stateLabel, value: stateValue },

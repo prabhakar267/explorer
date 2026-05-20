@@ -26,6 +26,14 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+const ENV_PATH = path.join(__dirname, '..', '.env');
+if (fs.existsSync(ENV_PATH)) {
+    for (const line of fs.readFileSync(ENV_PATH, 'utf8').split('\n')) {
+        const match = line.match(/^\s*([^#=]+?)\s*=\s*(.*)\s*$/);
+        if (match && !process.env[match[1]]) process.env[match[1]] = match[2];
+    }
+}
+
 const API_KEY = process.env.NPS_API_KEY || 'DEMO_KEY';
 const API_URL = `https://developer.nps.gov/api/v1/parks?limit=500&api_key=${API_KEY}`;
 const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'data', 'us-parks.json');
@@ -156,20 +164,24 @@ function expandStates(statesCsv) {
         .map((code) => STATE_NAMES[code] || code);
 }
 
-/** Pick the first image with a usable URL, or null. */
-function pickImage(images) {
-    if (!Array.isArray(images)) return null;
+/** Pick up to MAX_IMAGES images with usable URLs. */
+const MAX_IMAGES = 10;
+function pickImages(images) {
+    if (!Array.isArray(images)) return [];
+    const picked = [];
     for (const img of images) {
         if (img && img.url) {
-            return {
+            picked.push({
                 url: img.url,
                 altText: img.altText || '',
                 caption: img.caption || '',
                 credit: img.credit || '',
-            };
+                title: img.title || '',
+            });
+            if (picked.length >= MAX_IMAGES) break;
         }
     }
-    return null;
+    return picked;
 }
 
 /** Convert one NPS record to our flat park object. */
@@ -182,6 +194,7 @@ function toPark(record, { nameOverride, latOverride, lngOverride } = {}) {
     const displayName =
         nameOverride || NAME_OVERRIDES[record.name] || record.name;
 
+    const images = pickImages(record.images);
     return {
         name: displayName,
         fullName: record.fullName,
@@ -193,7 +206,11 @@ function toPark(record, { nameOverride, latOverride, lngOverride } = {}) {
         lng,
         description: record.description || '',
         url: record.url || '',
-        image: pickImage(record.images),
+        // `image` (singular) is kept for backwards compatibility with any
+        // consumer that only reads the cover image; `images` is the full
+        // gallery (up to MAX_IMAGES).
+        image: images[0] || null,
+        images,
     };
 }
 
@@ -252,7 +269,7 @@ async function main() {
         state: parks[0].state,
         coord: `${parks[0].lat}, ${parks[0].lng}`,
         hasDescription: !!parks[0].description,
-        hasImage: !!parks[0].image,
+        imageCount: parks[0].images.length,
     });
 }
 
