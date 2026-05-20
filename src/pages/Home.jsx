@@ -70,8 +70,11 @@ export default function Home() {
       <footer className="home-footer">
         <div className="footer-content">
           <p>
-            <a href="https://www.prabhakargupta.com/" target="_blank" rel="noopener noreferrer">Prabhakar Gupta</a>
+            <a href="https://www.prabhakargupta.com/">Prabhakar Gupta</a>
           </p>
+          <a href="https://github.com/prabhakar267/explorer" className="settings-button">
+            <i className="fa-brands fa-github"></i>
+          </a>
           <div className="settings-popover" ref={settingsRef}>
             <button
               className="settings-button"
