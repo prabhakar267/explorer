@@ -25,6 +25,12 @@ Get credentials at https://dev.twitch.tv/console/apps
 npm run games
 ```
 
+To toggle platinum trophy status on existing games:
+
+```bash
+npm run games -- --platinum
+```
+
 ## extract-us-parks.cjs
 
 Fetches the canonical 63 US National Parks from the NPS API and writes `public/data/us-parks.json`.

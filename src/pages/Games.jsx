@@ -109,6 +109,7 @@ export default function Games() {
               )}
               {game.collection && <div className="game-collection">{game.collection}</div>}
             </div>
+            {game.platinum && <span className="game-platinum"><i className="fa-solid fa-trophy"></i></span>}
           </a>
         ))}
       </div>

@@ -12,7 +12,8 @@
       "Open world"
     ],
     "developer": "SIE Santa Monica Studio",
-    "url": "https://store.playstation.com/en-us/concept/10001850"
+    "url": "https://store.playstation.com/en-us/concept/10001850",
+    "platinum": true
   },
   {
     "title": "God of War",
@@ -76,7 +77,8 @@
       "Open world"
     ],
     "developer": "Bend Studio",
-    "url": "https://store.playstation.com/en-us/concept/229018"
+    "url": "https://store.playstation.com/en-us/concept/229018",
+    "platinum": true
   },
   {
     "title": "Ghost of Yotei",
@@ -92,7 +94,8 @@
       "Open world"
     ],
     "developer": "Sucker Punch Productions",
-    "url": "https://store.playstation.com/en-us/concept/10003923"
+    "url": "https://store.playstation.com/en-us/concept/10003923",
+    "platinum": true
   },
   {
     "title": "Grand Theft Auto V",
@@ -141,7 +144,8 @@
       "Open world"
     ],
     "developer": "Insomniac Games",
-    "url": "https://www.igdb.com/games/marvels-spider-man"
+    "url": "https://www.igdb.com/games/marvels-spider-man",
+    "platinum": true
   },
   {
     "title": "Red Dead Redemption 2",
@@ -231,7 +235,8 @@
       "Open world"
     ],
     "developer": "Kojima Productions",
-    "url": "https://store.playstation.com/en-us/concept/10001538"
+    "url": "https://store.playstation.com/en-us/concept/10001538",
+    "platinum": true
   },
   {
     "title": "Hogwarts Legacy",
@@ -246,7 +251,8 @@
       "Open world"
     ],
     "developer": "Avalanche Software",
-    "url": "https://store.playstation.com/en-us/concept/232447"
+    "url": "https://store.playstation.com/en-us/concept/232447",
+    "platinum": true
   },
   {
     "title": "Assassin's Creed Origins",
@@ -295,7 +301,8 @@
       "Open world"
     ],
     "developer": "Insomniac Games",
-    "url": "https://store.playstation.com/en-us/concept/10002456"
+    "url": "https://store.playstation.com/en-us/concept/10002456",
+    "platinum": true
   },
   {
     "title": "Marvel's Spider-Man: Miles Morales",
@@ -310,7 +317,8 @@
       "Open world"
     ],
     "developer": "Insomniac Games",
-    "url": "https://store.playstation.com/en-us/concept/10000649"
+    "url": "https://store.playstation.com/en-us/concept/10000649",
+    "platinum": true
   },
   {
     "title": "Ghost of Tsushima",

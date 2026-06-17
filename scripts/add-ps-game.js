@@ -116,7 +116,36 @@ function saveGames(games) {
   writeFileSync(OUTPUT_PATH, JSON.stringify(games, null, 2) + '\n');
 }
 
+async function runPlatinum() {
+  const games = loadGames();
+  console.log(`\nToggle platinum trophies (Ctrl+C to exit).\n`);
+
+  while (true) {
+    const choice = await search({
+      message: 'Search a game to toggle platinum:',
+      source: (input) => {
+        const filtered = games
+          .map((g, i) => ({ ...g, index: i }))
+          .filter((g) => !input || g.title.toLowerCase().includes(input.toLowerCase()));
+        return filtered.map((g) => ({
+          name: `${g.platinum ? '🏆' : '  '} ${g.title}`,
+          value: g.index,
+        }));
+      },
+    });
+
+    games[choice].platinum = !games[choice].platinum;
+    const status = games[choice].platinum ? 'earned' : 'removed';
+    console.log(`  → Platinum ${status} for "${games[choice].title}"\n`);
+    saveGames(games);
+  }
+}
+
 async function run() {
+  if (process.argv.includes('--platinum')) {
+    return runPlatinum();
+  }
+
   console.log('Authenticating with Twitch...');
   await authenticate();
   console.log('Authenticated.\n');
@@ -189,7 +218,8 @@ async function run() {
     const ok = await confirm({ message: `Add "${game.name}" to your list?`, default: true });
 
     if (ok) {
-      const entry = { title: game.name, platform, genre, cover, rating, collection, themes, developer, url };
+      const platinum = await confirm({ message: 'Platinum trophy earned?', default: false });
+      const entry = { title: game.name, platform, genre, cover, rating, collection, themes, developer, url, platinum };
       games.push(entry);
       existing.add(game.name);
       saveGames(games);
