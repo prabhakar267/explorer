@@ -377,5 +377,20 @@
     ],
     "developer": "Hazelight Studios",
     "url": "https://store.playstation.com/en-us/concept/234689"
+  },
+  {
+    "title": "007 First Light",
+    "platform": "PS5",
+    "genre": "Shooter",
+    "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/coaoiz.jpg",
+    "rating": 81,
+    "collection": null,
+    "themes": [
+      "Action",
+      "Stealth"
+    ],
+    "developer": "IO Interactive",
+    "url": "https://store.playstation.com/en-us/concept/10006560/",
+    "platinum": true
   }
 ]
