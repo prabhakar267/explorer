@@ -9,3 +9,34 @@ body {
   line-height: 1.6;
   color: #2c3e2d;
 }
+
+/* Shown by the router's Suspense boundary while a lazily-loaded page chunk
+   downloads. Vite ships each async chunk's CSS alongside it, so explorer.css —
+   and with it every theme variable, .loading-indicator and .spinner — has not
+   arrived yet at this point. These rules are deliberately self-contained,
+   using literal colors and their own keyframes, and belong in global.css so
+   they land in the entry chunk. */
+.route-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  background: #1a4a3a;
+}
+
+[data-theme="dark"] .route-fallback {
+  background: #1a201b;
+}
+
+.route-fallback-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(232, 228, 218, 0.25);
+  border-top-color: #c47d2e;
+  border-radius: 50%;
+  animation: route-fallback-spin 1s linear infinite;
+}
+
+@keyframes route-fallback-spin {
+  to { transform: rotate(360deg); }
+}

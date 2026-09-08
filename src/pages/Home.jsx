@@ -4,6 +4,12 @@ import ThemeToggle from '../components/ThemeToggle';
 import { useTheme } from '../hooks/useTheme';
 import '../styles/home.css';
 
+// Warm the lazily-loaded tracker chunks (see main.jsx) on hover, so the
+// Suspense fallback usually never gets shown. Same modules main.jsx routes to,
+// hence the same chunks — these paths must stay in sync with it.
+const loadUnesco = () => import('./Unesco');
+const loadParks = () => import('./Parks');
+
 
 export default function Home() {
   const [theme, setTheme] = useTheme();
@@ -33,7 +39,8 @@ export default function Home() {
             className="tracker-tile"
             style={{ backgroundImage: 'url(https://live.staticflickr.com/5048/5250912829_e288600226_b.jpg)' }}
           >
-            <Link to="/unesco">
+            {/* onFocus covers keyboard navigation. */}
+            <Link to="/unesco" onMouseEnter={loadUnesco} onFocus={loadUnesco}>
               <div className="tile-overlay">
                 <h3>UNESCO World Heritage Sites</h3>
                 <p>Cultural and natural heritage sites I've visited around the world</p>
@@ -45,7 +52,7 @@ export default function Home() {
             className="tracker-tile"
             style={{ backgroundImage: 'url(https://capitolreefresort.com/wp-content/uploads/2020/01/CRNP-sunset-stock-750x375.jpg)' }}
           >
-            <Link to="/parks">
+            <Link to="/parks" onMouseEnter={loadParks} onFocus={loadParks}>
               <div className="tile-overlay">
                 <h3>US National Parks</h3>
                 <p>The 63 US National Parks I've explored</p>
