@@ -4,6 +4,70 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+import { config as maplibreConfig } from 'maplibre-gl';
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import '@maplibre/maplibre-gl-leaflet'; // adds L.maplibreGL
+
+// maplibre-gl 6 ships its worker as a separate module and locates it with
+// `new URL('./maplibre-gl-worker.mjs', import.meta.url)`. That path does not
+// exist next to Vite's bundled output (dev or build), so the worker 404s, no
+// vector tiles are ever requested, and the basemap renders blank with no
+// error. Point it at the worker Vite bundles for us instead.
+maplibreConfig.WORKER_URL = maplibreWorkerUrl;
+
+// OpenFreeMap serves vector basemaps with no API key, no account, and no
+// request quota. Positron is a light, low-contrast style, which keeps the
+// amber/gray site markers readable on top of it.
+const BASEMAP_STYLE = 'https://tiles.openfreemap.org/styles/positron';
+const BASEMAP_ATTRIBUTION =
+  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://openfreemap.org/">OpenFreeMap</a>';
+
+// The GL basemap is a single canvas rather than a GridLayer, so it does not
+// feed a maxZoom into the map the way L.tileLayer did. Set it explicitly or
+// Leaflet allows unbounded zoom.
+const MAX_ZOOM = 19;
+
+// Positron labels places in the local language, stacking the transliteration
+// over the native script ("India" above "भारत"). Prefer English everywhere
+// instead. name:latin is only a transliteration ("Wien", not "Vienna"), so it
+// sits behind the real English names as a fallback.
+const ENGLISH_LABEL = [
+  'coalesce',
+  ['get', 'name:en'],
+  ['get', 'name_en'],
+  ['get', 'name:latin'],
+  ['get', 'name'],
+];
+
+// Positron is a grayscale style, so its seas and lakes come out the same
+// gray as land. Tint them a muted blue: saturated enough to read as water,
+// pale enough that the amber/gray markers still dominate on the ocean-heavy
+// UNESCO map. Rivers go a shade darker so they stay visible against lakes.
+const WATER_FILL = 'hsl(205, 58%, 76%)';
+const WATERWAY_LINE = 'hsl(205, 45%, 68%)';
+
+// Patch the basemap style once it has loaded. Label layers keyed off whether
+// the existing text-field reads a name field at all: shield layers show road
+// numbers (`ref`) and must keep their own expression.
+function applyBasemapOverrides(glMap) {
+  const apply = () => {
+    for (const layer of glMap.getStyle().layers) {
+      const textField = layer.layout?.['text-field'];
+      if (textField && JSON.stringify(textField).includes('name')) {
+        glMap.setLayoutProperty(layer.id, 'text-field', ENGLISH_LABEL);
+      }
+      if (layer.type === 'fill' && layer['source-layer'] === 'water') {
+        glMap.setPaintProperty(layer.id, 'fill-color', WATER_FILL);
+      }
+      if (layer.type === 'line' && layer['source-layer'] === 'waterway') {
+        glMap.setPaintProperty(layer.id, 'line-color', WATERWAY_LINE);
+      }
+    }
+  };
+  if (glMap.isStyleLoaded()) apply();
+  else glMap.once('style.load', apply);
+}
 
 const VISITED_STYLE = { fillColor: '#c47d2e', color: '#a8691f' };
 const UNVISITED_STYLE = { fillColor: '#94a3b8', color: '#64748b' };
@@ -34,7 +98,6 @@ export default function ExplorerMap({
   visited,
   onPreview,
   mapOptions,
-  tileOptions,
   popupContent,
   boundaryLoader,
 }) {
@@ -143,16 +206,21 @@ export default function ExplorerMap({
     const mobileZoomAdjust = window.innerWidth <= 768 && mapOptions.zoom != null ? -1 : 0;
     const map = L.map(mapRef.current, {
       zoomControl: false,
+      maxZoom: MAX_ZOOM,
       ...mapOptions,
       zoom: (mapOptions.zoom || 3) + mobileZoomAdjust,
     });
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap contributors, &copy; CARTO',
-      maxZoom: 18,
-      subdomains: 'abcd',
-      ...tileOptions,
+    // maplibre-gl-leaflet overrides getAttribution() and ignores the usual
+    // Leaflet `attribution` option: it reads customAttribution, else the
+    // style's per-source attribution. Positron declares none, so passing it
+    // here is what keeps the required OSM credit on the map.
+    const basemap = L.maplibreGL({
+      style: BASEMAP_STYLE,
+      attributionControl: { customAttribution: BASEMAP_ATTRIBUTION },
     }).addTo(map);
+
+    applyBasemapOverrides(basemap.getMaplibreMap());
 
     const cluster = new L.MarkerClusterGroup({
       chunkedLoading: true,

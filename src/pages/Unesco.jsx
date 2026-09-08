@@ -13,8 +13,6 @@ const MAP_OPTIONS = {
   zoom: 3,
 };
 
-const TILE_OPTIONS = { noWrap: false };
-
 let wikiCache = null;
 let wikiPromise = null;
 
@@ -106,7 +104,6 @@ export default function Unesco() {
       dataUrl={import.meta.env.BASE_URL + 'data/unesco-sites.json'}
       visitedUrl={import.meta.env.BASE_URL + 'data/visited-unesco.json'}
       mapOptions={MAP_OPTIONS}
-      tileOptions={TILE_OPTIONS}
       popupContent={popupContent}
       buildOverlayDetails={buildOverlayDetails}
       buildLink={buildLink}

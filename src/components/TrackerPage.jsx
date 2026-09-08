@@ -10,7 +10,6 @@ export default function TrackerPage({
   dataUrl,
   visitedUrl,
   mapOptions,
-  tileOptions,
   popupContent,
   buildOverlayDetails,
   buildLink,
@@ -108,7 +107,6 @@ export default function TrackerPage({
         visited={visited}
         onPreview={handlePreview}
         mapOptions={mapOptions}
-        tileOptions={tileOptions}
         popupContent={popupContent}
         boundaryLoader={boundaryLoader}
       />

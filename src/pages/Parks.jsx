@@ -7,8 +7,6 @@ const MAP_OPTIONS = {
   zoom: 4,
 };
 
-const TILE_OPTIONS = {};
-
 function popupContent(site, isVisited) {
   return `
     <div class="custom-popup">
@@ -74,7 +72,6 @@ export default function Parks() {
       dataUrl={import.meta.env.BASE_URL + 'data/us-parks.json'}
       visitedUrl={import.meta.env.BASE_URL + 'data/visited-parks.json'}
       mapOptions={MAP_OPTIONS}
-      tileOptions={TILE_OPTIONS}
       popupContent={popupContent}
       buildOverlayDetails={buildOverlayDetails}
       buildLink={buildLink}

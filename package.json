@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/prabhakar267/explorer#readme",
   "dependencies": {
+    "@maplibre/maplibre-gl-leaflet": "^0.1.4",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",
+    "maplibre-gl": "^6.8.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-leaflet": "^5.0.0",
