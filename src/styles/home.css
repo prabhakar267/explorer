@@ -185,11 +185,6 @@
   text-decoration: underline;
 }
 
-.home-footer .separator {
-  margin: 0 15px;
-  color: var(--home-separator);
-}
-
 @media (max-width: 768px) {
   .home-page {
     padding: 16px 16px 0;
