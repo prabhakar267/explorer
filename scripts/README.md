@@ -50,3 +50,16 @@ node scripts/extract-park-boundaries.cjs
 ```
 
 Requires `NPS_API_KEY` in `.env` (the boundaries endpoint is rate-limited and `DEMO_KEY` runs out quickly across one call per park).
+
+Each polygon is passed through `simplify-park-boundaries.cjs` before it is written, so the committed files are already simplified.
+
+## simplify-park-boundaries.cjs
+
+Simplifies the boundary GeoJSON in `public/data/park-boundaries/` in place using [mapshaper](https://github.com/mbloch/mapshaper): Visvalingam simplification at a 20 m tolerance (keeping every ring), coordinates rounded to 5 decimals (~1 m), and NPS metadata stripped down to `fullName`. The raw API output is survey-grade (Grand Canyon alone is 8.6 MB); simplified, the whole directory is ~2 MB instead of ~22 MB.
+
+`extract-park-boundaries.cjs` runs this automatically. Run it by hand only after changing the tolerance or precision constants at the top of the script:
+
+```bash
+npm run boundaries:simplify          # all parks
+npm run boundaries:simplify -- grca  # one park
+```

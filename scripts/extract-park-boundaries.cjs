@@ -25,6 +25,7 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const { simplifyGeoJson } = require('./simplify-park-boundaries.cjs');
 
 const ROOT = path.join(__dirname, '..');
 const ENV_PATH = path.join(ROOT, '.env');
@@ -128,9 +129,10 @@ async function main() {
                 );
             }
             const outPath = path.join(OUTPUT_DIR, `${code}.json`);
-            // Compact JSON — these files are static assets served to the
-            // browser, so size matters more than human readability.
-            const serialized = JSON.stringify(data);
+            // The raw API response is survey-grade (Grand Canyon: 8.6 MB).
+            // Simplify before writing so the committed asset is what the
+            // browser can afford to fetch; see simplify-park-boundaries.cjs.
+            const serialized = await simplifyGeoJson(JSON.stringify(data));
             fs.writeFileSync(outPath, serialized);
             totalBytes += serialized.length;
             succeeded.push(code);
