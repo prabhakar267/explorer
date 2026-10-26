@@ -28,6 +28,16 @@ const BASEMAP_ATTRIBUTION =
 // Leaflet allows unbounded zoom.
 const MAX_ZOOM = 19;
 
+// Raster basemap for anyone who cannot run the vector one. maplibre-gl 6
+// hard-requires WebGL2 and throws straight out of its constructor when the
+// context cannot be created (hardware acceleration off, GPU blocklisted,
+// Safari Lockdown Mode). That throw used to escape this component's effect,
+// which unmounted the React tree and left a blank page instead of a map.
+// OSM's standard tiles need no key and draw in a plain 2D canvas.
+const RASTER_URL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+const RASTER_ATTRIBUTION =
+  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
 // Positron labels places in the local language, stacking the transliteration
 // over the native script ("India" above "भारत"). Prefer English everywhere
 // instead. name:latin is only a transliteration ("Wien", not "Vienna"), so it
@@ -67,6 +77,54 @@ function applyBasemapOverrides(glMap) {
   };
   if (glMap.isStyleLoaded()) apply();
   else glMap.once('style.load', apply);
+}
+
+// Add the vector basemap, degrading to raster tiles rather than taking the
+// page down with it. Two failure modes, both of which left users with nothing:
+// WebGL2 missing (throws synchronously from L.maplibreGL().addTo) and the
+// style never arriving (async `error` event: blocked host, offline, outage).
+function addBasemap(map) {
+  const addRaster = () =>
+    L.tileLayer(RASTER_URL, {
+      attribution: RASTER_ATTRIBUTION,
+      maxZoom: MAX_ZOOM,
+    }).addTo(map);
+
+  let basemap;
+  let glMap;
+  try {
+    // maplibre-gl-leaflet overrides getAttribution() and ignores the usual
+    // Leaflet `attribution` option: it reads customAttribution, else the
+    // style's per-source attribution. Positron declares none, so passing it
+    // here is what keeps the required OSM credit on the map.
+    basemap = L.maplibreGL({
+      style: BASEMAP_STYLE,
+      attributionControl: { customAttribution: BASEMAP_ATTRIBUTION },
+    }).addTo(map);
+    glMap = basemap.getMaplibreMap();
+  } catch (err) {
+    console.error('Vector basemap unavailable, using raster tiles:', err);
+    addRaster();
+    return;
+  }
+
+  if (!glMap) {
+    addRaster();
+    return;
+  }
+
+  let degraded = false;
+  glMap.on('error', (e) => {
+    // Once the style is up, errors are individual tile/glyph hiccups that
+    // maplibre retries; only a style that never loads means a blank canvas.
+    if (degraded || glMap.isStyleLoaded()) return;
+    degraded = true;
+    console.error('Vector basemap failed to load, using raster tiles:', e?.error ?? e);
+    map.removeLayer(basemap);
+    addRaster();
+  });
+
+  applyBasemapOverrides(glMap);
 }
 
 const VISITED_STYLE = { fillColor: '#c47d2e', color: '#a8691f' };
@@ -211,16 +269,7 @@ export default function ExplorerMap({
       zoom: (mapOptions.zoom || 3) + mobileZoomAdjust,
     });
 
-    // maplibre-gl-leaflet overrides getAttribution() and ignores the usual
-    // Leaflet `attribution` option: it reads customAttribution, else the
-    // style's per-source attribution. Positron declares none, so passing it
-    // here is what keeps the required OSM credit on the map.
-    const basemap = L.maplibreGL({
-      style: BASEMAP_STYLE,
-      attributionControl: { customAttribution: BASEMAP_ATTRIBUTION },
-    }).addTo(map);
-
-    applyBasemapOverrides(basemap.getMaplibreMap());
+    addBasemap(map);
 
     const cluster = new L.MarkerClusterGroup({
       chunkedLoading: true,

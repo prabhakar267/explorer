@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Games from './pages/Games';
+import RouteErrorBoundary from './components/RouteErrorBoundary';
 import { useTheme } from './hooks/useTheme';
 import './styles/global.css';
 
@@ -18,15 +19,17 @@ const Parks = lazy(() => import('./pages/Parks'));
 function App() {
   useTheme();
   return (
-    <Suspense fallback={<div className="route-fallback"><div className="route-fallback-spinner" /></div>}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/unesco" element={<Unesco />} />
-        <Route path="/parks" element={<Parks />} />
-        <Route path="/games" element={<Games />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </Suspense>
+    <RouteErrorBoundary>
+      <Suspense fallback={<div className="route-fallback"><div className="route-fallback-spinner" /></div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/unesco" element={<Unesco />} />
+          <Route path="/parks" element={<Parks />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Suspense>
+    </RouteErrorBoundary>
   );
 }
 

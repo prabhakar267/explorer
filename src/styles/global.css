@@ -40,3 +40,37 @@ body {
 @keyframes route-fallback-spin {
   to { transform: rotate(360deg); }
 }
+
+/* Same constraint as .route-fallback above: this is what RouteErrorBoundary
+   renders when a page chunk never arrives, so the page's own stylesheet may
+   never have loaded. Keep it self-contained. */
+.route-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100dvh;
+  background: #1a4a3a;
+  color: #e8e4da;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+[data-theme="dark"] .route-error {
+  background: #1a201b;
+}
+
+.route-error-retry {
+  font: inherit;
+  color: #ffffff;
+  background: #c47d2e;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+}
+
+.route-error-retry:hover {
+  background: #a8691f;
+}
