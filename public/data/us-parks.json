@@ -13,40 +13,82 @@
     "description": "Acadia National Park protects the natural beauty of the highest rocky headlands along the Atlantic coastline of the United States, an abundance of habitats, and a rich cultural heritage. At 4 million visits a year, it's one of the top 10 most-visited national parks in the United States. Visitors enjoy 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads.",
     "url": "https://www.nps.gov/acad/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B477B-1DD8-B71B-0BCB48E009241BAA.jpg",
-      "altText": "A brilliant sunset filled with hues of blue, red, orange, magenta, and purple highlight the sky.",
-      "caption": "As the tallest point on the eastern seaboard Cadillac Mountain provides fantastic viewpoints.",
-      "credit": "NPS / Kristi Rugg",
-      "title": "Sunset atop Cadillac Mountain"
+      "url": "https://www.nps.gov/common/uploads/structured_data/45637FDC-0A5F-0862-76C4B1418A914B5A.jpg",
+      "altText": "A man and woman holding walking sticks hike up a mountain summit near a wooden trail sign.",
+      "caption": "There are 158 miles of hiking trails in Acadia. More at go.nps.gov/HikeAcadia",
+      "credit": "Photo courtesy of Sam Mallon, Friends of Acadia",
+      "title": "Save Our Summits Hike"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B477B-1DD8-B71B-0BCB48E009241BAA.jpg",
-        "altText": "A brilliant sunset filled with hues of blue, red, orange, magenta, and purple highlight the sky.",
-        "caption": "As the tallest point on the eastern seaboard Cadillac Mountain provides fantastic viewpoints.",
-        "credit": "NPS / Kristi Rugg",
-        "title": "Sunset atop Cadillac Mountain"
+        "url": "https://www.nps.gov/common/uploads/structured_data/45637FDC-0A5F-0862-76C4B1418A914B5A.jpg",
+        "altText": "A man and woman holding walking sticks hike up a mountain summit near a wooden trail sign.",
+        "caption": "There are 158 miles of hiking trails in Acadia. More at go.nps.gov/HikeAcadia",
+        "credit": "Photo courtesy of Sam Mallon, Friends of Acadia",
+        "title": "Save Our Summits Hike"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4BEC-1DD8-B71B-0B2CF833F93140FF.jpg",
-        "altText": "Hiking tracks carved through three feet of snow wind through a heavy snow-laden forest.",
-        "caption": "During the colder months snows transform our landscape into a winter wonderland.",
-        "credit": "NPS / Kristi Rugg",
-        "title": "Heavy snow-laden trees"
+        "url": "https://www.nps.gov/common/uploads/structured_data/D44C463F-A561-74ED-C78695D3E0D31FF3.jpg",
+        "altText": "A group of people riding bicycles travels under the arch of a large stone bridge",
+        "caption": "There are 45 miles of historic carriage roads in Acadia. More at go.nps.gov/carriageroads",
+        "credit": "Photo courtesy Yehyun Kim, Friends of Acadia",
+        "title": "Carriage Road Bike Tour"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B45AE-1DD8-B71B-0B7EE131C7DFC2F5.jpg",
-        "altText": "Large puffy clouds dot a brilliant blue sky as wave crash against the rocky coastline of Acadia.",
-        "caption": "Millions of people come to Acadia for our distinctive rocky coastline.",
-        "credit": "NPS / Kristi Rugg",
-        "title": "Acadia's rocky coastline"
+        "url": "https://www.nps.gov/common/uploads/structured_data/D52D7489-CCF1-DC62-32BA0B2BDE814324.jpg",
+        "altText": "Two small, booth-like buildings are positioned across a roadway. Park rangers are seated at open win",
+        "caption": "Entrance fees are required year round. More at go.nps.gov/AcadiaPass",
+        "credit": "NPS Photo by Kent Miller",
+        "title": "Entrance Fee Required Year-Round"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B48F9-1DD8-B71B-0BD3B413E58978F8.jpg",
-        "altText": "Two hikers ascend a sheer cliff trail by way of historic iron rung ladders.",
-        "caption": "Whether it's a stroll along Ocean Path or a difficult ascent up The Precipice, there are hiking trails for everyone!",
-        "credit": "NPS / Kristi Rugg",
-        "title": "Climbing The Precipice"
+        "url": "https://www.nps.gov/common/uploads/structured_data/D4EA2DD2-C4B9-9CB4-75DB3AB73C80F432.jpg",
+        "altText": "While seated on a blanket on a patch of mountaintop granite, a man and woman clasp their arms around",
+        "caption": "A vehicle reservation is required to drive the Cadillac Summit Road from late-May to mid-October. More at go.nps.gov/AcadiaVehicleReservations",
+        "credit": "NPS Photo by Kent Miller",
+        "title": "Sunrise from Cadillac Mountain"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D55DE245-DB10-90E9-C93C82E2148D5A08.jpg",
+        "altText": "A park ranger in uniform  appears to lead a spirited discussion with a group of visitors in a wooded",
+        "caption": "Current listings of ranger-led programs are posted online at go.nps.gov/AcadiaEvents",
+        "credit": "Photo courtesy Yehyun Kim, Friends of Acadia",
+        "title": "Ranger-led Programs"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D5043389-CB54-31A8-222E60FD0B702727.jpg",
+        "altText": "A small black-and-white dog with floppy ears wears an orange bandana around its neck. A person stand",
+        "caption": "All pets must be kept on a leash no longer than 6 feet (2 m) at all times. More at go.nps.gov/AcadiaPets",
+        "credit": "Photo courtesy of Will Newton, Friends of Acadia",
+        "title": "Protect Your Pet Privileges"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D583EB46-F042-9F2A-FF92F9226DDB037D.jpg",
+        "altText": "Landscape photo of a wide ocean cove with a sand beach with densely wooded mountains and ridges in t",
+        "caption": "Sand Beach, located on the eastern side of Mount Desert Island in Newport Cove, is the largest sandy beach found in Acadia.",
+        "credit": "Photo courtesy Emma Forthofer, Friends of Acadia",
+        "title": "Sand Beach and Beehive from the Great Head Trail"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D59F0C37-F003-2F95-84B3FB71D9B3E376.jpg",
+        "altText": "Visitors wearing raincoats and holding umbrellas crowd along a metal railing above a steep rocky inl",
+        "caption": "Thunder Hole often attracts large crowds an hour or two before high tide when there can be loud splashes of ocean waves into a small cave along the shoreline.",
+        "credit": "NPS Photo by Kent Miller",
+        "title": "Thunder Hole"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D5BAF46D-B0C2-5F87-F118CEDD80CF1774.jpg",
+        "altText": "Landscape photo with a small historic farmhouse in the distance and an interpretive wayside in the f",
+        "caption": "In summer, stop by Carroll Homestead during program hours to explore the grounds of an 1800s farm, play games, and hear family stories.",
+        "credit": "Photo courtesy Emma Forthofer, Friends of Acadia",
+        "title": "Carroll Homestead"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D6A479D9-0D14-DD05-5869B61C8F1288B9.jpg",
+        "altText": "Two small owls with giant eyes are perched next to each other on a tree branch in a dense forest.",
+        "caption": "Two young owls watch park visitors who are watching them near the Sieur de Monts Nature Center",
+        "credit": "Photo courtesy Yehyun Kim, Friends of Acadia",
+        "title": "Two Owls"
       }
     ]
   },
@@ -115,20 +157,13 @@
     "description": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
     "url": "https://www.nps.gov/arch/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg",
-      "altText": "A crowd of people sit and watch the sunset at delicate arch.",
-      "caption": "Exploration awaits at Arches",
-      "credit": "NPS/Veronica Verdin",
-      "title": "An afternoon at Delicate Arch"
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79931C-1DD8-B71B-0BF201E3DB540D04.jpg",
+      "altText": "a broad, red arch with rock pinnacles in the background",
+      "caption": "Double O Arch is one of many large arches in the Devils Garden area",
+      "credit": "NPS Photo",
+      "title": "Double O Arch"
     },
     "images": [
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg",
-        "altText": "A crowd of people sit and watch the sunset at delicate arch.",
-        "caption": "Exploration awaits at Arches",
-        "credit": "NPS/Veronica Verdin",
-        "title": "An afternoon at Delicate Arch"
-      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C79931C-1DD8-B71B-0BF201E3DB540D04.jpg",
         "altText": "a broad, red arch with rock pinnacles in the background",
@@ -137,11 +172,18 @@
         "title": "Double O Arch"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0B2B-1DD8-B71B-0BE0E26B0740AA6B.jpg",
-        "altText": "a stone arch",
-        "caption": "Delicate Arch is perhaps the most famous natural arch in the world.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/CDBBADB9-96FA-A432-50C0801C838743F9.jpg",
+        "altText": "Large sandstone arch at dusk with a large white moon and clouds above",
+        "caption": "North Window with a waxing moon",
+        "credit": "NPS/Neal Herbert",
+        "title": "North Window"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/CDAE20E4-9953-100C-20EAB60C6B24CCA1.jpg",
+        "altText": "Red sandstone fins glow in sunset lighting",
+        "caption": "Sandstone fins near Sand Dune Arch",
         "credit": "NPS Photo",
-        "title": "Delicate Arch"
+        "title": "Sandstone fins"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0C49-1DD8-B71B-0B460D58D6E83B40.jpg",
@@ -156,6 +198,20 @@
         "caption": "The Park Avenue trail is one of many hiking trails at Arches, ranging from easy to strenuous.",
         "credit": "NPS/Herbert",
         "title": "Park Avenue Trail"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/CD7EC56E-B46C-DE5F-BDDFD667C85CDD49.jpg",
+        "altText": "A red sandstone arch with red leaves in the foreground",
+        "caption": "Arch with fall foliage",
+        "credit": "NPS/Amy Washuta",
+        "title": "Arch with fall foliage"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0B2B-1DD8-B71B-0BE0E26B0740AA6B.jpg",
+        "altText": "a stone arch",
+        "caption": "Delicate Arch is perhaps the most famous natural arch in the world.",
+        "credit": "NPS Photo",
+        "title": "Delicate Arch"
       }
     ]
   },
@@ -484,13 +540,20 @@
     "description": "Canyonlands is a wilderness of canyons, buttes, and spires carved by the Colorado River and Green River. The park is divided into four distinct districts; no roads join them together. The districts share similar desert ecosystems, but each one provides unique opportunities for adventure and discovery.",
     "url": "https://www.nps.gov/cany/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg",
-      "altText": "a broad stone arch with rock pinnacles in the distance",
-      "caption": "Mesa Arch, at Island in the Sky, is a great spot for photographers.",
-      "credit": "NPS/Neal Herbert",
-      "title": "Mesa Arch"
+      "url": "https://www.nps.gov/common/uploads/structured_data/D074F5CF-90A6-0468-24D18A9B669CC859.jpg",
+      "altText": "Small rounded canyons with large sandstone cliffs and mountains in the background",
+      "caption": "Canyons in The Needles district",
+      "credit": "NPS/Rhodes Smartt",
+      "title": "Canyons in The Needles district"
     },
     "images": [
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D074F5CF-90A6-0468-24D18A9B669CC859.jpg",
+        "altText": "Small rounded canyons with large sandstone cliffs and mountains in the background",
+        "caption": "Canyons in The Needles district",
+        "credit": "NPS/Rhodes Smartt",
+        "title": "Canyons in The Needles district"
+      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg",
         "altText": "a broad stone arch with rock pinnacles in the distance",
@@ -499,18 +562,25 @@
         "title": "Mesa Arch"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A53BC-1DD8-B71B-0BFF7AD2A83FC7A8.jpg",
-        "altText": "shallow pools with a double rainbow in the background",
-        "caption": "Pothole Point Trail",
-        "credit": "NPS/Neal Herbert",
-        "title": "Pothole Point"
-      },
-      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7A4FC2-1DD8-B71B-0B13118C99270C08.jpg",
         "altText": "a rugged canyon",
         "caption": "The Maze is the most remote district of the park. Visiting requires four-wheel drive, self-reliance, and extra time.",
         "credit": "NPS/Neal Herbert",
         "title": "The Maze"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D0AD44B0-0857-0A5D-0C5E18ED27D08813.jpg",
+        "altText": "A windy steep dirt road leads up the side of a sandstone cliff. River in background.",
+        "caption": "Hardscrabble Hill on White Rim Road, Island in the Sky district",
+        "credit": "NPS/Rhodes Smartt",
+        "title": "Hardscrabble Hill"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D0E228D4-CA7B-885D-3D690601FDA15669.jpg",
+        "altText": "Large reddish pictographs on a lighter red sandstone wall",
+        "caption": "Pictographs from the Great Gallery, Horseshoe Canyon Unit",
+        "credit": "NPS/Neal Herbert",
+        "title": "Great Gallery"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7A5534-1DD8-B71B-0B3887A48C037633.jpg",
@@ -525,13 +595,6 @@
         "caption": "The Needles, pinnacles of Cedar Mesa Sandstone, are visible in many parts of the Needles District, including this view in Chesler Park.",
         "credit": "NPS/Neal Herbert",
         "title": "The Needles in Chesler Park"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A5840-1DD8-B71B-0B3C87EB4677BFA5.jpg",
-        "altText": "a person rowing a dory on the Colorado River",
-        "caption": "Boating the Colorado and Green rivers is a popular activity at Canyonlands (permit required).",
-        "credit": "NPS/Neal Herbert",
-        "title": "Boating on the Colorado River"
       }
     ]
   },
@@ -717,6 +780,71 @@
     ]
   },
   {
+    "name": "Chiricahua",
+    "fullName": "Chiricahua National Park",
+    "parkCode": "chir",
+    "designation": "National Park",
+    "states": [
+      "Arizona"
+    ],
+    "state": "Arizona",
+    "lat": 32.01214618,
+    "lng": -109.341607,
+    "description": "Explore rhyolite pinnacles and balanced rocks on foot or by car. Relax at the campground under star-filled, dark skies. See how a mountain range rising between two deserts creates a home for diverse wildlife. Imagine history here. Prehistoric peoples, Apaches, Buffalo Soldiers, Civilian Conservation Corps, ranchers, and homesteaders inhabited Chiricahua.",
+    "url": "https://www.nps.gov/chir/index.htm",
+    "image": {
+      "url": "https://www.nps.gov/common/uploads/structured_data/391E0C41-F660-DF55-E2CD9A1ACFBC63C2.jpg",
+      "altText": "Many rock pinnacles with a valley and mountain range in background",
+      "caption": "Massai Point offers excellent views of the standing rocks at Chiricahua",
+      "credit": "NPS Photo",
+      "title": "View from Massai Point"
+    },
+    "images": [
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/391E0C41-F660-DF55-E2CD9A1ACFBC63C2.jpg",
+        "altText": "Many rock pinnacles with a valley and mountain range in background",
+        "caption": "Massai Point offers excellent views of the standing rocks at Chiricahua",
+        "credit": "NPS Photo",
+        "title": "View from Massai Point"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3B1F1A1C-99B2-E34B-7A367B1E6813F216.jpg",
+        "altText": "A ranch house in a green field surrounds by low mountains",
+        "caption": "Faraway Ranch and its settlers helped visitors discover the Wonderland of Rocks.",
+        "credit": "NPS Photo",
+        "title": "Faraway Ranch Historic Area"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3B2CA94D-DD68-B5A9-495E2F6CF9F586D3.jpg",
+        "altText": "People climb through rock archways",
+        "caption": "The Grotto offers unique exploration from the Echo Canyon Trail.",
+        "credit": "NPS",
+        "title": "Echo Canyon Grotto"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3B451434-9A88-EB48-5CE248F3253C564F.jpg",
+        "altText": "A narrow road winds between tall oaks and rock cliffs",
+        "caption": "Rock formations tower above the 8-mile scenic drive.",
+        "credit": "NPS",
+        "title": "Bonita Canyon"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3B5D3231-05C6-7AC9-6B5F41333C40B966.jpg",
+        "altText": "Large rock balanced on a small point with a hiker to the right",
+        "caption": "A half mile hike brings you to this giant marvel.",
+        "credit": "NPS",
+        "title": "Big Balanced Rock"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3AA42DAB-A4B2-BF29-C512A967630CAFDD.jpg",
+        "altText": "enormous balanced rocks with many pinnacles behind and trees in front",
+        "caption": "View from Massai Point",
+        "credit": "NPS 2025",
+        "title": "View from Massai Point"
+      }
+    ]
+  },
+  {
     "name": "Congaree",
     "fullName": "Congaree National Park",
     "parkCode": "cong",
@@ -730,19 +858,47 @@
     "description": "Astonishing biodiversity exists in Congaree National Park, the largest intact expanse of old growth bottomland hardwood forest remaining in the southeastern United States. Waters from the Congaree and Wateree Rivers sweep through the floodplain, carrying nutrients and sediments that nourish and rejuvenate this ecosystem and support the growth of national and state champion trees.",
     "url": "https://www.nps.gov/cong/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C862C60-1DD8-B71B-0BB65F7B652BA840.jpg",
-      "altText": "View of the Congaree River during the Fall",
-      "caption": "View of the Congaree River during the Fall",
-      "credit": "NPS",
-      "title": "Congaree River"
+      "url": "https://www.nps.gov/common/uploads/structured_data/1E4A1941-EF4F-C617-E6E802845527D9B9.jpg",
+      "altText": "A view of a bottomland/floodplain forest, with wide based cypress and tupelo trees, cypress knees",
+      "caption": "Cypress trees and knees by Weston Lake",
+      "credit": "NPS Photo",
+      "title": "Floodplain Forest"
     },
     "images": [
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/1E4A1941-EF4F-C617-E6E802845527D9B9.jpg",
+        "altText": "A view of a bottomland/floodplain forest, with wide based cypress and tupelo trees, cypress knees",
+        "caption": "Cypress trees and knees by Weston Lake",
+        "credit": "NPS Photo",
+        "title": "Floodplain Forest"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/54922A45-987E-B325-F2FB1725D5303BBA.jpg",
+        "altText": "An owl perched on a wooden building",
+        "caption": "A barred owl perched on the Harry Hampton Visitor Center roof at Congaree National Park",
+        "credit": "NPS Photo",
+        "title": "Barred Owl on Harry Hampton Visitor Center Roof"
+      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C862C60-1DD8-B71B-0BB65F7B652BA840.jpg",
         "altText": "View of the Congaree River during the Fall",
         "caption": "View of the Congaree River during the Fall",
         "credit": "NPS",
         "title": "Congaree River"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/54E0D8B1-B893-2056-1DEEF741AEAC3F52.jpg",
+        "altText": "Two people in a canoe on a narrow creek surrounded by forest",
+        "caption": "Two people canoeing on Cedar Creek within Congaree National Park",
+        "credit": "NPS Photo",
+        "title": "Canoeing Cedar Creek"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/1E585A90-E69A-91CF-E766E47D418A6DFF.jpg",
+        "altText": "A very large tree surrounded by smaller trees in a forest",
+        "caption": "A former Champion loblolly pine, more than 250 years old, just off the Boardwalk Trail",
+        "credit": "NPS Photo",
+        "title": "Loblolly Pine"
       }
     ]
   },
@@ -898,26 +1054,40 @@
     "description": "In this below-sea-level basin, steady drought and record summer heat make Death Valley a land of extremes. Yet, each extreme has a striking contrast. Towering peaks are frosted with winter snow. Rare rainstorms bring vast fields of wildflowers. Lush oases harbor tiny fish and refuge for wildlife and humans. Despite its morbid name, a great diversity of life thrives in Death Valley.",
     "url": "https://www.nps.gov/deva/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/84A6F4EF-9F8D-2784-0B3D03B4C5103EF8.jpg",
-      "altText": "Snowcapped mountains surrounded by bright blue skies and frames by gold wildflowers on a valley floo",
-      "caption": "Golden flowers cover a typically rocky and dry valley floor in the spring.",
-      "credit": "NPS",
-      "title": "Desert Gold in Panamint Valley"
+      "url": "https://www.nps.gov/common/uploads/structured_data/010A933C-95B1-CBCD-D6D64D47D5B81E76.jpg",
+      "altText": "badlands bathed in pale pink and orange light from the setting sun",
+      "caption": "The warm light of sunset covers the badlands at Zabriskie Point.",
+      "credit": "Ronald Gaddis",
+      "title": "Sunset from Zabriskie Point"
     },
     "images": [
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/84A6F4EF-9F8D-2784-0B3D03B4C5103EF8.jpg",
-        "altText": "Snowcapped mountains surrounded by bright blue skies and frames by gold wildflowers on a valley floo",
-        "caption": "Golden flowers cover a typically rocky and dry valley floor in the spring.",
-        "credit": "NPS",
-        "title": "Desert Gold in Panamint Valley"
-      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/010A933C-95B1-CBCD-D6D64D47D5B81E76.jpg",
         "altText": "badlands bathed in pale pink and orange light from the setting sun",
         "caption": "The warm light of sunset covers the badlands at Zabriskie Point.",
         "credit": "Ronald Gaddis",
         "title": "Sunset from Zabriskie Point"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/65DDA8C1-A47E-F7C3-656E1533A0ECD4C0.jpg",
+        "altText": "Low, warm light skims across pale sand dunes.",
+        "caption": "The Mesquite Dunes are known for dramatic shadows at sunrise and sunset, as ripples and edges in the dunes stand out in greater contrast.",
+        "credit": "NPS",
+        "title": "Mesquite Flat Sand Dunes"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/66554888-93E6-9F50-CD5F4ECBE80624A0.jpg",
+        "altText": "In the foreground, a narrow stream curves through clumps of green grass and low shrubs.",
+        "caption": "Home to some of the most unique and fascinating fishes in the world – the pupfish!",
+        "credit": "NPS",
+        "title": "Salt Creek"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/674601B0-A3F7-04AC-B65EB4641F91F127.jpg",
+        "altText": "A natural rock arch spans a narrow desert canyon. The viewer stands in deep shade beneath the arch.",
+        "caption": "A short walk up a canyon brings hikers to a natural rock bridge formation spanning the canyon.",
+        "credit": "NPS",
+        "title": "Natural Bridge"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/011D09CC-B05F-EFA0-820E55431CFBE5FE.jpg",
@@ -927,6 +1097,13 @@
         "title": "Storm over the Salt Flats"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/84A6F4EF-9F8D-2784-0B3D03B4C5103EF8.jpg",
+        "altText": "Snowcapped mountains surrounded by bright blue skies and frames by gold wildflowers on a valley floo",
+        "caption": "Golden flowers cover a typically rocky and dry valley floor in the spring.",
+        "credit": "NPS",
+        "title": "Desert Gold in Panamint Valley"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7EC929-1DD8-B71B-0B6F8851F7D62846.jpg",
         "altText": "Morning light on the badlands below Zabriskie Point.",
         "caption": "Zabriskie Point is a popular place to view sunrise over the badlands.",
@@ -934,18 +1111,25 @@
         "title": "Zabriskie Point"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/660C4297-A13B-A9E3-06800572942AED0F.jpg",
+        "altText": "A dark, jagged mountain ridge runs along the bottom edge. Above it, a dense river of stars.",
+        "caption": "With little light pollution, Death Valley National Park is an excellent place to view the Milky Way.",
+        "credit": "NPS",
+        "title": "Night Sky"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/9EF01EC1-0081-A605-C9ABE1231197FF45.jpg",
+        "altText": "Rugged gray mountains rise over a brown desert landscape under a gray sky.",
+        "caption": "Sweeping views of mountains surround the valley.",
+        "credit": "NPS",
+        "title": "Corkscrew"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/016AF1A5-E794-213A-6016B3C10486CF7E.jpg",
         "altText": "a sunset overlooking a valley filled with white salt",
         "caption": "A mile above the salt flats in the valley below, Dantes View provides breathtaking vistas.",
         "credit": "NPS / Jan Vanderlay",
         "title": "Sunset at Dantes View"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/DE627F5D-DE99-659B-7F55B12323533BFC.jpg",
-        "altText": "nine 25 foot tall rock beehive structures",
-        "caption": "Nearly a century and a half old, these are some of the best preserved kilns in the western U.S.",
-        "credit": "NPS / J. Jurado",
-        "title": "Wildrose Charcoal Kilns"
       }
     ]
   },
@@ -999,27 +1183,6 @@
         "title": "View from Stony Overlook"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/FC76414B-E76C-63E7-C399A03433D924FE.jpg",
-        "altText": "a man standing next to a green bus",
-        "caption": "Transit buses are a primary way for visitors to sightsee in Denali during summer",
-        "credit": "NPS Photo / Emily Mesner",
-        "title": "Transit Driver"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/FC7B6DBE-B7A8-DC59-246E01A289DBF21E.jpg",
-        "altText": "light turns a snowy mountain shades of pink and purple",
-        "caption": "Alpenglow on North America's tallest peak",
-        "credit": "NPS Photo / Emily Mesner",
-        "title": "Alpenglow"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/FC83BEFE-AE6C-5FF4-B24723DEBC350D5B.jpg",
-        "altText": "a park ranger leading hikers up a steep mountainside",
-        "caption": "Visitors following a ranger on a Discovery Hike, an off-trail adventure",
-        "credit": "NPS Photo / Emily Mesner",
-        "title": "Discovery Hike"
-      },
-      {
         "url": "https://www.nps.gov/common/uploads/structured_data/FC8ECC8C-A531-46F8-0D60DF1C84105DBE.jpg",
         "altText": "three brown bears walking along a dirt road",
         "caption": "Grizzlies walking on the park's sole road",
@@ -1034,11 +1197,32 @@
         "title": "Caribou Sighting"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/FC9EB92D-D2C5-B46F-3F9B7E4D1FC7EEE6.jpg",
-        "altText": "a large seated crowd faces a park ranger and a small group of sled dogs",
-        "caption": "A crowd takes in a sled dog demonstration in the Denali Park Kennels",
+        "url": "https://www.nps.gov/common/uploads/structured_data/6C5D870D-FBD8-2BFA-D544173DA8617964.jpg",
+        "altText": "A team of several huskies pulls a sled across a vast, snowy, winter landscape.",
+        "caption": "A sled dog team mushes through Thorofare Pass on a winter patrol.",
+        "credit": "NPS Photo / Lida Wise",
+        "title": "Thorofare Pass"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/FC7B6DBE-B7A8-DC59-246E01A289DBF21E.jpg",
+        "altText": "light turns a snowy mountain shades of pink and purple",
+        "caption": "Alpenglow on North America's tallest peak",
         "credit": "NPS Photo / Emily Mesner",
-        "title": "Sled Dog Demonstration"
+        "title": "Alpenglow"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/6C9D9EA6-0473-2CF5-0B17F87B052C28F8.jpg",
+        "altText": "A bus drives along a dusty, gravel road through a forest with mountains and a river in the distance.",
+        "caption": "A tour bus travels along the Denali Park Road.",
+        "credit": "NPS Photo / Emily Mesner",
+        "title": "Tour Bus"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/FC83BEFE-AE6C-5FF4-B24723DEBC350D5B.jpg",
+        "altText": "a park ranger leading hikers up a steep mountainside",
+        "caption": "Visitors following a ranger on a Discovery Hike, an off-trail adventure",
+        "credit": "NPS Photo / Emily Mesner",
+        "title": "Discovery Hike"
       }
     ]
   },
@@ -1071,18 +1255,18 @@
         "title": "Night sky at the Dry Tortugas"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80FF02-1DD8-B71B-0B39AC51BF7B2FA2.jpg",
-        "altText": "Park visitors enjoy a sunset on the moat wall.",
-        "caption": "Sunsets at the Dry Tortugas are breathtaking. Visitors who choose to camp over night can view the sun set at Fort Jefferson.",
-        "credit": "NPS Photo / Maria Belen Farias",
-        "title": "Sunset at Fort Jefferson"
+        "url": "https://www.nps.gov/common/uploads/structured_data/114D8E50-D791-3C01-69269B772441A986.jpg",
+        "altText": "Macro photography of a Scorpion",
+        "caption": "Macro photography of a Scorpion inside Fort Jefferson",
+        "credit": "NPS Photo / Brandon Cintron Gerena",
+        "title": "Scorpions at night inside Fort Jefferson"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C8103D0-1DD8-B71B-0B6DB5CF9A4AC58F.jpg",
-        "altText": "A view inside Fort Jefferson.",
-        "caption": "Garden Key is the second largest island in the Dry Tortugas, about 14 acres in size, and has had the most human impact. Located on Garden Key is historic Fort Jefferson, one of the nation’s largest 19th century forts and a central cultural feature of Dry",
-        "credit": "NPS Photo / Maria Belen Farias",
-        "title": "Inside Fort Jefferson"
+        "url": "https://www.nps.gov/common/uploads/structured_data/11964EA0-DFDF-193F-109E490F05445B4C.jpg",
+        "altText": "A photo in front of Loggerhead Key from a boat",
+        "caption": "The largest island in the Dry Tortugas, Loggerhead Key is a site of shipwrecks, a significant lighthouse installation, and where the historic Carnegie Laboratory for Marine Ecology once stood. Named for its abundance of loggerhead sea turtles, Loggerhead",
+        "credit": "NPS Photo / Brandon Cintron Gerena",
+        "title": "Loggerhead Key"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C810626-1DD8-B71B-0B1DFF7BCF9A0682.jpg",
@@ -1092,11 +1276,11 @@
         "title": "Diving at the Dry Tortugas"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C810258-1DD8-B71B-0BE07AC43C736990.jpg",
-        "altText": "A boat passes in front of Loggerhead Key during sunset.",
-        "caption": "The largest island in the Dry Tortugas, Loggerhead Key is a site of shipwrecks, a significant lighthouse installation, and where the historic Carnegie Laboratory for Marine Ecology once stood. Named for its abundance of loggerhead sea turtles, Loggerhead",
-        "credit": "NPS Photo / Maria Belen Farias",
-        "title": "Loggerhead Key"
+        "url": "https://www.nps.gov/common/uploads/structured_data/1235A06E-C258-D139-91C92BF563A058DB.jpg",
+        "altText": "Several brown noddies rest on a stone seawall beside blue water, with a sailboat in the distance.",
+        "caption": "Brown noddies rest near the turquoise waters of Dry Tortugas National Park. These seabirds nest seasonally on nearby Bush Key, an important protected bird habitat.",
+        "credit": "NPS Photo / Brandon Cintron Gerena",
+        "title": "Brown Noddies at Dry Tortugas"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C810049-1DD8-B71B-0B0040641619D4A6.jpg",
@@ -1106,10 +1290,10 @@
         "title": "Fort Jefferson"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C810722-1DD8-B71B-0BAD4B445F0C3D8C.jpg",
+        "url": "https://www.nps.gov/common/uploads/structured_data/118820B9-C5E9-8F61-A13518524D564AE8.jpg",
         "altText": "An aerial view of the Dry Tortugas",
         "caption": "The Dry Tortugas is made up of seven islands.",
-        "credit": "NPS Photo",
+        "credit": "NPS Photo / Brandon Cintron Gerena",
         "title": "Aerial view of the Dry Tortugas"
       }
     ]
@@ -1171,11 +1355,11 @@
         "title": "Transition from Sawgrass to Florida Bay"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C85F532-1DD8-B71B-0BFC5BB51D8AB675.jpg",
-        "altText": "Three tents are put up along the Long Pine Key campsite.",
-        "caption": "Long Pine Key Campground is open seasonally from November through May. It is located seven miles (11 km) from the main entrance, just off the main road.",
-        "credit": "NPS Photo",
-        "title": "Camping at Long Pine Key"
+        "url": "https://www.nps.gov/common/uploads/structured_data/2BC633F2-D515-A6AD-69C6C3C1DBC71AD3.jpg",
+        "altText": "Tent on an elevated platform over water with a kayak attached",
+        "caption": "Camping at Sweetwater chickee in Everglades National Park.",
+        "credit": "NPS Photo / Jane Gamble",
+        "title": "Wilderness Waterway Sweetwater Chickee"
       }
     ]
   },
@@ -1251,33 +1435,33 @@
     "description": "Gateway Arch National Park commemorates President Jefferson’s vision of a continental nation, the individuals and cultural groups who helped shape its history, St. Louis’ role in westward expansion, and Dred and Harriet Scott, who sued for their freedom in the Old Courthouse.",
     "url": "https://www.nps.gov/jeff/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/200BA7E6-D782-9A97-A8C36AC178DEB31C.jpg",
-      "altText": "The Gateway Arch and Old Courthouse with a row of pink blooming cherry trees in front",
-      "caption": "The blooming cherry trees in Kiener Plaza provide a wonderful foreground for the Gateway Arch and Old Courthouse in spring.",
-      "credit": "NPS photo/Jennifer Clark",
-      "title": "Cherry trees in bloom"
+      "url": "https://www.nps.gov/common/uploads/structured_data/A6BB26F2-E35A-F940-E65C458BC5784713.jpg",
+      "altText": "looking up at the curve of the Gateway Arch against the sky",
+      "caption": "Morning Light at the Gateway Arch",
+      "credit": "NPS Photo/Sue Ford",
+      "title": "Morning Light at the Gateway Arch"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/200BA7E6-D782-9A97-A8C36AC178DEB31C.jpg",
-        "altText": "The Gateway Arch and Old Courthouse with a row of pink blooming cherry trees in front",
-        "caption": "The blooming cherry trees in Kiener Plaza provide a wonderful foreground for the Gateway Arch and Old Courthouse in spring.",
-        "credit": "NPS photo/Jennifer Clark",
-        "title": "Cherry trees in bloom"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE538-1DD8-B71B-0BFF11B2DBCF6E6E.jpg",
-        "altText": "Arch and clouds",
-        "caption": "Arch reaching toward the clouds.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/A6BB26F2-E35A-F940-E65C458BC5784713.jpg",
+        "altText": "looking up at the curve of the Gateway Arch against the sky",
+        "caption": "Morning Light at the Gateway Arch",
         "credit": "NPS Photo/Sue Ford",
-        "title": "Reaching for the Clouds"
+        "title": "Morning Light at the Gateway Arch"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/348E44EA-F431-FA18-DCB014F7BAA8D225.jpg",
-        "altText": "The Gateway Arch reflected in the waters of of the north pond",
-        "caption": "A walk around the Gateway Arch grounds provide many chances to view the Arch from many different angles.",
-        "credit": "NPS photo/Jennifer Clark",
-        "title": "The Gateway Arch reflected"
+        "url": "https://www.nps.gov/common/uploads/structured_data/A69958A8-B4F8-D98E-A8F129662A0E623F.jpg",
+        "altText": "statue of a woman and man embracing in behind a black iron gate in front of the Arch",
+        "caption": "Dred and Harriet Scott statue at Gateway Arch National Park",
+        "credit": "NPS Photo/Sue Ford",
+        "title": "Dred and Harriet Scott Statue and the Gateway Arch"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/6DCA23DD-D16D-8AD7-18C71B3C9A500F87.jpg",
+        "altText": "The Gateway Arch against clouds in a blue sky",
+        "caption": "The Gateway Arch",
+        "credit": "NPS/Jennifer Clark",
+        "title": "Clouds at the Gateway Arch"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/34E649C6-F06F-EB7F-0F9B8B092450772F.jpg",
@@ -1287,18 +1471,11 @@
         "title": "The Old Courthouse"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/51613AEB-9CC1-53CF-90B993791222A9CB.jpg",
-        "altText": "West Entrance to the Gateway Arch Visitor Center",
-        "caption": "Welcome to the Gateway Arch",
+        "url": "https://www.nps.gov/common/uploads/structured_data/A6E5DD67-D9BF-819D-BBE85BB744FF231D.jpg",
+        "altText": "looking up at the Gateway Arch against a cloudy blue sky with a orange reflection at the top",
+        "caption": "Sunset glow on the Gateway Arch",
         "credit": "NPS Photo/Sue Ford",
-        "title": "West Entrance to the Gateway Arch Visitor Center"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE38B-1DD8-B71B-0BBBE77BE3A2180A.jpg",
-        "altText": "Gateway Arch",
-        "caption": "Over a million people visit the Gateway Arch each year.",
-        "credit": "NPS Photo/Sue Ford",
-        "title": "Gateway Arch"
+        "title": "Sunset glow on the Gateway Arch"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/347D5E5B-B4B0-917D-A3F2C03D113E911E.jpg",
@@ -1308,18 +1485,25 @@
         "title": "Old Courthouse"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD9B5-1DD8-B71B-0B598216CE4E46D0.jpg",
-        "altText": "Gateway Arch at Sunrise",
-        "caption": "The sunrise coming up behind the Gateway Arch.",
-        "credit": "NPS Photo/Sue Ford",
-        "title": "Gateway Arch at Sunrise"
+        "url": "https://www.nps.gov/common/uploads/structured_data/200BA7E6-D782-9A97-A8C36AC178DEB31C.jpg",
+        "altText": "The Gateway Arch and Old Courthouse with a row of pink blooming cherry trees in front",
+        "caption": "The blooming cherry trees in Kiener Plaza provide a wonderful foreground for the Gateway Arch and Old Courthouse in spring.",
+        "credit": "NPS photo/Jennifer Clark",
+        "title": "Cherry trees in bloom"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/0BEDA5BC-0EEE-7EE5-17B82A3F665BB398.jpg",
-        "altText": "People waiting on the Arch grounds waiting for the 4th of July Fireworks show to start.",
-        "caption": "A large crowd waits for the fireworks show to start at the Gateway Arch",
-        "credit": "NPS Photo/Barbara Michel",
-        "title": "Twlight Just Before the Fireworks"
+        "url": "https://www.nps.gov/common/uploads/structured_data/0994EFCF-D603-8430-46D02EF520597633.jpeg",
+        "altText": "red, white and blue fireworks behind the Gateway Arch with lights reflecting in the river",
+        "caption": "Fireworks at the Gateway Arch",
+        "credit": "NPS Photo/Jennifer Clark",
+        "title": "Fireworks at the Gateway Arch"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/A777237A-A873-52C5-DD8470A0D2C2A54F.jpeg",
+        "altText": "looking up at a very ornate decorated ceiling of many levels",
+        "caption": "looking up at the Rotunda of the Old Courthouse",
+        "credit": "NPS Photo/Jen Clark",
+        "title": "The Old Courthouse Rotunda"
       }
     ]
   },
@@ -1337,54 +1521,82 @@
     "description": "A showcase of melting glaciers, alpine meadows, carved valleys, and spectacular lakes. With over 700 miles of trails, Glacier is a paradise for adventurous visitors seeking a landscape steeped in human culture. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road.",
     "url": "https://www.nps.gov/glac/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/C20E6CD3-CDF7-B3AB-8448CDCD7FD590FF.jpg",
-      "altText": "Large mountains dotted with snow loom above a rocky meadow filled with yellow flowers.",
-      "caption": "Glacier lilies dot the landscape off the Highline Trail.",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F147B77-D1E9-3D10-61ABDA0E4A8D803D.jpg",
+      "altText": "The sun sets atop a ridge of mountains; a stream glistens in the mountain valley below.",
+      "caption": "A golden sunset taken from the Going-to-the-Sun Road highlights the magnificence of Glacier's landscape.",
       "credit": "NPS Photo",
-      "title": "Glacier Lilies near Logan Pass"
+      "title": "Golden Sunset from the Going-to-the-Sun Road"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C20E6CD3-CDF7-B3AB-8448CDCD7FD590FF.jpg",
-        "altText": "Large mountains dotted with snow loom above a rocky meadow filled with yellow flowers.",
-        "caption": "Glacier lilies dot the landscape off the Highline Trail.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/1F147B77-D1E9-3D10-61ABDA0E4A8D803D.jpg",
+        "altText": "The sun sets atop a ridge of mountains; a stream glistens in the mountain valley below.",
+        "caption": "A golden sunset taken from the Going-to-the-Sun Road highlights the magnificence of Glacier's landscape.",
         "credit": "NPS Photo",
-        "title": "Glacier Lilies near Logan Pass"
+        "title": "Golden Sunset from the Going-to-the-Sun Road"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FF648-1DD8-B71B-0B074AA63C93947A.jpg",
-        "altText": "Looking down into the lobby of the Lake McDonald Lodge from the balcony",
-        "caption": "Lobby of the historic Lake McDonald Lodge",
-        "credit": "NPS Photo / Jacob W. Frank",
-        "title": "Lobby of the Lake McDonald Lodge"
+        "url": "https://www.nps.gov/common/uploads/structured_data/50021801-C766-9756-F19A755835C4FF5D.jpg",
+        "altText": "A park ranger standing with arms out in front of snow and ice.",
+        "caption": "Ranger-led programs are very popular in Glacier National Park.",
+        "credit": "NPS",
+        "title": "A Park Ranger in front of Salamander Glacier"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/656FC997-DD74-8921-C68040FE1A2CA8D2.jpg",
-        "altText": "Clouds of orange and red sit above dark-gray mountains; snow dots the mountain peaks.",
-        "caption": "Majestic Heavens Peak is easily viewed from the Going-to-the-Sun Road.",
-        "credit": "NPS Photo",
-        "title": "Alpine Sunset"
+        "url": "https://www.nps.gov/common/uploads/structured_data/51A43173-CB41-3C8E-B92B5E804896749D.jpg",
+        "altText": "A young mountain goat surrounded by bushes",
+        "caption": "Mountains are adapted to Glacier's cold alpine environments.",
+        "credit": "NPS",
+        "title": "Mountain Goats are Iconic in Glacier"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/89491DA7-0FDD-BDB9-D0D03D996091EA72.jpg",
-        "altText": "A small, brown and white structure sits on a rocky top with mountain peaks in the distance.",
-        "caption": "The historic Swiftcurrent Lookout was built in a Swiss chalet architectural style.",
-        "credit": "NPS Photo",
-        "title": "Swiftcurrent Fire Lookout"
+        "url": "https://www.nps.gov/common/uploads/structured_data/50F96AAF-076A-3F6A-A524ABA8BAB2D190.jpg",
+        "altText": "people sitting on a hill with clouds and mountain behind",
+        "caption": "Glacier is a place of peace and inspiration for many.",
+        "credit": "NPS",
+        "title": "Peace and Inspiration"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C1C49B92-9BE9-6A08-F2C851A2A4ACEC8D.jpg",
-        "altText": "Jagged peaks rise out of a forested valley and an empty road curves off into the distance.",
-        "caption": "Going-to-the-Sun Road in the St. Mary Valley",
-        "credit": "NPS Photo",
-        "title": "East Side Sunset"
+        "url": "https://www.nps.gov/common/uploads/structured_data/52AA1BF2-F8F7-F07B-0B0DA9EBED705589.jpg",
+        "altText": "Grinnell Glacier from Lower Grinnell Ridge in 2016",
+        "caption": "Grinnell Glacier from lower Grinnell Ridge on September 27, 2016.",
+        "credit": "NPS",
+        "title": "Grinnell Glacier from Lower Grinnell Ridge in 2016"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/8B6A7473-B676-45CC-5663F191736048A4.jpg",
-        "altText": "Silhouetted mountains and flowers against a night sky filled with stars and a milky band of light.",
-        "caption": "Glacier's dark sky is important to wildlife and people.",
-        "credit": "NPS Photo",
-        "title": "Glacier's Night Sky"
+        "url": "https://www.nps.gov/common/uploads/structured_data/52D95F47-BA47-85AF-A6109B9EE49C7B17.jpg",
+        "altText": "Grinnell Glacier from Grinnell Ridge in 2025",
+        "caption": "Grinnell Glacier from Lower Grinnell Ridge on September 6, 2025.",
+        "credit": "NPS",
+        "title": "Grinnell Glacier from Grinnell Ridge in 2025"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/508F6529-D18E-0901-25421A17186B1798.jpg",
+        "altText": "Big Horn Sheep on the Highline Trail mountains in the background",
+        "caption": "Big Horn Sheep on the Highline Trail",
+        "credit": "NPS",
+        "title": "Big Horn Sheep on the Highline Trail"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/50B2C093-9FF2-B3E7-2CEDC92DD8D20DA0.jpg",
+        "altText": "historic stone bridge with mountains behind",
+        "caption": "Going-to-the-Sun Road is not just mountains!",
+        "credit": "NPS",
+        "title": "Going-to-the-Sun Road crossing the St. Mary River"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/51E53634-BE86-3E2D-50F690E75F45EF34.jpg",
+        "altText": "Swiftcurrent Glacier as seen from right outside the Swiftcurrent Firelookout on August 30, 2025.",
+        "caption": "Swiftcurrent Glacier as seen from right outside the Swiftcurrent Firelookout on August 30, 2025.",
+        "credit": "NPS",
+        "title": "Swiftcurrent Glacier from Lookout in 2025"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/51C04B39-FF89-7EF8-25176969A2EC48F6.jpg",
+        "altText": "Swiftcurrent Glacier as seen from right outside the Swiftcurrent Firelookout on August 5, 2015.",
+        "caption": "Swiftcurrent Glacier as seen from right outside the Swiftcurrent Firelookout on August 5, 2015.",
+        "credit": "NPS",
+        "title": "Swiftcurrent Glacier from Lookout in 2015"
       }
     ]
   },
@@ -1467,33 +1679,54 @@
     "description": "Entirely within the state of Arizona, the park encompasses 278 miles (447 km) of the Colorado River and adjacent uplands. Located on the ancestral homelands of 11 present day Tribal Communities, Grand Canyon is one of the most spectacular examples of erosion anywhere in the world—a mile deep canyon unmatched in the incomparable vistas it offers visitors from both north and south rims.",
     "url": "https://www.nps.gov/grca/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B12D1-1DD8-B71B-0BCE0712F9CEA155.jpg",
-      "altText": "The canyon glows orange as people visit Mather Point, a rock outcropping that juts into Grand Canyon",
-      "caption": "People come from all over the world to view Grand Canyon's sunset",
-      "credit": "NPS/M.Quinn",
-      "title": "Grand Canyon Mather Point Sunset on the South Rim"
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C7F2214-CE4D-E366-A283BE0F4E65F83B.jpg",
+      "altText": "At Sunset, swirling rain clouds above a vast canyon filled with colorful peaks and cliff walls.",
+      "caption": "Dramatic sunset from Mather Point",
+      "credit": "NPS/M. Quinn",
+      "title": "Sunset from Mather Point"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B12D1-1DD8-B71B-0BCE0712F9CEA155.jpg",
-        "altText": "The canyon glows orange as people visit Mather Point, a rock outcropping that juts into Grand Canyon",
-        "caption": "People come from all over the world to view Grand Canyon's sunset",
-        "credit": "NPS/M.Quinn",
-        "title": "Grand Canyon Mather Point Sunset on the South Rim"
+        "url": "https://www.nps.gov/common/uploads/structured_data/6C7F2214-CE4D-E366-A283BE0F4E65F83B.jpg",
+        "altText": "At Sunset, swirling rain clouds above a vast canyon filled with colorful peaks and cliff walls.",
+        "caption": "Dramatic sunset from Mather Point",
+        "credit": "NPS/M. Quinn",
+        "title": "Sunset from Mather Point"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B15A4-1DD8-B71B-0BFADECB506765CC.jpg",
-        "altText": "The Desert View Watchtower looms 70 feet into the air over a vast and dramatic view of the canyon.",
-        "caption": "The Watchtower is located at Desert View, the eastern-most developed area on the South Rim of Grand Canyon National Park.",
-        "credit": "NPS/M.Quinn",
-        "title": "Grand Canyon National Park: Desert View Watchtower (South Rim)"
+        "url": "https://www.nps.gov/common/uploads/structured_data/6D21F1C3-FC94-9597-A861557ED5AD2BC2.jpg",
+        "altText": "a small ancestral masonry storage room in a cliff above a muddy river.",
+        "caption": "Ancestral granary at Nankoweap, in the canyon wall, above the Colorado River",
+        "credit": "NPS/M. Lellouch",
+        "title": "Ancestral granary at Nankoweap"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7B1720-1DD8-B71B-0B74DCF6F887A960.jpg",
-        "altText": "Tall canyon walls frame the wide Colorado river weaving back and forth.",
-        "caption": "A view down the Colorado river from Nankoweap in Marble canyon.",
-        "credit": "NPS/M.Quinn",
-        "title": "Looking down the Colorado River from Nankoweap at river mile 53"
+        "url": "https://www.nps.gov/common/uploads/structured_data/6D4E8EE9-CBB3-C067-D68889233F7AAF8F.jpg",
+        "altText": "The last glow of sunset across the canyon rim with a full moon rising above a pointed peak",
+        "caption": "During sunset, the full moon is rising above Vishnu Temple.",
+        "credit": "NPS/M. Quinn",
+        "title": "Moonrise over Vishnu Temple"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/6DB76AE7-D151-6009-38541DF5F185BA0F.jpg",
+        "altText": "winter clouds and fog passing around a snow covered promentary within a vast mile deep canyon",
+        "caption": "A winter landscape as seen from Hermit Road on the South Rim of the park",
+        "credit": "NPS/M. Quinn",
+        "title": "Winter clouds above Isis Temple"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/D098D5FD-0DF4-C3F4-083C06DBAAB173CD.jpg",
+        "altText": "A cylindrical, stone tower, 70 feet (21 m) is on the edge of a vast, mile-deep canyon",
+        "caption": "A National Historic Landmark, Desert View Watchtower was constructed in 1932. The view offers an expansive glimpse of the Colorado River.",
+        "credit": "NPS/M. Quinn",
+        "title": "Desert View Watchtower"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/A204F452-FFF3-90CD-7431C3A6FEF23E54.jpg",
+        "altText": "Colorful sunset clouds in the sky above a rustic, four-story hotel on the edge of a precipice.",
+        "caption": "Sunset from the South Rim Historic District with El Tovar Hotel (1905) on the horizon.",
+        "credit": "NPS/V. Diaz",
+        "title": "Summer Sunset - Grand Canyon Village"
       }
     ]
   },
@@ -1511,82 +1744,82 @@
     "description": "Soaring over a landscape rich with wildlife, pristine lakes, and majestic alpine vistas, the Teton Range stands as a testament to generations of stewards. For over 11,000 years, communities have thrived in the valley known as Jackson Hole, turning these mountains into more than just peaks—they embody imagination and enduring human connection.",
     "url": "https://www.nps.gov/grte/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA4C5-1DD8-B71B-0B7FCC54E43FEE79.jpg",
-      "altText": "Backpackers in North Fork Cascade Canyon, Grand Teton behind",
-      "caption": "Backpackers in North Fork Cascade Canyon approaching Paintbrush Divide.",
-      "credit": "NPS Photo / D. Lehle",
-      "title": "North Fork Cascade Canyon"
+      "url": "https://www.nps.gov/common/uploads/structured_data/769E01AF-98C8-ECA3-7799030A09A7F685.jpg",
+      "altText": "Granite mountains with a cloudy blue sky and green and yellow trees and plants in the foreground",
+      "caption": "The Teton Range in the fall.",
+      "credit": "NPS Photo/Tobiason",
+      "title": "The Teton Range"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA4C5-1DD8-B71B-0B7FCC54E43FEE79.jpg",
-        "altText": "Backpackers in North Fork Cascade Canyon, Grand Teton behind",
-        "caption": "Backpackers in North Fork Cascade Canyon approaching Paintbrush Divide.",
-        "credit": "NPS Photo / D. Lehle",
-        "title": "North Fork Cascade Canyon"
+        "url": "https://www.nps.gov/common/uploads/structured_data/769E01AF-98C8-ECA3-7799030A09A7F685.jpg",
+        "altText": "Granite mountains with a cloudy blue sky and green and yellow trees and plants in the foreground",
+        "caption": "The Teton Range in the fall.",
+        "credit": "NPS Photo/Tobiason",
+        "title": "The Teton Range"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA7B7-1DD8-B71B-0B7B45B73D1C90C3.jpg",
-        "altText": "Winter sunrise on snow-covered Teton Range",
-        "caption": "Winter sunrise on snow-covered Teton Range",
-        "credit": "NPS Photo / D. Lehle",
-        "title": "Winter Sunrise on the Teton Range"
+        "url": "https://www.nps.gov/common/uploads/structured_data/7685843F-C5B6-8957-8D35DD648EF237C7.jpg",
+        "altText": "Two backpackers hiking through the mountains",
+        "caption": "Backpackers enjoying the alpine scenery.",
+        "credit": "NPS Photo/Lehle",
+        "title": "Backpacking in the Tetons"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA923-1DD8-B71B-0B30EAF26172B37E.jpg",
-        "altText": "Grizzly bear running through dry grass with shrubs behind",
-        "caption": "Grizzly bears are found throughout Grand Teton National Park",
-        "credit": "NPS Photo / D. Lehle",
-        "title": "Grizzly Bear"
+        "url": "https://www.nps.gov/common/uploads/structured_data/76BB60E6-05CF-3ACF-A42B3397EC65B9AB.jpg",
+        "altText": "A wooden barn with snowy peaks in the background and green vegetation in the foreground",
+        "caption": "The Moulton Barn is one of the most photographed barns in America.",
+        "credit": "NPS Photo/Tobiason",
+        "title": "Moulton Barn"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FAC1D-1DD8-B71B-0B1A9E05DFA2AD10.jpg",
-        "altText": "Lake Solitude with the high Teton Peaks beyond during summer",
-        "caption": "Lake Solitude is a favorite hiking destination in the park.",
-        "credit": "NPS Photo / D. Lehle",
-        "title": "Lake Solitude with the Cathedral Group"
+        "url": "https://www.nps.gov/common/uploads/structured_data/3A5C1BE6-F627-D214-77A00A9A0748DBEA.jpg",
+        "altText": "Two kayakers on a lake with a mountain in the background",
+        "caption": "Visitors enjoying the summer waters of Grand Teton National Park.",
+        "credit": "NPS Photo/Bill Bjornstad",
+        "title": "Kayaking String Lake"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FAD94-1DD8-B71B-0B3909D0F78F4B29.jpg",
-        "altText": "Oxbow Bend on the Snake River during fall with golden aspens and Mount Moran in the background.",
-        "caption": "Mount Moran at Oxbow Bend is a classic autumn view.",
-        "credit": "NPS Photo / D. Lehle",
-        "title": "Oxbow Bend and Mount Moran"
+        "url": "https://www.nps.gov/common/uploads/structured_data/76D551CC-A4C9-119A-C17DC613DC58798C.jpg",
+        "altText": "A bull elk in a field of dried grass",
+        "caption": "Fall brings the elk rut to life as bulls bugle across the valley.",
+        "credit": "NPS Photo/Adams",
+        "title": "Bull Elk Bugling"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FB060-1DD8-B71B-0BC5EE916AAA7E86.jpg",
-        "altText": "Mother in pink shirt, child in orange shirt, the Snake River below and the Teton Range beyond.",
-        "caption": "The Snake River Overlook is a where Ansel Adams took his iconic image of the Teton Range.",
-        "credit": "NPS Photo / D. Lehle",
-        "title": "Visitors at the Snake River Overlook"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FBF1F-1DD8-B71B-0B9125A1004AB2D5.jpg",
-        "altText": "Historic Moulton Barn with visitors and the Teton Range beyond.",
-        "caption": "Two Moulton brothers built adjacent icon barns on Mormon Row. John's barn is pictured. T.A., his brother, built a barn just to the south.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/76F3A882-92C5-6461-BBDE447526E869F8.jpg",
+        "altText": "Aspen trees with yellow leaves and the sun shining through the trees.",
+        "caption": "The golden glow of aspen leaves in the fall.",
         "credit": "NPS Photo",
-        "title": "John Moulton Barn at Mormon Row"
+        "title": "Yellow Aspen Leaves"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FC084-1DD8-B71B-0BA15A2029FE25D5.jpg",
-        "altText": "American Pika perched on a granite boulder",
-        "caption": "American Pika live in rockfall areas.",
-        "credit": "NPS Photo / M. Nicklas",
-        "title": "American Pika (Ochotona princeps)"
+        "url": "https://www.nps.gov/common/uploads/structured_data/77090CDC-C6C0-0602-DBAF603A69CFD10D.jpg",
+        "altText": "A mama grizzly standing up with a cub at her side",
+        "caption": "A mama grizzly keeps watch with her cub at her side.",
+        "credit": "NPS Photo/Adams",
+        "title": "Mama Grizzly and Her Cub"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FC1D0-1DD8-B71B-0BE07FCB0A12AC0B.jpg",
-        "altText": "Bull moose with large antlers walking through fall grasses",
-        "caption": "In the fall, bull moose antlers have lost their velvet readying for the rut.",
-        "credit": "NPS Photo / Potter",
-        "title": "Moose"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7FC332-1DD8-B71B-0B33576EE630E247.jpg",
-        "altText": "beaver pond at Schwabacher landing reflecting the Teton Range in early summer",
-        "caption": "The beaver ponds near Schwabacher Landing can produce beautiful reflections of the Teton Range.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/7731FAAA-E0B0-ED7E-AF6B0510B3C67D0D.jpg",
+        "altText": "A shimmering body of water with green vegetation on the shores and mountains in the background.",
+        "caption": "Oxbow Bend attracts many species of wildlife including moose, river otters, bald eagles, and coyotes.",
         "credit": "NPS Photo",
-        "title": "Schwabacher Landing"
+        "title": "Oxbow Bend"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/7720DD27-D80D-5931-201B278F23ED8A42.jpg",
+        "altText": "Yellow wildflowers",
+        "caption": "Once the valley begins to warm up in the late spring and early summer, the wildflowers begin to bloom.",
+        "credit": "NPS Photo",
+        "title": "Wildflowers"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/774D2047-E9F9-453A-2AEBD746FE7A18BC.jpg",
+        "altText": "Two bull moose standing in a snowy field",
+        "caption": "Moose are one of the largest mammals in the park and are very well adapted for the cold.",
+        "credit": "NPS Photo/Adams",
+        "title": "Two Bull Moose"
       }
     ]
   },
@@ -1770,33 +2003,19 @@
     "description": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park. Plan your visit today!",
     "url": "https://www.nps.gov/grsm/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg",
-      "altText": "A thick layer of frost covers the fields, trees, and mountains in Cades Cove.",
-      "caption": "Wintertime brings a quiet beauty to the Great Smoky Mountains.",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80EC37-1DD8-B71B-0B87F63E8B030D15.jpg",
+      "altText": "Wisps of fog hang over the forests in the mountains.",
+      "caption": "The park gets its name from mists that often rise like smoke from the mountains.",
       "credit": "Kristina Plaas",
-      "title": "Frosty Morning in Cades Cove"
+      "title": "\"Smoke\" Rising From the Mountains"
     },
     "images": [
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg",
-        "altText": "A thick layer of frost covers the fields, trees, and mountains in Cades Cove.",
-        "caption": "Wintertime brings a quiet beauty to the Great Smoky Mountains.",
-        "credit": "Kristina Plaas",
-        "title": "Frosty Morning in Cades Cove"
-      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C80EC37-1DD8-B71B-0B87F63E8B030D15.jpg",
         "altText": "Wisps of fog hang over the forests in the mountains.",
         "caption": "The park gets its name from mists that often rise like smoke from the mountains.",
         "credit": "Kristina Plaas",
         "title": "\"Smoke\" Rising From the Mountains"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/62D22291-ECC1-C9C6-D4C249F41BC599CC.jpg",
-        "altText": "A clear sky with a vast snowy mountain scene.",
-        "caption": "The Smokies receives snow periodically throughout the winter, mostly at higher elevations.",
-        "credit": "NPS / Bob Carr",
-        "title": "Winter in the Smokies"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C80F02B-1DD8-B71B-0BBC2DFD4E9349E9.jpg",
@@ -1806,18 +2025,18 @@
         "title": "The \"Wildflower National Park\""
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80F1CC-1DD8-B71B-0B784AC1BCA74166.jpg",
-        "altText": "Bright gold and red leaves shine through the fog in a forest.",
-        "caption": "Fall leaf season is one of the busiest times of year in the park.",
-        "credit": "NPS Photo",
-        "title": "Fall Colors Near Newfound Gap"
+        "url": "https://www.nps.gov/common/uploads/structured_data/62D22291-ECC1-C9C6-D4C249F41BC599CC.jpg",
+        "altText": "A clear sky with a vast snowy mountain scene.",
+        "caption": "The Smokies receives snow periodically throughout the winter, mostly at higher elevations.",
+        "credit": "NPS / Bob Carr",
+        "title": "Winter in the Smokies"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80F6C9-1DD8-B71B-0B33F35922A21B3B.jpg",
-        "altText": "Gold and red fall colors fill the valleys while snow coats the mountain tops.",
-        "caption": "In spring and fall, weather in the foothills can be pleasant, while snow and cold rule on the mountain tops.",
-        "credit": "Sam Hobbs",
-        "title": "Fall Meets Winter"
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg",
+        "altText": "A thick layer of frost covers the fields, trees, and mountains in Cades Cove.",
+        "caption": "Wintertime brings a quiet beauty to the Great Smoky Mountains.",
+        "credit": "Kristina Plaas",
+        "title": "Frosty Morning in Cades Cove"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C80EEE2-1DD8-B71B-0BC2620AAA57D7CA.jpg",
@@ -1827,11 +2046,25 @@
         "title": "The Waters of Roaring Fork Below Grotto Falls"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C80F1CC-1DD8-B71B-0B784AC1BCA74166.jpg",
+        "altText": "Bright gold and red leaves shine through the fog in a forest.",
+        "caption": "Fall leaf season is one of the busiest times of year in the park.",
+        "credit": "NPS Photo",
+        "title": "Fall Colors Near Newfound Gap"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C80EDBC-1DD8-B71B-0B743AF911FE7557.jpg",
         "altText": "Tombstones stand in front of a white, wooden church on a foggy morning.",
         "caption": "Historic buildings such as churches, gristmills, barns, and homes allow visitors to get a feel for life in the mountains before the national park was created.",
         "credit": "Kristina Plaas",
         "title": "A Foggy Morning at Cades Cove Methodist Church"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C80F6C9-1DD8-B71B-0B33F35922A21B3B.jpg",
+        "altText": "Gold and red fall colors fill the valleys while snow coats the mountain tops.",
+        "caption": "In spring and fall, weather in the foothills can be pleasant, while snow and cold rule on the mountain tops.",
+        "credit": "Sam Hobbs",
+        "title": "Fall Meets Winter"
       }
     ]
   },
@@ -1965,19 +2198,19 @@
     "description": "Hawai‘i Volcanoes National Park protects some of the most unique geological, biological, and cherished cultural landscapes in the world. Extending from sea level to 13,680 feet, the park encompasses the summits of two of the world's most active volcanoes - Kīlauea and Mauna Loa - and is a designated International Biosphere Reserve and UNESCO World Heritage Site.",
     "url": "https://www.nps.gov/havo/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
-      "altText": "Rocky coastline with palm trees and a cliff beyon",
-      "caption": "Coastline of Hawaiʻi Volcanoes National Park",
-      "credit": "Courtesy of J. Frank",
-      "title": "Halapē"
+      "url": "https://www.nps.gov/common/uploads/structured_data/DB1AA9A9-DDAE-CF83-7EDB42B91684D801.jpg",
+      "altText": "Fountains of molten lava erupting from within a crater next to a whirlwind formed from the eruption.",
+      "caption": "Millions of people visit the park to watch volcanic activity from the caldera's edge.",
+      "credit": "NPS Photo",
+      "title": "Lava"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
-        "altText": "Rocky coastline with palm trees and a cliff beyon",
-        "caption": "Coastline of Hawaiʻi Volcanoes National Park",
-        "credit": "Courtesy of J. Frank",
-        "title": "Halapē"
+        "url": "https://www.nps.gov/common/uploads/structured_data/DB1AA9A9-DDAE-CF83-7EDB42B91684D801.jpg",
+        "altText": "Fountains of molten lava erupting from within a crater next to a whirlwind formed from the eruption.",
+        "caption": "Millions of people visit the park to watch volcanic activity from the caldera's edge.",
+        "credit": "NPS Photo",
+        "title": "Lava"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/C5AEDF53-AE4A-F6DB-2FBA7BE158386C0E.jpg",
@@ -1994,6 +2227,13 @@
         "title": "Hōlei Pali"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
+        "altText": "Rocky coastline with palm trees and a cliff beyon",
+        "caption": "Coastline of Hawaiʻi Volcanoes National Park",
+        "credit": "Courtesy of J. Frank",
+        "title": "Halapē"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/C69391EE-FBFA-BC85-885A49C4BD5CEC8D.jpg",
         "altText": "Trees and tall grass through steam at sunrise",
         "caption": "Wahinekapu (Steaming Bluff)",
@@ -2006,13 +2246,6 @@
         "caption": "The Kahuku Unit of Hawaiʻi Volcanoes National Park once was one of the largest cattle ranches in Hawaiʻi",
         "credit": "NPS Photo/A. LaValle",
         "title": "The Kahuku Unit"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C4C64AE6-092B-A593-7727CAE9487AC462.jpg",
-        "altText": "Green vegetation in tide pools on a rocky ocean coastline",
-        "caption": "Tide pools along the Puna Coast",
-        "credit": "NPS Photo/A. LaValle",
-        "title": "Tide Pools"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/C44A654D-DEFB-02B3-2EECDD47FA6BF2D8.jpg",
@@ -2029,11 +2262,11 @@
         "title": "Lava Trees"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C6149CE4-DFB9-DECE-57311912C897C228.jpg",
-        "altText": "Ferns rising from a lava field",
-        "caption": "About 200 species of ferns can be found across the Hawaiian Islands. Sixty-five percent of these species are considered endemic, found nowhere else in the world.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/7AE7B515-91B9-74CF-65F0E0D99C6C78EE.jpg",
+        "altText": "A hula dancer in a red dress above a forested area",
+        "caption": "Kīlauea is home to important and sacred cultural sites stretching back centuries.",
         "credit": "NPS Photo",
-        "title": "ʻAe Fern"
+        "title": "Hula at Kīlauea"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/C6730400-9060-5187-6DA91D10ADF30A99.jpg",
@@ -2094,18 +2327,11 @@
         "title": "Bathhouse Row"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/23BF1E9D-A964-3BFE-BDEBFB703DE79463.jpeg",
-        "altText": "Close up of a hiking boot on the trail a hiker in the distance",
+        "url": "https://www.nps.gov/common/uploads/structured_data/38AB7607-AE00-43A5-502371E0DD46519C.jpg",
+        "altText": "A person hikes through a deep green forest.",
         "caption": "Hot Springs National Park has 26 miles of hiking trails to explore.",
         "credit": "NPS Photo",
         "title": "Take A Hike!"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/23D55284-B7DD-D42F-4689A73DDA1DC0B9.jpg",
-        "altText": "Hiker sits at the edge of the creek, with a bridge in the background",
-        "caption": "Visitors hike and enjoy the cool shady places in the park.",
-        "credit": "NPS photo",
-        "title": "Hiker at bridge Whittington Park Creek"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/243E69E8-B5AB-6E14-DDD7BF3A6FEFE437.jpg",
@@ -2134,6 +2360,13 @@
         "caption": "Along Sunset Trail is the spectacular view over Balanced Rock",
         "credit": "Mitch Smith",
         "title": "Balanced Rock Overlook"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/C1A14390-C25E-5A82-BA89C2004C3A526B.jpg",
+        "altText": "A tower and pagoda on the side of a mountain",
+        "caption": "For the best views of the Ouachita mountains, the tower and pagoda offer amazing and different sights",
+        "credit": "Mitch Smith",
+        "title": "Mountain Tower and Pagoda"
       }
     ]
   },
@@ -2230,27 +2463,13 @@
     "description": "Explore a rugged, isolated island far from our connected communities. Isle Royale offers adventures for backpackers, hikers, boaters, paddlers, and divers. Cross Lake Superior and make a commitment: Become a part of this island, and let it become a part of you. Find peace and refuge in island wilderness – because Isle Royale, in turn, finds refuge in us. Help Isle Royale stay wild.",
     "url": "https://www.nps.gov/isro/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/6059CAD8-02E8-2E00-2922DF84800167E0.jpg",
-      "altText": "View from above the trees looking down at Duncan Bay Narrows, trees, Lake Superior, and Canada.",
-      "caption": "Isle Royale, located in the northwestern corner of Lake Superior, offers views of the Canadian shoreline.",
-      "credit": "NPS / Paul Brown",
-      "title": "Duncan Bay Narrows"
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AC355-1DD8-B71B-0B9C2F07853F39F1.jpg",
+      "altText": "Aerial View of Belle Harbor",
+      "caption": "Isle Royale is also called Minong, which means \"the good place\" by the Grand Portage Band of Lake Superior Chippewa. Minong is a part of the ancestral lands of the Anishinaabe/Ojibwe peoples who have cared for these lands from time immemorial.",
+      "credit": "NPS Photo / Paul Brown",
+      "title": "Aerial View of Belle Harbor"
     },
     "images": [
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/6059CAD8-02E8-2E00-2922DF84800167E0.jpg",
-        "altText": "View from above the trees looking down at Duncan Bay Narrows, trees, Lake Superior, and Canada.",
-        "caption": "Isle Royale, located in the northwestern corner of Lake Superior, offers views of the Canadian shoreline.",
-        "credit": "NPS / Paul Brown",
-        "title": "Duncan Bay Narrows"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7AC799-1DD8-B71B-0B4E94DE10F014E5.jpg",
-        "altText": "Ice floes float in a harbor",
-        "caption": "Isle Royale National Park is closed in winter, with the exception of a few visiting researchers.",
-        "credit": "NPS Photo / Paul Brown",
-        "title": "Winter Ice Floes"
-      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7AC355-1DD8-B71B-0B9C2F07853F39F1.jpg",
         "altText": "Aerial View of Belle Harbor",
@@ -2432,47 +2651,82 @@
     "description": "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush forests along the fjords once carved by the vast expanse of ice. Today, shrinking glaciers bear witness to the effects of our changing climate.",
     "url": "https://www.nps.gov/kefj/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C798EAB-1DD8-B71B-0BC4BEFB197F2C90.jpg",
-      "altText": "aerial image of Bear Glacier",
-      "caption": "Bear Glacier is the largest of nearly 40 glaciers that flow from the Harding Icefield.",
-      "credit": "USGS/Bruce Molnia",
-      "title": "Bear Glacier Aerial"
+      "url": "https://www.nps.gov/common/uploads/structured_data/BCC539E0-C12C-F7DF-5A919EE253882B5A.jpg",
+      "altText": "A thin bay surrounded by mountains and ice",
+      "caption": "Rapidly receding glaciers reveal dramatic fjords",
+      "credit": "NPS Photo, S. Rainone",
+      "title": "Northwestern Fiord"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C798EAB-1DD8-B71B-0BC4BEFB197F2C90.jpg",
-        "altText": "aerial image of Bear Glacier",
-        "caption": "Bear Glacier is the largest of nearly 40 glaciers that flow from the Harding Icefield.",
-        "credit": "USGS/Bruce Molnia",
-        "title": "Bear Glacier Aerial"
+        "url": "https://www.nps.gov/common/uploads/structured_data/BCC539E0-C12C-F7DF-5A919EE253882B5A.jpg",
+        "altText": "A thin bay surrounded by mountains and ice",
+        "caption": "Rapidly receding glaciers reveal dramatic fjords",
+        "credit": "NPS Photo, S. Rainone",
+        "title": "Northwestern Fiord"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE352-1DD8-B71B-0B35831ADF254DE0.jpg",
-        "altText": "kayakers in front of a tidewater glacier",
-        "caption": "Kayakers enjoy the spectacular scenery in the fjords in Aialik Bay.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/6F2AB13B-A9A4-ABE2-E74F8E73914A44B4.jpg",
+        "altText": "A person looks out over a view of snow, ice, and mountain peaks",
+        "caption": "Views from the Harding Icefield Trail offer a window to past ice ages.",
         "credit": "NPS Photo",
-        "title": "Aialik Bay Kayakers"
+        "title": "The Harding Icefield"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE50D-1DD8-B71B-0B23431BC04ACB33.jpg",
-        "altText": "a humpback whale breaches",
-        "caption": "A humpback whale breaches in Kenai Fjords National Park",
-        "credit": "NPS Photo/Thoresen",
-        "title": "Humpback Whale Breach"
+        "url": "https://www.nps.gov/common/uploads/structured_data/7135CE6E-FEBA-740C-B794409CA37C3741.jpg",
+        "altText": "Two orcas surface with mountainous coastline beyond",
+        "caption": "Orcas make their way along the Kenai Fjords coast in summer.",
+        "credit": "NPS Photo",
+        "title": "Orcas on Kenai Fjords Coastline"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE88C-1DD8-B71B-0B3F02FD7F30F1AF.jpg",
-        "altText": "aerial view of Bear Glacier from Harding Icefield",
-        "caption": "Flightseeing over the Harding Icefield provides amazing opportunities to view glaciers, like Bear Glacier, from a different perspective.",
-        "credit": "USGS/Bruce Molnia",
-        "title": "Above Bear Glacier"
+        "url": "https://www.nps.gov/common/uploads/structured_data/70518281-E69D-4850-5FDF4F3BF3074C6B.jpg",
+        "altText": "A park ranger talks with a child with Exit Glacier in the background",
+        "caption": "Learn from Exit Glacier's retreat with a park ranger",
+        "credit": "NPS Photo",
+        "title": "Exit Glacier Park Ranger"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7DEEE0-1DD8-B71B-0B7B85B29F07C371.jpg",
-        "altText": "visitors at accessible overlook of Exit Glacier and Exit Creek.",
-        "caption": "A stroll to Glacier View provides a nice overlook of Exit Glacier as part of a 1 mile accessible walk.",
-        "credit": "NPS Photo/Jim Pfeiffenberger",
-        "title": "Exit Glacier View"
+        "url": "https://www.nps.gov/common/uploads/structured_data/6F4663BE-B09C-01AA-1ABBB8850868C2D0.jpg",
+        "altText": "A kayaker views a tidewater glacier in the distance",
+        "caption": "Participate in the long history of human powered travel along the Kenai Peninsula coast.",
+        "credit": "NPS Photo",
+        "title": "Kayaker Views Aialik Glacier"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/EB3DB94B-0E94-7E47-73A0966E4976504B.jpg",
+        "altText": "Two people, one in a wheelchair, looks at a directional sign on a paved trail",
+        "caption": "All trails start from the same trailhead at Exit Glacier, including the accessible Glacier View loop",
+        "credit": "NPS Photo",
+        "title": "Glacier View Accessible Trail"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/70C5E42F-E888-1B22-ADFAF31C1B0AD95C.jpg",
+        "altText": "Several humpback whales open their mouth above water",
+        "caption": "Humpback whales cooperatively bubble net feed on the bounty of the fjords in summer.",
+        "credit": "NPS Photo",
+        "title": "Bubble Net Feeding"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/70A8E56F-E2B5-9E70-5D5FC40D928B0E9F.jpg",
+        "altText": "Mountain goat with mountains in background",
+        "caption": "Keep an eye up high for mountain goats making their home on precarious terrain",
+        "credit": "NPS Photo",
+        "title": "Mountain Goat"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/707B3E46-E078-CB22-F6E71AECC2292518.jpg",
+        "altText": "Sea stacks rise from the ocean",
+        "caption": "View captivating sea stacks, playful wildlife, and calving glaciers along Kenai Fjords' rugged coast.",
+        "credit": "NPS Photo",
+        "title": "Spire Cove"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/70F9C4E4-B54A-BB84-C04537BFD32BFB92.jpg",
+        "altText": "Fireweed blooms with mountains in the background",
+        "caption": "Wildflowers bloom all along the lower trails at Exit Glacier.",
+        "credit": "NPS Photo",
+        "title": "Fireweed Exit Glacier Area"
       }
     ]
   },
@@ -2584,13 +2838,6 @@
         "title": "The Jade Mountains reflected in the Kobuk River"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A168D-1DD8-B71B-0B5167863DD39B57.jpg",
-        "altText": "pink flower growing in sand",
-        "caption": "Oxytropis kobukensis (Kobuk Locoweed) is a member of the pea family and adds a splash of pink to the sand dunes. The blossoms have that typical pea/ bean flower shape that many gardeners know.",
-        "credit": "NPS Photo",
-        "title": "Kobuk Locoweed"
-      },
-      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7A147D-1DD8-B71B-0BCC5182A7F0918A.jpg",
         "altText": "Caribou bone sitting in the sand",
         "caption": "Caribou migrate across the Great Kobuk Sand Dunes, heading north in the summer and south in the fall. Some survive and some don't, which is a reality of life",
@@ -2598,18 +2845,25 @@
         "title": "Left Behind"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1563-1DD8-B71B-0B76572CC32EBD25.jpg",
-        "altText": "Single caribou with antlers in velvet",
-        "caption": "A single caribou of the 240,000+ strong Western Arctic herd on its fall migration south across Kobuk Valley National Park.",
-        "credit": "NPS Photo",
-        "title": "Lone Rangifer tarandus"
-      },
-      {
         "url": "https://www.nps.gov/common/uploads/structured_data/9B843EAB-BE9D-AF8A-7D23CF259CD9FCB9.jpg",
         "altText": "Dark skies shadow the horizon. A rainbow is illuminated above Niaktovik Creek",
         "caption": "Dark skies shadow the horizon. A rainbow is illuminated above Niaktovik Creek.",
         "credit": "NPS Photo / Amy Martin (2022 Artist in Residence)",
         "title": "A rainbow over Niaktovik Creek"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/377B8B80-02A0-BBF9-6393E8D9D0890226.jpg",
+        "altText": "A herd of caribou run and swim the Kobuk River during fall migration.",
+        "caption": "Caribou crossing the Kobuk River in fall.",
+        "credit": "NPS Photo / Kyle Joly",
+        "title": "Caribou crossing the Kobuk River"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C7A168D-1DD8-B71B-0B5167863DD39B57.jpg",
+        "altText": "pink flower growing in sand",
+        "caption": "Oxytropis kobukensis (Kobuk Locoweed) is a member of the pea family and adds a splash of pink to the sand dunes. The blossoms have that typical pea/ bean flower shape that many gardeners know.",
+        "credit": "NPS Photo",
+        "title": "Kobuk Locoweed"
       }
     ]
   },
@@ -2785,19 +3039,26 @@
     "description": "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, earning it the title of UNESCO World Heritage Site and International Biosphere Region.",
     "url": "https://www.nps.gov/maca/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/95EAA431-F26B-66EB-E9E6B108F47F70B0.jpg",
-      "altText": "A cascade of water pours over a rock ledge. Green foliage is in the background.",
-      "caption": "The sound of falling water welcomes visitors into the natural entrance of Mammoth Cave.",
-      "credit": "NPS Photo/ Deb Spillman",
-      "title": "Waterfall at Historic Entrance"
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DB94E27-0FF0-E98D-2F0AA9F8B4800869.jpg",
+      "altText": "Looking out from a large cave entrance with falling water and green trees shown over the entrance.",
+      "caption": "Two worlds, one aboveground and the other below, collide at the largest natural entrance to Mammoth Cave.",
+      "credit": "NPS Photo / J. Cooper",
+      "title": "Historic Entrance to Mammoth Cave"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/95EAA431-F26B-66EB-E9E6B108F47F70B0.jpg",
-        "altText": "A cascade of water pours over a rock ledge. Green foliage is in the background.",
-        "caption": "The sound of falling water welcomes visitors into the natural entrance of Mammoth Cave.",
-        "credit": "NPS Photo/ Deb Spillman",
-        "title": "Waterfall at Historic Entrance"
+        "url": "https://www.nps.gov/common/uploads/structured_data/0DB94E27-0FF0-E98D-2F0AA9F8B4800869.jpg",
+        "altText": "Looking out from a large cave entrance with falling water and green trees shown over the entrance.",
+        "caption": "Two worlds, one aboveground and the other below, collide at the largest natural entrance to Mammoth Cave.",
+        "credit": "NPS Photo / J. Cooper",
+        "title": "Historic Entrance to Mammoth Cave"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/145F1ECE-0B89-0D9E-48F101A0B0F88BEC.jpg",
+        "altText": "Trees with colorful autumn leaves surround a large pond and reflect off of its surface.",
+        "caption": "Autumn arrives at Sloans Crossing Pond Trail, an accessible boardwalk path.",
+        "credit": "NPS Photo / J. Wheet",
+        "title": "Autumn at Sloans Pond"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/947D4300-ECE7-A506-8A6FF2BA4AECCFBB.jpg",
@@ -2807,18 +3068,18 @@
         "title": "Historic Entrance"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/958C8BC3-9657-7E73-D0697F507A869B69.jpg",
+        "altText": "A large stacked stone pillar reaches the flat ceiling containing signatures in a cave passage.",
+        "caption": "Over two hundred years of guided tours leads to the history of Mammoth Cave.",
+        "credit": "NPS Photo/ Jackie Wheet",
+        "title": "Gothic Avenue"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/94A76787-FA1B-8DC8-71277FDFA5E7CC79.jpg",
         "altText": "A long cave passage with an oval shape.",
         "caption": "The network of cave passages in the Mammoth Cave system stretches over 400 miles.",
         "credit": "NPS Photo/ Thomas DiGiovannangelo",
         "title": "Cleaveland Avenue"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/94F61E66-ACE7-ED8C-FC411F6BFDD80490.jpg",
-        "altText": "A small white church building with yellow flowers in the foreground.",
-        "caption": "Three historic church structures still stand, shedding light on the pre-park communities that once existed here.",
-        "credit": "NPS Photo/ Thomas DiGiovannangelo",
-        "title": "Good Spring Baptist Church"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/9472C6B0-DF25-7F27-BA8D162F34D2CB2F.jpg",
@@ -2828,18 +3089,18 @@
         "title": "Heritage Trail"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/94F61E66-ACE7-ED8C-FC411F6BFDD80490.jpg",
+        "altText": "A small white church building with yellow flowers in the foreground.",
+        "caption": "Three historic church structures still stand, shedding light on the pre-park communities that once existed here.",
+        "credit": "NPS Photo/ Thomas DiGiovannangelo",
+        "title": "Good Spring Baptist Church"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/95357AD9-E6A5-DDCF-432D3E3832808431.jpg",
         "altText": "A view of a river valley with hills covered in trees. A blue sky with white clouds stands above.",
         "caption": "Rolling hills and valleys can be seen from many of the overlooks in the park.",
         "credit": "NPS Photo/ Thomas DiGiovannangelo",
         "title": "Green River Valley"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/958C8BC3-9657-7E73-D0697F507A869B69.jpg",
-        "altText": "A large stacked stone pillar reaches the flat ceiling containing signatures in a cave passage.",
-        "caption": "Over two hundred years of guided tours leads to the history of Mammoth Cave.",
-        "credit": "NPS Photo/ Jackie Wheet",
-        "title": "Gothic Avenue"
       }
     ]
   },
@@ -2944,18 +3205,11 @@
         "title": "Silver Forest Sunset"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7CEEF2-1DD8-B71B-0B9F3B666327E5D1.jpg",
-        "altText": "Climber on glacier steps downward with icy crags in background.",
-        "caption": "Summiting Mount Rainier involves climbing a volcano, scaling glaciers, dealing with high elevations and much more. Almost 10,000 people a year attempt to summit.",
-        "credit": "NPS Photo",
-        "title": "Climbing Mount Rainier"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7C6C47-1DD8-B71B-0BFF9108D08A7FD3.jpg",
-        "altText": "Towering cedars and douglas-firs reach skyward while a beam of sun breaks through the canopy.",
-        "caption": "With some of the few remaining old-growth forests in the Cascade Mountains, Mount Rainier National Park protects native plants great and small in places like the Grove of the Patriarchs.",
-        "credit": "NPS Photo / Emily Brouwer",
-        "title": "Giants of the Old-Growth Forest"
+        "url": "https://www.nps.gov/common/uploads/structured_data/69651BDC-C0D0-7128-B1DAD5D83D03963C.jpg",
+        "altText": "A fan-shaped waterfall cascades over lava cliffs with a rainbow in its mist.",
+        "caption": "Narada Falls is one of dozens of waterfalls created by the glacier and snow-fed creeks and rivers of Mount Rainier.",
+        "credit": "NPS Photo / E. Brouwer",
+        "title": "Narada Falls Rainbow"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7C6D8C-1DD8-B71B-0BA69E7F583E25A5.jpg",
@@ -2972,6 +3226,13 @@
         "title": "Kids Hiking Through Wildflower Meadow"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C7C6A93-1DD8-B71B-0BA75B16C5FA3690.jpeg",
+        "altText": "Purple lupine and white bistort bloom in a meadow alongside a sign for the Wonderland Trail.",
+        "caption": "Both the Wonderland Trail and subalpine meadows encircle Mount Rainier. Summertime blooms splatter the hillsides with color.",
+        "credit": "NPS Photo/ K. Loving",
+        "title": "Wildflower Meadow Along the Wonderland Trail"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7C68E6-1DD8-B71B-0B42E9A3C7ECA52D.jpg",
         "altText": "Sunset paints the glaciers of Mount Rainier in pink and gold.",
         "caption": "Every scenic overlook shows a different side of Mount Rainier. Viewed from Gobblers Knob Lookout at sunset, the glaciers covering the mountain turn pink and gold.",
@@ -2979,18 +3240,11 @@
         "title": "Mount Rainier at sunset"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7C6EE9-1DD8-B71B-0B62C52C6844CC70.jpg",
-        "altText": "The historic National Park Inn covered in a foot of snow.",
-        "caption": "For thousands of years, people have traveled up to, over, and around Mount Rainier. Today the park strives to preserve this history while providing a chance for new generations to find their own adventures.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/67614551-E322-66B7-AFB2BE75D87CF8DF.jpg",
+        "altText": "A wood \"National Park Inn\" sign in front of a large wood shingle building covered in deep snow.",
+        "caption": "The historic National Park Inn in Longmire provides lodging for year-round explorations of Mount Rainier National Park.",
         "credit": "NPS Photo",
         "title": "National Park Inn in Winter"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7C6A93-1DD8-B71B-0BA75B16C5FA3690.jpeg",
-        "altText": "Purple lupine and white bistort bloom in a meadow alongside a sign for the Wonderland Trail.",
-        "caption": "Both the Wonderland Trail and subalpine meadows encircle Mount Rainier. Summertime blooms splatter the hillsides with color.",
-        "credit": "NPS Photo/ K. Loving",
-        "title": "Wildflower Meadow Along the Wonderland Trail"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/1FD67031-C1A8-4462-6B815FF24500A576.jpeg",
@@ -3454,54 +3708,61 @@
     "description": "Rocky Mountain National Park's 415 square miles (265,807 acres) encompasses a spectacular range of mountain environments. From meadows found in the montane life zone to glistening alpine lakes and up to the towering mountain peaks, there is something for everyone to discover. Along the way explore over 300 miles of hiking trails and incredible wildlife viewing.",
     "url": "https://www.nps.gov/romo/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/25871823-F36D-9986-8C552F7496B7D557.jpg",
-      "altText": "A person is using hiking poles and traction devices and hiking in snow",
-      "caption": "If hiking near and above treeline, be prepared for snow and ice on the trails",
-      "credit": "NPS Photo",
-      "title": "Take a hike in May and early June"
+      "url": "https://www.nps.gov/common/uploads/structured_data/8824D3C2-F84D-A622-C2DE87AC4B9A8BC9.jpg",
+      "altText": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
+      "caption": "Cub Lake in fall",
+      "credit": "NPS/J.Marino",
+      "title": "Cub Lake in fall"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/25871823-F36D-9986-8C552F7496B7D557.jpg",
-        "altText": "A person is using hiking poles and traction devices and hiking in snow",
-        "caption": "If hiking near and above treeline, be prepared for snow and ice on the trails",
-        "credit": "NPS Photo",
-        "title": "Take a hike in May and early June"
+        "url": "https://www.nps.gov/common/uploads/structured_data/8824D3C2-F84D-A622-C2DE87AC4B9A8BC9.jpg",
+        "altText": "Cub Lake with reflections. Yellow and brown grasses line the edge of the lake.",
+        "caption": "Cub Lake in fall",
+        "credit": "NPS/J.Marino",
+        "title": "Cub Lake in fall"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/25DE2A3F-EF40-16CC-AB4645848692560C.jpg",
-        "altText": "A cow elk is walking in a meadow with two calves",
-        "caption": "Rocky is home to a wide variety of wildlife, including elk, Mule deer, and more!",
-        "credit": "NPS Photo",
-        "title": "View Wildlife"
+        "url": "https://www.nps.gov/common/uploads/structured_data/883337BE-AC11-BF00-9E8B290B38A30A7F.jpeg",
+        "altText": "A man is standing on a bridge and looking up at a waterfall",
+        "caption": "Hiking in fall",
+        "credit": "NPS",
+        "title": "Hiking in fall"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/259CAEEE-BD13-92E2-C510A3F71BCBFA2F.jpg",
-        "altText": "Two junior rangers are gazing at Bear Lake in late spring/early summer",
-        "caption": "Enjoy scenic Bear Lake in late May and early June",
-        "credit": "NPS Photo",
-        "title": "Visit Bear Lake"
+        "url": "https://www.nps.gov/common/uploads/structured_data/88439955-DB09-4F45-62A55C2E00A2C229.jpg",
+        "altText": "A pika has harvested a tundra thistle",
+        "caption": "Pika preparing for winter",
+        "credit": "NPS/A.Schonlau",
+        "title": "Pika with thistle"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/25B4B9D7-953A-9999-788210BBBD93CC77.jpg",
-        "altText": "A park ranger is at Hidden Valley",
-        "caption": "Hidden Valley is a place for Junior Rangers to explore!",
-        "credit": "NPS Photo",
-        "title": "Explore Hidden Valley"
+        "url": "https://www.nps.gov/common/uploads/structured_data/884D97C7-DE25-EC69-F4D8B6378AA8E14C.jpg",
+        "altText": "Snow dusts the surface of Longs Peak and Mount Meeker",
+        "caption": "Longs Peak and Mount Meeker",
+        "credit": "NPS/D.Turk",
+        "title": "Longs Peak and Mount Meeker"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/25CB602E-E554-75FE-5D0E4635E8CD3338.jpg",
-        "altText": "A man is fishing along the banks of a river",
-        "caption": "Rocky Mountain National Park is a great place to go fishing",
-        "credit": "NPS Photo",
-        "title": "Go Fishing!"
+        "url": "https://www.nps.gov/common/uploads/structured_data/885BF182-DCD4-FE0C-2565F7F29906B864.jpg",
+        "altText": "a bull elk is standing next to two cow elk in a meadow. Aspen have yellow and green leaves",
+        "caption": "Elk in fall",
+        "credit": "NPS/P.Baker",
+        "title": "Elk in fall"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/260D64BE-DFA9-63E5-3464E4E466DD5217.jpg",
-        "altText": "A trailer is set up in a campsite",
-        "caption": "Take a camping trip - Camping is available by reservation only",
-        "credit": "NPS Photo",
-        "title": "Go Camping"
+        "url": "https://www.nps.gov/common/uploads/structured_data/88694C6C-F54C-6FCD-32E5B740E0F322C8.jpg",
+        "altText": "A green tent is set up on a tent pad in a campsite",
+        "caption": "Camping",
+        "credit": "NPS",
+        "title": "Camping"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/8873670D-ED67-A91E-A3275A8C48171A79.jpeg",
+        "altText": "A park ranger is swearing in a new Junior Ranger",
+        "caption": "Junior Ranger",
+        "credit": "NPS",
+        "title": "Junior Ranger"
       }
     ]
   },
@@ -3642,33 +3903,40 @@
     "description": "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is a land bursting with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to deer, songbirds, and black bear, there's so much to explore...and your journey begins right here!",
     "url": "https://www.nps.gov/shen/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B539-1DD8-B71B-0BEAAA4AC31E7D5B.jpg",
-      "altText": "A man stands on a rocky outcrop overlooking the receding mountains.",
-      "caption": "There are over 60 peaks with an elevation over 3,000 feet in Shenandoah.",
+      "url": "https://www.nps.gov/common/uploads/structured_data/183B110E-E008-CDD3-EC95F668F6CC3657.jpg",
+      "altText": "White-tailed bucks sparring in Big Meadows",
+      "caption": "Watch for all types of wildlife crossing Skyline Drive.",
       "credit": "NPS Photo / Neal Lewis",
-      "title": "Adventure Awaits"
+      "title": "Animal Crossing"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80B539-1DD8-B71B-0BEAAA4AC31E7D5B.jpg",
-        "altText": "A man stands on a rocky outcrop overlooking the receding mountains.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/183B110E-E008-CDD3-EC95F668F6CC3657.jpg",
+        "altText": "White-tailed bucks sparring in Big Meadows",
+        "caption": "Watch for all types of wildlife crossing Skyline Drive.",
+        "credit": "NPS Photo / Neal Lewis",
+        "title": "Animal Crossing"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/187E49E6-C473-3B6C-32A5429B5516C17B.jpg",
+        "altText": "Visitors stand on a rocky outcrop overlooking the receding mountains.",
         "caption": "There are over 60 peaks with an elevation over 3,000 feet in Shenandoah.",
         "credit": "NPS Photo / Neal Lewis",
         "title": "Adventure Awaits"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80B63B-1DD8-B71B-0BAC3145E329FC99.jpg",
-        "altText": "A man stands with his back facing us, looking at a waterfall.",
-        "caption": "Dark Hollow Falls, at 70 feet, is our most visited waterfall.",
-        "credit": "NPS Photo / Katy Cain",
-        "title": "Wonderful Waterfalls"
+        "url": "https://www.nps.gov/common/uploads/structured_data/40B4BA96-B7A2-896A-156E0E0E85486CC1.jpg",
+        "altText": "American Black Bear crossing Skyline Drive",
+        "caption": "Black bears are opportunistic, meaning they'll do anything for a snack! Properly store and dispose all food items, and share the road!",
+        "credit": "NPS Photo | B. Raeburn",
+        "title": "Recreate Responsibly"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80B752-1DD8-B71B-0B0FAB718671DC3E.jpg",
-        "altText": "A close up shot of a Red-Bellied Woodpecker with a blurry teal background.",
-        "caption": "There are over 200 species of bird that call Shenandoah \"home.\"",
-        "credit": "NPS Photo / Neal Lewis",
-        "title": "Red-Bellied Woodpecker"
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C80B989-1DD8-B71B-0B3A418BF2F78CF0.jpg",
+        "altText": "Looking up at a poplar stand canopy, which is turning yellow in fall.",
+        "caption": "This poplar stand at mile 8 is a popular stop for visitors entering from the north entrance.",
+        "credit": "NPS Photo / Katy Cain",
+        "title": "Find Yourself in Nature"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C80B867-1DD8-B71B-0B328321E4420769.jpg",
@@ -3678,11 +3946,11 @@
         "title": "Driving on Skyline Drive"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C80B989-1DD8-B71B-0B3A418BF2F78CF0.jpg",
-        "altText": "Looking up at a poplar stand canopy, which is turning yellow in fall.",
-        "caption": "This poplar stand at mile 8 is a popular stop for visitors entering from the north entrance.",
-        "credit": "NPS Photo / Katy Cain",
-        "title": "Find Yourself in Nature"
+        "url": "https://www.nps.gov/common/uploads/structured_data/17DBC477-0435-15B7-F8F09620D0A64247.jpg",
+        "altText": "A river navigates through an autumn forest.",
+        "caption": "Whiteoak Canyon Falls rewards hikers in every season.",
+        "credit": "NPS Photo / Brett Raeburn",
+        "title": "Wonderful Waterfalls"
       }
     ]
   },
@@ -3851,54 +4119,61 @@
     "description": "Voyageurs National Park spans 218,000 acres of lakes, forests, and streams in northern Minnesota. Established in 1975, the park is named after the French-Canadian Voyageurs who once navigated these abundant waters. Voyageurs National Park provides exceptional opportunities for recreation and exploration amidst landscapes rich in natural beauty, history, and cultural heritage.",
     "url": "https://www.nps.gov/voya/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C8405EF-1DD8-B71B-0B42909E4E77E144.jpg",
-      "altText": "Northern Lights over Voyageurs National Park waters",
-      "caption": "Experience the Aurora Borealis at Voyageurs National Park",
-      "credit": "NPS /Dimse",
-      "title": "Northern Lights"
+      "url": "https://www.nps.gov/common/uploads/structured_data/325E7D4A-919F-7E79-851567904D618FBF.jpg",
+      "altText": "Photograph of granite cliffs topped with trees alongside a blue lake.",
+      "caption": "Ancient granite rising above the waters of Grassy Bay.",
+      "credit": "Erik Fremstad",
+      "title": "Grassy Bay Cliffs"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C8405EF-1DD8-B71B-0B42909E4E77E144.jpg",
-        "altText": "Northern Lights over Voyageurs National Park waters",
-        "caption": "Experience the Aurora Borealis at Voyageurs National Park",
-        "credit": "NPS /Dimse",
-        "title": "Northern Lights"
+        "url": "https://www.nps.gov/common/uploads/structured_data/325E7D4A-919F-7E79-851567904D618FBF.jpg",
+        "altText": "Photograph of granite cliffs topped with trees alongside a blue lake.",
+        "caption": "Ancient granite rising above the waters of Grassy Bay.",
+        "credit": "Erik Fremstad",
+        "title": "Grassy Bay Cliffs"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C840728-1DD8-B71B-0BBDF500911CBD12.jpg",
-        "altText": "overlooking a lake",
-        "caption": "For peace and quiet explore the backcountry of the Kabetogama Peninsula",
-        "credit": "NPS Photo",
-        "title": "Peary Lake"
+        "url": "https://www.nps.gov/common/uploads/structured_data/31EDB5D6-FA28-880B-80068EB62E6C86CC.jpg",
+        "altText": "Photograph of northern lights over a lake.",
+        "caption": "Northern lights over Kabetogama Lake.",
+        "credit": "NPS Photo / Daniel Dendler",
+        "title": "Northern Lights Over Kabetogama"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C44E1879-9C3A-8F39-26AEBBEBB74FAD37.jpeg",
-        "altText": "Orange tinted sky with islands scattered throughout the still lake.",
-        "caption": "Enjoy a sunset in Voyageurs National Park.",
-        "credit": "More Than Just Parks",
-        "title": "Sunset in Voyageurs"
+        "url": "https://www.nps.gov/common/uploads/structured_data/326AE66F-9AD6-4E13-B9F5362F632938E3.jpg",
+        "altText": "Photograph of lake in distance viewed through trees.",
+        "caption": "Forest and lakes of Voyageurs National Park",
+        "credit": "NPS Photo / Billy Flynn",
+        "title": "Kabetogama Lake"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C840875-1DD8-B71B-0B2416D8B710421E.jpg",
-        "altText": "rock cliffs along the lake",
-        "caption": "Explore the unique geology of Voyageurs National Park and see our story unfold.",
-        "credit": "NPS Photo",
-        "title": "Anderson Bay"
+        "url": "https://www.nps.gov/common/uploads/structured_data/31FEBCCF-A01E-F585-A3C320EC62281F40.jpg",
+        "altText": "Photograph of landscape with large boulders and rock sculptures.",
+        "caption": "The Ellsworth Rock Gardens have been known as the “Showplace of Lake Kabetogama” since the 1940s.",
+        "credit": "NPS Photo / Billy Flynn",
+        "title": "Ellsworth Rock Gardens"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C840A23-1DD8-B71B-0B19E7CC6CCDF7C7.jpg",
-        "altText": "orange, yellow, and green colors are showing in the fall foliage",
-        "caption": "The mix of hardwood and conifers create inspiring scenic views especially in the fall.",
-        "credit": "NPS Photo",
-        "title": "Fall Colors"
+        "url": "https://www.nps.gov/common/uploads/structured_data/3217C0E8-C190-CF7F-A6E1AB89FFB0A91D.jpg",
+        "altText": "Photograph of rustic wooden sign on building front with \"Kettle Falls Hotel\" painted in red.",
+        "caption": "The Kettle Falls Hotel has accommodated and entertained travelers since 1913.",
+        "credit": "NPS Photo / Billy Flynn",
+        "title": "Kettle Falls Hotel"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/C46E3A91-C824-DAC5-5E137B57FC714764.jpeg",
-        "altText": "A view of a lake peaks through a stand of pine trees.",
-        "caption": "Get outside and hiking on one of our many trails.",
-        "credit": "Nicholas Durante",
-        "title": "Hike a trail"
+        "url": "https://www.nps.gov/common/uploads/structured_data/346648CD-D9F0-0C44-534EFDC83E943712.jpg",
+        "altText": "Photograph of person snowshoeing across frozen lake with snowy trees in the background.",
+        "caption": "Snowshoeing across a frozen lake near Ash River.",
+        "credit": "Hannah Olson",
+        "title": "Snowshoeing Near Ash River"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/348980CA-9854-D30A-19C354E3423538FE.jpg",
+        "altText": "Photograph of person standing next to brown national park sign at night with northern lights.",
+        "caption": "Voyageurs National Park shines as a certified International Dark Sky Park.",
+        "credit": "John Keefover",
+        "title": "Northern Lights Voyageurs Sign"
       }
     ]
   },
@@ -3974,26 +4249,26 @@
     "description": "Wind Cave National Park protects two very different worlds - one deep within the earth, the other a sunlit world of many resources. Bison, elk, and other wildlife roam the rolling prairie grasslands and forested hillsides of one of America's oldest national parks. Below the remnant island of intact prairie sits Wind Cave, one of the longest and most complex caves in the world.",
     "url": "https://www.nps.gov/wica/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACD12-1DD8-B71B-0BEF13804E4498FF.jpg",
-      "altText": "a bison cow and calf on the prairie",
-      "caption": "Several hundred bison roam the rolling prairie of Wind Cave National Park.",
-      "credit": "NPS Photo / Dan Roddy",
-      "title": "Bison cow and calf"
+      "url": "https://www.nps.gov/common/uploads/structured_data/3DDEBDBA-0714-8856-F59E16D2DB6FCB4B.jpg",
+      "altText": "Thin fins of calcite forming box-shaped openings, called boxwork, on a cave ceiling.",
+      "caption": "The boxwork on the ceiling of the Elk's Room is a popular photography subject and has been featured on many postcards and other souvenirs.",
+      "credit": "NPS Photo",
+      "title": "Boxwork in the Elk's Room"
     },
     "images": [
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3DDEBDBA-0714-8856-F59E16D2DB6FCB4B.jpg",
+        "altText": "Thin fins of calcite forming box-shaped openings, called boxwork, on a cave ceiling.",
+        "caption": "The boxwork on the ceiling of the Elk's Room is a popular photography subject and has been featured on many postcards and other souvenirs.",
+        "credit": "NPS Photo",
+        "title": "Boxwork in the Elk's Room"
+      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACD12-1DD8-B71B-0BEF13804E4498FF.jpg",
         "altText": "a bison cow and calf on the prairie",
         "caption": "Several hundred bison roam the rolling prairie of Wind Cave National Park.",
         "credit": "NPS Photo / Dan Roddy",
         "title": "Bison cow and calf"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACE71-1DD8-B71B-0BBD14BFE8C0C468.jpg",
-        "altText": "rolling hills of forest and prairie landscape",
-        "caption": "Wind Cave National Park from Rankin Ridge, the park's highest point.",
-        "credit": "NPS Photo",
-        "title": "Rankin Ridge view"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACFE9-1DD8-B71B-0BA11E8BB9A0EE0D.jpg",
@@ -4003,6 +4278,13 @@
         "title": "Boxwork"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACE71-1DD8-B71B-0BBD14BFE8C0C468.jpg",
+        "altText": "rolling hills of forest and prairie landscape",
+        "caption": "Wind Cave National Park from Rankin Ridge, the park's highest point.",
+        "credit": "NPS Photo",
+        "title": "Rankin Ridge view"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7AD1AD-1DD8-B71B-0B7C9E1C79DA6F5C.jpg",
         "altText": "a caver with pads and helmet crawling in the cave",
         "caption": "Each summer, the Wild Cave Tour offers the chance to get up close and personal with Wind Cave.",
@@ -4010,11 +4292,25 @@
         "title": "Wind Cave explorer"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7AD3B1-1DD8-B71B-0BC2F74D3D134758.jpg",
-        "altText": "two prairie dogs watch from their burrow",
-        "caption": "Prairie dog sightings are common throughout the park's prairies.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/7947CCD9-AC9E-CF65-A4B587F2C8185044.jpg",
+        "altText": "View of Wind Cave National Park from a ridge with scattered ponderosa pine trees and open grassland.",
+        "caption": "View of Wind Cave National Park from near the southern entrance.",
         "credit": "NPS Photo",
-        "title": "Prairie Dogs"
+        "title": "Park View"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/795A2E27-B049-8843-A778CD863E13D763.jpg",
+        "altText": "Two prairie dogs stand on a dirt mound surrounded by green grass.",
+        "caption": "Two prairie dogs watching for predators from the top of a mound.",
+        "credit": "NPS Photo",
+        "title": "Prairie Dogs on a Mound"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/A613F242-D1F1-26F0-EF952D92452BCC23.jpg",
+        "altText": "View of a cave room with yellowish-brown rocks and a criss-cross pattern of boxwork on the ceiling.",
+        "caption": "View of the Post Office room on the Natural Entrance Cave Tour.",
+        "credit": "NPS Photo",
+        "title": "Post Office room on the Natural Entrance Cave Tour"
       }
     ]
   },
@@ -4124,16 +4420,44 @@
     "state": "Idaho, Montana, Wyoming",
     "lat": 44.59824417,
     "lng": -110.5471695,
-    "description": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.",
+    "description": "",
     "url": "https://www.nps.gov/yell/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg",
-      "altText": "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.",
-      "caption": "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures",
-      "credit": "NPS/Jim Peaco",
-      "title": "Grand Prismatic Spring"
+      "url": "https://www.nps.gov/common/uploads/structured_data/2815637A-9869-FC9C-99461D0B36AA1922.jpg",
+      "altText": "The sun sets behind the sharp point of a snow-covered mountain; pink clouds are reflected in a pond",
+      "caption": "The sun sets behind Electric Peak.",
+      "credit": "NPS / Jacob W. Frank",
+      "title": "Electric Peak Sunset"
     },
     "images": [
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/2815637A-9869-FC9C-99461D0B36AA1922.jpg",
+        "altText": "The sun sets behind the sharp point of a snow-covered mountain; pink clouds are reflected in a pond",
+        "caption": "The sun sets behind Electric Peak.",
+        "credit": "NPS / Jacob W. Frank",
+        "title": "Electric Peak Sunset"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/28B56C01-ABED-ED7B-FDC8E6D3FC843D09.jpg",
+        "altText": "A geyser erupts steam in front of the bright sun.",
+        "caption": "Behive Geyser erupting in the Upper Geyser Basin",
+        "credit": "NPS / Jacob W. Frank",
+        "title": "Beehive Geyser Eruption"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/29EB105C-BCE3-4859-9B83F22E1091AA2F.jpg",
+        "altText": "Bison graze in sage brush",
+        "caption": "Bison grazing in Lamar Valley in the fall",
+        "credit": "NPS / Brett Raeburn",
+        "title": "Bison in Lamar Valley"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/2930A635-D9D1-E48D-571A9BBB8F078588.jpg",
+        "altText": "A dark wolf stands in the snow and looks towards the viewer.",
+        "caption": "A wolf in the Firehole area.",
+        "credit": "NPS / Jim Peaco",
+        "title": "Dark Wolf in Snow"
+      },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg",
         "altText": "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.",
@@ -4142,67 +4466,39 @@
         "title": "Grand Prismatic Spring"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg",
-        "altText": "A crowd of people standing along a wooden boardwalk watches a geyser erupt.",
-        "caption": "Aurum Geyser erupting",
-        "credit": "NPS/Jim Peaco",
-        "title": "Aurum Geyser"
+        "url": "https://www.nps.gov/common/uploads/structured_data/2A83F1F6-BA74-D152-1F43D8C6910C3897.jpg",
+        "altText": "A grizzly bear walks down a slope with its breath showing",
+        "caption": "A grizzly bear on a cold morning.",
+        "credit": "NPS / Jim Peaco",
+        "title": "Grizzly Bear"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg",
-        "altText": "A visitor stands on a boardwalk near a hot spring and a lake.",
-        "caption": "Black Pool at the West Thumb Geyser Basin",
-        "credit": "NPS/Diane Renkin",
-        "title": "Black Pool"
+        "url": "https://www.nps.gov/common/uploads/structured_data/2827C4D2-B449-5B06-82F83796B536F344.jpg",
+        "altText": "A large bull elk with antlers peers through dense green foliage.",
+        "caption": "A bull elk on Sepulcher Mountain Trail",
+        "credit": "NPS / Neal Herbert",
+        "title": "Bull Elk"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg",
-        "altText": "People on a wooden boardwalk watch a geyser erupt.",
-        "caption": "Visitors to the Upper Geyser Basin watch Beehive Geyser erupt.",
-        "credit": "NPS/Jim Peaco",
-        "title": "Beehive Geyser"
+        "url": "https://www.nps.gov/common/uploads/structured_data/29F8038A-F8C7-34C4-3AD1016597F0EE55.jpg",
+        "altText": "A creek winds towards a large lake",
+        "caption": "Pelican Creek winding into Yellowstone Lake",
+        "credit": "NPS / Jacob W. Frank",
+        "title": "Pelican Creek"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D3BD3-1DD8-B71B-0BB607F9BAAE1271.jpg",
-        "altText": "A wolf howls while standing on a snowy field.",
-        "caption": "Alpha male of the Canyon wolf pack",
-        "credit": "NPS/Jim Peaco",
-        "title": "Wolf howling"
+        "url": "https://www.nps.gov/common/uploads/structured_data/2B0FAE9E-F02C-BC67-F8720A6E84C6A30C.jpg",
+        "altText": "Multi-colored teepees are lit in front of a large, stone arch under the black night sky.",
+        "caption": "Lighted teepees at the Roosevelt Arch",
+        "credit": "NPS / Jacob W. Frank",
+        "title": "Lighted Teepees at Roosevelt Arch"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D573E-1DD8-B71B-0B5C0DF5BB91D043.jpg",
-        "altText": "Visitors walk into a rustic, log and stone building.",
-        "caption": "The stone-and-log architecture of Fishing Bridge Trailside Museum became a prototype for park buildings all around the country",
-        "credit": "NPS/Jim Peaco",
-        "title": "Fishing Bridge Trailside Museum"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D5AB4-1DD8-B71B-0BF91CF45345ED16.jpg",
-        "altText": "A geyser erupting in the middle of a large pool.",
-        "caption": "Great Fountain Geyser erupts against a blue summer sky",
-        "credit": "NPS/Diane Renkin",
-        "title": "Great Fountain Geyser"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D610A-1DD8-B71B-0BEF676112007818.jpg",
-        "altText": "A crowd in front of an erupting geyser during a snowy winter day.",
-        "caption": "Winter is a magical time to watch Old Faithful Geyser erupt",
-        "credit": "NPS/Jim Peaco",
-        "title": "Old Faithful Geyser in winter"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8903-1DD8-B71B-0BA8669AEEF74379.jpg",
-        "altText": "Visitors walk in front of a brightly colored, terraced landscape.",
-        "caption": "The vibrant colors of Palette Springs are formed by thermophiles—heat-loving organisms",
-        "credit": "NPS/Jim Peaco",
-        "title": "Palette Spring"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C7D95DD-1DD8-B71B-0BC4FA19BD72F0EC.jpg",
-        "altText": "Two bighorn sheep laying on the ground.",
-        "caption": "Two bighorn rams rest and chew their cud",
-        "credit": "NPS/Peggy Olliff",
-        "title": "Bighorn sheep"
+        "url": "https://www.nps.gov/common/uploads/structured_data/2B67F071-0744-4BA7-0020C3F4050180AB.jpg",
+        "altText": "A group of skiers watch bison in the snow and steam.",
+        "caption": "Skiers watching bison in the snow",
+        "credit": "NPS / Neal Herbert",
+        "title": "Skiers Watching Bison"
       }
     ]
   },
@@ -4220,19 +4516,19 @@
     "description": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
     "url": "https://www.nps.gov/yose/index.htm",
     "image": {
-      "url": "https://www.nps.gov/common/uploads/structured_data/3C84CC4C-1DD8-B71B-0BE967E5E5D93F25.jpg",
-      "altText": "Two tall waterfalls flowing down snow covered granite walls.",
-      "caption": "Yosemite Falls will sometimes only trickle at the end of summer, but wet winters can rejuvenate the flow.",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84CF74-1DD8-B71B-0B9C7FF83F7C68EB.jpg",
+      "altText": "Granite dome with trace amounts of snow.",
+      "caption": "Half Dome is one of the most recognizable granitic formations in the world.",
       "credit": "NPS / Cindy Jacoby",
-      "title": "Yosemite Falls on a Winter Morning"
+      "title": "Half Dome"
     },
     "images": [
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C84CC4C-1DD8-B71B-0BE967E5E5D93F25.jpg",
-        "altText": "Two tall waterfalls flowing down snow covered granite walls.",
-        "caption": "Yosemite Falls will sometimes only trickle at the end of summer, but wet winters can rejuvenate the flow.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C84CF74-1DD8-B71B-0B9C7FF83F7C68EB.jpg",
+        "altText": "Granite dome with trace amounts of snow.",
+        "caption": "Half Dome is one of the most recognizable granitic formations in the world.",
         "credit": "NPS / Cindy Jacoby",
-        "title": "Yosemite Falls on a Winter Morning"
+        "title": "Half Dome"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/05383E91-AA28-2DDC-AB517507594F9FA6.jpg",
@@ -4242,6 +4538,13 @@
         "title": "Upper Yosemite Fall and Merced River in spring"
       },
       {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C84C3C0-1DD8-B71B-0BFF90B64283C3D8.jpg",
+        "altText": "A mountain reflecting in a lake.",
+        "caption": "Cathedral Peak is one of the most recognizable peaks in the Yosemite Wilderness.",
+        "credit": "NPS / Cindy Jacoby",
+        "title": "Cathedral Peak and Lake in Autumn"
+      },
+      {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C84C6CF-1DD8-B71B-0B1C7CB883AA8FB1.jpg",
         "altText": "A rainbow over a mountain in the distance.",
         "caption": "A hike up to Sentinel Dome rewards people with great views of the landscape around them.",
@@ -4249,11 +4552,18 @@
         "title": "Rainbow over Half Dome"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C84C3C0-1DD8-B71B-0BFF90B64283C3D8.jpg",
-        "altText": "A mountain reflecting in a lake.",
-        "caption": "Cathedral Peak is one of the most recognizable peaks in the Yosemite Wilderness.",
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C8560E1-1DD8-B71B-0BD3183636F4B861.jpg",
+        "altText": "Cluster of tall trees with cloudy sky.",
+        "caption": "Yosemite National Park's massive giant sequoias (Sequoiadendron giganteum) live in three groves in the park. The most famous of these is the Mariposa Grove, which contains about 500 mature giant sequoias.",
         "credit": "NPS / Cindy Jacoby",
-        "title": "Cathedral Peak and Lake in Autumn"
+        "title": "Giant Sequoia Trees in the Mariposa Grove of Giant Sequoias"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/3C84CC4C-1DD8-B71B-0BE967E5E5D93F25.jpg",
+        "altText": "Two tall waterfalls flowing down snow covered granite walls.",
+        "caption": "Yosemite Falls will sometimes only trickle at the end of summer, but wet winters can rejuvenate the flow.",
+        "credit": "NPS / Cindy Jacoby",
+        "title": "Yosemite Falls on a Winter Morning"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/3C84CDD0-1DD8-B71B-0B6E5868AFC75B6B.jpg",
@@ -4282,20 +4592,6 @@
         "caption": "Glen Auilin is one of five High Sierra Camps, located in the Yosemite high country.",
         "credit": "NPS",
         "title": "Glen Aulin"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C8560E1-1DD8-B71B-0BD3183636F4B861.jpg",
-        "altText": "Cluster of tall trees with cloudy sky.",
-        "caption": "Yosemite National Park's massive giant sequoias (Sequoiadendron giganteum) live in three groves in the park. The most famous of these is the Mariposa Grove, which contains about 500 mature giant sequoias.",
-        "credit": "NPS / Cindy Jacoby",
-        "title": "Giant Sequoia Trees in the Mariposa Grove of Giant Sequoias"
-      },
-      {
-        "url": "https://www.nps.gov/common/uploads/structured_data/3C84C97E-1DD8-B71B-0B5DD2112C58C175.jpg",
-        "altText": "Mountains surrounding a lake.",
-        "caption": "Tenaya Lake is a favorite place to stop along the Tioga Road in summer.",
-        "credit": "NPS",
-        "title": "Tenaya Lake at Sunset"
       }
     ]
   },
@@ -4315,23 +4611,23 @@
     "image": {
       "url": "https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg",
       "altText": "A triangular sandstone mountain overlooks green and yellow foliage. A cloudy blue sky is overhead.",
-      "caption": "The Watchman in Zion Canyon",
-      "credit": "NPS/Shane Carte",
+      "caption": "The Watchman greets visitors to Zion Canyon as it towers over the visitor center and South Entrance.",
+      "credit": "NPS Photo / Shane Carte",
       "title": "The Watchman"
     },
     "images": [
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg",
         "altText": "A triangular sandstone mountain overlooks green and yellow foliage. A cloudy blue sky is overhead.",
-        "caption": "The Watchman in Zion Canyon",
-        "credit": "NPS/Shane Carte",
+        "caption": "The Watchman greets visitors to Zion Canyon as it towers over the visitor center and South Entrance.",
+        "credit": "NPS Photo / Shane Carte",
         "title": "The Watchman"
       },
       {
         "url": "https://www.nps.gov/common/uploads/structured_data/69162F54-D4AF-8695-A42F97A8F9774C19.jpg",
         "altText": "The sun sets behind large red and white towers of sandstone.",
-        "caption": "The Towers of the Virgin in Zion Canyon",
-        "credit": "NPS/Jesse Nelson",
+        "caption": "The Towers of the Virgin can be seen from the Human History Museum (Zion Canyon Shuttle Stop #2).",
+        "credit": "NPS Photo / Jesse Nelson",
         "title": "The Towers of the Virgin"
       },
       {
@@ -4349,11 +4645,18 @@
         "title": "The Narrows"
       },
       {
-        "url": "https://www.nps.gov/common/uploads/structured_data/69033C8D-B439-855D-6B260FB2F4CDB53B.jpg",
-        "altText": "A red sandstone arch under a clear blue sky.",
-        "caption": "Deep in Zion's Wilderness site Kolob Arch, one of the largest free-standing arches in the world.",
-        "credit": "NPS",
-        "title": "Kolob Arch"
+        "url": "https://www.nps.gov/common/uploads/structured_data/06BF5AAF-C83A-7BBD-C5AD8452D6564FBD.jpg",
+        "altText": "A winding road runs through a forest as distant red sandstone cliffs glow in the evening sun.",
+        "caption": "Kolob Canyons is located in the northwest corner of the park, near Cedar City. Multiple trails and scenic overlooks explore the unique geology of this area.",
+        "credit": "NPS Photo / Wil Marischen",
+        "title": "Kolob Canyons Scenic Drive"
+      },
+      {
+        "url": "https://www.nps.gov/common/uploads/structured_data/0831B93C-9093-A0E6-6DBC41905EE5F7AE.jpg",
+        "altText": "Distinct sandstone layers are exposed to a blue sky. Plateaus of white sandstone stand tall.",
+        "caption": "East of Zion Canyon, along the Zion-Mt. Carmel Highway, unique sandstone formations can be viewed from scenic overlooks and trails.",
+        "credit": "NPS Photo / Caitlin Ceci",
+        "title": "East Side of Zion"
       }
     ]
   }

@@ -55,7 +55,7 @@ export default function Home() {
             <Link to="/parks" onMouseEnter={loadParks} onFocus={loadParks}>
               <div className="tile-overlay">
                 <h3>US National Parks</h3>
-                <p>The 63 US National Parks I've explored</p>
+                <p>The 64 US National Parks I've explored</p>
               </div>
             </Link>
           </div>

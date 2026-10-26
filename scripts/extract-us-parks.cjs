@@ -38,6 +38,11 @@ const API_KEY = process.env.NPS_API_KEY || 'DEMO_KEY';
 const API_URL = `https://developer.nps.gov/api/v1/parks?limit=500&api_key=${API_KEY}`;
 const OUTPUT_PATH = path.join(__dirname, '..', 'public', 'data', 'us-parks.json');
 
+// Guard against the NPS inventory drifting without us noticing. Bump this
+// when Congress designates (or redesignates) a park: 63 until Chiricahua
+// National Monument became Chiricahua National Park.
+const EXPECTED_PARKS = 64;
+
 // State / territory code → full name. Covers everything the NPS API can
 // return in `states` (two-letter codes, comma-separated when a park spans
 // multiple states).
@@ -74,7 +79,7 @@ const NAME_OVERRIDES = {
 };
 
 // NPS administers Sequoia and Kings Canyon as a single unit (parkCode
-// "seki") and returns one combined record. The 63-park canonical list
+// "seki") and returns one combined record. The canonical park list
 // counts them as two, so we split the seki record into two entries using
 // each park's individual iconic center coords. Description, image, and
 // URL are shared from the joint record.
@@ -189,7 +194,7 @@ async function probeImagesParallel(images, concurrency = 8) {
 }
 
 /**
- * Does this NPS record represent one of the 63 canonical National Parks?
+ * Does this NPS record represent one of the canonical National Parks?
  *
  * Most parks have designation "National Park" or "National Park &
  * Preserve". Four special cases don't:
@@ -308,9 +313,9 @@ async function main() {
         }
     }
 
-    if (parks.length !== 63) {
+    if (parks.length !== EXPECTED_PARKS) {
         throw new Error(
-            `Expected 63 parks, got ${parks.length}. NPS API inventory may have drifted.`
+            `Expected ${EXPECTED_PARKS} parks, got ${parks.length}. NPS API inventory may have drifted.`
         );
     }
 

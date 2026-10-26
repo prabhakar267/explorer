@@ -33,7 +33,7 @@ npm run games -- --platinum
 
 ## extract-us-parks.cjs
 
-Fetches the canonical 63 US National Parks from the NPS API and writes `public/data/us-parks.json`.
+Fetches the canonical 64 US National Parks from the NPS API and writes `public/data/us-parks.json`. The expected count is asserted via `EXPECTED_PARKS` — bump it when a park is designated or redesignated.
 
 ```bash
 node scripts/extract-us-parks.cjs
@@ -49,4 +49,4 @@ Fetches park boundary polygons (GeoJSON `MultiPolygon`) from `/mapdata/parkbound
 node scripts/extract-park-boundaries.cjs
 ```
 
-Requires `NPS_API_KEY` in `.env` (the boundaries endpoint is rate-limited and `DEMO_KEY` runs out quickly across 63 calls).
+Requires `NPS_API_KEY` in `.env` (the boundaries endpoint is rate-limited and `DEMO_KEY` runs out quickly across one call per park).

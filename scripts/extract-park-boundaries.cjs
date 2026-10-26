@@ -10,7 +10,7 @@
  *
  * The endpoint is rate-limited to ~10 requests per second per key, so we
  * pace requests with a small delay between calls. NPS_API_KEY is required
- * (DEMO_KEY runs out long before 63 calls finish).
+ * (DEMO_KEY runs out long before one call per park finishes).
  *
  * Output:
  *   public/data/park-boundaries/{parkCode}.json   one file per park
@@ -45,7 +45,7 @@ if (!API_KEY) {
         'Error: NPS_API_KEY is required in .env. Get a key at https://developer.nps.gov.'
     );
     console.error(
-        '(DEMO_KEY is too rate-limited to fetch all 63 park boundaries.)'
+        '(DEMO_KEY is too rate-limited to fetch every park boundary.)'
     );
     process.exit(1);
 }
