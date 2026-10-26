@@ -1,24 +1,14 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { useJson } from '../hooks/useJson';
 import '../styles/games.css';
 
-export default function Games() {
-  const [games, setGames] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [themeFilter, setThemeFilter] = useState('All');
+const NO_GAMES = [];
 
-  useEffect(() => {
-    fetch(import.meta.env.BASE_URL + 'data/ps-games.json')
-      .then((r) => r.json())
-      .then((data) => {
-        setGames(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error('Error loading games:', err);
-        setLoading(false);
-      });
-  }, []);
+export default function Games() {
+  const { data, error, loading } = useJson(import.meta.env.BASE_URL + 'data/ps-games.json');
+  const games = Array.isArray(data) ? data : NO_GAMES;
+  const [themeFilter, setThemeFilter] = useState('All');
 
   const filtered = useMemo(() => {
     const list = themeFilter === 'All' ? games : games.filter((g) => g.themes?.includes(themeFilter));
@@ -76,6 +66,12 @@ export default function Games() {
         </div>
       )}
 
+      {!loading && error && (
+        <div className="games-empty" role="alert">
+          Couldn't load the games list. Check your connection and reload the page.
+        </div>
+      )}
+
       <div className="games-grid">
         {filtered.map((game) => (
           <a
@@ -114,7 +110,7 @@ export default function Games() {
         ))}
       </div>
 
-      {!loading && filtered.length === 0 && (
+      {!loading && !error && filtered.length === 0 && (
         <div className="games-empty">No games found for this filter.</div>
       )}
     </div>

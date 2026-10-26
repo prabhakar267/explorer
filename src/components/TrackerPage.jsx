@@ -1,9 +1,12 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useCallback, useRef, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import ExplorerMap from './ExplorerMap';
 import SiteOverlay from './SiteOverlay';
 import { useVisited } from '../hooks/useVisited';
+import { useJson } from '../hooks/useJson';
 import '../styles/explorer.css';
+
+const NO_SITES = [];
 
 export default function TrackerPage({
   title,
@@ -20,31 +23,26 @@ export default function TrackerPage({
   fetchOverlayDetails,
   boundaryLoader,
 }) {
-  const [sites, setSites] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [previewSite, setPreviewSite] = useState(null);
   const [overlayDetails, setOverlayDetails] = useState(null);
   const [filterState, setFilterState] = useState(filters?.initial ?? null);
   const previewRequestId = useRef(0);
-  const { visited } = useVisited(visitedUrl);
+  const { data, error, loading } = useJson(dataUrl);
+  const { visited, error: visitedError } = useVisited(visitedUrl);
 
-  useEffect(() => {
-    fetch(dataUrl)
-      .then((r) => r.json())
-      .then((data) => {
-        const valid = data.filter(
-          (s) => typeof s.lat === 'number' && typeof s.lng === 'number' && !Number.isNaN(s.lat) && !Number.isNaN(s.lng)
-        );
-        setSites(valid);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error(`Error loading ${title}:`, err);
-        setLoading(false);
-      });
-  }, [dataUrl, title]);
+  // Drop entries without usable coordinates. Memoised so ExplorerMap's
+  // marker-rebuild effect (keyed on `sites`) only fires when the data changes.
+  const sites = useMemo(() => {
+    if (!Array.isArray(data)) return NO_SITES;
+    return data.filter(
+      (s) => typeof s.lat === 'number' && typeof s.lng === 'number' && !Number.isNaN(s.lat) && !Number.isNaN(s.lng)
+    );
+  }, [data]);
 
-  const filteredSites = applyFilter ? applyFilter(sites, filterState) : sites;
+  const filteredSites = useMemo(
+    () => (applyFilter ? applyFilter(sites, filterState) : sites),
+    [applyFilter, sites, filterState]
+  );
 
   const handlePreview = useCallback(async (siteName) => {
     const requestId = ++previewRequestId.current;
@@ -83,7 +81,7 @@ export default function TrackerPage({
   }
 
   return (
-    <div className="explorer-page">
+    <div className={`explorer-page${previewSite ? ' overlay-open' : ''}`}>
       <div className="explorer-header">
         <div className="explorer-header-content">
           <div className="explorer-header-text">
@@ -102,6 +100,19 @@ export default function TrackerPage({
         </div>
       )}
 
+      {!loading && error && (
+        <div className="loading-indicator load-error" role="alert">
+          <div className="load-error-title">Couldn't load {title}.</div>
+          <div className="load-error-detail">Check your connection and reload the page.</div>
+        </div>
+      )}
+
+      {!loading && !error && visitedError && (
+        <div className="load-warning" role="status">
+          Visited status couldn't be loaded; all sites are shown as not visited.
+        </div>
+      )}
+
       <ExplorerMap
         sites={filteredSites}
         visited={visited}
@@ -111,16 +122,18 @@ export default function TrackerPage({
         boundaryLoader={boundaryLoader}
       />
 
-      <div className="explorer-stats">
-        {filters && (
-          <div className="stats-filter">
-            {filters.render(filterState, setFilterState)}
-          </div>
-        )}
-        {stats.map(({ label, value }) => (
-          <div key={label}>{label}: <span>{value}</span></div>
-        ))}
-      </div>
+      {!error && (
+        <div className="explorer-stats">
+          {filters && (
+            <div className="stats-filter">
+              {filters.render(filterState, setFilterState)}
+            </div>
+          )}
+          {stats.map(({ label, value }) => (
+            <div key={label}>{label}: <span>{value}</span></div>
+          ))}
+        </div>
+      )}
 
       <SiteOverlay
         site={previewSite}

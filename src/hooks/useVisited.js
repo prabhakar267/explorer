@@ -1,14 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
+import { useJson } from './useJson';
+
+const EMPTY = new Set();
 
 export function useVisited(dataUrl) {
-  const [visited, setVisited] = useState(new Set());
-
-  useEffect(() => {
-    fetch(dataUrl)
-      .then((r) => r.json())
-      .then((arr) => setVisited(new Set(arr)))
-      .catch(() => {});
-  }, [dataUrl]);
-
-  return { visited };
+  const { data, error } = useJson(dataUrl);
+  // Stable Set identity: ExplorerMap re-styles every marker whenever the
+  // `visited` prop changes, so don't hand it a fresh Set each render.
+  const visited = useMemo(() => (Array.isArray(data) ? new Set(data) : EMPTY), [data]);
+  return { visited, error };
 }

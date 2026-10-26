@@ -215,93 +215,39 @@
   100% { transform: rotate(360deg); }
 }
 
-/* Dropdown menu */
-.dropdown-menu {
-  position: relative;
-  z-index: 1001;
+/* Data failed to load: same centred card as the spinner, no spinner. */
+.load-error {
+  max-width: 320px;
+  border-color: rgba(155, 44, 44, 0.35);
 }
 
-.dropdown-button {
-  background: none;
-  border: none;
-  border-radius: var(--border-radius-sm);
-  padding: 8px 12px;
-  font-size: 18px;
+.load-error-title {
   font-weight: 600;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  min-width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 6px;
 }
 
-.dropdown-button:hover {
-  background: rgba(196, 125, 46, 0.1);
-  color: var(--primary-color);
-  transform: translateY(-1px);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  margin-top: 8px;
-  background: var(--background-glass);
-  min-width: 200px;
-  border-radius: var(--border-radius-sm);
-  box-shadow: var(--shadow-xl);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 1002;
-  overflow: hidden;
-}
-
-.dropdown-content.show {
-  display: block;
-}
-
-.dropdown-section {
-  padding: 12px 18px;
-}
-
-.dropdown-label {
-  display: block;
-  color: var(--text-muted);
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 8px;
-}
-
-.dropdown-divider {
-  height: 1px;
-  background: var(--border-color);
-  margin: 8px 0;
-}
-
-.dropdown-action {
-  color: var(--text-primary);
-  padding: 14px 18px;
-  text-decoration: none;
-  display: block;
+.load-error-detail {
+  color: var(--text-secondary);
   font-size: 14px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
 }
 
-.dropdown-action:hover {
-  background: rgba(196, 125, 46, 0.1);
-  color: var(--primary-color);
+/* Sites loaded but the visited list did not: non-blocking banner under the
+   header so the map is still usable. */
+.load-warning {
+  position: absolute;
+  top: calc(var(--explorer-header-height) + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  max-width: calc(100% - 32px);
+  padding: 8px 14px;
+  border-radius: var(--border-radius-sm);
+  background: var(--background-glass);
+  border: 1px solid rgba(183, 121, 31, 0.5);
+  color: var(--text-primary);
+  font-size: 13px;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(20px);
 }
 
 /* Theme toggle */
@@ -380,48 +326,6 @@
   font-size: 13px;
   line-height: 1.4;
   text-align: center;
-}
-
-.popup-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.popup-button {
-  flex: 1;
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: var(--border-radius-sm);
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow-sm);
-}
-
-.popup-button:hover {
-  background: var(--primary-hover);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
-
-.popup-button.visited {
-  background: var(--success-color);
-}
-
-.popup-button.visited:hover {
-  background: var(--success-hover);
-}
-
-.preview-button {
-  background: var(--accent-color) !important;
-}
-
-.preview-button:hover {
-  background: var(--accent-hover) !important;
 }
 
 /* Site overlay */
@@ -504,8 +408,7 @@
   flex-shrink: 0;
 }
 
-.back-button,
-.close-overlay {
+.back-button {
   background: none;
   border: none;
   font-size: 20px;
@@ -524,11 +427,6 @@
 .back-button:hover {
   background: rgba(196, 125, 46, 0.1);
   color: var(--primary-color);
-}
-
-.close-overlay:hover {
-  background: rgba(155, 44, 44, 0.1);
-  color: var(--danger-color);
 }
 
 .overlay-content {
@@ -739,48 +637,6 @@
   background: transparent !important;
 }
 
-/* Auth buttons */
-.auth-button {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: var(--border-radius-sm);
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  text-align: center;
-}
-
-.auth-button:hover {
-  background: var(--primary-hover);
-  transform: translateY(-1px);
-}
-
-.auth-button.secondary {
-  background: var(--secondary-color);
-  font-size: 12px;
-  padding: 6px 12px;
-}
-
-.auth-button.secondary:hover {
-  background: var(--text-muted);
-}
-
-.sync-status {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-.sync-indicator {
-  color: var(--success-color);
-  font-size: 8px;
-}
-
 /* Mobile */
 @media (max-width: 768px) {
   .explorer-header {
@@ -815,7 +671,31 @@
     padding: 16px;
   }
 
+  /* Keep the stats panel (and with it the category filter) reachable on
+     phones: compact it instead of hiding it. It sits over the bottom sheet's
+     area, so it is hidden only while a site overlay is open. */
   .explorer-stats {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 10px 14px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
+  }
+
+  .explorer-stats div {
+    margin-bottom: 0;
+  }
+
+  .explorer-stats .stats-filter {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .explorer-page.overlay-open .explorer-stats {
     display: none;
   }
 
@@ -823,15 +703,6 @@
     padding: 8px 14px;
     font-size: 13px;
     min-height: 36px;
-  }
-
-  .popup-buttons {
-    flex-direction: column;
-  }
-
-  .popup-button {
-    padding: 12px 16px;
-    min-height: 44px;
   }
 
   .info-item strong {
@@ -851,13 +722,7 @@
     font-size: 16px;
   }
 
-  .dropdown-button {
-    min-width: 44px;
-    height: 44px;
-  }
-
-  .back-button,
-  .close-overlay {
+  .back-button {
     width: 44px;
     height: 44px;
   }

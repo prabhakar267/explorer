@@ -4,7 +4,7 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Games from './pages/Games';
 import RouteErrorBoundary from './components/RouteErrorBoundary';
-import { useTheme } from './hooks/useTheme';
+import { ThemeProvider } from './hooks/useTheme';
 import './styles/global.css';
 
 // The tracker pages pull in Leaflet, markercluster and maplibre-gl — around a
@@ -17,7 +17,6 @@ const Unesco = lazy(() => import('./pages/Unesco'));
 const Parks = lazy(() => import('./pages/Parks'));
 
 function App() {
-  useTheme();
   return (
     <RouteErrorBoundary>
       <Suspense fallback={<div className="route-fallback"><div className="route-fallback-spinner" /></div>}>
@@ -35,8 +34,10 @@ function App() {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
+    <ThemeProvider>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </ThemeProvider>
   </StrictMode>
 );
