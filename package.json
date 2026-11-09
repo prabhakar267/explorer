@@ -29,14 +29,14 @@
     "maplibre-gl": "^6.16.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-router-dom": "^7.18.4"
+    "react-router-dom": "^7.18.5"
   },
   "devDependencies": {
-    "@inquirer/prompts": "^8.7.4",
+    "@inquirer/prompts": "^8.7.5",
     "@types/leaflet": "^1.9.22",
-    "@vitejs/plugin-react": "^6.1.2",
-    "mapshaper": "0.7.98",
-    "vite": "^8.3.5"
+    "@vitejs/plugin-react": "^6.2.1",
+    "mapshaper": "0.7.101",
+    "vite": "^8.3.6"
   },
   "engines": {
     "node": ">=22"
